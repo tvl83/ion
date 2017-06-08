@@ -32,10 +32,12 @@ Features:
 	* added onion images
     ../src/qt/res/src
 	* replaced bitcoin.svg with ion.svg
-
     ../src/qt/res/images
+* added initial automake setup to build iond. Build instructions: autoreconf --install ; ./configure ; make (by Aspa)
 
 * ISSUE: Default QT installation on tested system (Ubuntu Gnome 17.04 with GCC 5.9) was located in /opt/Qt5.9.0/5.9/gcc_64/lib, where ionx-qt looks for libQt5Core.so.5 files in /usr/lib/x86_64-linux-gnu/ folder. (aspa)
+
+* ISSUE: automake setup only builds iond, not ion-qt. Also, cross-compile with mingw only works for Windows, not Darwin. Will be fixed in next iteration (Aspa)
 
 * If you use API and darksend command, you need to change it to stashedsend
 Download:

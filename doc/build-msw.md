@@ -28,7 +28,7 @@ OpenSSL         \openssl-1.0.1p-mgw        http://www.openssl.org/source/
 Berkeley DB     \db-4.8.30.NC-mgw          http://www.oracle.com/technology/software/products/berkeley-db/index.html
 Boost           \boost-1.57.0-mgw          http://www.boost.org/users/download/
 miniupnpc       \miniupnpc-1.6-mgw         http://miniupnp.tuxfamily.org/files/
-Secp256k1       \secp256k1                 https://github.com/bitcoin/secp256k1
+Secp256k1       \secp256k1                 https://github.com/cevap/secp256k1
 
 Their licenses:
 OpenSSL        Old BSD license with the problematic advertising requirement

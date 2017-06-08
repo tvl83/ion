@@ -225,7 +225,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>IonGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Podpiši &amp;sporočilo ...</translation>
@@ -706,7 +706,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
     </message>
     </context>
 <context>
-    <name>DarksendConfig</name>
+    <name>StashedsendConfig</name>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -1839,7 +1839,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>ion-core</name>
     <message>
         <source>Ion version</source>
         <translation>Ion različica</translation>
@@ -1993,8 +1993,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
         <translation>Opremi output rahroščevanja s časovnim žigom. </translation>
     </message>
     <message>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>SSL možnosti: (glejte Bitcoin Wiki za navodla, kako nastaviti SSL)</translation>
+        <source>SSL options: (see the Ion Wiki for SSL setup instructions)</source>
+        <translation>SSL možnosti: (glejte Ion Wiki za navodla, kako nastaviti SSL)</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>

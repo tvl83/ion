@@ -25,7 +25,7 @@ DNSSeed Thread Fix
 
 Scale up addrman
 
-Sync fixes, CPU use, Darksend fixes
+Sync fixes, CPU use, Stashedsend fixes
 https://github.com/SCDeveloper/All-Work-Done-Prior-to-DarkSilk-RC-Repo/commit/0e1fe7055bf536c5545849264724aeecdcf3201b
 
 Guard against OpenSSL's new strict DER checks
@@ -52,7 +52,7 @@ https://github.com/dashpay/dash/commit/74551e9f31f10e351de1ec07f60513662ccdb06a
 CMasternodeman
 https://github.com/dashpay/dash/commits/v0.11.2.x?page=12
 
-move list logic back to rpcdarkcsend
+move list logic back to rpcstashedcsend
 https://github.com/dashpay/dash/commit/dd610900516b615c4f1ed9d3cd279485683c4d52
 
 add masternodelist to command list
@@ -76,7 +76,7 @@ https://github.com/dashpay/dash/commit/2e05bf212eaf5e0fe98161f673483dc62e5c0a95
 rpc fixes:
 https://github.com/dashpay/dash/commit/558585039696096b355a9e75beb70b36a3b7cec9
 
-rpc: allow "darksend" only with ENABLE_WALLET
+rpc: allow "stashedsend" only with ENABLE_WALLET
 https://github.com/dashpay/dash/commit/0d82275d05e9fb81d8d550a58c3d6202bdfce4e5
 
 fix DoAutomaticDenominating:
@@ -196,7 +196,7 @@ Fix possible MN breakage during mixing
 
 Remove donations to multisig addresses
 
-Further fixes to Darksend
+Further fixes to Stashedsend
 
 Added nDenom check for ssa
 
@@ -228,7 +228,7 @@ https://github.com/SCDeveloper/DarkSilk-Release-Candidate/commit/e6ebc2ec9a955f1
 Improve Trading Dialog page to include cross sending and withdrawing from bittrex.
 (wallet needs to be unlocked and SHOULD be encrypted)
 
-Fix PrepareDarksendDenominate - loop instead of if
+Fix PrepareStashedsendDenominate - loop instead of if
 
 When DS inputs are selected in coincontrol:
 - spend exactly these inputs
@@ -247,7 +247,7 @@ Update vAletrt pub/privkeys
 
 Add cryptostream for api key encryption
 
-Add removeSpaces in bitcoinunits.cpp
+Add removeSpaces in ionunits.cpp
 
 Coin control fixes for Qt5
 

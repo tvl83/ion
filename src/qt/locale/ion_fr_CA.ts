@@ -229,7 +229,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>IonGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Signer le &amp;message...</translation>
@@ -714,7 +714,7 @@ Cela veut dire que des frais d'un minimum de %1 par kb sont requis</translation>
     </message>
     </context>
 <context>
-    <name>DarksendConfig</name>
+    <name>StashedsendConfig</name>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -1855,7 +1855,7 @@ Cela veut dire que des frais d'un minimum de %1 par kb sont requis</translation>
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>ion-core</name>
     <message>
         <source>Ion version</source>
         <translation>Version Ion</translation>
@@ -2010,8 +2010,8 @@ Cela veut dire que des frais d'un minimum de %1 par kb sont requis</translation>
         <translation>Horodater les messages de debug</translation>
     </message>
     <message>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Options SSL : (voir le Wiki de Bitcoin pour les instructions de configuration du SSL)</translation>
+        <source>SSL options: (see the Ion Wiki for SSL setup instructions)</source>
+        <translation>Options SSL : (voir le Wiki de Ion pour les instructions de configuration du SSL)</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>

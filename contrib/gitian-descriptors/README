@@ -4,7 +4,7 @@
     
 *******************************************************************************/
 
-https://github.com/bitcoin/bitcoin/blob/master/doc/gitian-building.md#setting-up-debian-for-gitian-building
+https://github.com/cevap/ion/blob/master/doc/gitian-building.md#setting-up-debian-for-gitian-building
 
 
 
@@ -245,7 +245,7 @@ Sanity checks:
 
 Once you've got the right hardware and software:
 
-    git clone git://github.com/bitcoin/bitcoin.git
+    git clone git://github.com/cevap/ion.git
     git clone git://github.com/devrandom/gitian-builder.git
     mkdir gitian-builder/inputs
     wget 'http://miniupnp.tuxfamily.org/files/download.php?file=miniupnpc-1.6.tar.gz' -O gitian-builder/inputs/miniupnpc-1.6.tar.gz
@@ -256,10 +256,10 @@ Once you've got the right hardware and software:
     cd ..
 
     # To build
-    cd bitcoin
+    cd ion
     git pull
     cd ../gitian-builder
     git pull
-    ./bin/gbuild --commit bitcoin=HEAD ../bitcoin/contrib/gitian.yml
+    ./bin/gbuild --commit ion=HEAD ../ion/contrib/gitian.yml
 
 

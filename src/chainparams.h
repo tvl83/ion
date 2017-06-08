@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_CHAIN_PARAMS_H
-#define BITCOIN_CHAIN_PARAMS_H
+#ifndef ION_CHAIN_PARAMS_H
+#define ION_CHAIN_PARAMS_H
 
 #include "uint256.h"
 #include "util.h"
@@ -27,7 +27,7 @@ struct CDNSSeedData {
 
 /**
  * CChainParams defines various tweakable parameters of a given instance of the
- * Bitcoin system. There are three: the main network on which people trade goods
+ * Ion system. There are three: the main network on which people trade goods
  * and services, the public test network which gets reset from time to time and
  * a regression test mode which is intended for private networks only. It has
  * minimal difficulty to ensure that blocks can be found instantly.
@@ -71,7 +71,7 @@ public:
     int RPCPort() const { return nRPCPort; }
     int LastPOWBlock() const { return nLastPOWBlock; }
     int PoolMaxTransactions() const { return nPoolMaxTransactions; }
-    std::string DarksendPoolDummyAddress() const { return strDarksendPoolDummyAddress; }
+    std::string StashedsendPoolDummyAddress() const { return strStashedsendPoolDummyAddress; }
 
 protected:
     CChainParams() {};
@@ -91,7 +91,7 @@ protected:
     int nLastPOWBlock;
     int nPOSStartBlock;
     int nPoolMaxTransactions;
-    std::string strDarksendPoolDummyAddress;
+    std::string strStashedsendPoolDummyAddress;
 };
 
 /**

@@ -1,0 +1,42 @@
+﻿Version 2.1.3.0-🐼61402🐼 is now available.
+
+Features:
+* This release has to be properly tested as there are many changes in the source code
+* Darksend relabeled to dashsend
+* Bitcoin's, PPCoins, BCs, NovaCoin's and Dashcoin's (incl. darksend) labels (BTC, btc, bitcoin, ...) replaced with ion labels. Same for all graphics (by CEVAP)
+* Files renamed from peercoins, bc and dashcoin to ion (by CEVAP)
+* in base58 CBitcoinAddress changed to CCryptoAddress (by CEVAP)
+* corrected total amount of coins (by CEVAP)
+* license and copyright added/corrected (by CEVAP)
+* darksend renamed to stashedsend, dark to stashed (by CEVAP)
+* release notes (ISSUE: needs to be written, current info is useless) (by CEVAP)
+* added developer-notes.md (by CEVAP)
+* base58 corrections (by CEVAP)
+	CBitcoinAddress changed to CCryptoAddress
+	CBitcoinAddressVisitor changed to CCryptoAddressVisitor
+* replaced artworks in (by CEVAP)
+    ../share/pixmaps/
+        * removed bitcoin-bc.ico
+	* removed bitcoin32.xpm
+	* removed bitcoin80.xpm
+	* replaced bitcoin.ico with ion.ico
+	* replaced favicon.ico with ionomy logo
+        * replaced nsis-header.bmp with ion logo
+	* replaced nsis-wizard.bpm with ion logo
+    ../doc/
+	* replaced bitcoin_logo_doxygen.png with ion_logo_doxygen.png
+    ../src/qt/res/icons
+	* replaced bitcoin.icns with ion.icns
+	* replaced bitcoin_testnet.png to ion_testnet.png
+	* replaced bitcoin.ico with ion.ico and all sizes/formats of bitcoin.*
+	* added onion images
+    ../src/qt/res/src
+	* replaced bitcoin.svg with ion.svg
+
+    ../src/qt/res/images
+
+* ISSUE: Default QT installation on tested system (Ubuntu Gnome 17.04 with GCC 5.9) was located in /opt/Qt5.9.0/5.9/gcc_64/lib, where ionx-qt looks for libQt5Core.so.5 files in /usr/lib/x86_64-linux-gnu/ folder. (aspa)
+
+* If you use API and darksend command, you need to change it to stashedsend
+Download:
+https://github.com/cevap/ion/archive/master.zip

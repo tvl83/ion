@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Bitcoin developers
-// Copyright (c) 2017 Empinel/The Ion Developers
+// Copyright (c) 2017 Empinel/The Bitcoin Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -109,7 +109,7 @@ public:
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
 		nPoolMaxTransactions = 3;
-        strDarksendPoolDummyAddress = "iqbMeTpdFfxiNcWHn255T2TneJTrUECCBE";
+        strStashedsendPoolDummyAddress = "iqbMeTpdFfxiNcWHn255T2TneJTrUECCBE";
         nLastPOWBlock 	= 1000;
     }
 
@@ -170,7 +170,7 @@ public:
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
 	nPoolMaxTransactions = 3;
-        strDarksendPoolDummyAddress = "gCJDCcmcVZcfnwAZdEt7dg5s5jjAbDp9dZdhXAmP5NM";
+        strStashedsendPoolDummyAddress = "gCJDCcmcVZcfnwAZdEt7dg5s5jjAbDp9dZdhXAmP5NM";
         nLastPOWBlock 	= 300;
     }
 

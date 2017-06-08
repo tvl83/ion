@@ -118,7 +118,7 @@
                <string>Unconfirmed transactions to watch-only addresses</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 BTC</string>
+               <string notr="true">0.000 000 00 ION</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -143,7 +143,7 @@
                <string>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 BTC</string>
+               <string notr="true">0.000 000 00 ION</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -168,7 +168,7 @@
                <string>Mined balance in watch-only addresses that has not yet matured</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 BTC</string>
+               <string notr="true">0.000 000 00 ION</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -226,7 +226,7 @@
                <string>Mined balance that has not yet matured</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 BTC</string>
+               <string notr="true">0.000 000 00 ION</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -271,7 +271,7 @@
                <string>Your current total balance</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 BTC</string>
+               <string notr="true">0.000 000 00 ION</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -296,7 +296,7 @@
                <string>Current total balance in watch-only addresses</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 BTC</string>
+               <string notr="true">0.000 000 00 ION</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -338,7 +338,7 @@
                <string>Your current spendable balance</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 BTC</string>
+               <string notr="true">0.000 000 00 ION</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -370,7 +370,7 @@
                <string>Total of coins that was staked, and do not yet count toward the current balance</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 BTC</string>
+               <string notr="true">0.000 000 00 ION</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -395,7 +395,7 @@
                <string>Total of coins that was staked in watch-only addresses, and do not yet count toward the current watch-only balance</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 BTC</string>
+               <string notr="true">0.000 000 00 ION</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -420,7 +420,7 @@
                <string>Your current balance in watch-only addresses</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 BTC</string>
+               <string notr="true">0.000 000 00 ION</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -453,7 +453,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QFrame" name="frameDarksend">
+        <widget class="QFrame" name="frameStashedsend">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
            <horstretch>0</horstretch>
@@ -487,12 +487,12 @@
                </font>
               </property>
               <property name="text">
-               <string>Darksend</string>
+               <string>Stashedsend</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="labelDarksendSyncStatus">
+             <widget class="QLabel" name="labelStashedsendSyncStatus">
               <property name="toolTip">
                <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Ion network after a connection is established, but this process has not completed yet.</string>
               </property>
@@ -979,7 +979,7 @@
              </widget>
             </item>
             <item row="1" column="1">
-             <widget class="QProgressBar" name="darksendProgress">
+             <widget class="QProgressBar" name="stashedsendProgress">
               <property name="maximumSize">
                <size>
                 <width>154</width>
@@ -994,7 +994,7 @@
             <item row="3" column="0">
              <widget class="QLabel" name="labelAnonymizedText">
               <property name="text">
-               <string>Darksend Balance:</string>
+               <string>Stashedsend Balance:</string>
               </property>
              </widget>
             </item>
@@ -1043,7 +1043,7 @@
              </widget>
             </item>
             <item row="0" column="1">
-             <widget class="QLabel" name="darksendEnabled">
+             <widget class="QLabel" name="stashedsendEnabled">
               <property name="text">
                <string>Enabled/Disabled</string>
               </property>
@@ -1059,7 +1059,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="darksendStatus">
+           <widget class="QLabel" name="stashedsendStatus">
             <property name="minimumSize">
              <size>
               <width>288</width>
@@ -1078,7 +1078,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="darksendAuto">
+           <widget class="QPushButton" name="stashedsendAuto">
             <property name="sizePolicy">
              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1086,7 +1086,7 @@
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Try to manually submit a Darksend request.</string>
+             <string>Try to manually submit a Stashedsend request.</string>
             </property>
             <property name="text">
              <string>Try Mix</string>
@@ -1094,7 +1094,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="toggleDarksend">
+           <widget class="QPushButton" name="toggleStashedsend">
             <property name="sizePolicy">
              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1107,7 +1107,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="darksendReset">
+           <widget class="QPushButton" name="stashedsendReset">
             <property name="sizePolicy">
              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1115,7 +1115,7 @@
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Reset the current status of Darksend (can interrupt Darksend if it's in the process of Mixing, which can cost you money!)</string>
+             <string>Reset the current status of Stashedsend (can interrupt Stashedsend if it's in the process of Mixing, which can cost you money!)</string>
             </property>
             <property name="autoFillBackground">
              <bool>false</bool>

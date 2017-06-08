@@ -29,4 +29,4 @@ int64_t GetCoinbaseValue(int nHeight, CAmount nFees);
 /** Determine Block Reward for Proof Of Stake **/
 int64_t GetCoinstakeValue(int64_t nCoinAge, CAmount nFees, int nHeight);
 
-#endif // BITCOIN_POW_H
+#endif // ION_POW_H

@@ -233,7 +233,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>IonGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>消息签名(&amp;M)...</translation>
@@ -773,7 +773,7 @@ This label turns red, if the priority is smaller than "medium".
     </message>
     </context>
 <context>
-    <name>DarksendConfig</name>
+    <name>StashedsendConfig</name>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -1962,7 +1962,7 @@ This label turns red, if the priority is smaller than "medium".
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>ion-core</name>
     <message>
         <source>Ion version</source>
         <translation>黑币客户端 版本</translation>
@@ -2152,8 +2152,8 @@ alertnotify=echo %%s | mail -s "Ion Alert" admin@foo.com
         <translation>将时间信息加入调试输出中</translation>
     </message>
     <message>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>SSL选项：(参见Bitcoin Wiki关于SSL设置栏目)</translation>
+        <source>SSL options: (see the Ion Wiki for SSL setup instructions)</source>
+        <translation>SSL选项：(参见Ion Wiki关于SSL设置栏目)</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>

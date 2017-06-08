@@ -4166,7 +4166,7 @@ Please unlock your wallet manually or wait for StashedSend mixing to complete be
     </message>
     <message>
         <location line="+12"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Transfercoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Ion will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

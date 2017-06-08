@@ -117,7 +117,7 @@ QT_TRANSLATE_NOOP("ion-core", ""
 "pay if you send a transaction."),
 QT_TRANSLATE_NOOP("ion-core", ""
 "Warning: Please check that your computer's date and time are correct! If "
-"your clock is wrong Transfercoin will not work properly."),
+"your clock is wrong Ion will not work properly."),
 QT_TRANSLATE_NOOP("ion-core", ""
 "Warning: error reading wallet.dat! All keys read correctly, but transaction "
 "data or address book entries might be missing or incorrect."),

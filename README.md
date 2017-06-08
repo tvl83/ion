@@ -9,6 +9,35 @@ Ion Integration/Staging Tree
 ================================
 
 **Copyright (c) 2016-2017 ionomy**
+Copyright (c) 2017 🐼CEVAP🐼
+
+                `/:`                           
+             -odN:                             
+          `+mMMN-                              
+          +MMMM/.--`               ..          
+         +NMMMh/MMMMh            .dMMm+        
+       -mMMMMM/NMMMMM`          .NMMMMMd       
+      oMMMMMMM.sMMMMm.          .MMMMMMs       
+     /MMMMMMMMo `/N/             /mMMdyd-      
+     dMMMMMMMMM-  `                -+ :Mm      
+    .MMMMMMMMMMy                      -MM-     
+    :MMMMMMMMMM:                      `MM+     
+    /MMMMMMMMMm       `      `         dMh     
+    :MMMMMMMMMd    `+mM-    /MNy:      yMM.    
+    .MMMMMMMMMN`  -NMMy     `hMMMd`    dMMs    
+     +MMMMMMMMM/  `ydo        /dy:    -MMMM:   
+      /MMMMMMMMm`                    `mMMMMN.  
+       oMMMMMMMMm/    `ydmmNy     .+yNMMMMMMm` 
+       .MMMMMMMMMMmo.  `:oo-    /dMMMMMMMMMMMd 
+   :    NMMMMMMMMMMMMms:`   .:sNMMMMMMMMMMMMMMo
+   hm+. sMMMMMMMMMMMMMMMMNNNh+- +MMMMMMMMMMMMMN
+  `NMMMmymMMMMMMMMMMMMMMMd/`     dMMMMMMMMMMMMs
+  hMMMMMMMMMMMMMMMMMMMMy-        dMMMMMMMMMMMm`
+ `yNMMMMMMMMMMMMMMMMMMo    .h-.-oMMMMMMMMMMMM: 
+    `.:::sMMMMMMMMMMMMMs  -NMMMMMMMMMMMMMMMMh  
+         :MMMMMMMMMMMMMM+ .////NMMMMMMMMMMMd`  
+          +hdNNMMMMNNmdy/       .-://+++/:.    
+
 
 #### What is Ion?
 ----------------
@@ -56,16 +85,17 @@ for example, when specifying the the path of the dependency:
 Here BDB_PREFIX must absolute path - it is defined using $(pwd) which ensures
 the usage of the absolute path.
 
-To Build
+To Build ionx-qt
+---------------------
+[Download](https://www.qt.io/download/) and install latest QT creator, import .pro file and compile 
+
+To Build (without QT Version)
 ---------------------
 
 ```bash
-qmake
-make
-make install # optional
+autoreconf --install ; ./configure ; make
 ```
-
-This will build ionx-Qt as well if the dependencies are met.
+This will build ion without QT (no GUI) if all dependencies are met.
 
 Dependencies
 ---------------------

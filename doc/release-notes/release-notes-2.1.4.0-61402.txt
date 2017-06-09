@@ -17,6 +17,9 @@ https://github.com/cevap/ion/archive/master.zip
 Dowloade CE Releases (Community edition):
 	[2.1.4.0-🐼61402🐼 CE](https://github.com/cevap/ion/releases/tag/2.1.4)
 
-All Releases can be found [here](https://github.com/cevap/ion/tags).
+All Releases can be found [here](https://github.com/cevap/ion/tags/).
+
+Ion Core team's releases can be found [here](https://github.com/ionomy/ion/tags/).
+
 
 

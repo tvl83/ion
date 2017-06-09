@@ -1,6 +1,6 @@
 TEMPLATE = app
-TARGET = ionx-qt
-VERSION = 1.0.0
+TARGET = ion-qt
+VERSION = 2.1.4
 INCLUDEPATH += src src/json src/qt
 QT += network printsupport
 DEFINES += ENABLE_WALLET
@@ -580,7 +580,7 @@ macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm src/qt/macnotificationhan
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit -framework CoreServices
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
 macx:ICON = src/qt/res/icons/ion.icns
-macx:TARGET = "ionx-Qt"
+macx:TARGET = "ion-Qt"
 macx:QMAKE_CFLAGS_THREAD += -pthread
 macx:QMAKE_LFLAGS_THREAD += -pthread
 macx:QMAKE_CXXFLAGS_THREAD += -pthread

@@ -49,4 +49,4 @@ Do you want to help but you can not code? Contributors of this release, you can 
 
 **Ion**: [imHX5qPv1fv1nZeRPJhmDDhkCeDUMdWoVv](ionomy:imHX5qPv1fv1nZeRPJhmDDhkCeDUMdWoVv)
 
-![Donate ION to 🔩ASPA🔩](https://raw.githubusercontent.com/cevap/ion/master/contrib/donation/ASPA-ION-DONATION-ADDRESS.png)
+![Donate ION](https://raw.githubusercontent.com/cevap/ion/master/contrib/donation/ASPA-ION-DONATION-ADDRESS.png)

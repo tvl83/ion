@@ -32,15 +32,20 @@
 
 #### 💁 Donate to [🐼CEVAP🐼](https://github.com/cevap)
 ----------------
+
 User contributed in this release, please donate if you would like to see further developments:
 **Ion**: [iiT87sp5zT4TiudtDnYwSGQLwfeWC3bnmm](ionomy:iiT87sp5zT4TiudtDnYwSGQLwfeWC3bnmm)
+
 ![Donate ION to 🐼CEVAP🐼](https://raw.githubusercontent.com/cevap/ion/master/contrib/donation/donation-cevap-ion-address.png)
 
 **Btc**: [3DHhT6c2BN86Tx6D2w615UUSFvUwT41jY7](bitcoin:3DHhT6c2BN86Tx6D2w615UUSFvUwT41jY7)
+
 ![Donate BTC to 🐼CEVAP🐼](https://raw.githubusercontent.com/cevap/ion/master/contrib/donation/donation-cevap-btc-address.png)
 
 
 #### 💁 Donate to [🔩ASPA🔩](https://github.com/aspaas/)
 ----------------
+
 **Ion**: [imHX5qPv1fv1nZeRPJhmDDhkCeDUMdWoVv](ionomy:imHX5qPv1fv1nZeRPJhmDDhkCeDUMdWoVv)
+
 ![Donate ION to 🔩ASPA🔩](https://raw.githubusercontent.com/cevap/ion/master/contrib/donation/ASPA-ION-DONATION-ADDRESS.png)

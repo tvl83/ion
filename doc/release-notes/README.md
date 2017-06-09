@@ -1,4 +1,4 @@
-🗺️Ion Core Wallet CE ©️ - Reeleases
+🗺️Ion Core Wallet CE ©️
 ================================
 **Copyright (c) 2017 🐼CEVAP🐼**
 

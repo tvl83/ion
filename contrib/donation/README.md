@@ -30,10 +30,11 @@
              +hdNNMMMMNNmdy/       .-://+++/:.    
 
 
+Do you want to help but you can not code? Contributors of this release, you can donate if you would like to see further developments or simply to thank contributors for their work.
+
 #### 💁 Donate to [🐼CEVAP🐼](https://github.com/cevap)
 ----------------
 
-User contributed in this release, please donate if you would like to see further developments:
 **Ion**: [iiT87sp5zT4TiudtDnYwSGQLwfeWC3bnmm](ionomy:iiT87sp5zT4TiudtDnYwSGQLwfeWC3bnmm)
 
 ![Donate ION to 🐼CEVAP🐼](https://raw.githubusercontent.com/cevap/ion/master/contrib/donation/donation-cevap-ion-address.png)

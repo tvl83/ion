@@ -86,9 +86,12 @@ for example, when specifying the the path of the dependency:
 Here BDB_PREFIX must absolute path - it is defined using $(pwd) which ensures
 the usage of the absolute path.
 
-To Build ionx-qt
+To Build ion-qt
 ---------------------
 [Download](https://www.qt.io/download/) and install latest QT creator, import .pro file and compile 
+1. Start QT creator
+2. Open QT project file *.pro (Keyboard Shortcut: STRG+C)
+3. Build all (Keyboard shortcut: STRG+SHIFT+B)
 
 To Build (without QT Version)
 ---------------------
@@ -168,7 +171,7 @@ Optional:
 Dependencies for the GUI: Ubuntu & Debian
 -----------------------------------------
 
-If you want to build ionx-Qt, make sure that the required packages for Qt development
+If you want to build ion-Qt, make sure that the required packages for Qt development
 are installed. Qt 5 is necessary to build the GUI.
 If both Qt 4 and Qt 5 are installed, Qt 5 will be used. Pass `--with-gui=qt5` to configure to choose Qt5.
 To build without GUI pass `--without-gui`.
@@ -181,7 +184,7 @@ libqrencode (optional) can be installed with:
 
     sudo apt-get install libqrencode-dev
 
-Once these are installed, they will be found by configure and a ionx-Qt executable will be
+Once these are installed, they will be found by configure and a ion-Qt executable will be
 built by default.
 
 Notes

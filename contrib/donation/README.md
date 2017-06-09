@@ -35,7 +35,9 @@ Do you want to help but you can not code? Contributors of this release, you can 
 #### 💁 Donate to [🐼CEVAP🐼](https://github.com/cevap)
 ----------------
 
-**Ion**: [iiT87sp5zT4TiudtDnYwSGQLwfeWC3bnmm](ionomy:iiT87sp5zT4TiudtDnYwSGQLwfeWC3bnmm)
+**Ion**
+
+[iiT87sp5zT4TiudtDnYwSGQLwfeWC3bnmm](ionomy:iiT87sp5zT4TiudtDnYwSGQLwfeWC3bnmm)
 
 ![Donate ION to 🐼CEVAP🐼](https://raw.githubusercontent.com/cevap/ion/master/contrib/donation/donation-cevap-ion-address.png)
 
@@ -47,6 +49,8 @@ Do you want to help but you can not code? Contributors of this release, you can 
 #### 💁 Donate to [🔩ASPA🔩](https://github.com/aspaas/)
 ----------------
 
-**Ion**: [imHX5qPv1fv1nZeRPJhmDDhkCeDUMdWoVv](ionomy:imHX5qPv1fv1nZeRPJhmDDhkCeDUMdWoVv)
+**Ion**
 
-![Donate ION](https://raw.githubusercontent.com/cevap/ion/master/contrib/donation/ASPA-ION-DONATION-ADDRESS.png)
+[imHX5qPv1fv1nZeRPJhmDDhkCeDUMdWoVv](ionomy:imHX5qPv1fv1nZeRPJhmDDhkCeDUMdWoVv)
+
+![Donate ION](https://raw.githubusercontent.com/cevap/ion/master/contrib/donation/ASPA-ION-DONATION-ADDRESS.PNG)

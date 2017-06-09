@@ -29,11 +29,11 @@
             :MMMMMMMMMMMMMM+ .////NMMMMMMMMMMMd,  
              +hdNNMMMMNNmdy/       .-://+++/:.    
 
-#### Version
+#### Versions
 -----------------------------
 
-Dowloade CE Releases (Community edition):
-	[2.1.4.0-🐼61402🐼 CE](https://github.com/cevap/ion/releases/tag/2.1.4)
+Dowload CE Releases (Community edition):
+	[2.1.4.0-🐼61402🐼 CE](https://github.com/cevap/ion/releases/tag/2.1.4) - [Release Notes](https://github.com/cevap/ion/blob/master/doc/release-notes/release-notes-2.1.4.0-61402.md)
 
 -----------------------------
 

@@ -2,6 +2,7 @@
 # Copyright (c) 2014-2017 Wladimir J. van der Laan
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2017 CEVAP
 '''
 Script to generate list of seed nodes for chainparams.cpp.
 
@@ -127,10 +128,10 @@ def main():
     g.write(' * IPv4 as well as onion addresses are wrapped inside a IPv6 address accordingly.\n')
     g.write(' */\n')
     with open(os.path.join(indir,'nodes_main.txt'),'r') as f:
-        process_nodes(g, f, 'pnSeed6_main', 8333)
+        process_nodes(g, f, 'pnSeed6_main', 12700)
     g.write('\n')
     with open(os.path.join(indir,'nodes_test.txt'),'r') as f:
-        process_nodes(g, f, 'pnSeed6_test', 18333)
+        process_nodes(g, f, 'pnSeed6_test', 27170)
     g.write('#endif // ION_CHAINPARAMSSEEDS_H\n')
             
 if __name__ == '__main__':

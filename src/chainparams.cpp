@@ -89,6 +89,8 @@ public:
         nRPCPort = 12705;
         nProofOfWorkLimit = uint256S("000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         nProofOfStakeLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        nTargetSpacing = 64;
+        nTargetTimespan = 7 * 24 * 60 * 60; // one week
 
 		genesis = CreateGenesisBlock(1486045800, 28884498, 0x1e00ffff, 1, (1 * COIN));
 		hashGenesisBlock = genesis.GetHash();
@@ -147,6 +149,8 @@ public:
    
         nProofOfWorkLimit = uint256S("000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         nProofOfStakeLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        nTargetSpacing = 64;
+        nTargetTimespan = 7 * 24 * 60 * 60; // one week
 
 	genesis = CreateGenesisBlock(1491737471, 1603027, 0x1e00ffff, 1, (1 * COIN));
         

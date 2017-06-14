@@ -16,7 +16,7 @@
 class CBlockIndex;
 class uint256;
 
-static const int nTargetSpacing = 64;
+//static const int nTargetSpacing = 64;
 
 /** Determine Coinbase Maturity (generally not a good idea - done so to increase speed) */
 int DetermineCoinbaseMaturity();

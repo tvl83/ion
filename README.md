@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://github.com/Ion-Network/Ion-Core/blob/master/src/qt/res/images/splash.png" alt="Ion_Icon"/>
 </p>
-# **Ion-Core (ION) v2.1.4**
+# **Ion-Core (ION) v2.1.5**
 
 [![Build Status](https://travis-ci.org/ionomy/ion.svg?branch=master)](https://travis-ci.org/ionomy/ion)
 
@@ -71,7 +71,6 @@ RPC Port = 12705
 P2P Port = 27170
 RPC Port = 27171
 
-
 UNIX BUILD NOTES
 ====================
 Some notes on how to build Ion in Unix.
@@ -86,14 +85,54 @@ for example, when specifying the the path of the dependency:
 Here BDB_PREFIX must absolute path - it is defined using $(pwd) which ensures
 the usage of the absolute path.
 
-To Build ion-qt
+BUILD QT AND IOND FOR LINUX (Method 1)
+--------------------
+    ./autogen.sh;./configure;make
+
+
+BUILD QT AND IOND FOR WINDOWS 64 Bit (Method 1)
+--------------------
+To build executables for Windows 64-bit, install the following dependencies:
+    sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
+
+Then build using:
+    cd depends
+    make HOST=x86_64-w64-mingw32
+    cd ..
+    CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/
+    make
+
+BUILD QT AND IOND FOR WINDOWS 32 Bit (Method 1)
+--------------------
+To build executables for Windows 64-bit, install the following dependencies:
+    sudo apt-get install g++-mingw-w64-i686 mingw-w64-i686-dev
+
+Then build using:
+    cd depends
+    make HOST=i686-w64-mingw32
+    cd ..
+    ./autogen.sh # not required when building from tarball
+    CONFIG_SITE=$PWD/depends/i686-w64-mingw32/share/config.site ./configure --prefix=/
+    make
+
+To Build ion-qt (Method 2)
 ---------------------
 [Download](https://www.qt.io/download/) and install latest QT creator, import .pro file and compile 
 1. Start QT creator
 2. Open QT project file *.pro (Keyboard Shortcut: STRG+C)
 3. Build all (Keyboard shortcut: STRG+SHIFT+B)
 
-To Build (without QT Version)
+Example Build Command (Method 3)
+--------------------
+Qt Wallet and Deamon, CLI version build:
+
+    qmake && make && cd src && make -f src/makefile.unix
+
+Deamon Only Buld:
+
+    cd src && make -f src/makefile.unix
+
+To Build (without QT Version) (Method 3)
 ---------------------
 
 ```bash
@@ -189,7 +228,7 @@ built by default.
 
 Notes
 -----
-The release is built with GCC and then "strip xiond" to strip the debug
+The release is built with GCC and then "strip iond" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
@@ -270,7 +309,7 @@ Hardening enables the following features:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-        scanelf -e ./xiond
+        scanelf -e ./iond
 
     The output should contain:
      TYPE
@@ -284,21 +323,10 @@ Hardening enables the following features:
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./xiond`
+    `scanelf -e ./iond`
 
     the output should contain:
     STK/REL/PTL
     RW- R-- RW-
 
     The STK RW- means that the stack is readable and writeable but not executable.
-
-
-Example Build Command
---------------------
-Qt Wallet and Deamon, CLI version build:
-
-    qmake && make && cd src && make -f src/makefile.unix
-
-Deamon Only Buld:
-
-    cd src && make -f src/makefile.unix

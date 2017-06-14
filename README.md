@@ -71,7 +71,6 @@ RPC Port = 12705
 P2P Port = 27170
 RPC Port = 27171
 
-
 UNIX BUILD NOTES
 ====================
 Some notes on how to build Ion in Unix.
@@ -86,14 +85,54 @@ for example, when specifying the the path of the dependency:
 Here BDB_PREFIX must absolute path - it is defined using $(pwd) which ensures
 the usage of the absolute path.
 
-To Build ion-qt
+BUILD QT AND IOND FOR LINUX (Method 1)
+--------------------
+    ./autogen.sh;./configure;make
+
+
+BUILD QT AND IOND FOR WINDOWS 64 Bit (Method 1)
+--------------------
+To build executables for Windows 64-bit, install the following dependencies:
+    sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
+
+Then build using:
+    cd depends
+    make HOST=x86_64-w64-mingw32
+    cd ..
+    CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/
+    make
+
+BUILD QT AND IOND FOR WINDOWS 32 Bit (Method 1)
+--------------------
+To build executables for Windows 64-bit, install the following dependencies:
+    sudo apt-get install g++-mingw-w64-i686 mingw-w64-i686-dev
+
+Then build using:
+    cd depends
+    make HOST=i686-w64-mingw32
+    cd ..
+    ./autogen.sh # not required when building from tarball
+    CONFIG_SITE=$PWD/depends/i686-w64-mingw32/share/config.site ./configure --prefix=/
+    make
+
+To Build ion-qt (Method 2)
 ---------------------
 [Download](https://www.qt.io/download/) and install latest QT creator, import .pro file and compile 
 1. Start QT creator
 2. Open QT project file *.pro (Keyboard Shortcut: STRG+C)
 3. Build all (Keyboard shortcut: STRG+SHIFT+B)
 
-To Build (without QT Version)
+Example Build Command (Method 3)
+--------------------
+Qt Wallet and Deamon, CLI version build:
+
+    qmake && make && cd src && make -f src/makefile.unix
+
+Deamon Only Buld:
+
+    cd src && make -f src/makefile.unix
+
+To Build (without QT Version) (Method 3)
 ---------------------
 
 ```bash
@@ -292,13 +331,3 @@ Hardening enables the following features:
 
     The STK RW- means that the stack is readable and writeable but not executable.
 
-
-Example Build Command
---------------------
-Qt Wallet and Deamon, CLI version build:
-
-    qmake && make && cd src && make -f src/makefile.unix
-
-Deamon Only Buld:
-
-    cd src && make -f src/makefile.unix

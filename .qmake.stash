@@ -22,3 +22,14 @@ QMAKE_CXX.COMPILER_MACROS = \
     QT_GCC_MAJOR_VERSION \
     QT_GCC_MINOR_VERSION \
     QT_GCC_PATCH_VERSION
+QMAKE_DEFAULT_INCDIRS = \
+    /home/tor/go/src/github.com/cevap/ion/depends/x86_64-w64-mingw32/include \
+    /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/include/c++ \
+    /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/include/c++/x86_64-w64-mingw32 \
+    /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/include/c++/backward \
+    /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/include \
+    /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/include-fixed \
+    /usr/x86_64-w64-mingw32/include
+QMAKE_DEFAULT_LIBDIRS = \
+    /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32 \
+    /usr/x86_64-w64-mingw32/lib

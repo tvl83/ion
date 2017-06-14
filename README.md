@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://github.com/Ion-Network/Ion-Core/blob/master/src/qt/res/images/splash.png" alt="Ion_Icon"/>
 </p>
-# **Ion-Core (ION) v2.1.5**
+# **Ion-Core (ION) v2.1.4**
 
 [![Build Status](https://travis-ci.org/ionomy/ion.svg?branch=master)](https://travis-ci.org/ionomy/ion)
 

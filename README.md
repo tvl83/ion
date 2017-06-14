@@ -85,29 +85,33 @@ for example, when specifying the the path of the dependency:
 Here BDB_PREFIX must absolute path - it is defined using $(pwd) which ensures
 the usage of the absolute path.
 
-BUILD QT AND IOND FOR LINUX (Method 1)
+Build ION-QT and IOND for LINUX (Method 1)
 --------------------
     ./autogen.sh;./configure;make
 
 
-BUILD QT AND IOND FOR WINDOWS 64 Bit (Method 1)
+Build ION-QT and IOND for WINDOWS 64 Bit (Method 1)
 --------------------
 To build executables for Windows 64-bit, install the following dependencies:
+
     sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
 
 Then build using:
+
     cd depends
     make HOST=x86_64-w64-mingw32
     cd ..
     CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/
     make
 
-BUILD QT AND IOND FOR WINDOWS 32 Bit (Method 1)
+Build ION-QT and IOND for WINDOWS 32 Bit (Method 1)
 --------------------
 To build executables for Windows 64-bit, install the following dependencies:
+
     sudo apt-get install g++-mingw-w64-i686 mingw-w64-i686-dev
 
 Then build using:
+
     cd depends
     make HOST=i686-w64-mingw32
     cd ..

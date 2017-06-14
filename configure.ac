@@ -16,8 +16,8 @@ AC_CONFIG_MACRO_DIR([build-aux/m4])
 
 ION_DAEMON_NAME=iond
 ION_GUI_NAME=ion-qt
-ION_CLI_NAME=ion-cli
-ION_TX_NAME=ion-tx
+#ION_CLI_NAME=ion-cli
+#ION_TX_NAME=ion-tx
 
 AC_CANONICAL_HOST
 

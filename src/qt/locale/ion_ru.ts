@@ -1821,8 +1821,8 @@ Address: %4
         <translation>Использование:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Отправить команду на -server или xiond</translation>
+        <source>Send command to -server or iond</source>
+        <translation>Отправить команду на -server или iond</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1842,8 +1842,8 @@ Address: %4
         <translation>Указать конфигурационный файл (по умолчанию: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>Указать pid-файл (по умолчанию: xiond.pid)</translation>
+        <source>Specify pid file (default: iond.pid)</source>
+        <translation>Указать pid-файл (по умолчанию: iond.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

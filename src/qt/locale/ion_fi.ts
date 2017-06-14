@@ -1944,8 +1944,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Käyttö:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Syötä komento kohteeseen -server tai xiond</translation>
+        <source>Send command to -server or iond</source>
+        <translation>Syötä komento kohteeseen -server tai iond</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1964,7 +1964,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Määritä asetustiedosto (oletus: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
+        <source>Specify pid file (default: iond.pid)</source>
         <translation>Määritä prosessitiedosto (oletus: ion.pid)</translation>
     </message>
     <message>

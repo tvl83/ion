@@ -1720,8 +1720,8 @@ Adresse: %4</translation>
         <translation>Benutzung:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Kommando versenden an -server oder xiond </translation>
+        <source>Send command to -server or iond</source>
+        <translation>Kommando versenden an -server oder iond </translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1740,7 +1740,7 @@ Adresse: %4</translation>
         <translation>Konfigurationsdatei angeben (Standard: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
+        <source>Specify pid file (default: iond.pid)</source>
         <translation>PID Datei angeben (Standard: ion.pid)</translation>
     </message>
     <message>

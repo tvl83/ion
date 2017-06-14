@@ -78,7 +78,7 @@ Section -Main SEC0000
     File /oname=readme.txt /home/tor/go/src/github.com/cevap/ion/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
     File /home/tor/go/src/github.com/cevap/ion/release/iond
-    File /home/tor/go/src/github.com/cevap/ion/release/ion-cli
+    File /home/tor/go/src/github.com/cevap/ion/release/
     SetOutPath $INSTDIR\doc
     File /r /home/tor/go/src/github.com/cevap/ion/doc\*.*
     SetOutPath $INSTDIR

@@ -4056,8 +4056,8 @@ Please unlock your wallet manually or wait for StashedSend mixing to complete be
     </message>
     <message>
         <location line="-47"/>
-        <source>Send command to -server or xiond</source>
-        <translation>Send command to -server or xiond</translation>
+        <source>Send command to -server or iond</source>
+        <translation>Send command to -server or iond</translation>
     </message>
     <message>
         <location line="-36"/>
@@ -4516,8 +4516,8 @@ Please unlock your wallet manually or wait for StashedSend mixing to complete be
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>Specify pid file (default: xiond.pid)</translation>
+        <source>Specify pid file (default: iond.pid)</source>
+        <translation>Specify pid file (default: iond.pid)</translation>
     </message>
     <message>
         <location line="+1"/>

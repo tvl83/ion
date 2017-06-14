@@ -1861,8 +1861,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <translation>Uz:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Trimite comanda catre server sau xiond</translation>
+        <source>Send command to -server or iond</source>
+        <translation>Trimite comanda catre server sau iond</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1881,7 +1881,7 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <translation>Specifica fisier de configurare(implicit: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
+        <source>Specify pid file (default: iond.pid)</source>
         <translation>Speficica fisier pid(implicit: ion.pid)</translation>
     </message>
     <message>

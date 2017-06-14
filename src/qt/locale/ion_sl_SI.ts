@@ -1849,7 +1849,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
         <translation>Uporaba:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
+        <source>Send command to -server or iond</source>
         <translation>Pošlji ukaz na -server ali blackoind</translation>
     </message>
     <message>
@@ -1869,7 +1869,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
         <translation>Določi konfiguracijsko datoteko (privzeto: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
+        <source>Specify pid file (default: iond.pid)</source>
         <translation>Določi pid datoteko (privzeto: ion.pid)</translation>
     </message>
     <message>

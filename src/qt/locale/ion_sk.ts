@@ -1980,8 +1980,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Použitie:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Pošli príkaz na -server alebo xiond</translation>
+        <source>Send command to -server or iond</source>
+        <translation>Pošli príkaz na -server alebo iond</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -2000,8 +2000,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Zadajte konfiguračný súbor (predvolené: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>Zadajte pid súbor (predvolené: xiond.pid)</translation>
+        <source>Specify pid file (default: iond.pid)</source>
+        <translation>Zadajte pid súbor (predvolené: iond.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

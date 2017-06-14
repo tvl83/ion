@@ -512,7 +512,7 @@ void StartRPCThreads()
     {
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
-        string strWhatAmI = "To use xiond";
+        string strWhatAmI = "To use iond";
         if (mapArgs.count("-server"))
             strWhatAmI = strprintf(_("To use the %s option"), "\"-server\"");
         else if (mapArgs.count("-daemon"))
@@ -860,7 +860,7 @@ json_spirit::Value CRPCTable::execute(const std::string &strMethod, const json_s
 }
 
 std::string HelpExampleCli(string methodname, string args){
-    return "> xiond " + methodname + " " + args + "\n";
+    return "> iond " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args){

@@ -2642,7 +2642,7 @@ bool CBlock::AcceptBlock()
         return DoS(10, error("AcceptBlock() : prev block not found"));
     CBlockIndex* pindexPrev = (*mi).second;
     int nHeight = pindexPrev->nHeight+1;
-
+   
     uint256 hashProof;
     if (IsProofOfWork() && nHeight > Params().LastPOWBlock()){
         return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
@@ -2667,11 +2667,15 @@ bool CBlock::AcceptBlock()
         return DoS(100, error("AcceptBlock() : incorrect %s", IsProofOfWork() ? "proof-of-work" : "proof-of-stake"));
 
     // Check timestamp against prev
-    if (FutureDrift(GetBlockTime()) < pindexPrev->GetBlockTime())
+    if ((nHeight > Params().Fork1Height()) &&
+            (FutureDrift(GetBlockTime()) < pindexPrev->GetBlockTime())){
         return error("AcceptBlock() : block's timestamp is too far in the future");
+    }
     
-    if (GetBlockTime() <= pindexPrev->GetMedianTimePast())
+    if ((nHeight > Params().Fork1Height()) &&
+            ((GetBlockTime() <= pindexPrev->GetMedianTimePast()))){
         return error("AcceptBlock() : block's timestamp is too early");
+    }
     
     // Check that all transactions are finalized
     BOOST_FOREACH(const CTransaction& tx, vtx)

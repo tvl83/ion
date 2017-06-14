@@ -22,6 +22,10 @@ class uint256;
 int DetermineCoinbaseMaturity();
 /** Calculate difficulty using retarget algorithm by maintaining target */
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake);
+/** Calculate difficulty using retarget algorithm V1 by maintaining target */
+unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofOfStake);
+/** Calculate difficulty using retarget algorithm V2 by maintaining target */
+unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofOfStake);
 /** Check whether a block hash satisfies the proof-of-work requirement specified by nBits */
 bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 /** Determine Block Reward for Proof Of Work **/

@@ -73,6 +73,8 @@ public:
     int LastPOWBlock() const { return nLastPOWBlock; }
     int PoolMaxTransactions() const { return nPoolMaxTransactions; }
     std::string StashedsendPoolDummyAddress() const { return strStashedsendPoolDummyAddress; }
+    
+    int Fork1Height() const { return nFork1Height; }
 
 protected:
     CChainParams() {};
@@ -95,6 +97,8 @@ protected:
     int nPOSStartBlock;
     int nPoolMaxTransactions;
     std::string strStashedsendPoolDummyAddress;
+    
+    int nFork1Height;
 };
 
 /**

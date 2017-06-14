@@ -69,6 +69,55 @@ int64_t GetCoinstakeValue(int64_t nCoinAge, CAmount nFees, int nHeight)
     return nSubsidy + nFees;
 }
 
+unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
+{
+    if (pindexLast->nHeight > Params().Fork1Height()){
+        return GetNextTargetRequiredV2(pindexLast, fProofOfStake);
+    } else {
+        return GetNextTargetRequiredV1(pindexLast, fProofOfStake);
+    }
+    
+}
+
+unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofOfStake)
+{
+    uint256 bnTargetLimit = fProofOfStake ? Params().ProofOfStakeLimit() : Params().ProofOfWorkLimit();
+
+    if (pindexLast == NULL)
+        return bnTargetLimit.GetCompact(); // genesis block
+
+    const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
+    if (pindexPrev->pprev == NULL)
+        return bnTargetLimit.GetCompact(); // first block
+    const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
+    if (pindexPrevPrev->pprev == NULL)
+        return bnTargetLimit.GetCompact(); // second block
+
+    int64_t nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
+
+    if (nActualSpacing < 0) {
+        nActualSpacing = Params().TargetSpacing();
+    }
+    else if (fProofOfStake && nActualSpacing > Params().TargetSpacing() * 10) {
+         nActualSpacing = Params().TargetSpacing() * 10;
+    }
+
+    // target change every block
+    // retarget with exponential moving toward target spacing
+    // Includes fix for wrong retargeting difficulty by Mammix2
+    uint256 bnNew;
+    bnNew.SetCompact(pindexPrev->nBits);
+
+    int64_t nInterval = fProofOfStake ? 10 : 10;
+    bnNew *= ((nInterval - 1) * Params().TargetSpacing() + nActualSpacing + nActualSpacing);
+    bnNew /= ((nInterval + 1) * Params().TargetSpacing());
+
+    if (bnNew <= 0 || bnNew > bnTargetLimit)
+        bnNew = bnTargetLimit;
+
+    return bnNew.GetCompact();
+}
+
 // This is MIDAS (Multi Interval Difficulty Adjustment System), a novel getnextwork algorithm.  It responds quickly to
 // huge changes in hashing power, is immune to time warp attacks, and regulates the block rate to keep the block height
 // close to the block height expected given the nominal block interval and the elapsed time.  How close the
@@ -113,9 +162,8 @@ void avgRecentTimestamps(const CBlockIndex* pindexLast, int64_t *avgOf5, int64_t
   *avgOf17 /= 17;
 }
 
-
 //unsigned int GetNextWorkRequired(const CBlockIndex *pindexLast, const CBlockHeader *pblock)
-unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
+unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
     int64_t avgOf5;
     int64_t avgOf9;
@@ -137,11 +185,7 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
     if (pindexLast == NULL)
         // Genesis Block
         return nTargetLimit;
-
-//    return nTargetLimit;
-    
-
-    
+   
     // Regulate block times so as to remain synchronized in the long run with the actual time.  The first step is to
     // calculate what interval we want to use as our regulatory goal.  It depends on how far ahead of (or behind)
     // schedule we are.  If we're more than an adjustment period ahead or behind, we use the maximum (nSlowInterval) or minimum
@@ -234,48 +278,6 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
     return bnNew.GetCompact();
      
 }
-
-
-// TODO: remove; not used
-unsigned int GetNextTargetRequiredOld(const CBlockIndex* pindexLast, bool fProofOfStake)
-{
-    uint256 bnTargetLimit = fProofOfStake ? Params().ProofOfStakeLimit() : Params().ProofOfWorkLimit();
-
-    if (pindexLast == NULL)
-        return bnTargetLimit.GetCompact(); // genesis block
-
-    const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
-    if (pindexPrev->pprev == NULL)
-        return bnTargetLimit.GetCompact(); // first block
-    const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
-    if (pindexPrevPrev->pprev == NULL)
-        return bnTargetLimit.GetCompact(); // second block
-
-    int64_t nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
-
-    if (nActualSpacing < 0) {
-        nActualSpacing = Params().TargetSpacing();
-    }
-    else if (fProofOfStake && nActualSpacing > Params().TargetSpacing() * 10) {
-         nActualSpacing = Params().TargetSpacing() * 10;
-    }
-
-    // target change every block
-    // retarget with exponential moving toward target spacing
-    // Includes fix for wrong retargeting difficulty by Mammix2
-    uint256 bnNew;
-    bnNew.SetCompact(pindexPrev->nBits);
-
-    int64_t nInterval = fProofOfStake ? 10 : 10;
-    bnNew *= ((nInterval - 1) * Params().TargetSpacing() + nActualSpacing + nActualSpacing);
-    bnNew /= ((nInterval + 1) * Params().TargetSpacing());
-
-    if (bnNew <= 0 || bnNew > bnTargetLimit)
-        bnNew = bnTargetLimit;
-
-    return bnNew.GetCompact();
-}
-
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits)
 {

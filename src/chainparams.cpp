@@ -113,6 +113,8 @@ public:
 		nPoolMaxTransactions = 3;
         strStashedsendPoolDummyAddress = "iqbMeTpdFfxiNcWHn255T2TneJTrUECCBE";
         nLastPOWBlock 	= 1000;
+        
+        nFork1Height = 175000;
     }
 
     virtual const CBlock& GenesisBlock() const { return genesis; }
@@ -176,6 +178,8 @@ public:
 	nPoolMaxTransactions = 3;
         strStashedsendPoolDummyAddress = "gCJDCcmcVZcfnwAZdEt7dg5s5jjAbDp9dZdhXAmP5NM";
         nLastPOWBlock 	= 300;
+        
+        nFork1Height = 78800;
     }
 
     virtual const CBlock& GenesisBlock() const { return genesis; }

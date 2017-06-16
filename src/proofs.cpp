@@ -71,10 +71,10 @@ int64_t GetCoinstakeValue(int64_t nCoinAge, CAmount nFees, int nHeight)
 
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
-    if (pindexLast->nHeight > Params().Fork1Height()){
-        return GetNextTargetRequiredV2(pindexLast, fProofOfStake);
-    } else {
+    if (pindexLast->nHeight < Params().Fork1Height()){
         return GetNextTargetRequiredV1(pindexLast, fProofOfStake);
+    } else {
+        return GetNextTargetRequiredV2(pindexLast, fProofOfStake);
     }
     
 }

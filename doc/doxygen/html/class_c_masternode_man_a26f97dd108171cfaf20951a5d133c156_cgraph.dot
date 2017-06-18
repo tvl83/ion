@@ -1,0 +1,13 @@
+digraph "CMasternodeMan::CountMasternodesAboveProtocol"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node35 [label="CMasternodeMan::CountMasternodes\lAboveProtocol",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node35 -> Node36 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node36 [label="CMasternode::Check",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode.html#a6c5f883b797298678c1cf814faab09a5"];
+  Node36 -> Node37 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node37 [label="ShutdownRequested",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$init_8cpp.html#a6f201ca9fe6b594f1985c12b4482ea5a"];
+  Node35 -> Node38 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 [label="CMasternode::IsEnabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode.html#a08782379f6ba10e9087b39f0cef19bce"];
+}

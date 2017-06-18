@@ -1,0 +1,34 @@
+digraph "MultisigDialog::on_createTransactionButton_clicked"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node133 [label="MultisigDialog::on\l_createTransactionButton\l_clicked",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node133 -> Node134 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node134 [label="MultisigInputEntry\l::validate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_multisig_input_entry.html#ac00fe5c686fa9a5b60681714f2ae15e8"];
+  Node133 -> Node135 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node135 [label="MultisigInputEntry\l::getInput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_multisig_input_entry.html#a51788724dba408966291c6ef691dd86f"];
+  Node133 -> Node136 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node136 [label="SendCoinsEntry::validate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_send_coins_entry.html#ab77df95fe77e9a001190cd4dabe0dfec"];
+  Node136 -> Node137 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node137 [label="WalletModel::validateAddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wallet_model.html#a04604615253aeaae1253b1412a70a1f7"];
+  Node137 -> Node138 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node138 [label="IsStealthAddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stealth_8cpp.html#a26c89afcb720e8b1a9c9dadaee26757b"];
+  Node138 -> Node139 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node139 [label="DecodeBase58",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$base58_8cpp.html#a0f74d1d6e7e982cad4b0e538acea4538",tooltip="Decode a base58-encoded string (psz) into a byte vector (vchRet). "];
+  Node138 -> Node140 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node140 [label="VerifyChecksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stealth_8cpp.html#a5ff6f6775db5f747f5088c7ef8264b74"];
+  Node140 -> Node141 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node141 [label="StashedSilkChecksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stealth_8cpp.html#abb79a3b98a10b85daf3f3ff35c1cbfa8"];
+  Node137 -> Node142 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node142 [label="CIonAddress::IsValid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_ion_address.html#a93cb71370b938e7fad4a74c4b5775da6"];
+  Node142 -> Node143 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node143 [label="Params",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$chainparams_8cpp.html#ace5c5b706d71a324a417dd2db394fd4a",tooltip="Return the currently selected parameters. "];
+  Node142 -> Node144 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node144 [label="CChainParams::Base58Prefix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_chain_params.html#a103c58eca4a26a71201882b3ed6c4cb4"];
+  Node133 -> Node145 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node145 [label="SendCoinsEntry::getValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_send_coins_entry.html#af36fb0ed9e2e07079c1a982b31e793c8"];
+  Node145 -> Node138 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node133 -> Node146 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node146 [label="CScript::SetDestination",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_script.html#ad1b5a9077241aa06116040c4f1b7c31e"];
+}

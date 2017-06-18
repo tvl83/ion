@@ -1,0 +1,21 @@
+digraph "ClientModel::getOptionsModel"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node75 [label="ClientModel::getOptionsModel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node75 -> Node76 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node76 [label="IonGUI::setClientModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ion_g_u_i.html#aee0c583c834ce4f4c598c29db83b0680",tooltip="Set the client model. "];
+  Node75 -> Node77 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node77 [label="IonGUI::optionsClicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ion_g_u_i.html#a463be06dd466d69e20a3a8b073d110d2",tooltip="Show configuration dialog. "];
+  Node77 -> Node78 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node78 [label="IonGUI::createActions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ion_g_u_i.html#a5a5e1c2fbc2fec3d925d654c61a8b252",tooltip="Create the main UI actions. "];
+  Node78 -> Node79 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node79 [label="IonGUI::IonGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ion_g_u_i.html#ad0e22e4901b039bcc987ef0328c8c5d4"];
+  Node75 -> Node80 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node80 [label="IonGUI::changeEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ion_g_u_i.html#a6005d97bcb7f0d66f3ccc6524f47c152"];
+  Node75 -> Node81 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node81 [label="IonGUI::closeEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ion_g_u_i.html#ad7ce96c380f48f75a015726217e0f0fe"];
+  Node75 -> Node82 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node82 [label="IonGUI::askFee",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ion_g_u_i.html#a53aaa5c2286e3c045c55b554470c5dee",tooltip="Asks the user whether to pay the transaction fee or to cancel the transaction. "];
+}

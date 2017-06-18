@@ -1,0 +1,15 @@
+digraph "CMasternodeMan::AskForMN"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node5 [label="CMasternodeMan::AskForMN",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="GetTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$util_8cpp.html#a46fac5fba8ba905b5f9acb364f5d8c6f"];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CTxIn::ToString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_tx_in.html#a9f3dcba8a979ca7007448f8ad1d3c4c1"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="HexStr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$util_8h.html#ace13a819ca4e98c22847d26b3b357e75"];
+  Node5 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="CNode::PushMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_node.html#a204fda3d33404cb37698c085b1583ab2"];
+}

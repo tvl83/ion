@@ -1,0 +1,9 @@
+digraph "fImporting"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node37 [label="fImporting",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node37 -> Node38 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 [label="IsInitialBlockDownload",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$validation_8cpp.html#a5edcd96316574fd4a7f3ae0922a5cfd6",tooltip="Check whether we are doing an initial block download (synchronizing from disk or network) ..."];
+}

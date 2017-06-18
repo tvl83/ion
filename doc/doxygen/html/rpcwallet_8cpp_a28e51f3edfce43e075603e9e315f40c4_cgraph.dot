@@ -1,0 +1,29 @@
+digraph "WalletTxToJSON"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1183 [label="WalletTxToJSON",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1183 -> Node1184 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1184 [label="CMerkleTx::GetDepthInMain\lChain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_merkle_tx.html#a887a9f1a0b7fc64b43e42cec76b38ef9"];
+  Node1184 -> Node1185 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1185 [label="CTxMemPool::exists",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_tx_mem_pool.html#a8b7a13b5289ab839d4460f41a7da9789"];
+  Node1185 -> Node1186 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1186 [label="CTxMemPool::lookup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_tx_mem_pool.html#ad6d9966cdeb4b6586f7186e709b4e77e"];
+  Node1183 -> Node1187 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1187 [label="GetIXConfirmations",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#afb9aef5806c13c7a81fda9854f852155"];
+  Node1183 -> Node1188 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1188 [label="CTransaction::GetHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_transaction.html#a0b46d80e82ca324e82c2ce3fc1492bfa"];
+  Node1188 -> Node1189 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1189 [label="SerializeHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hash_8h.html#a6de694e43f17c62025c6883965b65e63"];
+  Node1183 -> Node1190 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1190 [label="CTransaction::IsCoinBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_transaction.html#a96256e8ac1bf79ad9c057e48c41132dd"];
+  Node1183 -> Node1191 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1191 [label="CTransaction::IsCoinStake",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_transaction.html#ace4278a41a296d40dcf5fb2b9cf007ec"];
+  Node1183 -> Node1192 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1192 [label="base_uint::GetHex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbase__uint.html#ae5e7b7481de91ebead20eebd5d685441"];
+  Node1183 -> Node1193 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1193 [label="CWalletTx::GetConflicts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_wallet_tx.html#a127b064ab044a96158117ec8162188a7"];
+  Node1183 -> Node1194 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1194 [label="CWalletTx::GetTxTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_wallet_tx.html#ab94368cf0553687d8f1fec5d2aaa1457"];
+}

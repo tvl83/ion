@@ -1,0 +1,18 @@
+digraph "ServiceConnection"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node144 [label="ServiceConnection",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node144 -> Node145 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node145 [label="ReadHTTPRequestLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rpcprotocol_8cpp.html#add578b3fb095706a7a78d265fa97d8d0"];
+  Node145 -> Node146 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node146 [label="atoi",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$util_8h.html#aa5ce96ec36f4413f820cec9c1831c070"];
+  Node144 -> Node147 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node147 [label="AcceptedConnection\l::stream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_accepted_connection.html#a2072a12e4d8f1b79a67bc86903400a0e"];
+  Node144 -> Node148 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node148 [label="ReadHTTPMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rpcprotocol_8cpp.html#a04ef20cccddfd1505806982c3c232325"];
+  Node148 -> Node149 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node149 [label="ReadHTTPHeaders",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rpcprotocol_8cpp.html#adfa1ef30dd1e00dcbecff15e1161e369"];
+  Node149 -> Node146 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

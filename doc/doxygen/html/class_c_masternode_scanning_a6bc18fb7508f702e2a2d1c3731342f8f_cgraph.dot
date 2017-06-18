@@ -1,0 +1,36 @@
+digraph "CMasternodeScanning::DoMasternodePOSChecks"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="CMasternodeScanning\l::DoMasternodePOSChecks",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="IsSporkActive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$spork_8cpp.html#a3305663176e21e81c80dc951a7f8ea5e"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="GetTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$util_8cpp.html#a46fac5fba8ba905b5f9acb364f5d8c6f"];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="IsInitialBlockDownload",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a5edcd96316574fd4a7f3ae0922a5cfd6",tooltip="Check whether we are doing an initial block download (synchronizing from disk or network) ..."];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CMasternodeMan::GetMasternodeRank",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode_man.html#a41fd522da90284837d5dcb1e2d2e7d7c"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="GetBlockHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$masternode_8cpp.html#a32f5cbabfc2bd53c2f2daedf122a83cb"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="CBlockIndex::GetBlockHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_block_index.html#a98490a2788c65cdd6ae9002b004dd74c"];
+  Node7 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="CMasternode::Check",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode.html#a6c5f883b797298678c1cf814faab09a5"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="ShutdownRequested",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$init_8cpp.html#a6f201ca9fe6b594f1985c12b4482ea5a"];
+  Node7 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="CMasternode::IsEnabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode.html#a08782379f6ba10e9087b39f0cef19bce"];
+  Node7 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="CMasternode::CalculateScore",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode.html#a5193b7bca7224b39c455ddd39f0846f3"];
+  Node13 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Hash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hash_8h.html#ab3f6c437460137530d86e09c2c102e99"];
+  Node7 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="memcpy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$glibc__compat_8cpp.html#a0f46826ab0466591e136db24394923cf"];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="memmove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$glibc__compat_8cpp.html#a9778d49e9029dd75bc53ecbbf9f5e9a1"];
+  Node15 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="__chk_fail",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$glibc__compat_8cpp.html#a424ac71631da5ada2976630ff67051d1"];
+}

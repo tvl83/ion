@@ -1,0 +1,20 @@
+digraph "CoinControlDialog::parentViewItemChanged"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node211 [label="CoinControlDialog::\lparentViewItemChanged",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node211 -> Node212 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node212 [label="CCoinControl::UnSelectAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_coin_control.html#a78bc21b1698e6ae5e6c2fef9758db39c"];
+  Node211 -> Node213 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node213 [label="CoinControlDialog::\lupdateLabels",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_coin_control_dialog.html#a4fc60e89b097952ff22dc0f9c58c87d9"];
+  Node211 -> Node214 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node214 [label="CoinControlDialog::\lviewItemChanged",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_coin_control_dialog.html#ac3c37dabd83f71d9c96bf5567fe85234"];
+  Node214 -> Node215 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node215 [label="CCoinControl::UnSelect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_coin_control.html#a28843122428b30c81814e54b9a0bcaa6"];
+  Node214 -> Node216 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node216 [label="CCoinControl::Select",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_coin_control.html#a0c6d66b747f1e9531afa32a8bb851ba0"];
+  Node214 -> Node217 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node217 [label="CWallet::GetInputStashedsend\lRounds",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_wallet.html#a9a6ea9a3fe28ec7ef0ed0871647b59db"];
+  Node214 -> Node213 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

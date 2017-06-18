@@ -1,0 +1,15 @@
+digraph "AddressBookPage::getReturnValue"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node35 [label="AddressBookPage::getReturn\lValue",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node35 -> Node36 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node36 [label="MultisigAddressEntry\l::on_addressBookButton\l_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_multisig_address_entry.html#a6077acfd02d628465478c463c3024e6e"];
+  Node35 -> Node37 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node37 [label="SendCoinsEntry::on\l_addressBookButton_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_send_coins_entry.html#ac661741d286d9f3db32f78bd22125cb0"];
+  Node35 -> Node38 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 [label="SignVerifyMessageDialog\l::on_addressBookButton\l_SM_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sign_verify_message_dialog.html#a792a3bd647958c8ae74286c5ab3cf205"];
+  Node35 -> Node39 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node39 [label="SignVerifyMessageDialog\l::on_addressBookButton\l_VM_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sign_verify_message_dialog.html#a90ceb00084c68da5e9c481ba0841d976"];
+}

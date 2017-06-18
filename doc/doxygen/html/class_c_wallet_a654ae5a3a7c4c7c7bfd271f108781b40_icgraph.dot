@@ -1,0 +1,26 @@
+digraph "CWallet::Unlock"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1506 [label="CWallet::Unlock",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1506 -> Node1507 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1507 [label="WalletModel::setWalletLocked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wallet_model.html#a5a8b65bfaecb0813d64c733f4f34f090"];
+  Node1507 -> Node1508 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1508 [label="IonGUI::lockWallet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ion_g_u_i.html#abfbef460c97022eea4d5e2dec1887ba0"];
+  Node1508 -> Node1509 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1509 [label="IonGUI::createActions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ion_g_u_i.html#a5a5e1c2fbc2fec3d925d654c61a8b252",tooltip="Create the main UI actions. "];
+  Node1509 -> Node1510 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1510 [label="IonGUI::IonGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ion_g_u_i.html#ad0e22e4901b039bcc987ef0328c8c5d4"];
+  Node1508 -> Node1511 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1511 [label="IonGUI::updateWeight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ion_g_u_i.html#a2689de984576a927ea382a800a81a3f0"];
+  Node1511 -> Node1512 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1512 [label="IonGUI::updateStakingIcon",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ion_g_u_i.html#a5e9ba63b943650e5dec3ab6e13e9a20b"];
+  Node1512 -> Node1510 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1507 -> Node1513 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1513 [label="WalletModel::requestUnlock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wallet_model.html#ae98eaede9493625ce778a0a873b3d124"];
+  Node1506 -> Node1514 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1514 [label="masternode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rpcstashedsend_8cpp.html#a30609e443aeb47c29ed0878d16b1b5e1"];
+  Node1506 -> Node1515 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1515 [label="walletpassphrase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rpcwallet_8cpp.html#a733f7c70e7c18783935e6de9643c0086"];
+}

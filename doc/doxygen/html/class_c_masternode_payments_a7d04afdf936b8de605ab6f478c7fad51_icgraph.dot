@@ -1,0 +1,11 @@
+digraph "CMasternodePayments::Sign"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node263 [label="CMasternodePayments\l::Sign",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node263 -> Node264 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node264 [label="CMasternodePayments\l::ProcessBlock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode_payments.html#aa23dfbc148f10f601e9771bfcffea441"];
+  Node263 -> Node265 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node265 [label="CMasternodePayments\l::SetPrivKey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode_payments.html#a525bcafd8d00b58a3e05a848ef493603"];
+}

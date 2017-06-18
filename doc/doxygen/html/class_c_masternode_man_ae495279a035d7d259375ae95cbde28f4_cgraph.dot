@@ -1,0 +1,19 @@
+digraph "CMasternodeMan::CountEnabled"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node20 [label="CMasternodeMan::CountEnabled",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node20 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="CMasternodePayments\l::GetMinMasternodePayments\lProto",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode_payments.html#adb98cc9f21cf8746c0b6ac3131b85dfb"];
+  Node21 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="IsSporkActive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$spork_8cpp.html#a3305663176e21e81c80dc951a7f8ea5e"];
+  Node22 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="GetTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$util_8cpp.html#a46fac5fba8ba905b5f9acb364f5d8c6f"];
+  Node20 -> Node24 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="CMasternode::Check",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode.html#a6c5f883b797298678c1cf814faab09a5"];
+  Node24 -> Node25 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node25 [label="ShutdownRequested",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$init_8cpp.html#a6f201ca9fe6b594f1985c12b4482ea5a"];
+  Node20 -> Node26 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 [label="CMasternode::IsEnabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode.html#a08782379f6ba10e9087b39f0cef19bce"];
+}

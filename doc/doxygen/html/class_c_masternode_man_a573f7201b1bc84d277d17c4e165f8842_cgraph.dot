@@ -1,0 +1,38 @@
+digraph "CMasternodeMan::FindOldestNotInVec"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node72 [label="CMasternodeMan::FindOldest\lNotInVec",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node72 -> Node73 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node73 [label="CMasternode::Check",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode.html#a6c5f883b797298678c1cf814faab09a5"];
+  Node73 -> Node74 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node74 [label="ShutdownRequested",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$init_8cpp.html#a6f201ca9fe6b594f1985c12b4482ea5a"];
+  Node72 -> Node75 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node75 [label="CMasternode::IsEnabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode.html#a08782379f6ba10e9087b39f0cef19bce"];
+  Node72 -> Node76 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node76 [label="CMasternode::GetMasternode\lInputAge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode.html#abc43d7a984d888b6dbc59a667a2fbc17"];
+  Node76 -> Node77 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node77 [label="GetInputAge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ae137d76bbcaf8d65fab905889b504e26"];
+  Node77 -> Node78 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node78 [label="GetTransaction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a7d2a4633e4e0e8e4cb9c881d45a496b5"];
+  Node78 -> Node79 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node79 [label="CTxMemPool::lookup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_tx_mem_pool.html#ad6d9966cdeb4b6586f7186e709b4e77e"];
+  Node78 -> Node80 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node80 [label="CTransaction::ReadFromDisk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_transaction.html#ad9d526afecbd816c385343f60c5352fd"];
+  Node80 -> Node81 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node81 [label="OpenBlockFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8h.html#acaa494f20aefb99c5f5f9022a97d0040"];
+  Node78 -> Node82 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node82 [label="CBlock::ReadFromDisk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_block.html#a77a1b1e9902e1e557d762f5a5f325cd8"];
+  Node82 -> Node81 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node78 -> Node83 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node83 [label="CBlock::GetHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_block.html#a681acf1fa72ec2ed6c83ea5afc14e0f3"];
+  Node83 -> Node84 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node84 [label="CBlock::GetPoWHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_block.html#af203beb528a62ec30b0453cf5d860044"];
+  Node84 -> Node85 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node85 [label="Hash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hash_8h.html#ab3f6c437460137530d86e09c2c102e99"];
+  Node78 -> Node86 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node86 [label="CTransaction::GetHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_transaction.html#a0b46d80e82ca324e82c2ce3fc1492bfa"];
+  Node86 -> Node87 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node87 [label="SerializeHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hash_8h.html#a6de694e43f17c62025c6883965b65e63"];
+}

@@ -1,0 +1,11 @@
+digraph "CBlock::ConnectBlock"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node32 [label="CBlock::ConnectBlock",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node32 -> Node33 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node33 [label="CheckBlock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$validation_8cpp.html#abc9c65975a473d224b3b97b89d571942",tooltip="Functions for validating blocks and updating the block tree. "];
+  Node32 -> Node34 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node34 [label="GetSerializeSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$serialize_8h.html#a48239e478ae730373d1984fe304ca025"];
+}

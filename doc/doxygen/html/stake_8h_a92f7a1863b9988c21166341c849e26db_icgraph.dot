@@ -1,0 +1,11 @@
+digraph "CheckStakeKernelHash"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node16 [label="CheckStakeKernelHash",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="CheckKernel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stake_8h.html#a65bf2727fbb2781621c1b66999fb0f98"];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="CWallet::CreateCoinStake",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_wallet.html#a644df129468440aa36f49ca3716a3c19"];
+}

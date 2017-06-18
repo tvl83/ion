@@ -1,0 +1,15 @@
+digraph "TransactionRecord::showTransaction"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node59 [label="TransactionRecord::\lshowTransaction",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node59 -> Node60 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node60 [label="CTransaction::IsCoinBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_transaction.html#a96256e8ac1bf79ad9c057e48c41132dd"];
+  Node59 -> Node61 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node61 [label="CMerkleTx::IsInMainChain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_merkle_tx.html#ad4b3623fabf1924dba2a7694e3418e1e"];
+  Node61 -> Node62 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node62 [label="AcceptToMemoryPool",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8h.html#addea0e425b693b4c1be712c3ead94568",tooltip="(try to) add transaction to memory pool "];
+  Node62 -> Node63 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node63 [label="CTransaction::CheckTransaction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_transaction.html#a2104329681e2749baeeaaf47c0af482d"];
+}

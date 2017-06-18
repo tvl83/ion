@@ -1,0 +1,30 @@
+digraph "MultisigDialog::updateAmounts"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node227 [label="MultisigDialog::updateAmounts",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node227 -> Node228 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node228 [label="MultisigInputEntry\l::getAmount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_multisig_input_entry.html#a0b0e1379adc39ad68ab4a69b428a58f1"];
+  Node228 -> Node229 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node229 [label="GetTransaction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a7d2a4633e4e0e8e4cb9c881d45a496b5"];
+  Node229 -> Node230 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node230 [label="CTxMemPool::lookup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_tx_mem_pool.html#ad6d9966cdeb4b6586f7186e709b4e77e"];
+  Node229 -> Node231 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node231 [label="CTransaction::ReadFromDisk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_transaction.html#ad9d526afecbd816c385343f60c5352fd"];
+  Node231 -> Node232 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node232 [label="OpenBlockFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8h.html#acaa494f20aefb99c5f5f9022a97d0040"];
+  Node229 -> Node233 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node233 [label="CBlock::ReadFromDisk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_block.html#a77a1b1e9902e1e557d762f5a5f325cd8"];
+  Node233 -> Node232 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node229 -> Node234 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node234 [label="CBlock::GetHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_block.html#a681acf1fa72ec2ed6c83ea5afc14e0f3"];
+  Node234 -> Node235 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node235 [label="CBlock::GetPoWHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_block.html#af203beb528a62ec30b0453cf5d860044"];
+  Node235 -> Node236 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node236 [label="Hash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hash_8h.html#ab3f6c437460137530d86e09c2c102e99"];
+  Node229 -> Node237 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node237 [label="CTransaction::GetHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_transaction.html#a0b46d80e82ca324e82c2ce3fc1492bfa"];
+  Node237 -> Node238 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node238 [label="SerializeHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hash_8h.html#a6de694e43f17c62025c6883965b65e63"];
+}

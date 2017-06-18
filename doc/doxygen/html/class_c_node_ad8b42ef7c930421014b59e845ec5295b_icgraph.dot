@@ -1,0 +1,28 @@
+digraph "CNode::SweepBanned"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node258 [label="CNode::SweepBanned",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node258 -> Node259 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node259 [label="StartNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$net_8h.html#a9396d8054e8f74959e9391871aaddde0"];
+  Node259 -> Node260 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node260 [label="SendBufferSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$net_8h.html#a13f289d6233bd32b78a38793f76bdccb"];
+  Node258 -> Node261 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node261 [label="DumpBanlist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$net_8h.html#af593c31ddb8a6d2f3c6faf63c28b5aa9"];
+  Node261 -> Node262 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node262 [label="DumpData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$net_8cpp.html#a88d718bd281a8150c9bb2d8c1e8e0a09"];
+  Node261 -> Node263 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node263 [label="RPCConsole::banSelectedNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_r_p_c_console.html#aacaf485583b6342c5e1877e7582f95c5",tooltip="Ban a selected node on the Peers tab. "];
+  Node263 -> Node264 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node264 [label="RPCConsole::setClientModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_r_p_c_console.html#a355349a33664a07628e9ca22a60f5fa7"];
+  Node264 -> Node265 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node265 [label="IonGUI::setClientModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ion_g_u_i.html#aee0c583c834ce4f4c598c29db83b0680",tooltip="Set the client model. "];
+  Node261 -> Node266 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node266 [label="RPCConsole::unbanSelectedNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_r_p_c_console.html#a9a974887c33bf1d4b25eb6aeea002941",tooltip="Unban a selected node on the Bans tab. "];
+  Node266 -> Node264 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node261 -> Node267 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node267 [label="setban",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rpcnet_8cpp.html#a4691c5765507f04c86e42e8df1e5c047"];
+  Node261 -> Node268 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node268 [label="clearbanned",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rpcnet_8cpp.html#a6bc0a8efe17b841bb486d49037dda28c"];
+}

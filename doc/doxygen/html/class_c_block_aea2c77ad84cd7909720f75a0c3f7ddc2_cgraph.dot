@@ -1,0 +1,17 @@
+digraph "CBlock::RebuildAddressIndex"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node219 [label="CBlock::RebuildAddressIndex",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node219 -> Node220 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node220 [label="CTransaction::GetHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_transaction.html#a0b46d80e82ca324e82c2ce3fc1492bfa"];
+  Node220 -> Node221 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node221 [label="SerializeHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hash_8h.html#a6de694e43f17c62025c6883965b65e63"];
+  Node219 -> Node222 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node222 [label="CTransaction::IsCoinBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_transaction.html#a96256e8ac1bf79ad9c057e48c41132dd"];
+  Node219 -> Node223 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node223 [label="CTransaction::FetchInputs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_transaction.html#a5a4967303d3b588a120687f3ed1f4b0a",tooltip="Fetch from memory and/or disk. "];
+  Node223 -> Node224 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node224 [label="CTxDB::ReadTxIndex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_tx_d_b.html#a8a138e5dcc3ef98991abaa16eaa8ddeb"];
+}

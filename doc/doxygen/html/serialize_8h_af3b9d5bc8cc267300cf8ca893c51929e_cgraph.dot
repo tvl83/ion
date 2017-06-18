@@ -1,0 +1,11 @@
+digraph "GetSerializeSize"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node70 [label="GetSerializeSize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node70 -> Node71 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node71 [label="GetSizeOfCompactSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$serialize_8h.html#a404beecbf8d7aec8d2cdac3cbb71e808"];
+  Node70 -> Node72 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node72 [label="CFlatData::GetSerializeSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_flat_data.html#ae47ed62d67cc6d923d6c8f9dde7a940c"];
+}

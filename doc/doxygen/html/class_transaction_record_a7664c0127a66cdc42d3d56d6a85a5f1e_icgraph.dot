@@ -1,0 +1,13 @@
+digraph "TransactionRecord::formatSubTxId"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node51 [label="TransactionRecord::\lformatSubTxId",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node51 -> Node52 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node52 [label="TransactionDesc::toHTML",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_transaction_desc.html#ab7c9dbb2048aae121dd9d75df86e64f4"];
+  Node52 -> Node53 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node53 [label="TransactionTablePriv\l::describe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_transaction_table_priv.html#ab08d44e16bf6dd95b5b83959b3013780"];
+  Node51 -> Node54 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node54 [label="TransactionRecord::\lgetTxID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_transaction_record.html#a838d881f68f967b751e7f7707bccfffa",tooltip="Return the unique identifier for this transaction (part) "];
+}

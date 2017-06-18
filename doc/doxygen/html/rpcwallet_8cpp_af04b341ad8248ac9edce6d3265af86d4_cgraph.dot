@@ -1,0 +1,32 @@
+digraph "GetAccountAddress"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node225 [label="GetAccountAddress",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node225 -> Node226 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node226 [label="CWalletDB::ReadAccount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_wallet_d_b.html#afa8d9d374072629b360adb49b9bdd584"];
+  Node226 -> Node227 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node227 [label="CAccount::SetNull",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_account.html#ac63a4127fd899a21a5916a86588e809a"];
+  Node225 -> Node228 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node228 [label="CPubKey::IsValid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_pub_key.html#a4fa94293cf8577fd039b9a133f6c7f30"];
+  Node228 -> Node229 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node229 [label="base_uint\< 160 \>::size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbase__uint.html#a1f49b034e686269601ea89b0319b8004"];
+  Node225 -> Node230 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node230 [label="CScript::SetDestination",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_script.html#ad1b5a9077241aa06116040c4f1b7c31e"];
+  Node225 -> Node231 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node231 [label="CPubKey::GetID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_pub_key.html#a2675f7e6f72eff68e7a5227289feb021"];
+  Node231 -> Node232 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node232 [label="CKeyID::CKeyID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_key_i_d.html#a01dbd3c37820a2ffe89d106c6a7cf53d"];
+  Node231 -> Node233 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node233 [label="Hash160",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hash_8h.html#a4490f70ddae16e9e48460a0416a48a6b"];
+  Node231 -> Node229 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node225 -> Node234 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node234 [label="CWallet::GetKeyFromPool",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_wallet.html#a18549ec5c472c003afc4794daeb9adfd"];
+  Node225 -> Node235 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node235 [label="JSONRPCError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rpcprotocol_8cpp.html#a17b1bb111ab339efc951929834766039"];
+  Node225 -> Node236 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node236 [label="CWallet::SetAddressBookName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_wallet.html#a95d2dd3693db562aa11afbecf33e1276"];
+  Node225 -> Node237 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node237 [label="CWalletDB::WriteAccount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_wallet_d_b.html#afef640a4990f74fd5af7178c99415cf3"];
+}

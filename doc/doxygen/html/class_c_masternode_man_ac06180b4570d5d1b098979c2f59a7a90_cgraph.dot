@@ -1,0 +1,28 @@
+digraph "CMasternodeMan::GetMasternodeRanks"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node155 [label="CMasternodeMan::GetMasternode\lRanks",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node155 -> Node156 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node156 [label="GetBlockHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$masternode_8cpp.html#a32f5cbabfc2bd53c2f2daedf122a83cb"];
+  Node156 -> Node157 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node157 [label="CBlockIndex::GetBlockHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_block_index.html#a98490a2788c65cdd6ae9002b004dd74c"];
+  Node155 -> Node158 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node158 [label="CMasternode::Check",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode.html#a6c5f883b797298678c1cf814faab09a5"];
+  Node158 -> Node159 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node159 [label="ShutdownRequested",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$init_8cpp.html#a6f201ca9fe6b594f1985c12b4482ea5a"];
+  Node155 -> Node160 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node160 [label="CMasternode::IsEnabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode.html#a08782379f6ba10e9087b39f0cef19bce"];
+  Node155 -> Node161 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node161 [label="CMasternode::CalculateScore",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_masternode.html#a5193b7bca7224b39c455ddd39f0846f3"];
+  Node161 -> Node156 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node161 -> Node162 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node162 [label="Hash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hash_8h.html#ab3f6c437460137530d86e09c2c102e99"];
+  Node155 -> Node163 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node163 [label="memcpy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$glibc__compat_8cpp.html#a0f46826ab0466591e136db24394923cf"];
+  Node163 -> Node164 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node164 [label="memmove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$glibc__compat_8cpp.html#a9778d49e9029dd75bc53ecbbf9f5e9a1"];
+  Node163 -> Node165 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node165 [label="__chk_fail",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$glibc__compat_8cpp.html#a424ac71631da5ada2976630ff67051d1"];
+}

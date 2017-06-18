@@ -1,0 +1,27 @@
+digraph "CWalletTx::GetAmounts"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node54 [label="CWalletTx::GetAmounts",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node54 -> Node55 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node55 [label="ExtractDestination",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$script_8cpp.html#a951f7e601746ae076afdf3169ecca2fc"];
+  Node55 -> Node56 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node56 [label="Solver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$script_8cpp.html#a6ee6be50bff44464e905680c6fcee6dc"];
+  Node56 -> Node57 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node57 [label="CScript::IsPayToScriptHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_script.html#a0c3729c606d318923dc06f95d85a0971"];
+  Node56 -> Node58 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node58 [label="CScript::clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_script.html#a7b2baf842621f07c4939408acf63377c"];
+  Node56 -> Node59 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node59 [label="CScript::GetOp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_script.html#a94635ed93d8d244ec3acfa83f9ecfe5f"];
+  Node56 -> Node60 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node60 [label="CScript::DecodeOP_N",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_script.html#a7f975fca06b3e9a17da8ba23c7647e2e"];
+  Node55 -> Node61 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node61 [label="CPubKey::GetID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_pub_key.html#a2675f7e6f72eff68e7a5227289feb021"];
+  Node61 -> Node62 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node62 [label="CKeyID::CKeyID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_key_i_d.html#a01dbd3c37820a2ffe89d106c6a7cf53d"];
+  Node61 -> Node63 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node63 [label="Hash160",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hash_8h.html#a4490f70ddae16e9e48460a0416a48a6b"];
+  Node61 -> Node64 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node64 [label="base_uint\< 160 \>::size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbase__uint.html#a1f49b034e686269601ea89b0319b8004"];
+}

@@ -1,0 +1,22 @@
+digraph "CheckKernel"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="CheckKernel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CTransaction::ReadFromDisk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_transaction.html#ad9d526afecbd816c385343f60c5352fd"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OpenBlockFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8h.html#acaa494f20aefb99c5f5f9022a97d0040"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CBlock::ReadFromDisk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_block.html#a77a1b1e9902e1e557d762f5a5f325cd8"];
+  Node5 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="IsConfirmedInNPrevBlocks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stake_8cpp.html#a22e712bbf635a69ba8dd7ae004d2697b"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="DetermineCoinbaseMaturity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$proofs_8cpp.html#a97478c8207cae73889a6b1fbbc3c67e3",tooltip="Determine Coinbase Maturity (generally not a good idea - done so to increase speed) ..."];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="CBlock::GetBlockTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_block.html#a4fa8201373b08e0ee4b4c678b8f2c4aa"];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="CheckStakeKernelHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stake_8cpp.html#a40b6982bd755610b7829746a193ee619"];
+}

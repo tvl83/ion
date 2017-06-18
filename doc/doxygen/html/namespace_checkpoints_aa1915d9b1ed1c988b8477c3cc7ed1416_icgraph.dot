@@ -1,0 +1,11 @@
+digraph "Checkpoints::AutoSelectSyncCheckpoint"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Checkpoints::AutoSelectSync\lCheckpoint",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Checkpoints::CheckSync",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_checkpoints.html#ab698c7033e4afdd7f7173bbe22b7c2c5"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="getcheckpoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rpcblockchain_8cpp.html#a18e0cd566c85cd589c2d687fa06d77e7"];
+}

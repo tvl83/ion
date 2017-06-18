@@ -1,0 +1,24 @@
+digraph "WalletModel::haveWatchOnly"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node569 [label="WalletModel::haveWatchOnly",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node569 -> Node570 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node570 [label="OverviewPage::setWalletModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_overview_page.html#a2ed52a3a87e9c74fee38fa873c9bc71f"];
+  Node570 -> Node571 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node571 [label="IonGUI::setWalletModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ion_g_u_i.html#a37f87db65498b036d387c705a749c45d",tooltip="Set the wallet model. "];
+  Node569 -> Node572 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node572 [label="TransactionView::setModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_transaction_view.html#a4920c2cd57d72eb50248948fa160c83c"];
+  Node572 -> Node571 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node569 -> Node573 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node573 [label="TransactionView::exportClicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_transaction_view.html#a5983022ff1e5395f87de3c5728eff8da"];
+  Node569 -> Node574 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node574 [label="WalletModel::checkBalance\lChanged",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wallet_model.html#adcc4eb8cd71cb4de223621866bb7fb7d"];
+  Node574 -> Node575 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node575 [label="WalletModel::pollBalance\lChanged",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wallet_model.html#a51469b2d95cfd4bc0a14ee456fca7b95"];
+  Node575 -> Node576 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node576 [label="WalletModel::WalletModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wallet_model.html#af50d9654d2f20e4e4f0789dcb64ad6b1"];
+  Node574 -> Node577 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node577 [label="WalletModel::sendCoins",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wallet_model.html#a053fb3ff2b8b0347f83e6bb591126746"];
+}

@@ -1,0 +1,43 @@
+digraph "CWallet::AvailableCoinsMN"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node150 [label="CWallet::AvailableCoinsMN",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node150 -> Node151 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node151 [label="IsFinalTx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#adc332cd7ac94e639bb4239618341be19"];
+  Node151 -> Node152 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node152 [label="GetAdjustedTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$util_8cpp.html#a09f81b9c7650f898cf3cf305b87547e6"];
+  Node152 -> Node153 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node153 [label="GetTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$util_8cpp.html#a46fac5fba8ba905b5f9acb364f5d8c6f"];
+  Node152 -> Node154 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node154 [label="GetTimeOffset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$util_8cpp.html#a50ca5344c75631267633f15cfe5e983e"];
+  Node150 -> Node155 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node155 [label="CWalletTx::IsTrusted",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_wallet_tx.html#a71efb0d5b5def8ae00a1d74b8741bfcb"];
+  Node155 -> Node151 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node155 -> Node156 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node156 [label="CWallet::GetWalletTx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_wallet.html#ac496716bb889a5934fa27398aeb2330a"];
+  Node155 -> Node157 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node157 [label="CWallet::IsMine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_wallet.html#a4eada57edc1c443564b8cc9b853d955c"];
+  Node157 -> Node158 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node158 [label="IsMine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$script_8cpp.html#adc59cf67d903c1ba1ef225561b85bfce"];
+  Node158 -> Node159 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node159 [label="CScript::SetDestination",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_script.html#ad1b5a9077241aa06116040c4f1b7c31e"];
+  Node158 -> Node158 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node150 -> Node160 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node160 [label="CTransaction::IsCoinBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_transaction.html#a96256e8ac1bf79ad9c057e48c41132dd"];
+  Node150 -> Node161 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node161 [label="CMerkleTx::GetBlocksToMaturity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_merkle_tx.html#a69ebd437f7b44169659c3527fe73b6ab"];
+  Node161 -> Node162 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node162 [label="DetermineCoinbaseMaturity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$proofs_8cpp.html#a97478c8207cae73889a6b1fbbc3c67e3",tooltip="Determine Coinbase Maturity (generally not a good idea - done so to increase speed) ..."];
+  Node150 -> Node163 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node163 [label="CTransaction::IsCoinStake",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_transaction.html#ace4278a41a296d40dcf5fb2b9cf007ec"];
+  Node150 -> Node164 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node164 [label="CMerkleTx::GetDepthInMain\lChain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_merkle_tx.html#a887a9f1a0b7fc64b43e42cec76b38ef9"];
+  Node164 -> Node165 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node165 [label="CTxMemPool::exists",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_tx_mem_pool.html#a8b7a13b5289ab839d4460f41a7da9789"];
+  Node165 -> Node166 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node166 [label="CTxMemPool::lookup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_tx_mem_pool.html#ad6d9966cdeb4b6586f7186e709b4e77e"];
+  Node150 -> Node167 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node167 [label="GetMNCollateral",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8h.html#a7ecfeb5987564d84c46a6715d4c3a2df"];
+}

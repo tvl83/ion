@@ -1,0 +1,13 @@
+digraph "CValidationInterface::NewPoWValidBlock"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node10 [label="CValidationInterface\l::NewPoWValidBlock",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="RegisterValidationInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$validationinterface_8h.html#ade8ef59282b5f7521ecfd870a8e3b137",tooltip="Register a wallet to receive updates from core. "];
+  Node10 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="UnregisterValidationInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$validationinterface_8h.html#a5e1776de1f87b4d045e9e2a198236b63",tooltip="Unregister a wallet from core. "];
+  Node10 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="UnregisterAllValidationInterfaces",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$validationinterface_8h.html#a8fe3fbf8c47cc0419fd7b9a14e8b140d",tooltip="Unregister all wallets from core. "];
+}

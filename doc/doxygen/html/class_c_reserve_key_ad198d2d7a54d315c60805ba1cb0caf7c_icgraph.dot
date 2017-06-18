@@ -1,0 +1,21 @@
+digraph "CReserveKey::GetReservedKey"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node5 [label="CReserveKey::GetReservedKey",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CreateNewBlock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$miner_8h.html#aca0de7d757e027c2b08bd101c68c1549"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ThreadStakeMiner",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$miner_8cpp.html#a31faece5ef0e403969b3d3debd79b352"];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="getworkex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rpcmining_8cpp.html#aa40f86dc468a3f2ef4a3bba99e20a069"];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="getwork",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rpcmining_8cpp.html#a356be62c93d38267a7da9e1cb644d547"];
+  Node6 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="getblocktemplate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rpcmining_8cpp.html#a27347eecedd59156c914fcb5ce488f9a"];
+  Node5 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="CStashedsendPool::MakeCollateral\lAmounts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_stashedsend_pool.html#af475cbfebb9c64e9e7b831f2415d921c",tooltip="Split up large inputs or make fee sized inputs. "];
+  Node5 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="CStashedsendPool::Create\lDenominated",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_stashedsend_pool.html#a02b3808e3653ed966b4c60874a137490"];
+}

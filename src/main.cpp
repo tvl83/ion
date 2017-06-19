@@ -480,7 +480,7 @@ bool IsStandardTx(const CTransaction& tx, string& reason)
         return false;
     }
     // nTime has different purpose from nLockTime but can be used in similar attacks
-    if (tx.nTime > FutureDrift(GetAdjustedTime())) {
+    if (tx.nTime > FutureDrift(GetAdjustedTime(), nBestHeight)) {
         reason = "time-too-new";
         return false;
     }
@@ -2462,7 +2462,7 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
         return DoS(50, error("CheckBlock() : proof of work failed"));
 
     // Check timestamp
-    if (GetBlockTime() > FutureDrift(GetAdjustedTime()))
+    if (GetBlockTime() > FutureDriftV2(GetAdjustedTime()))
         return error("CheckBlock() : block timestamp too far in the future");
 
     // First transaction must be coinbase, the rest must not be
@@ -2655,7 +2655,7 @@ bool CBlock::AcceptBlock()
     }
 
     // Check coinbase timestamp
-    if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime) && IsProofOfStake())
+    if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime, nHeight) && IsProofOfStake())
         return DoS(50, error("AcceptBlock() : coinbase timestamp is too early"));
 
     // Check coinstake timestamp
@@ -2668,7 +2668,7 @@ bool CBlock::AcceptBlock()
 
     // Check timestamp against prev
     if ((nHeight > Params().Fork1Height()) &&
-            (FutureDrift(GetBlockTime()) < pindexPrev->GetBlockTime())){
+            (FutureDrift(GetBlockTime(), nHeight) < pindexPrev->GetBlockTime())){
         return error("AcceptBlock() : block's timestamp is too far in the future");
     }
     

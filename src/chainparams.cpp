@@ -115,6 +115,7 @@ public:
         nLastPOWBlock 	= 1000;
         
         nFork1Height = 176500;
+        nFork1Time = 1497541280;
     }
 
     virtual const CBlock& GenesisBlock() const { return genesis; }
@@ -180,6 +181,7 @@ public:
         nLastPOWBlock 	= 300;
         
         nFork1Height = 78800;
+        nFork1Time = 1497479952;
     }
 
     virtual const CBlock& GenesisBlock() const { return genesis; }

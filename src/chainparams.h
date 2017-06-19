@@ -75,6 +75,7 @@ public:
     std::string StashedsendPoolDummyAddress() const { return strStashedsendPoolDummyAddress; }
     
     int Fork1Height() const { return nFork1Height; }
+    int Fork1Time() const { return nFork1Time; }
 
 protected:
     CChainParams() {};
@@ -99,6 +100,7 @@ protected:
     std::string strStashedsendPoolDummyAddress;
     
     int nFork1Height;
+    int64_t nFork1Time;
 };
 
 /**

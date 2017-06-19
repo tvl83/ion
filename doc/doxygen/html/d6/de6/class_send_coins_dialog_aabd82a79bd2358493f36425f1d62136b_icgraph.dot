@@ -1,0 +1,29 @@
+digraph "SendCoinsDialog::removeEntry"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node597 [label="SendCoinsDialog::removeEntry",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node597 -> Node598 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node598 [label="SendCoinsDialog::addEntry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/de6/class_send_coins_dialog.html#a3d680a76b967641115c6ff2fa83fb62a"];
+  Node598 -> Node599 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node599 [label="SendCoinsDialog::SendCoins\lDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/de6/class_send_coins_dialog.html#a0df5bc29d1df68eda44826651afc595f"];
+  Node598 -> Node600 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node600 [label="SendCoinsDialog::clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/de6/class_send_coins_dialog.html#a127bddff45f49ff5e6e263efe218ae26"];
+  Node600 -> Node599 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node600 -> Node601 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node601 [label="SendCoinsDialog::reject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/de6/class_send_coins_dialog.html#a4879553d77d29f522ac92ac04580f4ad"];
+  Node600 -> Node602 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node602 [label="SendCoinsDialog::accept",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/de6/class_send_coins_dialog.html#af2185c3d29e43d37c30669f0def46060"];
+  Node598 -> Node597 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node598 -> Node603 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node603 [label="SendCoinsDialog::setAddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/de6/class_send_coins_dialog.html#a920b2dbf121ca3cfac2adc56e96295f8"];
+  Node598 -> Node604 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node604 [label="SendCoinsDialog::pasteEntry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/de6/class_send_coins_dialog.html#a4440d15ced5d217baaad33a17d56b409"];
+  Node604 -> Node605 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node605 [label="SendCoinsDialog::handleURI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/de6/class_send_coins_dialog.html#a0b55c56582d3352734eb01e8a6f404c1"];
+  Node605 -> Node606 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node606 [label="IonGUI::dropEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d0b/class_ion_g_u_i.html#a42edcabd719877fa223bfc4ce1004950"];
+  Node605 -> Node607 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node607 [label="IonGUI::handleURI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d0b/class_ion_g_u_i.html#a96c92e010ff8af010b4053c09128a273"];
+}

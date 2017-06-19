@@ -1,0 +1,31 @@
+digraph "MultisigDialog::setModel"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node213 [label="MultisigDialog::setModel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node213 -> Node214 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node214 [label="MultisigAddressEntry\l::setModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d39/class_multisig_address_entry.html#ab1d0ae8a8d3f9d1678ae621f9ccbeb6c"];
+  Node214 -> Node215 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node215 [label="MultisigAddressEntry\l::clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d39/class_multisig_address_entry.html#a8325b202ad0045c1d1a37a8f73d6963d"];
+  Node213 -> Node216 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node216 [label="MultisigInputEntry\l::setModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d3d/class_multisig_input_entry.html#a2a75533b3c1f80ccde79ea5c31d806a8"];
+  Node216 -> Node217 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node217 [label="MultisigInputEntry\l::clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d3d/class_multisig_input_entry.html#a4e2c13566a3516c12641e805ed7849f8"];
+  Node213 -> Node218 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node218 [label="SendCoinsEntry::setModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dbc/class_send_coins_entry.html#a831f8f9a63acd77b7d66d5393e12310b"];
+  Node218 -> Node219 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node219 [label="WalletModel::getOptionsModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d27/class_wallet_model.html#a96d53e56b3f8f07537ea2523f7a7d300"];
+  Node218 -> Node220 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node220 [label="SendCoinsEntry::updateDisplayUnit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dbc/class_send_coins_entry.html#a6ff4bd5b370545bcfd6214e866ee33f3"];
+  Node220 -> Node219 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node220 -> Node221 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node221 [label="OptionsModel::getDisplayUnit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d1f/class_options_model.html#a3b6e4d4ef42be3aaba315b8cd14f468e"];
+  Node221 -> Node222 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node222 [label="OptionsModel::getProxySettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d1f/class_options_model.html#a0fa582a801df3753c2c50840c40bb350"];
+  Node222 -> Node223 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node223 [label="GetProxy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d0e/netbase_8cpp.html#a4e67b39fc1769663260d791d2f4d049d"];
+  Node218 -> Node224 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node224 [label="SendCoinsEntry::clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dbc/class_send_coins_entry.html#abff66fcd456c82144e7a2c410f5082ac"];
+  Node224 -> Node220 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

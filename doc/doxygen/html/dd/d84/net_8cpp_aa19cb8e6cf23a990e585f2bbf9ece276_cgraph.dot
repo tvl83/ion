@@ -1,0 +1,33 @@
+digraph "OpenNetworkConnection"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node226 [label="OpenNetworkConnection",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node226 -> Node227 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node227 [label="IsLocal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d84/net_8cpp.html#a16fa1bd4d34c4c29c90903fc3cdf7517",tooltip="check whether a given address is potentially local "];
+  Node226 -> Node228 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node228 [label="FindNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d84/net_8cpp.html#a66a7371d8e724cac0b4495169cdf2859"];
+  Node226 -> Node229 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node229 [label="CNode::IsBanned",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d64/class_c_node.html#aefa8b81afa53b4c6635dc4c6c024211a"];
+  Node229 -> Node230 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node230 [label="CSubNet::Match",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d87/class_c_sub_net.html#af84fa02ebca222739c55e9d2cd7d38a3"];
+  Node230 -> Node231 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node231 [label="CNetAddr::IsValid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/dc3/class_c_net_addr.html#a6fe20b8da9701ca5dc2af078e2e8ac25"];
+  Node230 -> Node232 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node232 [label="CNetAddr::GetByte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/dc3/class_c_net_addr.html#acfd51ebf2030b01fa5ac133176512475"];
+  Node229 -> Node233 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node233 [label="GetTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d2d/util_8cpp.html#a46fac5fba8ba905b5f9acb364f5d8c6f"];
+  Node226 -> Node234 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node234 [label="ConnectNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d84/net_8cpp.html#abd8cb3f96f11637f9e7f67aac9b783e8"];
+  Node234 -> Node227 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node234 -> Node228 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node234 -> Node235 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node235 [label="CNode::AddRef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d64/class_c_node.html#afb65ed679f7bda59aab89e0f5afae292"];
+  Node226 -> Node236 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node236 [label="CSemaphoreGrant::MoveTo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d2f/class_c_semaphore_grant.html#ab3e6f84f304703abc52517b0c8de26cf"];
+  Node236 -> Node237 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node237 [label="CSemaphoreGrant::Release",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d2f/class_c_semaphore_grant.html#a8d985eeace74e037baeb39bd2d586576"];
+  Node237 -> Node238 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node238 [label="CSemaphore::post",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d06/class_c_semaphore.html#af6a956f6c191e824485fd3af6db39318"];
+}

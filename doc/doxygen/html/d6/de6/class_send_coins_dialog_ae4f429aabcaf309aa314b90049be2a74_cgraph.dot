@@ -1,0 +1,23 @@
+digraph "SendCoinsDialog::coinControlUpdateLabels"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node425 [label="SendCoinsDialog::coinControl\lUpdateLabels",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node425 -> Node426 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node426 [label="WalletModel::getOptionsModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d27/class_wallet_model.html#a96d53e56b3f8f07537ea2523f7a7d300"];
+  Node425 -> Node427 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node427 [label="OptionsModel::getCoinControl\lFeatures",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d1f/class_options_model.html#ace6c871068f613aee277e37bfdc988c0"];
+  Node425 -> Node428 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node428 [label="SendCoinsEntry::getValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dbc/class_send_coins_entry.html#af36fb0ed9e2e07079c1a982b31e793c8"];
+  Node428 -> Node429 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node429 [label="IsStealthAddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d2d/stealth_8cpp.html#a26c89afcb720e8b1a9c9dadaee26757b"];
+  Node429 -> Node430 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node430 [label="DecodeBase58",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d9c/base58_8cpp.html#a0f74d1d6e7e982cad4b0e538acea4538",tooltip="Decode a base58-encoded string (psz) into a byte vector (vchRet). "];
+  Node429 -> Node431 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node431 [label="VerifyChecksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d2d/stealth_8cpp.html#a5ff6f6775db5f747f5088c7ef8264b74"];
+  Node431 -> Node432 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node432 [label="StashedSilkChecksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d2d/stealth_8cpp.html#abb79a3b98a10b85daf3f3ff35c1cbfa8"];
+  Node425 -> Node433 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node433 [label="CoinControlDialog::\lupdateLabels",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/dfb/class_coin_control_dialog.html#a4fc60e89b097952ff22dc0f9c58c87d9"];
+}

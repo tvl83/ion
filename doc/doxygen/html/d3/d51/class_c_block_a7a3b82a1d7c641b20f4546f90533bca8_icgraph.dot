@@ -1,0 +1,13 @@
+digraph "CBlock::GetMerkleBranch"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node99 [label="CBlock::GetMerkleBranch",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node99 -> Node100 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node100 [label="GetP2SHSigOpCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/dbf/main_8h.html#acc0a05d60127f0cfcf778348670067e0",tooltip="Count ECDSA signature operations in pay-to-script-hash inputs. "];
+  Node100 -> Node101 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node101 [label="CTxOutCompressor::CTxOut\lCompressor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d8d/class_c_tx_out_compressor.html#a38ef1033989cd003de65598620d15cea"];
+  Node99 -> Node102 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node102 [label="getworkex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/ddd/rpcmining_8cpp.html#aa40f86dc468a3f2ef4a3bba99e20a069"];
+}

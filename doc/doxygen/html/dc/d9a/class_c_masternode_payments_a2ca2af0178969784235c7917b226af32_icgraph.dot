@@ -1,0 +1,11 @@
+digraph "CMasternodePayments::CheckSignature"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node49 [label="CMasternodePayments\l::CheckSignature",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node49 -> Node50 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node50 [label="ProcessMessageMasternode\lPayments",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d20/masternode-payments_8h.html#a8c28fb440d8031543d1de309e34c40f2"];
+  Node49 -> Node51 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node51 [label="CMasternodePayments\l::SetPrivKey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d9a/class_c_masternode_payments.html#a525bcafd8d00b58a3e05a848ef493603"];
+}

@@ -1,0 +1,16 @@
+digraph "SoftSetBoolArg"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1119 [label="SoftSetBoolArg",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1119 -> Node1120 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1120 [label="IsSwitchChar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d3c/util_8h.html#ac0165e18ce3be89a2e0731e27d54b478"];
+  Node1120 -> Node1121 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1121 [label="AppInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d35/iond_8cpp.html#ac59316b767e6984e1285f0531275286b"];
+  Node1121 -> Node1122 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1122 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d35/iond_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97"];
+  Node1120 -> Node1123 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1123 [label="CommandLineRPC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d59/rpcclient_8h.html#a4ee23259648a971c9c05aeff8b545a6d"];
+  Node1123 -> Node1121 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

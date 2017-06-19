@@ -1,6 +1,9 @@
+#/bin/
+
+
 *.tar.gz
 
-*.exe
+#*.exe
 src/ion
 src/iond
 src/ion-cli
@@ -109,7 +112,7 @@ test/cache/*
 
 !src/leveldb*/Makefile
 
-/doc/doxygen/
+#/doc/doxygen/
 
 libionconsensus.pc
 contrib/devtools/split-debug.sh

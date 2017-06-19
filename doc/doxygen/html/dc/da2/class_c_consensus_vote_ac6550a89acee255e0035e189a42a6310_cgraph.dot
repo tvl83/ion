@@ -1,0 +1,43 @@
+digraph "CConsensusVote::SignatureValid"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node44 [label="CConsensusVote::Signature\lValid",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node44 -> Node45 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node45 [label="CMasternodeMan::Find",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d6b/class_c_masternode_man.html#aade63e2fbea916e7051819015ef31dc5"];
+  Node44 -> Node46 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node46 [label="CStashedSendSigner\l::VerifyMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d0a/class_c_stashed_send_signer.html#a917e4eb567f2005a73ef59bafcf46bd4",tooltip="Verify the message, returns true if succcessful. "];
+  Node46 -> Node47 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node47 [label="CPubKey::RecoverCompact",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d4e/class_c_pub_key.html#a169505e735a02db385486b0affeb565c"];
+  Node47 -> Node48 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node48 [label="secp256k1_ecdsa_recoverable\l_signature_parse_compact",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d84/secp256k1__recovery_8h.html#a6699b45dc75be70f028ac7d8ffaba46e",tooltip="Parse a compact ECDSA signature (64 bytes + recovery id). "];
+  Node47 -> Node49 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node49 [label="secp256k1_ecdsa_recover",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d84/secp256k1__recovery_8h.html#a7e156c6f4be24b07f4a563210dcb1a2e",tooltip="Recover an ECDSA public key from a signature. "];
+  Node47 -> Node50 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node50 [label="base_uint::begin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/df7/classbase__uint.html#aaa32054bf4e8fbb31d54a75f6065174d"];
+  Node47 -> Node51 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node51 [label="secp256k1_ec_pubkey\l_serialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dd3/secp256k1_8h.html#a34977bf00322e510e881160c421836d7",tooltip="Serialize a pubkey object into a serialized byte sequence. "];
+  Node47 -> Node52 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node52 [label="CPubKey::Set",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d4e/class_c_pub_key.html#af59bc1d3be119c1f8b49d3c1e2c0797b"];
+  Node52 -> Node53 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node53 [label="memcpy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d9f/glibc__compat_8cpp.html#a0f46826ab0466591e136db24394923cf"];
+  Node53 -> Node54 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node54 [label="memmove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d9f/glibc__compat_8cpp.html#a9778d49e9029dd75bc53ecbbf9f5e9a1"];
+  Node53 -> Node55 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node55 [label="__chk_fail",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d9f/glibc__compat_8cpp.html#a424ac71631da5ada2976630ff67051d1"];
+  Node46 -> Node56 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node56 [label="CHashWriter::GetHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/def/class_c_hash_writer.html#ae94a937211502eabf19477630090093a"];
+  Node46 -> Node57 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node57 [label="_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d6d/ui__interface_8h.html#aad133bb6103b53cebf03fd01e2f11ba1",tooltip="Translation function: Call Translate signal on UI interface, which returns a boost::optional result..."];
+  Node46 -> Node58 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node58 [label="CPubKey::GetID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d4e/class_c_pub_key.html#a2675f7e6f72eff68e7a5227289feb021"];
+  Node58 -> Node59 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node59 [label="CKeyID::CKeyID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d88/class_c_key_i_d.html#a01dbd3c37820a2ffe89d106c6a7cf53d"];
+  Node58 -> Node60 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node60 [label="Hash160",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/dfb/hash_8h.html#a4490f70ddae16e9e48460a0416a48a6b"];
+  Node58 -> Node61 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node61 [label="base_uint\< 160 \>::size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/df7/classbase__uint.html#a1f49b034e686269601ea89b0319b8004"];
+  Node46 -> Node62 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node62 [label="base_uint::ToString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/df7/classbase__uint.html#acccba4d9d51a0c36261718ca0cbb293b"];
+}

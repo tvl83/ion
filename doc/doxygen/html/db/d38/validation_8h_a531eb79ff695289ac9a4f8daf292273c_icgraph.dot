@@ -1,0 +1,15 @@
+digraph "OpenBlockFile"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node114 [label="OpenBlockFile",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node114 -> Node115 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node115 [label="GetTransaction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d38/validation_8h.html#a07fae6c3df8041881d293cd91afd9c97",tooltip="Retrieve a transaction (from memory pool, or from disk, if possible) "];
+  Node114 -> Node116 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node116 [label="ReadBlockFromDisk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d38/validation_8h.html#a578c1df234b05798180f0235d469a5ba",tooltip="Functions for disk access for blocks. "];
+  Node116 -> Node117 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node117 [label="ReadBlockFromDisk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d38/validation_8h.html#aee79e45a0b167f9b312f83a23880cfbc"];
+  Node116 -> Node118 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node118 [label="CVerifyDB::VerifyDB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/da0/class_c_verify_d_b.html#af12e07230f20d23cf01d417d0e785c49"];
+}

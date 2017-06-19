@@ -1,9 +1,0 @@
-digraph "CScript::EncodeOP_N"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node146 [label="CScript::EncodeOP_N",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node146 -> Node147 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node147 [label="GetScriptForMultisig",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$script_8h.html#a7030aee2e7c653ebc11b77dab70b09f1"];
-}

@@ -1,0 +1,48 @@
+digraph "SendCoinsDialog::on_sendButton_clicked"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node489 [label="SendCoinsDialog::on\l_sendButton_clicked",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node489 -> Node490 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node490 [label="WalletModel::getOptionsModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d27/class_wallet_model.html#a96d53e56b3f8f07537ea2523f7a7d300"];
+  Node489 -> Node491 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node491 [label="SendCoinsEntry::validate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dbc/class_send_coins_entry.html#ab77df95fe77e9a001190cd4dabe0dfec"];
+  Node491 -> Node492 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node492 [label="WalletModel::validateAddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d27/class_wallet_model.html#a04604615253aeaae1253b1412a70a1f7"];
+  Node492 -> Node493 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node493 [label="IsStealthAddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d2d/stealth_8cpp.html#a26c89afcb720e8b1a9c9dadaee26757b"];
+  Node493 -> Node494 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node494 [label="DecodeBase58",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d9c/base58_8cpp.html#a0f74d1d6e7e982cad4b0e538acea4538",tooltip="Decode a base58-encoded string (psz) into a byte vector (vchRet). "];
+  Node493 -> Node495 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node495 [label="VerifyChecksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d2d/stealth_8cpp.html#a5ff6f6775db5f747f5088c7ef8264b74"];
+  Node495 -> Node496 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node496 [label="StashedSilkChecksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d2d/stealth_8cpp.html#abb79a3b98a10b85daf3f3ff35c1cbfa8"];
+  Node492 -> Node497 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node497 [label="CIonAddress::IsValid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/de4/class_c_ion_address.html#a93cb71370b938e7fad4a74c4b5775da6"];
+  Node497 -> Node498 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node498 [label="Params",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/dbf/chainparams_8cpp.html#ace5c5b706d71a324a417dd2db394fd4a",tooltip="Return the currently selected parameters. "];
+  Node497 -> Node499 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node499 [label="CChainParams::Base58Prefix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d4f/class_c_chain_params.html#a103c58eca4a26a71201882b3ed6c4cb4"];
+  Node489 -> Node500 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node500 [label="SendCoinsEntry::getValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dbc/class_send_coins_entry.html#af36fb0ed9e2e07079c1a982b31e793c8"];
+  Node500 -> Node493 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node489 -> Node501 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node501 [label="IonUnits::formatWithUnit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dab/class_ion_units.html#a07052cd4b4b8496b73ffe657432a8624",tooltip="Format as string (with unit) "];
+  Node501 -> Node502 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node502 [label="IonUnits::format",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dab/class_ion_units.html#a7cf8cdbd0a24c418ae91b511fac5bee4",tooltip="Format as string. "];
+  Node502 -> Node503 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node503 [label="IonUnits::valid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dab/class_ion_units.html#a23c5b1306ed473dbb2375a6675a2ce13",tooltip="Is unit ID valid? "];
+  Node502 -> Node504 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node504 [label="IonUnits::factor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dab/class_ion_units.html#a210814a200496caf63083ed4abd1bd24",tooltip="Number of Satoshis (1e-8) per unit. "];
+  Node502 -> Node505 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node505 [label="IonUnits::decimals",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dab/class_ion_units.html#a5e9c7a5b666b858c171760273c51c9d7",tooltip="Number of decimals left. "];
+  Node501 -> Node506 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node506 [label="IonUnits::name",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dab/class_ion_units.html#a5bb4881389b09aeeb0bc235e87e0a42f",tooltip="Short name. "];
+  Node489 -> Node507 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node507 [label="OptionsModel::getDisplayUnit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d1f/class_options_model.html#a3b6e4d4ef42be3aaba315b8cd14f468e"];
+  Node507 -> Node508 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node508 [label="OptionsModel::getProxySettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d1f/class_options_model.html#a0fa582a801df3753c2c50840c40bb350"];
+  Node508 -> Node509 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node509 [label="GetProxy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d0e/netbase_8cpp.html#a4e67b39fc1769663260d791d2f4d049d"];
+}

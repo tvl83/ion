@@ -1,0 +1,17 @@
+digraph "CreateNewLock"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node26 [label="CreateNewLock",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node26 -> Node27 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 [label="ProcessMessageInstantX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d5f/instantx_8h.html#aa516cb499ead2691d8ab216a499db5d0"];
+  Node26 -> Node28 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 [label="CWalletTx::RelayWalletTransaction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d53/class_c_wallet_tx.html#aec8c50f3fcde27525485b6cd4a4e19b5"];
+  Node28 -> Node29 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="CStashedsendPool::ChargeFees",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d8a/class_c_stashedsend_pool.html#acd76c93879dbcbdda4ca0a253f0d9c68",tooltip="Charge fees to bad actors (Charge clients a fee if they&#39;re abusive) "];
+  Node28 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="CStashedsendPool::Charge\lRandomFees",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d8a/class_c_stashedsend_pool.html#abcf715f6e5e01039218bf4881fffc3fe",tooltip="Rarely charge fees to pay miners. "];
+  Node28 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="CWallet::ResendWalletTransactions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/de5/class_c_wallet.html#ace33dcf23623d2036a38696bc3a94553"];
+}

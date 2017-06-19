@@ -1,0 +1,13 @@
+digraph "blockToJSON"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node10 [label="blockToJSON",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="CCoin::SerializationOp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d99/struct_c_coin.html#a2a0a2532bdacb03b087b3b0a400830ec"];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="getblock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d47/rpcblockchain_8cpp.html#a63608cf1bb275120194c3b4e070af3d7"];
+  Node10 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="getblockbynumber",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d47/rpcblockchain_8cpp.html#a4039f7b3e313c63b81c98e3fc479a117"];
+}

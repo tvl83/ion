@@ -1,0 +1,15 @@
+digraph "CoinControlDialog::viewItemChanged"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node574 [label="CoinControlDialog::\lviewItemChanged",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node574 -> Node575 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node575 [label="CCoinControl::UnSelect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d48/class_c_coin_control.html#a28843122428b30c81814e54b9a0bcaa6"];
+  Node574 -> Node576 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node576 [label="CCoinControl::Select",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d48/class_c_coin_control.html#a0c6d66b747f1e9531afa32a8bb851ba0"];
+  Node574 -> Node577 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node577 [label="CWallet::GetInputStashedsend\lRounds",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/de5/class_c_wallet.html#a9a6ea9a3fe28ec7ef0ed0871647b59db"];
+  Node574 -> Node578 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node578 [label="CoinControlDialog::\lupdateLabels",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/dfb/class_coin_control_dialog.html#a4fc60e89b097952ff22dc0f9c58c87d9"];
+}

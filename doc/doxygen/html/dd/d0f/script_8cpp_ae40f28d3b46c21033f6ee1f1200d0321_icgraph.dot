@@ -1,0 +1,41 @@
+digraph "GetScriptForDestination"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node160 [label="GetScriptForDestination",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node160 -> Node161 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node161 [label="CMasternodePayments\l::ProcessBlock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d9a/class_c_masternode_payments.html#aa23dfbc148f10f601e9771bfcffea441"];
+  Node160 -> Node162 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node162 [label="WalletModel::prepareTransaction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d27/class_wallet_model.html#a8abc851901c7c7343ebfb5a8e5fc0154"];
+  Node162 -> Node163 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node163 [label="SendCoinsDialog::send",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/de6/class_send_coins_dialog.html#afd8d436a16ea7dba1276e8fdfdc8b2d3"];
+  Node160 -> Node164 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node164 [label="importaddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dbf/rpcdump_8cpp.html#a457bc572859c8265c72a0afd1a6db56c"];
+  Node160 -> Node165 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node165 [label="SendMoney",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d6b/rpcstashedsend_8cpp.html#a49669702f73a24c1d1dc5a08d7c0785f"];
+  Node165 -> Node166 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node166 [label="stashedsend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d6b/rpcstashedsend_8cpp.html#a5a7cb1ad55aeaa8bcbb5172e9153a75a"];
+  Node165 -> Node167 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node167 [label="CWallet::SendMoneyToDestination",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/de5/class_c_wallet.html#aad5d55fc472f6b9ccbec5af0a7246d60"];
+  Node167 -> Node168 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node168 [label="sendtoaddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d1d/rpcwallet_8cpp.html#a134064858f9cfa4775a6ae34cac2b133"];
+  Node167 -> Node169 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node169 [label="sendfrom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d1d/rpcwallet_8cpp.html#a845eaefd9ec7752b1145c183205524d0"];
+  Node165 -> Node170 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node170 [label="CWallet::LoadMinVersion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/de5/class_c_wallet.html#a88317da8dab80135b8db73e945e15b60"];
+  Node160 -> Node171 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node171 [label="masternode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d6b/rpcstashedsend_8cpp.html#a30609e443aeb47c29ed0878d16b1b5e1"];
+  Node160 -> Node172 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node172 [label="CStashedsendPool::SetCollateral\lAddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d8a/class_c_stashedsend_pool.html#a562858f74088b5b506c399c353efee5b"];
+  Node160 -> Node173 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node173 [label="CStashedsendPool::MakeCollateral\lAmounts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d8a/class_c_stashedsend_pool.html#af475cbfebb9c64e9e7b831f2415d921c",tooltip="Split up large inputs or make fee sized inputs. "];
+  Node160 -> Node174 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node174 [label="CStashedsendPool::Create\lDenominated",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d8a/class_c_stashedsend_pool.html#a02b3808e3653ed966b4c60874a137490"];
+  Node160 -> Node175 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node175 [label="CStashedSendSigner\l::IsVinAssociatedWithPubkey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d0a/class_c_stashed_send_signer.html#aaca192c63b69266a4ac439051d3bbf58",tooltip="Is the inputs associated with this public key? (and there is 20000 ION - checking if valid masternode..."];
+  Node160 -> Node176 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node176 [label="CWallet::AddKeyPubKey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/de5/class_c_wallet.html#a3240da36cd717146296969227a3e0bd5"];
+  Node176 -> Node177 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node177 [label="importprivkey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dbf/rpcdump_8cpp.html#a3a6fdb974fce01220a895393d444e981"];
+}

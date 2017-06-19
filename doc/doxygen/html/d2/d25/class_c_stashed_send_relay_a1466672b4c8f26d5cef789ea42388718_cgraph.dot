@@ -1,0 +1,41 @@
+digraph "CStashedSendRelay::Relay"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node46 [label="CStashedSendRelay::\lRelay",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node46 -> Node47 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node47 [label="CMasternodeMan::CountEnabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d6b/class_c_masternode_man.html#ae495279a035d7d259375ae95cbde28f4"];
+  Node47 -> Node48 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node48 [label="CMasternodePayments\l::GetMinMasternodePayments\lProto",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d9a/class_c_masternode_payments.html#adb98cc9f21cf8746c0b6ac3131b85dfb"];
+  Node48 -> Node49 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node49 [label="IsSporkActive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d0d/spork_8cpp.html#a3305663176e21e81c80dc951a7f8ea5e"];
+  Node49 -> Node50 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node50 [label="GetTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d2d/util_8cpp.html#a46fac5fba8ba905b5f9acb364f5d8c6f"];
+  Node47 -> Node51 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node51 [label="CMasternode::Check",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/dac/class_c_masternode.html#a6c5f883b797298678c1cf814faab09a5"];
+  Node51 -> Node52 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node52 [label="ShutdownRequested",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dc9/init_8cpp.html#a6f201ca9fe6b594f1985c12b4482ea5a"];
+  Node47 -> Node53 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node53 [label="CMasternode::IsEnabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/dac/class_c_masternode.html#a08782379f6ba10e9087b39f0cef19bce"];
+  Node46 -> Node54 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node54 [label="CStashedSendRelay::\lRelayThroughNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d25/class_c_stashed_send_relay.html#a3e759315bdccb63c1810582eeffa080e"];
+  Node54 -> Node55 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node55 [label="CMasternodeMan::GetMasternode\lByRank",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d6b/class_c_masternode_man.html#ab32afaad2651c69d2f93c68aee466677"];
+  Node55 -> Node51 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node55 -> Node53 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node55 -> Node56 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node56 [label="CMasternode::CalculateScore",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/dac/class_c_masternode.html#a5193b7bca7224b39c455ddd39f0846f3"];
+  Node56 -> Node57 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node57 [label="GetBlockHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/da3/masternode_8cpp.html#a32f5cbabfc2bd53c2f2daedf122a83cb"];
+  Node57 -> Node58 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node58 [label="CBlockIndex::GetBlockHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/dbd/class_c_block_index.html#a98490a2788c65cdd6ae9002b004dd74c"];
+  Node56 -> Node59 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node59 [label="Hash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/dfb/hash_8h.html#ab3f6c437460137530d86e09c2c102e99"];
+  Node55 -> Node60 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node60 [label="memcpy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d9f/glibc__compat_8cpp.html#a0f46826ab0466591e136db24394923cf"];
+  Node60 -> Node61 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node61 [label="memmove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d9f/glibc__compat_8cpp.html#a9778d49e9029dd75bc53ecbbf9f5e9a1"];
+  Node60 -> Node62 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node62 [label="__chk_fail",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d9f/glibc__compat_8cpp.html#a424ac71631da5ada2976630ff67051d1"];
+}

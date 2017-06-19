@@ -1,0 +1,45 @@
+digraph "getnewpubkey"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node362 [label="getnewpubkey",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node362 -> Node363 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node363 [label="AccountFromValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d1d/rpcwallet_8cpp.html#a3039648e370837eb1e7b4dc669f3ef0f"];
+  Node363 -> Node364 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node364 [label="JSONRPCError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d30/rpcprotocol_8cpp.html#a17b1bb111ab339efc951929834766039"];
+  Node362 -> Node365 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node365 [label="CCryptoKeyStore::IsLocked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/dad/class_c_crypto_key_store.html#a52919fa284a3aa10f1b4bd6018b6dbee"];
+  Node362 -> Node366 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node366 [label="CWallet::TopUpKeyPool",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/de5/class_c_wallet.html#aeeeca131336b2ec20cede9a2fccc203a"];
+  Node366 -> Node367 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node367 [label="GetBoolArg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d2d/util_8cpp.html#a64d956f1dda7f9a80ab5d594532b906d",tooltip="Return boolean argument or default value. "];
+  Node367 -> Node368 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node368 [label="atoi",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d3c/util_8h.html#aa5ce96ec36f4413f820cec9c1831c070"];
+  Node366 -> Node369 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node369 [label="GetArg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d2d/util_8cpp.html#a24f685720bf40370e5bd2a192ad50cd8",tooltip="Return string argument or default value. "];
+  Node366 -> Node370 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node370 [label="CWalletDB::WritePool",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d90/class_c_wallet_d_b.html#ad43630ad28a68c3e8b1a633f09aa0964"];
+  Node366 -> Node371 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node371 [label="_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d6d/ui__interface_8h.html#aad133bb6103b53cebf03fd01e2f11ba1",tooltip="Translation function: Call Translate signal on UI interface, which returns a boost::optional result..."];
+  Node362 -> Node372 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node372 [label="CWallet::GetKeyFromPool",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/de5/class_c_wallet.html#a18549ec5c472c003afc4794daeb9adfd"];
+  Node362 -> Node364 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node362 -> Node373 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node373 [label="CPubKey::GetID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d4e/class_c_pub_key.html#a2675f7e6f72eff68e7a5227289feb021"];
+  Node373 -> Node374 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node374 [label="CKeyID::CKeyID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d88/class_c_key_i_d.html#a01dbd3c37820a2ffe89d106c6a7cf53d"];
+  Node373 -> Node375 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node375 [label="Hash160",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/dfb/hash_8h.html#a4490f70ddae16e9e48460a0416a48a6b"];
+  Node373 -> Node376 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node376 [label="base_uint\< 160 \>::size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/df7/classbase__uint.html#a1f49b034e686269601ea89b0319b8004"];
+  Node362 -> Node377 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node377 [label="CWallet::SetAddressBookName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/de5/class_c_wallet.html#a95d2dd3693db562aa11afbecf33e1276"];
+  Node362 -> Node378 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node378 [label="HexStr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d3c/util_8h.html#ace13a819ca4e98c22847d26b3b357e75"];
+  Node362 -> Node379 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node379 [label="CPubKey::begin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d4e/class_c_pub_key.html#a859ab9909d68092d6d4fc739237ab358"];
+  Node362 -> Node380 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node380 [label="CPubKey::end",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d4e/class_c_pub_key.html#a1d6fb1ec2b45fb229f549215d6a23dbc"];
+  Node380 -> Node376 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

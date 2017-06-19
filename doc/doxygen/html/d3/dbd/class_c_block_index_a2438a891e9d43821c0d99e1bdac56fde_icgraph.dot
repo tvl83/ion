@@ -1,0 +1,32 @@
+digraph "CBlockIndex::IsProofOfStake"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node99 [label="CBlockIndex::IsProofOfStake",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node99 -> Node100 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node100 [label="GetLastBlockIndex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/dbf/main_8h.html#a67a2382a391340c12c45961f3b8c66e8"];
+  Node100 -> Node101 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node101 [label="GetNextTargetRequiredV1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d48/proofs_8h.html#a206d1c747985d51a94cdfc830357114a",tooltip="Calculate difficulty using retarget algorithm V1 by maintaining target. "];
+  Node101 -> Node102 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node102 [label="GetNextTargetRequired",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d48/proofs_8h.html#a868a58404bd61b6a82901f428d152bae",tooltip="Calculate difficulty using retarget algorithm by maintaining target. "];
+  Node102 -> Node103 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node103 [label="checkkernel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/ddd/rpcmining_8cpp.html#a36ee2284a7252841b8a62a9531b6acbc"];
+  Node100 -> Node104 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node104 [label="GetDifficulty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/da2/rpcserver_8h.html#a8fcb55e3479716ded2b499e470bdc13a"];
+  Node104 -> Node105 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node105 [label="GetPoWMHashPS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/da2/rpcserver_8h.html#a3da60ebd3884dc09e7a20b0798b6cf36"];
+  Node105 -> Node106 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node106 [label="getmininginfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/ddd/rpcmining_8cpp.html#a89c187faff7322c7d15134d13570ca1e"];
+  Node104 -> Node107 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node107 [label="GetPoSKernelPS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/da2/rpcserver_8h.html#a8de51dc4945be68c0581e328efb8c9ab"];
+  Node104 -> Node108 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node108 [label="getdifficulty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d47/rpcblockchain_8cpp.html#a273d24288c722f1ba2013cc5576b4321"];
+  Node104 -> Node106 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node104 -> Node109 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node109 [label="getstakinginfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/ddd/rpcmining_8cpp.html#aedf628177ea04e0077d9d530963d40d6"];
+  Node100 -> Node108 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node100 -> Node106 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node100 -> Node109 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node99 -> Node107 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,32 @@
+digraph "RelayTransaction"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node213 [label="RelayTransaction",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node213 -> Node214 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node214 [label="RelayInventory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d97/net_8h.html#a8efddffaa3931e6bafecaac5e0605d1b"];
+  Node214 -> Node215 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node215 [label="ProcessMessageInstantX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d5f/instantx_8h.html#aa516cb499ead2691d8ab216a499db5d0"];
+  Node214 -> Node216 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node216 [label="RelayTransaction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d97/net_8h.html#aa7eea5ebcc85b5a7a0ae3716608bfffe"];
+  Node214 -> Node217 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node217 [label="CSporkManager::Relay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d5e/class_c_spork_manager.html#ae8651894670c02ecb5f99806376d5af2"];
+  Node217 -> Node218 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node218 [label="ProcessSpork",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d24/spork_8h.html#a3f9c24c1f4c012152fb4422ca981610a"];
+  Node217 -> Node219 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node219 [label="CSporkManager::UpdateSpork",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d5e/class_c_spork_manager.html#a51293c5c9db22f4435f044b4ccb65028"];
+  Node219 -> Node220 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node220 [label="spork",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d48/rpcmisc_8cpp.html#a8dcc7f3e5749bbd1dad163b85d0abdcb"];
+  Node220 -> Node218 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node220 -> Node221 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node221 [label="CSporkManager::CSporkManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d5e/class_c_spork_manager.html#af25ba284196ede7288bc9855e7f8a8a5"];
+  Node213 -> Node222 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node222 [label="CWalletTx::RelayWalletTransaction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d53/class_c_wallet_tx.html#aec8c50f3fcde27525485b6cd4a4e19b5"];
+  Node222 -> Node223 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node223 [label="CStashedsendPool::ChargeFees",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d8a/class_c_stashedsend_pool.html#acd76c93879dbcbdda4ca0a253f0d9c68",tooltip="Charge fees to bad actors (Charge clients a fee if they&#39;re abusive) "];
+  Node222 -> Node224 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node224 [label="CStashedsendPool::Charge\lRandomFees",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d8a/class_c_stashedsend_pool.html#abcf715f6e5e01039218bf4881fffc3fe",tooltip="Rarely charge fees to pay miners. "];
+  Node222 -> Node225 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node225 [label="CWallet::ResendWalletTransactions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/de5/class_c_wallet.html#ace33dcf23623d2036a38696bc3a94553"];
+}

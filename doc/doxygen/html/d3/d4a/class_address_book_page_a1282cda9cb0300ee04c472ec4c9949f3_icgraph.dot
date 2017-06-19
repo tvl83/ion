@@ -1,0 +1,17 @@
+digraph "AddressBookPage::setModel"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node107 [label="AddressBookPage::setModel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node107 -> Node108 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node108 [label="IonGUI::setWalletModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d0b/class_ion_g_u_i.html#a37f87db65498b036d387c705a749c45d",tooltip="Set the wallet model. "];
+  Node107 -> Node109 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node109 [label="MultisigAddressEntry\l::on_addressBookButton\l_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d39/class_multisig_address_entry.html#a6077acfd02d628465478c463c3024e6e"];
+  Node107 -> Node110 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node110 [label="SendCoinsEntry::on\l_addressBookButton_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dbc/class_send_coins_entry.html#ac661741d286d9f3db32f78bd22125cb0"];
+  Node107 -> Node111 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node111 [label="SignVerifyMessageDialog\l::on_addressBookButton\l_SM_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d26/class_sign_verify_message_dialog.html#a792a3bd647958c8ae74286c5ab3cf205"];
+  Node107 -> Node112 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node112 [label="SignVerifyMessageDialog\l::on_addressBookButton\l_VM_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d26/class_sign_verify_message_dialog.html#a90ceb00084c68da5e9c481ba0841d976"];
+}

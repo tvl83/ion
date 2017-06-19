@@ -1,0 +1,11 @@
+digraph "GetNextTargetRequiredV1"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node116 [label="GetNextTargetRequiredV1",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node116 -> Node117 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node117 [label="GetNextTargetRequired",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d48/proofs_8h.html#a868a58404bd61b6a82901f428d152bae",tooltip="Calculate difficulty using retarget algorithm by maintaining target. "];
+  Node117 -> Node118 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node118 [label="checkkernel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/ddd/rpcmining_8cpp.html#a36ee2284a7252841b8a62a9531b6acbc"];
+}

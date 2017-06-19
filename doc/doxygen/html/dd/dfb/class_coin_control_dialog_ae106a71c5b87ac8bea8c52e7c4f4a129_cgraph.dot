@@ -1,0 +1,11 @@
+digraph "CoinControlDialog::buttonSelectAllClicked"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node107 [label="CoinControlDialog::\lbuttonSelectAllClicked",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node107 -> Node108 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node108 [label="CCoinControl::UnSelectAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d48/class_c_coin_control.html#a78bc21b1698e6ae5e6c2fef9758db39c"];
+  Node107 -> Node109 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node109 [label="CoinControlDialog::\lupdateLabels",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/dfb/class_coin_control_dialog.html#a4fc60e89b097952ff22dc0f9c58c87d9"];
+}

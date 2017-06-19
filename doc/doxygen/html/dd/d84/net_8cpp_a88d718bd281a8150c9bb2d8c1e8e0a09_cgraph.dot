@@ -1,0 +1,31 @@
+digraph "DumpData"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node110 [label="DumpData",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node110 -> Node111 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node111 [label="DumpAddresses",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d84/net_8cpp.html#ab8b5323f5ef61499582a5a6e53b49b6e"];
+  Node111 -> Node112 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node112 [label="GetTimeMillis",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d3c/util_8h.html#a139d0fe6387b9e230a9b8bb12d9b43b9"];
+  Node111 -> Node113 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node113 [label="CAddrDB::Write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/da8/class_c_addr_d_b.html#aaec90dba59cd69a2f25bc5630a1dde39"];
+  Node113 -> Node114 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node114 [label="GetRandBytes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d2d/util_8cpp.html#acf52c2aa8213c7b15e26594a2264ed8a"];
+  Node110 -> Node115 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node115 [label="CNode::BannedSetIsDirty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d64/class_c_node.html#a238cd722064013a8dff38b02d2da4869",tooltip="check is the banlist has unwritten changes "];
+  Node110 -> Node116 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node116 [label="DumpBanlist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d84/net_8cpp.html#af593c31ddb8a6d2f3c6faf63c28b5aa9"];
+  Node116 -> Node112 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node116 -> Node117 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node117 [label="CNode::SweepBanned",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d64/class_c_node.html#ad8b42ef7c930421014b59e845ec5295b",tooltip="clean unused entires (if bantime has expired) "];
+  Node117 -> Node118 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node118 [label="GetTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d2d/util_8cpp.html#a46fac5fba8ba905b5f9acb364f5d8c6f"];
+  Node116 -> Node119 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node119 [label="CNode::GetBanned",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d64/class_c_node.html#ac7dc25e8d4c24df89befe4dcc2060372"];
+  Node116 -> Node120 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node120 [label="CBanDB::Write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/db6/class_c_ban_d_b.html#a0550a06c6b5987869f557467fe7f9896"];
+  Node120 -> Node114 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node110 -> Node121 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node121 [label="CNode::SetBannedSetDirty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d64/class_c_node.html#ab4248e8207bfae98f83ce56a4b25d07b",tooltip="set the \"dirty\" flag for the banlist "];
+}

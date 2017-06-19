@@ -109,7 +109,7 @@ test/cache/*
 
 !src/leveldb*/Makefile
 
-#/doc/doxygen/
+/doc/doxygen/
 
 libionconsensus.pc
 contrib/devtools/split-debug.sh

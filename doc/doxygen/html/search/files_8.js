@@ -5,7 +5,6 @@ var searchData=
   ['init_2eh',['init.h',['../init_8h.html',1,'']]],
   ['instantx_2ecpp',['instantx.cpp',['../instantx_8cpp.html',1,'']]],
   ['instantx_2eh',['instantx.h',['../instantx_8h.html',1,'']]],
-  ['ion_2dconfig_2eh',['ion-config.h',['../ion-config_8h.html',1,'']]],
   ['ion_2ecpp',['ion.cpp',['../ion_8cpp.html',1,'']]],
   ['ionaddressvalidator_2ecpp',['ionaddressvalidator.cpp',['../ionaddressvalidator_8cpp.html',1,'']]],
   ['ionaddressvalidator_2eh',['ionaddressvalidator.h',['../ionaddressvalidator_8h.html',1,'']]],

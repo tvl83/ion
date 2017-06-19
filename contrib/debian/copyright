@@ -2,12 +2,12 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Ion
 Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
  irc://#ion@freenode.net
-Source: https://github.com/ion/ion
+Source: https://github.com/cevap/ion
 
 Files: *
 Copyright: 2009-2017, Bitcoin Core Developers
 License: Expat
-Comment: The Ion Core Developers encompasses the current developers listed on ion.org,
+Comment: The Ion Core Developers encompasses the current developers listed on ioncoin.org,
          as well as the numerous contributors to the project.
 
 Files: debian/*

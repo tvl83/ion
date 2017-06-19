@@ -11,5 +11,5 @@ digraph "src/secp256k1/src/java" {
   }
   }
   dir_1b4df0b9bba47cf333db333897c5a5a4 [shape=box label="include" URL="dir_1b4df0b9bba47cf333db333897c5a5a4.html"];
-  dir_6aa3a68224b805bba267e8177562bcaa->dir_1b4df0b9bba47cf333db333897c5a5a4 [headlabel="1", labeldistance=1.5 headhref="dir_000012_000011.html"];
+  dir_6aa3a68224b805bba267e8177562bcaa->dir_1b4df0b9bba47cf333db333897c5a5a4 [headlabel="1", labeldistance=1.5 headhref="dir_000010_000009.html"];
 }

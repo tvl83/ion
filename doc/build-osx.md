@@ -29,7 +29,7 @@ Build Ion Core
 
 1. Clone the ion source code and cd into `ion`
 
-        git clone https://github.com/ion/ion
+        git clone https://github.com/cevap/ion
         cd ion
 
 2.  Build ion-core:
@@ -96,4 +96,4 @@ Notes
 
 * Tested on OS X 10.8 through 10.12 on 64-bit Intel processors only.
 
-* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/ion/ion/issues/7714)
+* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/cevap/ion/issues/7714)

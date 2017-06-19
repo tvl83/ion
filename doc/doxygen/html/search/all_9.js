@@ -100,7 +100,6 @@ var searchData=
   ['invoke',['invoke',['../struct_transaction_notification.html#a6351a5b93f908a2df2e854e08178edb3',1,'TransactionNotification::invoke()'],['../structtinyformat_1_1detail_1_1format_value_as_type.html#a126bc5958024c456851f08fa380d1cac',1,'tinyformat::detail::formatValueAsType::invoke()'],['../structtinyformat_1_1detail_1_1format_value_as_type_3_01_t_00_01fmt_t_00_01true_01_4.html#a7680bc0f7b6b5eee0e27c494812fb667',1,'tinyformat::detail::formatValueAsType&lt; T, fmtT, true &gt;::invoke()'],['../structtinyformat_1_1detail_1_1convert_to_int.html#a1e1c0d85c6afc3bb21d2bc9458b3feb1',1,'tinyformat::detail::convertToInt::invoke()'],['../structtinyformat_1_1detail_1_1convert_to_int_3_01_t_00_01true_01_4.html#a7d03793b995eb4428bb13349004f5fcd',1,'tinyformat::detail::convertToInt&lt; T, true &gt;::invoke()']]],
   ['involveswatchaddress',['involvesWatchAddress',['../class_transaction_record.html#ac938161128e04ca5d044d8a19827b0e2',1,'TransactionRecord']]],
   ['ion',['ION',['../class_ion_units.html#aa43d9ba6cab22ee37bf5605d1b4a32cfa918184a4a03d2a03576bc0a7efc91c79',1,'IonUnits']]],
-  ['ion_2dconfig_2eh',['ion-config.h',['../ion-config_8h.html',1,'']]],
   ['ion_2ecpp',['ion.cpp',['../ion_8cpp.html',1,'']]],
   ['ion_5fipc_5fconnect_5ftimeout',['ION_IPC_CONNECT_TIMEOUT',['../paymentserver_8cpp.html#aaf8994cfdb05c0b9f5a3b799ee6af390',1,'paymentserver.cpp']]],
   ['ion_5fipc_5fprefix',['ION_IPC_PREFIX',['../paymentserver_8cpp.html#a3b83d22ee80b109d2be2aa8799915a45',1,'paymentserver.cpp']]],

@@ -20,22 +20,22 @@ Summary:	Peer to Peer Cryptographic Currency
 
 Group:		Applications/System
 License:	MIT
-URL:		https://ion.org/
-Source0:	https://ion.org/bin/ion-core-%{version}/ion-%{version}.tar.gz
+URL:		https://ioncoin.org/
+Source0:	https://ioncoin.org/bin/ion-core-%{version}/ion-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
-Source10:	https://raw.githubusercontent.com/ion/ion/v%{version}/contrib/debian/examples/ion.conf
+Source10:	https://raw.githubusercontent.com/cevap/ion/v%{version}/contrib/debian/examples/ion.conf
 
 #man pages
-Source20:	https://raw.githubusercontent.com/ion/ion/v%{version}/doc/man/iond.1
-Source21:	https://raw.githubusercontent.com/ion/ion/v%{version}/doc/man/ion-cli.1
-Source22:	https://raw.githubusercontent.com/ion/ion/v%{version}/doc/man/ion-qt.1
+Source20:	https://raw.githubusercontent.com/cevap/ion/v%{version}/doc/man/iond.1
+Source21:	https://raw.githubusercontent.com/cevap/ion/v%{version}/doc/man/ion-cli.1
+Source22:	https://raw.githubusercontent.com/cevap/ion/v%{version}/doc/man/ion-qt.1
 
 #selinux
-Source30:	https://raw.githubusercontent.com/ion/ion/v%{version}/contrib/rpm/ion.te
+Source30:	https://raw.githubusercontent.com/cevap/ion/v%{version}/contrib/rpm/ion.te
 # Source31 - what about ion-tx and bench_ion ???
-Source31:	https://raw.githubusercontent.com/ion/ion/v%{version}/contrib/rpm/ion.fc
-Source32:	https://raw.githubusercontent.com/ion/ion/v%{version}/contrib/rpm/ion.if
+Source31:	https://raw.githubusercontent.com/cevap/ion/v%{version}/contrib/rpm/ion.fc
+Source32:	https://raw.githubusercontent.com/cevap/ion/v%{version}/contrib/rpm/ion.if
 
 Source100:	https://upload.wikimedia.org/wikipedia/commons/4/46/Ion.svg
 

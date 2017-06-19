@@ -77,6 +77,9 @@ src/qt/test/moc*.cpp
 Makefile
 ion-qt
 ion-Qt.app
+iond
+ion-cli
+ion-tx
 
 # Unit-tests
 Makefile.test
@@ -106,7 +109,7 @@ test/cache/*
 
 !src/leveldb*/Makefile
 
-/doc/doxygen/
+#/doc/doxygen/
 
 libionconsensus.pc
 contrib/devtools/split-debug.sh

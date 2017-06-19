@@ -60,7 +60,7 @@ static const int MAX_BLOCKS_IN_TRANSIT_PER_PEER = 128;
 /** Timeout in seconds before considering a block download peer unresponsive. */
 static const unsigned int BLOCK_DOWNLOAD_TIMEOUT = 60;
 
-inline int64_t FutureDrift(int64_t nTime) { return nTime + 1497541280; }
+inline int64_t FutureDrift(int64_t nTime) { return nTime + 600; }
 
 /** "reject" message codes **/
 static const unsigned char REJECT_INVALID = 0x10;

@@ -33,8 +33,8 @@
              +hdNNMMMMNNmdy/       .-://+++/:.    
 
 ### Download (Linux)
-[**🐼Download iond🐼**](https://raw.githubusercontent.com/cevap/ion/midas-algo/bin/iond)
-[**🐼Download ion-qt🐼**](https://raw.githubusercontent.com/cevap/ion/midas-algo/bin/ion-qt)
+[**🐼Download iond🐼**](https://raw.githubusercontent.com/cevap/ion/midas-algo/bin/iond.tar.xz)
+[**🐼Download ion-qt🐼**](https://raw.githubusercontent.com/cevap/ion/midas-algo/bin/ion-qt.tar.xz)
 
 #### Hashes
 ---------------------------

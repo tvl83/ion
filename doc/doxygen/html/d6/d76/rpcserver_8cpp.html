@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯): src/rpcserver.cpp File Reference</title>
+<title>Ion Core: src/rpcserver.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -22,10 +22,10 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="../../ion_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯)
-   &#160;<span id="projectnumber">2.1.5.3</span>
+   <div id="projectname">Ion Core
+   &#160;<span id="projectnumber">2.1.5</span>
    </div>
-   <div id="projectbrief">Ion P2P Digital Currency</div>
+   <div id="projectbrief">P2P Digital Currency</div>
   </td>
  </tr>
  </tbody>
@@ -142,6 +142,14 @@ Functions</h2></td></tr>
 <tr class="separator:a9ec282be04e51f5fde86d5ba98467019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adda5af922ba2f27c9f6219394d3c4f4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#adda5af922ba2f27c9f6219394d3c4f4c">ServiceConnection</a> (<a class="el" href="../../d5/d78/class_accepted_connection.html">AcceptedConnection</a> *conn)</td></tr>
 <tr class="separator:adda5af922ba2f27c9f6219394d3c4f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6c8e04570f3b8f8a9fc49c2550f18c"><td class="memTemplParams" colspan="2">template&lt;typename Protocol , typename SocketAcceptorService &gt; </td></tr>
+<tr class="memitem:a1e6c8e04570f3b8f8a9fc49c2550f18c"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#a1e6c8e04570f3b8f8a9fc49c2550f18c">RPCAcceptHandler</a> (boost::shared_ptr&lt; basic_socket_acceptor&lt; Protocol, SocketAcceptorService &gt; &gt; acceptor, ssl::context &amp;context, const bool fUseSSL, <a class="el" href="../../d5/d78/class_accepted_connection.html">AcceptedConnection</a> *conn, const boost::system::error_code &amp;<a class="el" href="../../d8/d3c/util_8h.html#af8985880cf4ef26df0a5aa2ffcb76662">error</a>)</td></tr>
+<tr class="memdesc:a1e6c8e04570f3b8f8a9fc49c2550f18c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept and handle incoming connection.  <a href="#a1e6c8e04570f3b8f8a9fc49c2550f18c">More...</a><br /></td></tr>
+<tr class="separator:a1e6c8e04570f3b8f8a9fc49c2550f18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeacbba516a7d8bbeba092fb07081b60"><td class="memTemplParams" colspan="2">template&lt;typename Protocol , typename SocketAcceptorService &gt; </td></tr>
+<tr class="memitem:aeeacbba516a7d8bbeba092fb07081b60"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#aeeacbba516a7d8bbeba092fb07081b60">RPCListen</a> (boost::shared_ptr&lt; basic_socket_acceptor&lt; Protocol, SocketAcceptorService &gt; &gt; acceptor, ssl::context &amp;context, const bool fUseSSL)</td></tr>
+<tr class="memdesc:aeeacbba516a7d8bbeba092fb07081b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up I/O resources to accept and handle a new connection.  <a href="#aeeacbba516a7d8bbeba092fb07081b60">More...</a><br /></td></tr>
+<tr class="separator:aeeacbba516a7d8bbeba092fb07081b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4d692a884c24c4abe2fc3f2b165542d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#af4d692a884c24c4abe2fc3f2b165542d">StartRPCThreads</a> ()</td></tr>
 <tr class="separator:af4d692a884c24c4abe2fc3f2b165542d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5be6ec7b71359ed4111f1a5ed93b893"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#af5be6ec7b71359ed4111f1a5ed93b893">StopRPCThreads</a> ()</td></tr>
@@ -150,6 +158,10 @@ Functions</h2></td></tr>
 <tr class="separator:a930b142742ce0c89b650ade9e1cb49ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5061d3a516e4daf4f4be1e11fc98248a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#a5061d3a516e4daf4f4be1e11fc98248a">RPCRunLater</a> (const std::string &amp;<a class="el" href="../../d8/d04/rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, boost::function&lt; void(void)&gt; func, int64_t nSeconds)</td></tr>
 <tr class="separator:a5061d3a516e4daf4f4be1e11fc98248a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84f3199884bd0fa01edad0aa99602ef"><td class="memItemLeft" align="right" valign="top">static Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#aa84f3199884bd0fa01edad0aa99602ef">JSONRPCExecOne</a> (const Value &amp;req)</td></tr>
+<tr class="separator:aa84f3199884bd0fa01edad0aa99602ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7931d42076c069db94baae77ec7f2fc"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#ad7931d42076c069db94baae77ec7f2fc">JSONRPCExecBatch</a> (const Array &amp;vReq)</td></tr>
+<tr class="separator:ad7931d42076c069db94baae77ec7f2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac01ac6eab5467567ed0da106814e04ec"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#ac01ac6eab5467567ed0da106814e04ec">HelpExampleCli</a> (string methodname, string args)</td></tr>
 <tr class="separator:ac01ac6eab5467567ed0da106814e04ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ea60e24e5a1053a14a11b1009bf9ef"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#a06ea60e24e5a1053a14a11b1009bf9ef">HelpExampleRpc</a> (string methodname, string args)</td></tr>
@@ -157,6 +169,18 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ab235aea437e49b686e1d706845b66afc"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#ab235aea437e49b686e1d706845b66afc">strRPCUserColonPass</a></td></tr>
+<tr class="separator:ab235aea437e49b686e1d706845b66afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae111b48fe16aeec1b61e70e3570db6a3"><td class="memItemLeft" align="right" valign="top">static asio::io_service *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#ae111b48fe16aeec1b61e70e3570db6a3">rpc_io_service</a> = NULL</td></tr>
+<tr class="separator:ae111b48fe16aeec1b61e70e3570db6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be0dbe43925291554de0ac8e5d615d5"><td class="memItemLeft" align="right" valign="top">static map&lt; string, boost::shared_ptr&lt; deadline_timer &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#a4be0dbe43925291554de0ac8e5d615d5">deadlineTimers</a></td></tr>
+<tr class="separator:a4be0dbe43925291554de0ac8e5d615d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24f1f9a6ccb4df74e3f770cd5e9f9deb"><td class="memItemLeft" align="right" valign="top">static ssl::context *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#a24f1f9a6ccb4df74e3f770cd5e9f9deb">rpc_ssl_context</a> = NULL</td></tr>
+<tr class="separator:a24f1f9a6ccb4df74e3f770cd5e9f9deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a5202bb8ba2678ed6037289ef620116"><td class="memItemLeft" align="right" valign="top">static boost::thread_group *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#a7a5202bb8ba2678ed6037289ef620116">rpc_worker_group</a> = NULL</td></tr>
+<tr class="separator:a7a5202bb8ba2678ed6037289ef620116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2988600773997baf948af95744995f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dfe/class_c_r_p_c_command.html">CRPCCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#adf2988600773997baf948af95744995f">vRPCCommands</a> []</td></tr>
+<tr class="separator:adf2988600773997baf948af95744995f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a429f7846ff8cb60ec898309c28931129"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d2/d6c/class_c_r_p_c_table.html">CRPCTable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/rpcserver_8cpp.html#a429f7846ff8cb60ec898309c28931129">tableRPC</a></td></tr>
 <tr class="separator:a429f7846ff8cb60ec898309c28931129"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -179,9 +203,15 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html#l00088">88</a> of file <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html">rpcserver.cpp</a>.</p>
 <div class="dynheader">
-Here is the caller graph for this function:</div>
+Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><!-- SVG 1 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 2 -->
 </div>
 </div>
 
@@ -207,7 +237,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 2 -->
+<div class="center"><!-- SVG 3 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 4 -->
 </div>
 </div>
 
@@ -249,7 +285,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 3 -->
+<div class="center"><!-- SVG 5 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 6 -->
 </div>
 </div>
 
@@ -285,13 +327,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 4 -->
+<div class="center"><!-- SVG 7 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 5 -->
+<div class="center"><!-- SVG 8 -->
 </div>
 </div>
 
@@ -327,7 +369,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 6 -->
+<div class="center"><!-- SVG 9 -->
 </div>
 </div>
 
@@ -363,7 +405,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 7 -->
+<div class="center"><!-- SVG 10 -->
 </div>
 </div>
 
@@ -389,7 +431,93 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 8 -->
+<div class="center"><!-- SVG 11 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 12 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="ad7931d42076c069db94baae77ec7f2fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7931d42076c069db94baae77ec7f2fc">&#9670;&nbsp;</a></span>JSONRPCExecBatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string JSONRPCExecBatch </td>
+          <td>(</td>
+          <td class="paramtype">const Array &amp;&#160;</td>
+          <td class="paramname"><em>vReq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html#l00724">724</a> of file <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html">rpcserver.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 13 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 14 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="aa84f3199884bd0fa01edad0aa99602ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa84f3199884bd0fa01edad0aa99602ef">&#9670;&nbsp;</a></span>JSONRPCExecOne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Object JSONRPCExecOne </td>
+          <td>(</td>
+          <td class="paramtype">const Value &amp;&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html#l00700">700</a> of file <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html">rpcserver.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 15 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 16 -->
 </div>
 </div>
 
@@ -425,7 +553,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 9 -->
+<div class="center"><!-- SVG 17 -->
 </div>
 </div>
 
@@ -461,13 +589,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 10 -->
+<div class="center"><!-- SVG 18 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 11 -->
+<div class="center"><!-- SVG 19 -->
 </div>
 </div>
 
@@ -503,7 +631,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 12 -->
+<div class="center"><!-- SVG 20 -->
 </div>
 </div>
 
@@ -539,13 +667,139 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 13 -->
+<div class="center"><!-- SVG 21 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 14 -->
+<div class="center"><!-- SVG 22 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a1e6c8e04570f3b8f8a9fc49c2550f18c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e6c8e04570f3b8f8a9fc49c2550f18c">&#9670;&nbsp;</a></span>RPCAcceptHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Protocol , typename SocketAcceptorService &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPCAcceptHandler </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; basic_socket_acceptor&lt; Protocol, SocketAcceptorService &gt; &gt;&#160;</td>
+          <td class="paramname"><em>acceptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssl::context &amp;&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fUseSSL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d78/class_accepted_connection.html">AcceptedConnection</a> *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const boost::system::error_code &amp;&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Accept and handle incoming connection. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html#l00472">472</a> of file <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html">rpcserver.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 23 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="aeeacbba516a7d8bbeba092fb07081b60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeacbba516a7d8bbeba092fb07081b60">&#9670;&nbsp;</a></span>RPCListen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Protocol , typename SocketAcceptorService &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPCListen </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; basic_socket_acceptor&lt; Protocol, SocketAcceptorService &gt; &gt;&#160;</td>
+          <td class="paramname"><em>acceptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssl::context &amp;&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>fUseSSL</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets up I/O resources to accept and handle a new connection. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html#l00449">449</a> of file <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html">rpcserver.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 24 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 25 -->
 </div>
 </div>
 
@@ -578,6 +832,12 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html#l00639">639</a> of file <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html">rpcserver.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 26 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -615,9 +875,15 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html#l00645">645</a> of file <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html">rpcserver.cpp</a>.</p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 27 -->
+</div>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 15 -->
+<div class="center"><!-- SVG 28 -->
 </div>
 </div>
 
@@ -659,13 +925,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 16 -->
+<div class="center"><!-- SVG 29 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 17 -->
+<div class="center"><!-- SVG 30 -->
 </div>
 </div>
 
@@ -707,7 +973,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 18 -->
+<div class="center"><!-- SVG 31 -->
 </div>
 </div>
 
@@ -733,7 +999,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 19 -->
+<div class="center"><!-- SVG 32 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 33 -->
 </div>
 </div>
 
@@ -755,6 +1027,18 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html#l00507">507</a> of file <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html">rpcserver.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 34 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 35 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -788,13 +1072,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 20 -->
+<div class="center"><!-- SVG 36 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 21 -->
+<div class="center"><!-- SVG 37 -->
 </div>
 </div>
 
@@ -819,7 +1103,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 22 -->
+<div class="center"><!-- SVG 38 -->
 </div>
 </div>
 
@@ -845,13 +1129,133 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 23 -->
+<div class="center"><!-- SVG 39 -->
 </div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a4be0dbe43925291554de0ac8e5d615d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be0dbe43925291554de0ac8e5d615d5">&#9670;&nbsp;</a></span>deadlineTimers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string, boost::shared_ptr&lt;deadline_timer&gt; &gt; deadlineTimers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html">rpcserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae111b48fe16aeec1b61e70e3570db6a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae111b48fe16aeec1b61e70e3570db6a3">&#9670;&nbsp;</a></span>rpc_io_service</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">asio::io_service* rpc_io_service = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html">rpcserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a24f1f9a6ccb4df74e3f770cd5e9f9deb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24f1f9a6ccb4df74e3f770cd5e9f9deb">&#9670;&nbsp;</a></span>rpc_ssl_context</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssl::context* rpc_ssl_context = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html">rpcserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7a5202bb8ba2678ed6037289ef620116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a5202bb8ba2678ed6037289ef620116">&#9670;&nbsp;</a></span>rpc_worker_group</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::thread_group* rpc_worker_group = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html">rpcserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab235aea437e49b686e1d706845b66afc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab235aea437e49b686e1d706845b66afc">&#9670;&nbsp;</a></span>strRPCUserColonPass</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string strRPCUserColonPass</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html">rpcserver.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a429f7846ff8cb60ec898309c28931129"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a429f7846ff8cb60ec898309c28931129">&#9670;&nbsp;</a></span>tableRPC</h2>
 
@@ -868,10 +1272,34 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="adf2988600773997baf948af95744995f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf2988600773997baf948af95744995f">&#9670;&nbsp;</a></span>vRPCCommands</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dfe/class_c_r_p_c_command.html">CRPCCommand</a> vRPCCommands[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html#l00221">221</a> of file <a class="el" href="../../d6/d76/rpcserver_8cpp_source.html">rpcserver.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 19 2017 12:04:47 for 🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 20 2017 08:00:05 for Ion Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

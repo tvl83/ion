@@ -3,7 +3,7 @@ digraph "SetThreadPriority"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1270 [label="SetThreadPriority",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1270 -> Node1271 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1271 [label="RenameThread",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d3c/util_8h.html#a85fc1244e0bd3c91ee7a1c05ed10ebbb"];
+  Node6650 [label="SetThreadPriority",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node6650 -> Node6651 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6651 [label="RenameThread",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d3c/util_8h.html#a85fc1244e0bd3c91ee7a1c05ed10ebbb"];
 }

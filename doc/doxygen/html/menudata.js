@@ -31,6 +31,7 @@ var menudata={children:[
 {text:"p",url:"namespacemembers_func.html#index_p"},
 {text:"q",url:"namespacemembers_func.html#index_q"},
 {text:"s",url:"namespacemembers_func.html#index_s"}]},
+{text:"Variables",url:"namespacemembers_vars.html"},
 {text:"Typedefs",url:"namespacemembers_type.html"},
 {text:"Enumerations",url:"namespacemembers_enum.html"},
 {text:"Enumerator",url:"namespacemembers_eval.html",children:[
@@ -44,7 +45,8 @@ var menudata={children:[
 {text:"Class Hierarchy",url:"inherits.html"},
 {text:"Class Members",url:"functions.html",children:[
 {text:"All",url:"functions.html",children:[
-{text:"_",url:"functions.html#index__"},
+{text:"[",url:"functions.html#index_0x5b"},
+{text:"_",url:"functions__.html#index__"},
 {text:"a",url:"functions_a.html#index_a"},
 {text:"b",url:"functions_b.html#index_b"},
 {text:"c",url:"functions_c.html#index_c"},
@@ -73,7 +75,8 @@ var menudata={children:[
 {text:"z",url:"functions_z.html#index_z"},
 {text:"~",url:"functions_0x7e.html#index_0x7e"}]},
 {text:"Functions",url:"functions_func.html",children:[
-{text:"a",url:"functions_func.html#index_a"},
+{text:"[",url:"functions_func.html#index_0x5b"},
+{text:"a",url:"functions_func_a.html#index_a"},
 {text:"b",url:"functions_func_b.html#index_b"},
 {text:"c",url:"functions_func_c.html#index_c"},
 {text:"d",url:"functions_func_d.html#index_d"},
@@ -252,9 +255,11 @@ var menudata={children:[
 {text:"d",url:"globals_vars_d.html#index_d"},
 {text:"e",url:"globals_vars_e.html#index_e"},
 {text:"f",url:"globals_vars_f.html#index_f"},
+{text:"g",url:"globals_vars_g.html#index_g"},
 {text:"h",url:"globals_vars_h.html#index_h"},
 {text:"i",url:"globals_vars_i.html#index_i"},
 {text:"k",url:"globals_vars_k.html#index_k"},
+{text:"l",url:"globals_vars_l.html#index_l"},
 {text:"m",url:"globals_vars_m.html#index_m"},
 {text:"n",url:"globals_vars_n.html#index_n"},
 {text:"p",url:"globals_vars_p.html#index_p"},
@@ -298,7 +303,8 @@ var menudata={children:[
 {text:"s",url:"globals_eval_s.html#index_s"},
 {text:"t",url:"globals_eval_t.html#index_t"}]},
 {text:"Macros",url:"globals_defs.html",children:[
-{text:"a",url:"globals_defs.html#index_a"},
+{text:"_",url:"globals_defs.html#index__"},
+{text:"a",url:"globals_defs_a.html#index_a"},
 {text:"b",url:"globals_defs_b.html#index_b"},
 {text:"c",url:"globals_defs_c.html#index_c"},
 {text:"d",url:"globals_defs_d.html#index_d"},

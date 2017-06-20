@@ -5,6 +5,7 @@ var searchData=
   ['wallet_5fcrypto_5fsalt_5fsize',['WALLET_CRYPTO_SALT_SIZE',['../df/d1f/crypter_8h.html#aa42a9547c4738b8f92fd88016c5184a0',1,'crypter.h']]],
   ['walletmodel',['walletModel',['../d9/ded/class_address_table_model.html#a39336e3604ebe5c4d0d5b666699f6352',1,'AddressTableModel::walletModel()'],['../dc/d0b/class_ion_g_u_i.html#a3ea71e30f4f2f6f2deb1513bebfdbc54',1,'IonGUI::walletModel()'],['../d9/d70/class_masternode_manager.html#a1dcb08c2f97ed0dbba3dc04b62471fa7',1,'MasternodeManager::walletModel()'],['../d1/d91/class_overview_page.html#a7535cf9cf474ab94e09bf4e80fc148a2',1,'OverviewPage::walletModel()'],['../d7/dfe/class_transaction_table_model.html#a9b6548eb4eee79c9b0fa2f9cb5c1b9e4',1,'TransactionTableModel::walletModel()']]],
   ['wallettransaction',['walletTransaction',['../d2/d99/class_wallet_model_transaction.html#a2f0f83ee9aec8398fd2b22033657eb25',1,'WalletModelTransaction']]],
+  ['warningcache',['warningcache',['../dd/d7d/validation_8cpp.html#a6984fefe04295af92e0814256e50d33e',1,'validation.cpp']]],
   ['watchonlyfilter',['watchOnlyFilter',['../d2/ddd/class_transaction_filter_proxy.html#a707bda5a9eb88e93be96257c08d17f5c',1,'TransactionFilterProxy']]],
   ['watchonlywidget',['watchOnlyWidget',['../d2/d2c/class_transaction_view.html#a788b3483bcce9c112553aba80503adc6',1,'TransactionView']]],
   ['wnaf',['wnaf',['../d6/d04/structbench__inv__t.html#ad3f27ccce40e43c4d9efd6942b911de1',1,'bench_inv_t']]],

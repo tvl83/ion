@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯): src/secp256k1/src/modules/recovery/main_impl.h File Reference</title>
+<title>Ion Core: src/secp256k1/src/modules/recovery/main_impl.h File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -22,10 +22,10 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="../../ion_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯)
-   &#160;<span id="projectnumber">2.1.5.3</span>
+   <div id="projectname">Ion Core
+   &#160;<span id="projectnumber">2.1.5</span>
    </div>
-   <div id="projectbrief">Ion P2P Digital Currency</div>
+   <div id="projectbrief">P2P Digital Currency</div>
   </td>
  </tr>
  </tbody>
@@ -83,19 +83,25 @@ Include dependency graph for main_impl.h:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a37101568f72e98d7b29de6c6a825a289"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5d/recovery_2main__impl_8h.html#a37101568f72e98d7b29de6c6a825a289">secp256k1_ecdsa_recoverable_signature_parse_compact</a> (const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a282ec9e6dfec8c35955c3eb2f7476e5e">secp256k1_context</a> *ctx, <a class="el" href="../../de/d74/structsecp256k1__ecdsa__recoverable__signature.html">secp256k1_ecdsa_recoverable_signature</a> *sig, const unsigned char *input64, int recid)</td></tr>
+<tr class="memitem:aa3ef0903a865dc9a6e42dfe61f75a9e5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5d/recovery_2main__impl_8h.html#aa3ef0903a865dc9a6e42dfe61f75a9e5">secp256k1_ecdsa_recoverable_signature_load</a> (const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a282ec9e6dfec8c35955c3eb2f7476e5e">secp256k1_context</a> *<a class="el" href="../../d5/d7f/tests_8c.html#a06a3e29ada83211a695a49e8f7405842">ctx</a>, <a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *r, <a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *s, int *recid, const <a class="el" href="../../de/d74/structsecp256k1__ecdsa__recoverable__signature.html">secp256k1_ecdsa_recoverable_signature</a> *sig)</td></tr>
+<tr class="separator:aa3ef0903a865dc9a6e42dfe61f75a9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a8a03b17aeb5cb4daf2940a58663b9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5d/recovery_2main__impl_8h.html#a58a8a03b17aeb5cb4daf2940a58663b9">secp256k1_ecdsa_recoverable_signature_save</a> (<a class="el" href="../../de/d74/structsecp256k1__ecdsa__recoverable__signature.html">secp256k1_ecdsa_recoverable_signature</a> *sig, const <a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *r, const <a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *s, int recid)</td></tr>
+<tr class="separator:a58a8a03b17aeb5cb4daf2940a58663b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37101568f72e98d7b29de6c6a825a289"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5d/recovery_2main__impl_8h.html#a37101568f72e98d7b29de6c6a825a289">secp256k1_ecdsa_recoverable_signature_parse_compact</a> (const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a282ec9e6dfec8c35955c3eb2f7476e5e">secp256k1_context</a> *<a class="el" href="../../d5/d7f/tests_8c.html#a06a3e29ada83211a695a49e8f7405842">ctx</a>, <a class="el" href="../../de/d74/structsecp256k1__ecdsa__recoverable__signature.html">secp256k1_ecdsa_recoverable_signature</a> *sig, const unsigned char *input64, int recid)</td></tr>
 <tr class="memdesc:a37101568f72e98d7b29de6c6a825a289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a compact ECDSA signature (64 bytes + recovery id).  <a href="#a37101568f72e98d7b29de6c6a825a289">More...</a><br /></td></tr>
 <tr class="separator:a37101568f72e98d7b29de6c6a825a289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac122392fa6ff6264a7a110875af164b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5d/recovery_2main__impl_8h.html#ac122392fa6ff6264a7a110875af164b0">secp256k1_ecdsa_recoverable_signature_serialize_compact</a> (const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a282ec9e6dfec8c35955c3eb2f7476e5e">secp256k1_context</a> *ctx, unsigned char *output64, int *recid, const <a class="el" href="../../de/d74/structsecp256k1__ecdsa__recoverable__signature.html">secp256k1_ecdsa_recoverable_signature</a> *sig)</td></tr>
+<tr class="memitem:ac122392fa6ff6264a7a110875af164b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5d/recovery_2main__impl_8h.html#ac122392fa6ff6264a7a110875af164b0">secp256k1_ecdsa_recoverable_signature_serialize_compact</a> (const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a282ec9e6dfec8c35955c3eb2f7476e5e">secp256k1_context</a> *<a class="el" href="../../d5/d7f/tests_8c.html#a06a3e29ada83211a695a49e8f7405842">ctx</a>, unsigned char *output64, int *recid, const <a class="el" href="../../de/d74/structsecp256k1__ecdsa__recoverable__signature.html">secp256k1_ecdsa_recoverable_signature</a> *sig)</td></tr>
 <tr class="memdesc:ac122392fa6ff6264a7a110875af164b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize an ECDSA signature in compact format (64 bytes + recovery id).  <a href="#ac122392fa6ff6264a7a110875af164b0">More...</a><br /></td></tr>
 <tr class="separator:ac122392fa6ff6264a7a110875af164b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16ddfc800140d761bc783e571c34548c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5d/recovery_2main__impl_8h.html#a16ddfc800140d761bc783e571c34548c">secp256k1_ecdsa_recoverable_signature_convert</a> (const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a282ec9e6dfec8c35955c3eb2f7476e5e">secp256k1_context</a> *ctx, <a class="el" href="../../d1/df3/structsecp256k1__ecdsa__signature.html">secp256k1_ecdsa_signature</a> *sig, const <a class="el" href="../../de/d74/structsecp256k1__ecdsa__recoverable__signature.html">secp256k1_ecdsa_recoverable_signature</a> *sigin)</td></tr>
+<tr class="memitem:a16ddfc800140d761bc783e571c34548c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5d/recovery_2main__impl_8h.html#a16ddfc800140d761bc783e571c34548c">secp256k1_ecdsa_recoverable_signature_convert</a> (const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a282ec9e6dfec8c35955c3eb2f7476e5e">secp256k1_context</a> *<a class="el" href="../../d5/d7f/tests_8c.html#a06a3e29ada83211a695a49e8f7405842">ctx</a>, <a class="el" href="../../d1/df3/structsecp256k1__ecdsa__signature.html">secp256k1_ecdsa_signature</a> *sig, const <a class="el" href="../../de/d74/structsecp256k1__ecdsa__recoverable__signature.html">secp256k1_ecdsa_recoverable_signature</a> *sigin)</td></tr>
 <tr class="memdesc:a16ddfc800140d761bc783e571c34548c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a recoverable signature into a normal signature.  <a href="#a16ddfc800140d761bc783e571c34548c">More...</a><br /></td></tr>
 <tr class="separator:a16ddfc800140d761bc783e571c34548c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae06d019b6eaa34e248a502ba9c6d04cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5d/recovery_2main__impl_8h.html#ae06d019b6eaa34e248a502ba9c6d04cb">secp256k1_ecdsa_sign_recoverable</a> (const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a282ec9e6dfec8c35955c3eb2f7476e5e">secp256k1_context</a> *ctx, <a class="el" href="../../de/d74/structsecp256k1__ecdsa__recoverable__signature.html">secp256k1_ecdsa_recoverable_signature</a> *signature, const unsigned char *msg32, const unsigned char *seckey, <a class="el" href="../../d7/dd3/secp256k1_8h.html#a539882fd91bff672712fa19a4cfaeb98">secp256k1_nonce_function</a> noncefp, const void *noncedata)</td></tr>
+<tr class="memitem:a1a831ed991717749ed9d200bb9d3f03b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5d/recovery_2main__impl_8h.html#a1a831ed991717749ed9d200bb9d3f03b">secp256k1_ecdsa_sig_recover</a> (const <a class="el" href="../../d8/dd7/structsecp256k1__ecmult__context.html">secp256k1_ecmult_context</a> *<a class="el" href="../../d5/d7f/tests_8c.html#a06a3e29ada83211a695a49e8f7405842">ctx</a>, const <a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *sigr, const <a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *sigs, <a class="el" href="../../d0/dbb/structsecp256k1__ge.html">secp256k1_ge</a> *pubkey, const <a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *message, int recid)</td></tr>
+<tr class="separator:a1a831ed991717749ed9d200bb9d3f03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06d019b6eaa34e248a502ba9c6d04cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5d/recovery_2main__impl_8h.html#ae06d019b6eaa34e248a502ba9c6d04cb">secp256k1_ecdsa_sign_recoverable</a> (const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a282ec9e6dfec8c35955c3eb2f7476e5e">secp256k1_context</a> *<a class="el" href="../../d5/d7f/tests_8c.html#a06a3e29ada83211a695a49e8f7405842">ctx</a>, <a class="el" href="../../de/d74/structsecp256k1__ecdsa__recoverable__signature.html">secp256k1_ecdsa_recoverable_signature</a> *signature, const unsigned char *msg32, const unsigned char *seckey, <a class="el" href="../../d7/dd3/secp256k1_8h.html#a539882fd91bff672712fa19a4cfaeb98">secp256k1_nonce_function</a> noncefp, const void *noncedata)</td></tr>
 <tr class="memdesc:ae06d019b6eaa34e248a502ba9c6d04cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a recoverable ECDSA signature.  <a href="#ae06d019b6eaa34e248a502ba9c6d04cb">More...</a><br /></td></tr>
 <tr class="separator:ae06d019b6eaa34e248a502ba9c6d04cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75f3e32e9a25eac9e8f9d3a5a8b0dc94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5d/recovery_2main__impl_8h.html#a75f3e32e9a25eac9e8f9d3a5a8b0dc94">secp256k1_ecdsa_recover</a> (const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a282ec9e6dfec8c35955c3eb2f7476e5e">secp256k1_context</a> *ctx, <a class="el" href="../../da/dde/structsecp256k1__pubkey.html">secp256k1_pubkey</a> *pubkey, const <a class="el" href="../../de/d74/structsecp256k1__ecdsa__recoverable__signature.html">secp256k1_ecdsa_recoverable_signature</a> *signature, const unsigned char *msg32)</td></tr>
+<tr class="memitem:a75f3e32e9a25eac9e8f9d3a5a8b0dc94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5d/recovery_2main__impl_8h.html#a75f3e32e9a25eac9e8f9d3a5a8b0dc94">secp256k1_ecdsa_recover</a> (const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a282ec9e6dfec8c35955c3eb2f7476e5e">secp256k1_context</a> *<a class="el" href="../../d5/d7f/tests_8c.html#a06a3e29ada83211a695a49e8f7405842">ctx</a>, <a class="el" href="../../da/dde/structsecp256k1__pubkey.html">secp256k1_pubkey</a> *pubkey, const <a class="el" href="../../de/d74/structsecp256k1__ecdsa__recoverable__signature.html">secp256k1_ecdsa_recoverable_signature</a> *signature, const unsigned char *msg32)</td></tr>
 <tr class="memdesc:a75f3e32e9a25eac9e8f9d3a5a8b0dc94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recover an ECDSA public key from a signature.  <a href="#a75f3e32e9a25eac9e8f9d3a5a8b0dc94">More...</a><br /></td></tr>
 <tr class="separator:a75f3e32e9a25eac9e8f9d3a5a8b0dc94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -143,9 +149,15 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html#l00170">170</a> of file <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html">main_impl.h</a>.</p>
 <div class="dynheader">
-Here is the caller graph for this function:</div>
+Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><!-- SVG 1 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 2 -->
 </div>
 </div>
 
@@ -187,6 +199,86 @@ Here is the caller graph for this function:</div>
 <p>Returns: 1 Out: sig: a pointer to a normal signature (cannot be NULL). In: sigin: a pointer to a recoverable signature (cannot be NULL). </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html#l00074">74</a> of file <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html">main_impl.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 3 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 4 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="aa3ef0903a865dc9a6e42dfe61f75a9e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ef0903a865dc9a6e42dfe61f75a9e5">&#9670;&nbsp;</a></span>secp256k1_ecdsa_recoverable_signature_load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void secp256k1_ecdsa_recoverable_signature_load </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a282ec9e6dfec8c35955c3eb2f7476e5e">secp256k1_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>recid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d74/structsecp256k1__ecdsa__recoverable__signature.html">secp256k1_ecdsa_recoverable_signature</a> *&#160;</td>
+          <td class="paramname"><em>sig</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html#l00012">12</a> of file <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html">main_impl.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 5 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 6 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -233,9 +325,77 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html#l00038">38</a> of file <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html">main_impl.h</a>.</p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 7 -->
+</div>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 2 -->
+<div class="center"><!-- SVG 8 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a58a8a03b17aeb5cb4daf2940a58663b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58a8a03b17aeb5cb4daf2940a58663b9">&#9670;&nbsp;</a></span>secp256k1_ecdsa_recoverable_signature_save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void secp256k1_ecdsa_recoverable_signature_save </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d74/structsecp256k1__ecdsa__recoverable__signature.html">secp256k1_ecdsa_recoverable_signature</a> *&#160;</td>
+          <td class="paramname"><em>sig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>recid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html#l00027">27</a> of file <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html">main_impl.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 9 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 10 -->
 </div>
 </div>
 
@@ -284,9 +444,89 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html#l00060">60</a> of file <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html">main_impl.h</a>.</p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 11 -->
+</div>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 3 -->
+<div class="center"><!-- SVG 12 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a1a831ed991717749ed9d200bb9d3f03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a831ed991717749ed9d200bb9d3f03b">&#9670;&nbsp;</a></span>secp256k1_ecdsa_sig_recover()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int secp256k1_ecdsa_sig_recover </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/dd7/structsecp256k1__ecmult__context.html">secp256k1_ecmult_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *&#160;</td>
+          <td class="paramname"><em>sigr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *&#160;</td>
+          <td class="paramname"><em>sigs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/dbb/structsecp256k1__ge.html">secp256k1_ge</a> *&#160;</td>
+          <td class="paramname"><em>pubkey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>recid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html#l00087">87</a> of file <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html">main_impl.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 13 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 14 -->
 </div>
 </div>
 
@@ -347,9 +587,15 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html#l00123">123</a> of file <a class="el" href="../../d6/d5d/recovery_2main__impl_8h_source.html">main_impl.h</a>.</p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 15 -->
+</div>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 4 -->
+<div class="center"><!-- SVG 16 -->
 </div>
 </div>
 
@@ -358,7 +604,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 19 2017 12:04:47 for 🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 20 2017 08:00:06 for Ion Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

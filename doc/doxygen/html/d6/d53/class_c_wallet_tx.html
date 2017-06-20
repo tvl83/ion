@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯): CWalletTx Class Reference</title>
+<title>Ion Core: CWalletTx Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -22,10 +22,10 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="../../ion_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯)
-   &#160;<span id="projectnumber">2.1.5.3</span>
+   <div id="projectname">Ion Core
+   &#160;<span id="projectnumber">2.1.5</span>
    </div>
-   <div id="projectbrief">Ion P2P Digital Currency</div>
+   <div id="projectbrief">P2P Digital Currency</div>
   </td>
  </tr>
  </tbody>
@@ -100,7 +100,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a626a5d41502247ea13b0c90694455468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad207b1e6b355946842a126bc14c7e793"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d53/class_c_wallet_tx.html#ad207b1e6b355946842a126bc14c7e793">Init</a> (const <a class="el" href="../../d2/de5/class_c_wallet.html">CWallet</a> *pwalletIn)</td></tr>
 <tr class="separator:ad207b1e6b355946842a126bc14c7e793"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00122fc2bbd9b8cb656422fd99c369e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d53/class_c_wallet_tx.html#a00122fc2bbd9b8cb656422fd99c369e6">IMPLEMENT_SERIALIZE</a> (<a class="el" href="../../d6/d53/class_c_wallet_tx.html">CWalletTx</a> *pthis=const_cast&lt; <a class="el" href="../../d6/d53/class_c_wallet_tx.html">CWalletTx</a> *&gt;(this);if(fRead) pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#ad207b1e6b355946842a126bc14c7e793">Init</a>(NULL);char fSpent=false;if(!fRead) { pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;fromaccount&quot;]=pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a099b5ca562f8a8378124b345b9123f25">strFromAccount</a>;std::string str;BOOST_FOREACH(char f, <a class="el" href="../../d6/d53/class_c_wallet_tx.html#a32c09e049302518c81f80c4f1f85583b">vfSpent</a>) { str+=(f ? '1' :'0');if(f) fSpent=true;} pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;spent&quot;]=str;WriteOrderPos(pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#af51e160ff1d9d78986e9f239c7ac7a35">nOrderPos</a>, pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>);if(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a3c9ba52ce7203b9f16235785a09c383c">nTimeSmart</a>) pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;timesmart&quot;]=strprintf(&quot;%u&quot;, nTimeSmart);} nSerSize+=<a class="el" href="../../df/d9d/serialize_8h.html#a3f746e0ed1975fa9447ef30050218aa9">SerReadWrite</a>(s, *(<a class="el" href="../../d1/dff/class_c_merkle_tx.html">CMerkleTx</a> *) this, nType, <a class="el" href="../../df/d43/class_c_transaction.html#a6c29bdd822859c7b21b7b6c22dca6825">nVersion</a>, ser_action);<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#ae122d2e0ce296bd9dfc63eb3ede5ce98">vtxPrev</a>);<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>);<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a923dbbba343b8f4d1c3d89ae73bdcea0">vOrderForm</a>);<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#ac058c61be3a1c680a3ad384ff04d27eb">fTimeReceivedIsTxTime</a>);<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#af4f4b58875061467026da7b259532b69">nTimeReceived</a>);<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a1598bf4a18fd05ce5eaaa0c3eb58ff28">fFromMe</a>);<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(fSpent);if(fRead) { pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a099b5ca562f8a8378124b345b9123f25">strFromAccount</a>=pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;fromaccount&quot;];if(mapValue.count(&quot;spent&quot;)) pthis-&gt;vfSpent.push_back(c !='0');else pthis-&gt;vfSpent.assign(vout.size(), fSpent);ReadOrderPos(pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#af51e160ff1d9d78986e9f239c7ac7a35">nOrderPos</a>, pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>);pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a3c9ba52ce7203b9f16235785a09c383c">nTimeSmart</a>=mapValue.count(&quot;timesmart&quot;) ?(unsigned int) <a class="el" href="../../d8/db2/utilstrencodings_8h.html#aba1c6f08c135078a7af3385ed3e91ef3">atoi64</a>(pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;timesmart&quot;]) :0;} pthis-&gt;mapValue.erase(&quot;fromaccount&quot;);pthis-&gt;mapValue.erase(&quot;version&quot;);pthis-&gt;mapValue.erase(&quot;spent&quot;);pthis-&gt;mapValue.erase(&quot;n&quot;);pthis-&gt;mapValue.erase(&quot;timesmart&quot;);) bool UpdateSpent(const std</td></tr>
+<tr class="memitem:a00122fc2bbd9b8cb656422fd99c369e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d53/class_c_wallet_tx.html#a00122fc2bbd9b8cb656422fd99c369e6">IMPLEMENT_SERIALIZE</a> (<a class="el" href="../../d6/d53/class_c_wallet_tx.html">CWalletTx</a> *pthis=const_cast&lt; <a class="el" href="../../d6/d53/class_c_wallet_tx.html">CWalletTx</a> *&gt;(this);if(fRead) pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#ad207b1e6b355946842a126bc14c7e793">Init</a>(NULL);char fSpent=false;if(!fRead) { pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;fromaccount&quot;]=pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a099b5ca562f8a8378124b345b9123f25">strFromAccount</a>;std::string str;BOOST_FOREACH(char f, <a class="el" href="../../d6/d53/class_c_wallet_tx.html#a32c09e049302518c81f80c4f1f85583b">vfSpent</a>) { str+=(f ? '1' :'0');if(f) fSpent=true;} pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;spent&quot;]=str;<a class="el" href="../../d0/df4/wallet_8h.html#af07173c51df7b2e2087e134f52f51c61">WriteOrderPos</a>(pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#af51e160ff1d9d78986e9f239c7ac7a35">nOrderPos</a>, pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>);if(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a3c9ba52ce7203b9f16235785a09c383c">nTimeSmart</a>) pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;timesmart&quot;]=strprintf(&quot;%u&quot;, nTimeSmart);} nSerSize+=<a class="el" href="../../df/d9d/serialize_8h.html#a3f746e0ed1975fa9447ef30050218aa9">SerReadWrite</a>(s, *(<a class="el" href="../../d1/dff/class_c_merkle_tx.html">CMerkleTx</a> *) this, nType, <a class="el" href="../../df/d43/class_c_transaction.html#a6c29bdd822859c7b21b7b6c22dca6825">nVersion</a>, ser_action);<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#ae122d2e0ce296bd9dfc63eb3ede5ce98">vtxPrev</a>);<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>);<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a923dbbba343b8f4d1c3d89ae73bdcea0">vOrderForm</a>);<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#ac058c61be3a1c680a3ad384ff04d27eb">fTimeReceivedIsTxTime</a>);<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#af4f4b58875061467026da7b259532b69">nTimeReceived</a>);<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a1598bf4a18fd05ce5eaaa0c3eb58ff28">fFromMe</a>);<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(fSpent);if(fRead) { pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a099b5ca562f8a8378124b345b9123f25">strFromAccount</a>=pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;fromaccount&quot;];if(<a class="el" href="../../d5/d7f/tests_8c.html#ad43c3812e6d13e0518d9f8b8f463ffcf">mapValue.count</a>(&quot;spent&quot;)) pthis-&gt;vfSpent.push_back(c !='0');else pthis-&gt;vfSpent.assign(vout.size(), fSpent);<a class="el" href="../../d0/df4/wallet_8h.html#a4ac39b557acef3326f11b3cd3537568f">ReadOrderPos</a>(pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#af51e160ff1d9d78986e9f239c7ac7a35">nOrderPos</a>, pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>);pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a3c9ba52ce7203b9f16235785a09c383c">nTimeSmart</a>=<a class="el" href="../../d5/d7f/tests_8c.html#ad43c3812e6d13e0518d9f8b8f463ffcf">mapValue.count</a>(&quot;timesmart&quot;) ?(unsigned int) <a class="el" href="../../d8/db2/utilstrencodings_8h.html#aba1c6f08c135078a7af3385ed3e91ef3">atoi64</a>(pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;timesmart&quot;]) :0;} pthis-&gt;mapValue.erase(&quot;fromaccount&quot;);pthis-&gt;mapValue.erase(&quot;version&quot;);pthis-&gt;mapValue.erase(&quot;spent&quot;);pthis-&gt;mapValue.erase(&quot;n&quot;);pthis-&gt;mapValue.erase(&quot;timesmart&quot;);) bool UpdateSpent(const std</td></tr>
 <tr class="separator:a00122fc2bbd9b8cb656422fd99c369e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8a376bcb955e437489504dc596b43cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d53/class_c_wallet_tx.html#ac8a376bcb955e437489504dc596b43cf">MarkDirty</a> ()</td></tr>
 <tr class="separator:ac8a376bcb955e437489504dc596b43cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,7 +223,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5a4967303d3b588a120687f3ed1f4b0a inherit pub_methods_class_c_transaction"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d43/class_c_transaction.html#a5a4967303d3b588a120687f3ed1f4b0a">FetchInputs</a> (<a class="el" href="../../d9/d8d/class_c_tx_d_b.html">CTxDB</a> &amp;<a class="el" href="../../dc/d9c/txdb-leveldb_8cpp.html#a72eff8ae1d84de13daf97a61b8c02bc6">txdb</a>, const std::map&lt; <a class="el" href="../../d2/d86/classuint256.html">uint256</a>, <a class="el" href="../../d5/db3/class_c_tx_index.html">CTxIndex</a> &gt; &amp;mapTestPool, bool fBlock, bool fMiner, <a class="el" href="../../d4/dbf/main_8h.html#a05bae354566c88f7dca5ad13aaf8b30f">MapPrevTx</a> &amp;inputsRet, bool &amp;fInvalid)</td></tr>
 <tr class="memdesc:a5a4967303d3b588a120687f3ed1f4b0a inherit pub_methods_class_c_transaction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch from memory and/or disk.  <a href="../../df/d43/class_c_transaction.html#a5a4967303d3b588a120687f3ed1f4b0a">More...</a><br /></td></tr>
 <tr class="separator:a5a4967303d3b588a120687f3ed1f4b0a inherit pub_methods_class_c_transaction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaab6c4ba493c918e29fd383043dcaae7 inherit pub_methods_class_c_transaction"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d43/class_c_transaction.html#aaab6c4ba493c918e29fd383043dcaae7">ConnectInputs</a> (<a class="el" href="../../d9/d8d/class_c_tx_d_b.html">CTxDB</a> &amp;<a class="el" href="../../dc/d9c/txdb-leveldb_8cpp.html#a72eff8ae1d84de13daf97a61b8c02bc6">txdb</a>, <a class="el" href="../../d4/dbf/main_8h.html#a05bae354566c88f7dca5ad13aaf8b30f">MapPrevTx</a> inputs, std::map&lt; <a class="el" href="../../d2/d86/classuint256.html">uint256</a>, <a class="el" href="../../d5/db3/class_c_tx_index.html">CTxIndex</a> &gt; &amp;mapTestPool, const <a class="el" href="../../d3/d3c/class_c_disk_tx_pos.html">CDiskTxPos</a> &amp;posThisTx, const <a class="el" href="../../d3/dbd/class_c_block_index.html">CBlockIndex</a> *pindexBlock, bool fBlock, bool fMiner, unsigned int flags=STANDARD_SCRIPT_VERIFY_FLAGS, bool fValidateSig=true)</td></tr>
+<tr class="memitem:aaab6c4ba493c918e29fd383043dcaae7 inherit pub_methods_class_c_transaction"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d43/class_c_transaction.html#aaab6c4ba493c918e29fd383043dcaae7">ConnectInputs</a> (<a class="el" href="../../d9/d8d/class_c_tx_d_b.html">CTxDB</a> &amp;<a class="el" href="../../dc/d9c/txdb-leveldb_8cpp.html#a72eff8ae1d84de13daf97a61b8c02bc6">txdb</a>, <a class="el" href="../../d4/dbf/main_8h.html#a05bae354566c88f7dca5ad13aaf8b30f">MapPrevTx</a> inputs, std::map&lt; <a class="el" href="../../d2/d86/classuint256.html">uint256</a>, <a class="el" href="../../d5/db3/class_c_tx_index.html">CTxIndex</a> &gt; &amp;mapTestPool, const <a class="el" href="../../d3/d3c/class_c_disk_tx_pos.html">CDiskTxPos</a> &amp;posThisTx, const <a class="el" href="../../d3/dbd/class_c_block_index.html">CBlockIndex</a> *pindexBlock, bool fBlock, bool fMiner, unsigned int flags=<a class="el" href="../../de/d7f/script_8h.html#a5100f707492ff0fea1c1f53552b31f51">STANDARD_SCRIPT_VERIFY_FLAGS</a>, bool fValidateSig=true)</td></tr>
 <tr class="memdesc:aaab6c4ba493c918e29fd383043dcaae7 inherit pub_methods_class_c_transaction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sanity check previous transactions, then, if all checks succeed, mark them as spent by this transaction.  <a href="../../df/d43/class_c_transaction.html#aaab6c4ba493c918e29fd383043dcaae7">More...</a><br /></td></tr>
 <tr class="separator:aaab6c4ba493c918e29fd383043dcaae7 inherit pub_methods_class_c_transaction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2104329681e2749baeeaaf47c0af482d inherit pub_methods_class_c_transaction"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d43/class_c_transaction.html#a2104329681e2749baeeaaf47c0af482d">CheckTransaction</a> () const</td></tr>
@@ -1201,7 +1201,7 @@ Here is the caller graph for this function:</div>
           <td class="memname">CWalletTx::IMPLEMENT_SERIALIZE </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d6/d53/class_c_wallet_tx.html">CWalletTx</a> *&#160;</td>
-          <td class="paramname"><em>pthis</em> = <code>const_cast&lt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html">CWalletTx</a>*&gt;(this);&#160;if&#160;(fRead)&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#ad207b1e6b355946842a126bc14c7e793">Init</a>(NULL);&#160;char&#160;fSpent&#160;=&#160;false;&#160;if&#160;(!fRead)&#160;{&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;fromaccount&quot;]&#160;=&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a099b5ca562f8a8378124b345b9123f25">strFromAccount</a>;&#160;std::string&#160;str;&#160;BOOST_FOREACH(char&#160;f,&#160;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a32c09e049302518c81f80c4f1f85583b">vfSpent</a>)&#160;{&#160;str&#160;+=&#160;(f&#160;?&#160;'1'&#160;:&#160;'0');&#160;if&#160;(f)&#160;fSpent&#160;=&#160;true;&#160;}&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;spent&quot;]&#160;=&#160;str;&#160;WriteOrderPos(pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#af51e160ff1d9d78986e9f239c7ac7a35">nOrderPos</a>,&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>);&#160;if&#160;(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a3c9ba52ce7203b9f16235785a09c383c">nTimeSmart</a>)&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;timesmart&quot;]&#160;=&#160;strprintf(&quot;%u&quot;,&#160;nTimeSmart);&#160;}&#160;nSerSize&#160;+=&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a3f746e0ed1975fa9447ef30050218aa9">SerReadWrite</a>(s,&#160;*(<a class="el" href="../../d1/dff/class_c_merkle_tx.html">CMerkleTx</a>*)this,&#160;nType,&#160;<a class="el" href="../../df/d43/class_c_transaction.html#a6c29bdd822859c7b21b7b6c22dca6825">nVersion</a>,ser_action);&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#ae122d2e0ce296bd9dfc63eb3ede5ce98">vtxPrev</a>);&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>);&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a923dbbba343b8f4d1c3d89ae73bdcea0">vOrderForm</a>);&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#ac058c61be3a1c680a3ad384ff04d27eb">fTimeReceivedIsTxTime</a>);&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#af4f4b58875061467026da7b259532b69">nTimeReceived</a>);&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a1598bf4a18fd05ce5eaaa0c3eb58ff28">fFromMe</a>);&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(fSpent);&#160;if&#160;(fRead)&#160;{&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a099b5ca562f8a8378124b345b9123f25">strFromAccount</a>&#160;=&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;fromaccount&quot;];&#160;if&#160;(mapValue.count(&quot;spent&quot;))&#160;pthis-&gt;vfSpent.push_back(c&#160;!=&#160;'0');&#160;else&#160;pthis-&gt;vfSpent.assign(vout.size(),&#160;fSpent);&#160;ReadOrderPos(pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#af51e160ff1d9d78986e9f239c7ac7a35">nOrderPos</a>,&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>);&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a3c9ba52ce7203b9f16235785a09c383c">nTimeSmart</a>&#160;=&#160;mapValue.count(&quot;timesmart&quot;)&#160;?&#160;(unsigned&#160;int)<a class="el" href="../../d8/db2/utilstrencodings_8h.html#aba1c6f08c135078a7af3385ed3e91ef3">atoi64</a>(pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;timesmart&quot;])&#160;:&#160;0;&#160;}&#160;pthis-&gt;mapValue.erase(&quot;fromaccount&quot;);&#160;pthis-&gt;mapValue.erase(&quot;version&quot;);&#160;pthis-&gt;mapValue.erase(&quot;spent&quot;);&#160;pthis-&gt;mapValue.erase(&quot;n&quot;);&#160;pthis-&gt;mapValue.erase(&quot;timesmart&quot;);</code></td><td>)</td>
+          <td class="paramname"><em>pthis</em> = <code>const_cast&lt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html">CWalletTx</a>*&gt;(this);&#160;if&#160;(fRead)&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#ad207b1e6b355946842a126bc14c7e793">Init</a>(NULL);&#160;char&#160;fSpent&#160;=&#160;false;&#160;if&#160;(!fRead)&#160;{&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;fromaccount&quot;]&#160;=&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a099b5ca562f8a8378124b345b9123f25">strFromAccount</a>;&#160;std::string&#160;str;&#160;BOOST_FOREACH(char&#160;f,&#160;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a32c09e049302518c81f80c4f1f85583b">vfSpent</a>)&#160;{&#160;str&#160;+=&#160;(f&#160;?&#160;'1'&#160;:&#160;'0');&#160;if&#160;(f)&#160;fSpent&#160;=&#160;true;&#160;}&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;spent&quot;]&#160;=&#160;str;&#160;<a class="el" href="../../d0/df4/wallet_8h.html#af07173c51df7b2e2087e134f52f51c61">WriteOrderPos</a>(pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#af51e160ff1d9d78986e9f239c7ac7a35">nOrderPos</a>,&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>);&#160;if&#160;(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a3c9ba52ce7203b9f16235785a09c383c">nTimeSmart</a>)&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;timesmart&quot;]&#160;=&#160;strprintf(&quot;%u&quot;,&#160;nTimeSmart);&#160;}&#160;nSerSize&#160;+=&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a3f746e0ed1975fa9447ef30050218aa9">SerReadWrite</a>(s,&#160;*(<a class="el" href="../../d1/dff/class_c_merkle_tx.html">CMerkleTx</a>*)this,&#160;nType,&#160;<a class="el" href="../../df/d43/class_c_transaction.html#a6c29bdd822859c7b21b7b6c22dca6825">nVersion</a>,ser_action);&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#ae122d2e0ce296bd9dfc63eb3ede5ce98">vtxPrev</a>);&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>);&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a923dbbba343b8f4d1c3d89ae73bdcea0">vOrderForm</a>);&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#ac058c61be3a1c680a3ad384ff04d27eb">fTimeReceivedIsTxTime</a>);&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#af4f4b58875061467026da7b259532b69">nTimeReceived</a>);&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a1598bf4a18fd05ce5eaaa0c3eb58ff28">fFromMe</a>);&#160;<a class="el" href="../../df/d9d/serialize_8h.html#a4d7fc7040e01003a01f367b8d90324f1">READWRITE</a>(fSpent);&#160;if&#160;(fRead)&#160;{&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a099b5ca562f8a8378124b345b9123f25">strFromAccount</a>&#160;=&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;fromaccount&quot;];&#160;if&#160;(<a class="el" href="../../d5/d7f/tests_8c.html#ad43c3812e6d13e0518d9f8b8f463ffcf">mapValue.count</a>(&quot;spent&quot;))&#160;pthis-&gt;vfSpent.push_back(c&#160;!=&#160;'0');&#160;else&#160;pthis-&gt;vfSpent.assign(vout.size(),&#160;fSpent);&#160;<a class="el" href="../../d0/df4/wallet_8h.html#a4ac39b557acef3326f11b3cd3537568f">ReadOrderPos</a>(pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#af51e160ff1d9d78986e9f239c7ac7a35">nOrderPos</a>,&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>);&#160;pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a3c9ba52ce7203b9f16235785a09c383c">nTimeSmart</a>&#160;=&#160;<a class="el" href="../../d5/d7f/tests_8c.html#ad43c3812e6d13e0518d9f8b8f463ffcf">mapValue.count</a>(&quot;timesmart&quot;)&#160;?&#160;(unsigned&#160;int)<a class="el" href="../../d8/db2/utilstrencodings_8h.html#aba1c6f08c135078a7af3385ed3e91ef3">atoi64</a>(pthis-&gt;<a class="el" href="../../d6/d53/class_c_wallet_tx.html#a17229eca0c81245312115a9c333203d8">mapValue</a>[&quot;timesmart&quot;])&#160;:&#160;0;&#160;}&#160;pthis-&gt;mapValue.erase(&quot;fromaccount&quot;);&#160;pthis-&gt;mapValue.erase(&quot;version&quot;);&#160;pthis-&gt;mapValue.erase(&quot;spent&quot;);&#160;pthis-&gt;mapValue.erase(&quot;n&quot;);&#160;pthis-&gt;mapValue.erase(&quot;timesmart&quot;);</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1213,6 +1213,12 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d0/df4/wallet_8h_source.html#l00613">613</a> of file <a class="el" href="../../d0/df4/wallet_8h_source.html">wallet.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 32 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1272,7 +1278,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 32 -->
+<div class="center"><!-- SVG 33 -->
 </div>
 </div>
 
@@ -1306,7 +1312,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 33 -->
+<div class="center"><!-- SVG 34 -->
 </div>
 </div>
 
@@ -1339,13 +1345,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 34 -->
+<div class="center"><!-- SVG 35 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 35 -->
+<div class="center"><!-- SVG 36 -->
 </div>
 </div>
 
@@ -1378,7 +1384,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 36 -->
+<div class="center"><!-- SVG 37 -->
 </div>
 </div>
 
@@ -1412,7 +1418,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 37 -->
+<div class="center"><!-- SVG 38 -->
 </div>
 </div>
 
@@ -1446,7 +1452,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 38 -->
+<div class="center"><!-- SVG 39 -->
 </div>
 </div>
 
@@ -1482,13 +1488,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 39 -->
+<div class="center"><!-- SVG 40 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 40 -->
+<div class="center"><!-- SVG 41 -->
 </div>
 </div>
 
@@ -1533,13 +1539,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 41 -->
+<div class="center"><!-- SVG 42 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 42 -->
+<div class="center"><!-- SVG 43 -->
 </div>
 </div>
 
@@ -2362,7 +2368,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 19 2017 12:04:48 for 🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 20 2017 08:00:12 for Ion Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

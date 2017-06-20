@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯): CStashedsendPool Class Reference</title>
+<title>Ion Core: CStashedsendPool Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -22,10 +22,10 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="../../ion_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯)
-   &#160;<span id="projectnumber">2.1.5.3</span>
+   <div id="projectname">Ion Core
+   &#160;<span id="projectnumber">2.1.5</span>
    </div>
-   <div id="projectbrief">Ion P2P Digital Currency</div>
+   <div id="projectbrief">P2P Digital Currency</div>
   </td>
  </tr>
  </tbody>
@@ -193,7 +193,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a953b684a05b58919c45c8c6f159b0b14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a953b684a05b58919c45c8c6f159b0b14">IsCollateralValid</a> (const <a class="el" href="../../df/d43/class_c_transaction.html">CTransaction</a> &amp;<a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a878831763c8445bad60a0f3f76eccec4">txCollateral</a>)</td></tr>
 <tr class="memdesc:a953b684a05b58919c45c8c6f159b0b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the collateral is valid given by a client.  <a href="#a953b684a05b58919c45c8c6f159b0b14">More...</a><br /></td></tr>
 <tr class="separator:a953b684a05b58919c45c8c6f159b0b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1a6ad5b08e23bce1ae8fb908cb384c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#af1a6ad5b08e23bce1ae8fb908cb384c9">AddEntry</a> (const std::vector&lt; <a class="el" href="../../de/da8/class_c_tx_in.html">CTxIn</a> &gt; &amp;newInput, const int64_t &amp;nAmount, const <a class="el" href="../../df/d43/class_c_transaction.html">CTransaction</a> &amp;<a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a878831763c8445bad60a0f3f76eccec4">txCollateral</a>, const std::vector&lt; <a class="el" href="../../d2/db7/class_c_tx_out.html">CTxOut</a> &gt; &amp;newOutput, std::string &amp;error)</td></tr>
+<tr class="memitem:af1a6ad5b08e23bce1ae8fb908cb384c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#af1a6ad5b08e23bce1ae8fb908cb384c9">AddEntry</a> (const std::vector&lt; <a class="el" href="../../de/da8/class_c_tx_in.html">CTxIn</a> &gt; &amp;newInput, const int64_t &amp;nAmount, const <a class="el" href="../../df/d43/class_c_transaction.html">CTransaction</a> &amp;<a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a878831763c8445bad60a0f3f76eccec4">txCollateral</a>, const std::vector&lt; <a class="el" href="../../d2/db7/class_c_tx_out.html">CTxOut</a> &gt; &amp;newOutput, std::string &amp;<a class="el" href="../../d8/d3c/util_8h.html#af8985880cf4ef26df0a5aa2ffcb76662">error</a>)</td></tr>
 <tr class="memdesc:af1a6ad5b08e23bce1ae8fb908cb384c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a clients entry to the pool.  <a href="#af1a6ad5b08e23bce1ae8fb908cb384c9">More...</a><br /></td></tr>
 <tr class="separator:af1a6ad5b08e23bce1ae8fb908cb384c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03e21e58f84272bd6012ba36290cb128"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a03e21e58f84272bd6012ba36290cb128">AddScriptSig</a> (const <a class="el" href="../../de/da8/class_c_tx_in.html">CTxIn</a> &amp;newVin)</td></tr>
@@ -205,7 +205,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6a94b951db9f47197abf79e141e8de1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a6a94b951db9f47197abf79e141e8de1a">SendStashedsendDenominate</a> (std::vector&lt; <a class="el" href="../../de/da8/class_c_tx_in.html">CTxIn</a> &gt; &amp;vin, std::vector&lt; <a class="el" href="../../d2/db7/class_c_tx_out.html">CTxOut</a> &gt; &amp;vout, int64_t amount)</td></tr>
 <tr class="memdesc:a6a94b951db9f47197abf79e141e8de1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">As a client, send a transaction to a Masternode to start the denomination process.  <a href="#a6a94b951db9f47197abf79e141e8de1a">More...</a><br /></td></tr>
 <tr class="separator:a6a94b951db9f47197abf79e141e8de1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18ce7c417bf6958eaec601b2d824db0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a18ce7c417bf6958eaec601b2d824db0f">StatusUpdate</a> (int newState, int newEntriesCount, int newAccepted, std::string &amp;error, int newSessionID=0)</td></tr>
+<tr class="memitem:a18ce7c417bf6958eaec601b2d824db0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a18ce7c417bf6958eaec601b2d824db0f">StatusUpdate</a> (int newState, int newEntriesCount, int newAccepted, std::string &amp;<a class="el" href="../../d8/d3c/util_8h.html#af8985880cf4ef26df0a5aa2ffcb76662">error</a>, int newSessionID=0)</td></tr>
 <tr class="memdesc:a18ce7c417bf6958eaec601b2d824db0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Masternode updates about the progress of Stashedsend.  <a href="#a18ce7c417bf6958eaec601b2d824db0f">More...</a><br /></td></tr>
 <tr class="separator:a18ce7c417bf6958eaec601b2d824db0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4e76a2c5ccd3fedef74f5e0b12c87f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#aa4e76a2c5ccd3fedef74f5e0b12c87f1">SignFinalTransaction</a> (<a class="el" href="../../df/d43/class_c_transaction.html">CTransaction</a> &amp;finalTransactionNew, <a class="el" href="../../d1/d64/class_c_node.html">CNode</a> *node)</td></tr>
@@ -217,7 +217,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a622242d20da9ef7c6637af06d3c492b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a622242d20da9ef7c6637af06d3c492b7">NewBlock</a> ()</td></tr>
 <tr class="memdesc:a622242d20da9ef7c6637af06d3c492b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a new block.  <a href="#a622242d20da9ef7c6637af06d3c492b7">More...</a><br /></td></tr>
 <tr class="separator:a622242d20da9ef7c6637af06d3c492b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac839314a7aba08f3dece58321efcdfd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#ac839314a7aba08f3dece58321efcdfd0">CompletedTransaction</a> (bool error, int errorID)</td></tr>
+<tr class="memitem:ac839314a7aba08f3dece58321efcdfd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#ac839314a7aba08f3dece58321efcdfd0">CompletedTransaction</a> (bool <a class="el" href="../../d8/d3c/util_8h.html#af8985880cf4ef26df0a5aa2ffcb76662">error</a>, int errorID)</td></tr>
 <tr class="separator:ac839314a7aba08f3dece58321efcdfd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ba73058c29a2924b7dee76a470ef568"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a1ba73058c29a2924b7dee76a470ef568">ClearLastMessage</a> ()</td></tr>
 <tr class="separator:a1ba73058c29a2924b7dee76a470ef568"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,9 +251,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab1619b0749cdf4041383d0466a38a70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebe6dcd903303539047d0ae907fe38f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#aebe6dcd903303539047d0ae907fe38f7">RelayIn</a> (const std::vector&lt; <a class="el" href="../../df/d59/class_c_tx_d_s_in.html">CTxDSIn</a> &gt; &amp;vin, const int64_t &amp;nAmount, const <a class="el" href="../../df/d43/class_c_transaction.html">CTransaction</a> &amp;<a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a878831763c8445bad60a0f3f76eccec4">txCollateral</a>, const std::vector&lt; <a class="el" href="../../d1/d82/class_c_tx_d_s_out.html">CTxDSOut</a> &gt; &amp;vout)</td></tr>
 <tr class="separator:aebe6dcd903303539047d0ae907fe38f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b929dbfc2ce8727a0b4c6f5e8e8314"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a74b929dbfc2ce8727a0b4c6f5e8e8314">RelayStatus</a> (const int <a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a037dfb141ca6c24a0811ae0291b5569d">sessionID</a>, const int newState, const int newEntriesCount, const int newAccepted, const std::string error=&quot;&quot;)</td></tr>
+<tr class="memitem:a74b929dbfc2ce8727a0b4c6f5e8e8314"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a74b929dbfc2ce8727a0b4c6f5e8e8314">RelayStatus</a> (const int <a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a037dfb141ca6c24a0811ae0291b5569d">sessionID</a>, const int newState, const int newEntriesCount, const int newAccepted, const std::string <a class="el" href="../../d8/d3c/util_8h.html#af8985880cf4ef26df0a5aa2ffcb76662">error</a>=&quot;&quot;)</td></tr>
 <tr class="separator:a74b929dbfc2ce8727a0b4c6f5e8e8314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38b648d86444b23fbbdbfccc9c88e322"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a38b648d86444b23fbbdbfccc9c88e322">RelayCompletedTransaction</a> (const int <a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a037dfb141ca6c24a0811ae0291b5569d">sessionID</a>, const bool error, const std::string errorMessage)</td></tr>
+<tr class="memitem:a38b648d86444b23fbbdbfccc9c88e322"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a38b648d86444b23fbbdbfccc9c88e322">RelayCompletedTransaction</a> (const int <a class="el" href="../../dd/d8a/class_c_stashedsend_pool.html#a037dfb141ca6c24a0811ae0291b5569d">sessionID</a>, const bool <a class="el" href="../../d8/d3c/util_8h.html#af8985880cf4ef26df0a5aa2ffcb76662">error</a>, const std::string errorMessage)</td></tr>
 <tr class="separator:a38b648d86444b23fbbdbfccc9c88e322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -431,6 +431,12 @@ Private Attributes</h2></td></tr>
 <p>Add a clients entry to the pool. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html#l01017">1017</a> of file <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html">stashedsend.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -453,6 +459,12 @@ Private Attributes</h2></td></tr>
 <p>Add signature to a vin. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html#l01067">1067</a> of file <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html">stashedsend.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 2 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -477,7 +489,7 @@ Private Attributes</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 1 -->
+<div class="center"><!-- SVG 3 -->
 </div>
 </div>
 
@@ -504,7 +516,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 2 -->
+<div class="center"><!-- SVG 4 -->
 </div>
 </div>
 
@@ -528,6 +540,18 @@ Here is the call graph for this function:</div>
 <p>Check for process in Stashedsend. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html#l00525">525</a> of file <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html">stashedsend.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 5 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 6 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -547,6 +571,12 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html#l00586">586</a> of file <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html">stashedsend.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 7 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -569,13 +599,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 3 -->
+<div class="center"><!-- SVG 8 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 4 -->
+<div class="center"><!-- SVG 9 -->
 </div>
 </div>
 
@@ -598,9 +628,15 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html#l00816">816</a> of file <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html">stashedsend.cpp</a>.</p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 10 -->
+</div>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 5 -->
+<div class="center"><!-- SVG 11 -->
 </div>
 </div>
 
@@ -652,6 +688,12 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html#l01351">1351</a> of file <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html">stashedsend.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 12 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -675,7 +717,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 6 -->
+<div class="center"><!-- SVG 13 -->
 </div>
 </div>
 
@@ -703,13 +745,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 7 -->
+<div class="center"><!-- SVG 14 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 8 -->
+<div class="center"><!-- SVG 15 -->
 </div>
 </div>
 
@@ -744,7 +786,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 9 -->
+<div class="center"><!-- SVG 16 -->
 </div>
 </div>
 
@@ -779,6 +821,12 @@ Here is the caller graph for this function:</div>
 <p>Get the denominations for a list of outputs (returns a bitshifted integer) </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html#l01979">1979</a> of file <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html">stashedsend.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 17 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -884,7 +932,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 10 -->
+<div class="center"><!-- SVG 18 -->
 </div>
 </div>
 
@@ -917,7 +965,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 11 -->
+<div class="center"><!-- SVG 19 -->
 </div>
 </div>
 
@@ -1017,7 +1065,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 12 -->
+<div class="center"><!-- SVG 20 -->
 </div>
 </div>
 
@@ -1043,7 +1091,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 13 -->
+<div class="center"><!-- SVG 21 -->
 </div>
 </div>
 
@@ -1076,7 +1124,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 14 -->
+<div class="center"><!-- SVG 22 -->
 </div>
 </div>
 
@@ -1101,13 +1149,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 15 -->
+<div class="center"><!-- SVG 23 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 16 -->
+<div class="center"><!-- SVG 24 -->
 </div>
 </div>
 
@@ -1140,7 +1188,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 17 -->
+<div class="center"><!-- SVG 25 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 26 -->
 </div>
 </div>
 
@@ -1168,13 +1222,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 18 -->
+<div class="center"><!-- SVG 27 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 19 -->
+<div class="center"><!-- SVG 28 -->
 </div>
 </div>
 
@@ -1202,7 +1256,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 20 -->
+<div class="center"><!-- SVG 29 -->
 </div>
 </div>
 
@@ -1265,6 +1319,12 @@ Here is the call graph for this function:</div>
 <p>Is this amount compatible with other client in the pool? </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html#l01874">1874</a> of file <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html">stashedsend.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 30 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1321,6 +1381,12 @@ Here is the call graph for this function:</div>
 <p>Do we have enough users to take entries? </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dbc/stashedsend_8h_source.html#l00426">426</a> of file <a class="el" href="../../d9/dbc/stashedsend_8h_source.html">stashedsend.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 31 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1345,7 +1411,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 21 -->
+<div class="center"><!-- SVG 32 -->
 </div>
 </div>
 
@@ -1369,6 +1435,18 @@ Here is the call graph for this function:</div>
 <p>Process a new block. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html#l01338">1338</a> of file <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html">stashedsend.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 33 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 34 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1391,7 +1469,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 22 -->
+<div class="center"><!-- SVG 35 -->
 </div>
 </div>
 
@@ -1460,6 +1538,18 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html">stashedsend.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 36 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 37 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1496,6 +1586,12 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html#l02254">2254</a> of file <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html">stashedsend.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 38 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1529,7 +1625,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 23 -->
+<div class="center"><!-- SVG 39 -->
 </div>
 </div>
 
@@ -1577,7 +1673,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 24 -->
+<div class="center"><!-- SVG 40 -->
 </div>
 </div>
 
@@ -1674,6 +1770,12 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html#l02247">2247</a> of file <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html">stashedsend.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 41 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1696,7 +1798,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 25 -->
+<div class="center"><!-- SVG 42 -->
 </div>
 </div>
 
@@ -1723,7 +1825,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 26 -->
+<div class="center"><!-- SVG 43 -->
 </div>
 </div>
 
@@ -1767,7 +1869,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 27 -->
+<div class="center"><!-- SVG 44 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 45 -->
 </div>
 </div>
 
@@ -1793,7 +1901,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 28 -->
+<div class="center"><!-- SVG 46 -->
 </div>
 </div>
 
@@ -1824,6 +1932,12 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dbc/stashedsend_8h_source.html#l00362">362</a> of file <a class="el" href="../../d9/dbc/stashedsend_8h_source.html">stashedsend.h</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 47 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1846,7 +1960,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 29 -->
+<div class="center"><!-- SVG 48 -->
 </div>
 </div>
 
@@ -1902,6 +2016,12 @@ Here is the call graph for this function:</div>
 <p>Check to make sure a signature matches an input in the pool. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html#l00920">920</a> of file <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html">stashedsend.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 49 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1937,7 +2057,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 30 -->
+<div class="center"><!-- SVG 50 -->
 </div>
 </div>
 
@@ -1990,6 +2110,12 @@ Here is the call graph for this function:</div>
 <p>Get Masternode updates about the progress of Stashedsend. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html#l01213">1213</a> of file <a class="el" href="../../d1/d04/stashedsend_8cpp_source.html">stashedsend.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 51 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -2012,7 +2138,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 31 -->
+<div class="center"><!-- SVG 52 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 53 -->
 </div>
 </div>
 
@@ -2043,6 +2175,12 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dbc/stashedsend_8h_source.html#l00402">402</a> of file <a class="el" href="../../d9/dbc/stashedsend_8h_source.html">stashedsend.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 54 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -2598,7 +2736,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 19 2017 12:04:48 for 🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 20 2017 08:00:11 for Ion Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

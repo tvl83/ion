@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯): src/main.h File Reference</title>
+<title>Ion Core: src/main.h File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -22,10 +22,10 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="../../ion_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯)
-   &#160;<span id="projectnumber">2.1.5.3</span>
+   <div id="projectname">Ion Core
+   &#160;<span id="projectnumber">2.1.5</span>
    </div>
-   <div id="projectbrief">Ion P2P Digital Currency</div>
+   <div id="projectbrief">P2P Digital Currency</div>
   </td>
  </tr>
  </tbody>
@@ -157,8 +157,18 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a045ec5542eb6a9e00055faf0d548f2bb"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a045ec5542eb6a9e00055faf0d548f2bb">FutureDrift</a> (int64_t nTime)</td></tr>
-<tr class="separator:a045ec5542eb6a9e00055faf0d548f2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a550f7654063538773e60d3a02920f811"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a550f7654063538773e60d3a02920f811">IsProtocolV1</a> (int nHeight)</td></tr>
+<tr class="separator:a550f7654063538773e60d3a02920f811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a35182b2d1692f9dd1805b8410a6ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a20a35182b2d1692f9dd1805b8410a6ed">IsProtocolV2</a> (int nHeight)</td></tr>
+<tr class="separator:a20a35182b2d1692f9dd1805b8410a6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cef13aaf6041e80dc001abdaa59d7b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a1cef13aaf6041e80dc001abdaa59d7b5">IsDriftReduced</a> (int64_t nTime)</td></tr>
+<tr class="separator:a1cef13aaf6041e80dc001abdaa59d7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ee438ddf693ec1d68339a306a0b4d30"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a8ee438ddf693ec1d68339a306a0b4d30">FutureDriftV2</a> (int64_t nTime)</td></tr>
+<tr class="separator:a8ee438ddf693ec1d68339a306a0b4d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa870d277e659681850c076130320f04"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#afa870d277e659681850c076130320f04">FutureDriftV1</a> (int64_t nTime)</td></tr>
+<tr class="separator:afa870d277e659681850c076130320f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ccc18be451c0cbde74b3074e71f9c66"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a3ccc18be451c0cbde74b3074e71f9c66">FutureDrift</a> (int64_t nTime, int nHeight)</td></tr>
+<tr class="separator:a3ccc18be451c0cbde74b3074e71f9c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ecfeb5987564d84c46a6715d4c3a2df"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a7ecfeb5987564d84c46a6715d4c3a2df">GetMNCollateral</a> (int nHeight)</td></tr>
 <tr class="separator:a7ecfeb5987564d84c46a6715d4c3a2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6b7f220759fb53f10c65654bbf61317"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#aa6b7f220759fb53f10c65654bbf61317">RegisterWallet</a> (<a class="el" href="../../dc/d1a/class_c_wallet_interface.html">CWalletInterface</a> *pwalletIn)</td></tr>
@@ -263,6 +273,55 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:adc2d6337de183e043ac91630897f8a6a"><td class="memItemLeft" align="right" valign="top">static const int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#adc2d6337de183e043ac91630897f8a6a">STASHEDSEND_COLLATERAL</a> = (0.01*<a class="el" href="../../dd/d2f/amount_8h.html#aed6bcb17bc73a5dcf33250e9c2c023cc">COIN</a>)</td></tr>
+<tr class="separator:adc2d6337de183e043ac91630897f8a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08eb3aac9cf2563ae989f425fcf0cb84"><td class="memItemLeft" align="right" valign="top">static const int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a08eb3aac9cf2563ae989f425fcf0cb84">STASHEDSEND_POOL_MAX</a> = (9999.99*<a class="el" href="../../dd/d2f/amount_8h.html#aed6bcb17bc73a5dcf33250e9c2c023cc">COIN</a>)</td></tr>
+<tr class="separator:a08eb3aac9cf2563ae989f425fcf0cb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3fe77c361da2c62764542a1d32c8e25"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#ae3fe77c361da2c62764542a1d32c8e25">MAX_BLOCK_SIZE</a> = 20000000</td></tr>
+<tr class="memdesc:ae3fe77c361da2c62764542a1d32c8e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum allowed size for a serialized block, in bytes (network rule)  <a href="#ae3fe77c361da2c62764542a1d32c8e25">More...</a><br /></td></tr>
+<tr class="separator:ae3fe77c361da2c62764542a1d32c8e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322e5519d6da1c7a3a2f911c83609d56"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a322e5519d6da1c7a3a2f911c83609d56">MAX_BLOCK_SIZE_GEN</a> = <a class="el" href="../../d4/dbf/main_8h.html#ae3fe77c361da2c62764542a1d32c8e25">MAX_BLOCK_SIZE</a>/2</td></tr>
+<tr class="memdesc:a322e5519d6da1c7a3a2f911c83609d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum size for mined blocks.  <a href="#a322e5519d6da1c7a3a2f911c83609d56">More...</a><br /></td></tr>
+<tr class="separator:a322e5519d6da1c7a3a2f911c83609d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa301575eb37f7f95a7b67b064c73cdf8"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#aa301575eb37f7f95a7b67b064c73cdf8">DEFAULT_BLOCK_PRIORITY_SIZE</a> = 50000</td></tr>
+<tr class="memdesc:aa301575eb37f7f95a7b67b064c73cdf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default for -blockprioritysize, maximum space for zero/low-fee transactions.  <a href="#aa301575eb37f7f95a7b67b064c73cdf8">More...</a><br /></td></tr>
+<tr class="separator:aa301575eb37f7f95a7b67b064c73cdf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefbb84a1c575dfc90d140d06f8c8d1e9"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#aefbb84a1c575dfc90d140d06f8c8d1e9">MAX_STANDARD_TX_SIZE</a> = <a class="el" href="../../d4/dbf/main_8h.html#a322e5519d6da1c7a3a2f911c83609d56">MAX_BLOCK_SIZE_GEN</a>/5</td></tr>
+<tr class="memdesc:aefbb84a1c575dfc90d140d06f8c8d1e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum size for transactions we're willing to relay/mine.  <a href="#aefbb84a1c575dfc90d140d06f8c8d1e9">More...</a><br /></td></tr>
+<tr class="separator:aefbb84a1c575dfc90d140d06f8c8d1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb7a14a94e74d91ad3d1b752c144c507"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#acb7a14a94e74d91ad3d1b752c144c507">MAX_BLOCK_SIGOPS</a> = <a class="el" href="../../d4/dbf/main_8h.html#ae3fe77c361da2c62764542a1d32c8e25">MAX_BLOCK_SIZE</a>/50</td></tr>
+<tr class="memdesc:acb7a14a94e74d91ad3d1b752c144c507"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum allowed number of signature check operations in a block (network rule)  <a href="#acb7a14a94e74d91ad3d1b752c144c507">More...</a><br /></td></tr>
+<tr class="separator:acb7a14a94e74d91ad3d1b752c144c507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cca063cd81ff8eb9274145aa85707b9"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a4cca063cd81ff8eb9274145aa85707b9">MAX_P2SH_SIGOPS</a> = 15</td></tr>
+<tr class="memdesc:a4cca063cd81ff8eb9274145aa85707b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maxiumum number of signature check operations in an <a class="el" href="../../dd/d0f/script_8cpp.html#abb2b48ecfd43dcb01e25d9d4c333a340">IsStandard()</a> P2SH script.  <a href="#a4cca063cd81ff8eb9274145aa85707b9">More...</a><br /></td></tr>
+<tr class="separator:a4cca063cd81ff8eb9274145aa85707b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff28c3fe2c4d93ea81ca99c40852e32c"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#aff28c3fe2c4d93ea81ca99c40852e32c">MAX_TX_SIGOPS</a> = <a class="el" href="../../d4/dbf/main_8h.html#acb7a14a94e74d91ad3d1b752c144c507">MAX_BLOCK_SIGOPS</a>/5</td></tr>
+<tr class="memdesc:aff28c3fe2c4d93ea81ca99c40852e32c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of sigops we're willing to relay/mine in a single tx.  <a href="#aff28c3fe2c4d93ea81ca99c40852e32c">More...</a><br /></td></tr>
+<tr class="separator:aff28c3fe2c4d93ea81ca99c40852e32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7bd77db96d2cdb665d645fb3daa2de6"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#ae7bd77db96d2cdb665d645fb3daa2de6">MAX_ORPHAN_TRANSACTIONS</a> = <a class="el" href="../../d4/dbf/main_8h.html#ae3fe77c361da2c62764542a1d32c8e25">MAX_BLOCK_SIZE</a>/100</td></tr>
+<tr class="memdesc:ae7bd77db96d2cdb665d645fb3daa2de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of orphan transactions kept in memory.  <a href="#ae7bd77db96d2cdb665d645fb3daa2de6">More...</a><br /></td></tr>
+<tr class="separator:ae7bd77db96d2cdb665d645fb3daa2de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31e74bf6db006c63912a414ed60faa8"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#ae31e74bf6db006c63912a414ed60faa8">DEFAULT_MAX_ORPHAN_BLOCKS</a> = 10000</td></tr>
+<tr class="memdesc:ae31e74bf6db006c63912a414ed60faa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default for -maxorphanblocks, maximum number of orphan blocks kept in memory.  <a href="#ae31e74bf6db006c63912a414ed60faa8">More...</a><br /></td></tr>
+<tr class="separator:ae31e74bf6db006c63912a414ed60faa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a0f02f0c3059655f28e2cb0c267a26"><td class="memItemLeft" align="right" valign="top">static const int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a88a0f02f0c3059655f28e2cb0c267a26">MIN_TX_FEE</a> = (0.001*<a class="el" href="../../dd/d2f/amount_8h.html#aed6bcb17bc73a5dcf33250e9c2c023cc">COIN</a>)</td></tr>
+<tr class="memdesc:a88a0f02f0c3059655f28e2cb0c267a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fees smaller than this (in satoshi) are considered zero fee (for transaction creation)  <a href="#a88a0f02f0c3059655f28e2cb0c267a26">More...</a><br /></td></tr>
+<tr class="separator:a88a0f02f0c3059655f28e2cb0c267a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af192bf76941f52fc5de8a720625fbe5a"><td class="memItemLeft" align="right" valign="top">static const int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#af192bf76941f52fc5de8a720625fbe5a">MIN_RELAY_TX_FEE</a> = <a class="el" href="../../d4/dbf/main_8h.html#a88a0f02f0c3059655f28e2cb0c267a26">MIN_TX_FEE</a></td></tr>
+<tr class="memdesc:af192bf76941f52fc5de8a720625fbe5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fees smaller than this (in satoshi) are considered zero fee (for relaying)  <a href="#af192bf76941f52fc5de8a720625fbe5a">More...</a><br /></td></tr>
+<tr class="separator:af192bf76941f52fc5de8a720625fbe5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18113899ca9e7ef7a1938b0209fd62b5"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a18113899ca9e7ef7a1938b0209fd62b5">LOCKTIME_THRESHOLD</a> = 500000000</td></tr>
+<tr class="memdesc:a18113899ca9e7ef7a1938b0209fd62b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp.  <a href="#a18113899ca9e7ef7a1938b0209fd62b5">More...</a><br /></td></tr>
+<tr class="separator:a18113899ca9e7ef7a1938b0209fd62b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276b0b56a72df733dda86cfe6322f604"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a276b0b56a72df733dda86cfe6322f604">MAX_BLOCKS_IN_TRANSIT_PER_PEER</a> = 128</td></tr>
+<tr class="memdesc:a276b0b56a72df733dda86cfe6322f604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of blocks that can be requested at any given time from a single peer.  <a href="#a276b0b56a72df733dda86cfe6322f604">More...</a><br /></td></tr>
+<tr class="separator:a276b0b56a72df733dda86cfe6322f604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab028f49f2c98920af737982c60780f"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a8ab028f49f2c98920af737982c60780f">BLOCK_DOWNLOAD_TIMEOUT</a> = 60</td></tr>
+<tr class="memdesc:a8ab028f49f2c98920af737982c60780f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout in seconds before considering a block download peer unresponsive.  <a href="#a8ab028f49f2c98920af737982c60780f">More...</a><br /></td></tr>
+<tr class="separator:a8ab028f49f2c98920af737982c60780f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1c4e097229d17dd9f721dd066160e9"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a4d1c4e097229d17dd9f721dd066160e9">REJECT_INVALID</a> = 0x10</td></tr>
+<tr class="memdesc:a4d1c4e097229d17dd9f721dd066160e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">"reject" message codes  <a href="#a4d1c4e097229d17dd9f721dd066160e9">More...</a><br /></td></tr>
+<tr class="separator:a4d1c4e097229d17dd9f721dd066160e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ed86cbbedb72d8fcec0524f2792ada8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4b/class_c_script.html">CScript</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a5ed86cbbedb72d8fcec0524f2792ada8">COINBASE_FLAGS</a></td></tr>
 <tr class="memdesc:a5ed86cbbedb72d8fcec0524f2792ada8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant stuff for coinbase transactions we create:  <a href="#a5ed86cbbedb72d8fcec0524f2792ada8">More...</a><br /></td></tr>
 <tr class="separator:a5ed86cbbedb72d8fcec0524f2792ada8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -319,6 +378,8 @@ Variables</h2></td></tr>
 <tr class="separator:ae3377c351f05649e07963776ba3a0499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8ed8d08421c7cdfb3acb22e585468fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#aa8ed8d08421c7cdfb3acb22e585468fd">fLargeWorkInvalidChainFound</a></td></tr>
 <tr class="separator:aa8ed8d08421c7cdfb3acb22e585468fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769a355f46457c5203bf33a3fe0be368"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbf/main_8h.html#a769a355f46457c5203bf33a3fe0be368">nMinDiskSpace</a> = 52428800</td></tr>
+<tr class="separator:a769a355f46457c5203bf33a3fe0be368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a9e15d55227c00c556fcb73d04f82283c"></a>
@@ -366,7 +427,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00233">233</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00241">241</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
 
 </div>
 </div>
@@ -388,7 +449,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a8c24d39fc07a60d3c019618a73cc15a7a146093898dd622fd76ca7ded2b6933ef"></a>GMF_SEND&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00226">226</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00234">234</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
 
 </div>
 </div>
@@ -494,6 +555,12 @@ Here is the call graph for this function:</div>
 <div class="center"><!-- SVG 4 -->
 </div>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 5 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -553,13 +620,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 5 -->
+<div class="center"><!-- SVG 6 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 6 -->
+<div class="center"><!-- SVG 7 -->
 </div>
 </div>
 
@@ -589,7 +656,19 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00473">473</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00481">481</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 8 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 9 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -613,7 +692,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 7 -->
+<div class="center"><!-- SVG 10 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 11 -->
 </div>
 </div>
 
@@ -659,13 +744,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 8 -->
+<div class="center"><!-- SVG 12 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 9 -->
+<div class="center"><!-- SVG 13 -->
 </div>
 </div>
 
@@ -711,7 +796,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 10 -->
+<div class="center"><!-- SVG 14 -->
 </div>
 </div>
 
@@ -747,20 +832,20 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 11 -->
+<div class="center"><!-- SVG 15 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 12 -->
+<div class="center"><!-- SVG 16 -->
 </div>
 </div>
 
 </div>
 </div>
-<a id="a045ec5542eb6a9e00055faf0d548f2bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a045ec5542eb6a9e00055faf0d548f2bb">&#9670;&nbsp;</a></span>FutureDrift()</h2>
+<a id="a3ccc18be451c0cbde74b3074e71f9c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ccc18be451c0cbde74b3074e71f9c66">&#9670;&nbsp;</a></span>FutureDrift()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -770,6 +855,56 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">int64_t FutureDrift </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>nTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nHeight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00071">71</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 17 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 18 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="afa870d277e659681850c076130320f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa870d277e659681850c076130320f04">&#9670;&nbsp;</a></span>FutureDriftV1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t FutureDriftV1 </td>
           <td>(</td>
           <td class="paramtype">int64_t&#160;</td>
           <td class="paramname"><em>nTime</em></td><td>)</td>
@@ -783,11 +918,51 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00063">63</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00069">69</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 19 -->
+</div>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 13 -->
+<div class="center"><!-- SVG 20 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a8ee438ddf693ec1d68339a306a0b4d30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ee438ddf693ec1d68339a306a0b4d30">&#9670;&nbsp;</a></span>FutureDriftV2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t FutureDriftV2 </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>nTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00068">68</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 21 -->
 </div>
 </div>
 
@@ -813,13 +988,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 14 -->
+<div class="center"><!-- SVG 22 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 15 -->
+<div class="center"><!-- SVG 23 -->
 </div>
 </div>
 
@@ -855,7 +1030,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 16 -->
+<div class="center"><!-- SVG 24 -->
 </div>
 </div>
 
@@ -881,7 +1056,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 17 -->
+<div class="center"><!-- SVG 25 -->
 </div>
 </div>
 
@@ -917,13 +1092,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 18 -->
+<div class="center"><!-- SVG 26 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 19 -->
+<div class="center"><!-- SVG 27 -->
 </div>
 </div>
 
@@ -953,13 +1128,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 20 -->
+<div class="center"><!-- SVG 28 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 21 -->
+<div class="center"><!-- SVG 29 -->
 </div>
 </div>
 
@@ -992,6 +1167,12 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l04562">4562</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 30 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1034,6 +1215,18 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00789">789</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 31 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 32 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1061,11 +1254,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00068">68</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00076">76</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 22 -->
+<div class="center"><!-- SVG 33 -->
 </div>
 </div>
 
@@ -1103,7 +1296,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 23 -->
+<div class="center"><!-- SVG 34 -->
 </div>
 </div>
 
@@ -1149,13 +1342,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 24 -->
+<div class="center"><!-- SVG 35 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 25 -->
+<div class="center"><!-- SVG 36 -->
 </div>
 </div>
 
@@ -1197,13 +1390,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 26 -->
+<div class="center"><!-- SVG 37 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 27 -->
+<div class="center"><!-- SVG 38 -->
 </div>
 </div>
 
@@ -1269,6 +1462,46 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a1cef13aaf6041e80dc001abdaa59d7b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cef13aaf6041e80dc001abdaa59d7b5">&#9670;&nbsp;</a></span>IsDriftReduced()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsDriftReduced </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>nTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00066">66</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 39 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 40 -->
+</div>
+</div>
+
+</div>
+</div>
 <a id="aa7ca31ac11bff224c6b0ac27fccce7b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7ca31ac11bff224c6b0ac27fccce7b5">&#9670;&nbsp;</a></span>IsFinalTx()</h2>
 
@@ -1305,13 +1538,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 28 -->
+<div class="center"><!-- SVG 41 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 29 -->
+<div class="center"><!-- SVG 42 -->
 </div>
 </div>
 
@@ -1333,6 +1566,86 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l01463">1463</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 43 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a550f7654063538773e60d3a02920f811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a550f7654063538773e60d3a02920f811">&#9670;&nbsp;</a></span>IsProtocolV1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsProtocolV1 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nHeight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00063">63</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 44 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 45 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a20a35182b2d1692f9dd1805b8410a6ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a35182b2d1692f9dd1805b8410a6ed">&#9670;&nbsp;</a></span>IsProtocolV2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsProtocolV2 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nHeight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00064">64</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 46 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1364,6 +1677,12 @@ Here is the caller graph for this function:</div>
 
 <p>Check for standard transaction types. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if all outputs (scriptPubKeys) use only standard transaction forms </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 47 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1387,7 +1706,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 30 -->
+<div class="center"><!-- SVG 48 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 49 -->
 </div>
 </div>
 
@@ -1425,13 +1750,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 31 -->
+<div class="center"><!-- SVG 50 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 32 -->
+<div class="center"><!-- SVG 51 -->
 </div>
 </div>
 
@@ -1471,9 +1796,15 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l03044">3044</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 52 -->
+</div>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 33 -->
+<div class="center"><!-- SVG 53 -->
 </div>
 </div>
 
@@ -1498,7 +1829,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 34 -->
+<div class="center"><!-- SVG 54 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 55 -->
 </div>
 </div>
 
@@ -1534,13 +1871,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 35 -->
+<div class="center"><!-- SVG 56 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 36 -->
+<div class="center"><!-- SVG 57 -->
 </div>
 </div>
 
@@ -1564,9 +1901,15 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l04214">4214</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 58 -->
+</div>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 37 -->
+<div class="center"><!-- SVG 59 -->
 </div>
 </div>
 
@@ -1608,7 +1951,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 38 -->
+<div class="center"><!-- SVG 60 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 61 -->
 </div>
 </div>
 
@@ -1636,7 +1985,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 39 -->
+<div class="center"><!-- SVG 62 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 63 -->
 </div>
 </div>
 
@@ -1661,6 +2016,18 @@ Here is the call graph for this function:</div>
 <p>Register a wallet to receive updates from core. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 64 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 65 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1684,9 +2051,15 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00165">165</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 66 -->
+</div>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 40 -->
+<div class="center"><!-- SVG 67 -->
 </div>
 </div>
 
@@ -1720,9 +2093,15 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l04334">4334</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 68 -->
+</div>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 41 -->
+<div class="center"><!-- SVG 69 -->
 </div>
 </div>
 
@@ -1763,6 +2142,12 @@ Here is the caller graph for this function:</div>
 <p>Push an updated transaction to all registered wallets. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00161">161</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 70 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1786,7 +2171,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 42 -->
+<div class="center"><!-- SVG 71 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 72 -->
 </div>
 </div>
 
@@ -1812,7 +2203,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 43 -->
+<div class="center"><!-- SVG 73 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 74 -->
 </div>
 </div>
 
@@ -1839,7 +2236,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 44 -->
+<div class="center"><!-- SVG 75 -->
 </div>
 </div>
 
@@ -1867,13 +2264,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 45 -->
+<div class="center"><!-- SVG 76 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 46 -->
+<div class="center"><!-- SVG 77 -->
 </div>
 </div>
 
@@ -1898,6 +2295,12 @@ Here is the caller graph for this function:</div>
 <p>Unregister a wallet from core. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00143">143</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 78 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1918,10 +2321,42 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l01421">1421</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 79 -->
+</div>
+</div>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a8ab028f49f2c98920af737982c60780f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ab028f49f2c98920af737982c60780f">&#9670;&nbsp;</a></span>BLOCK_DOWNLOAD_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int BLOCK_DOWNLOAD_TIMEOUT = 60</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Timeout in seconds before considering a block download peer unresponsive. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00061">61</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+
+</div>
+</div>
 <a id="a5ed86cbbedb72d8fcec0524f2792ada8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ed86cbbedb72d8fcec0524f2792ada8">&#9670;&nbsp;</a></span>COINBASE_FLAGS</h2>
 
@@ -1955,6 +2390,58 @@ Here is the caller graph for this function:</div>
 <p>Global state. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa301575eb37f7f95a7b67b064c73cdf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa301575eb37f7f95a7b67b064c73cdf8">&#9670;&nbsp;</a></span>DEFAULT_BLOCK_PRIORITY_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int DEFAULT_BLOCK_PRIORITY_SIZE = 50000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default for -blockprioritysize, maximum space for zero/low-fee transactions. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00039">39</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+
+</div>
+</div>
+<a id="ae31e74bf6db006c63912a414ed60faa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae31e74bf6db006c63912a414ed60faa8">&#9670;&nbsp;</a></span>DEFAULT_MAX_ORPHAN_BLOCKS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int DEFAULT_MAX_ORPHAN_BLOCKS = 10000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default for -maxorphanblocks, maximum number of orphan blocks kept in memory. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00051">51</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
 
 </div>
 </div>
@@ -2066,6 +2553,32 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a18113899ca9e7ef7a1938b0209fd62b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18113899ca9e7ef7a1938b0209fd62b5">&#9670;&nbsp;</a></span>LOCKTIME_THRESHOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int LOCKTIME_THRESHOLD = 500000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00057">57</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+
+</div>
+</div>
 <a id="a9d5aa0c4581116d898ff51357a0df059"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d5aa0c4581116d898ff51357a0df059">&#9670;&nbsp;</a></span>mapBlockIndex</h2>
 
@@ -2098,6 +2611,214 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="acb7a14a94e74d91ad3d1b752c144c507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb7a14a94e74d91ad3d1b752c144c507">&#9670;&nbsp;</a></span>MAX_BLOCK_SIGOPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_BLOCK_SIGOPS = <a class="el" href="../../d4/dbf/main_8h.html#ae3fe77c361da2c62764542a1d32c8e25">MAX_BLOCK_SIZE</a>/50</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The maximum allowed number of signature check operations in a block (network rule) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00043">43</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+
+</div>
+</div>
+<a id="ae3fe77c361da2c62764542a1d32c8e25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3fe77c361da2c62764542a1d32c8e25">&#9670;&nbsp;</a></span>MAX_BLOCK_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_BLOCK_SIZE = 20000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The maximum allowed size for a serialized block, in bytes (network rule) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00035">35</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+
+</div>
+</div>
+<a id="a322e5519d6da1c7a3a2f911c83609d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a322e5519d6da1c7a3a2f911c83609d56">&#9670;&nbsp;</a></span>MAX_BLOCK_SIZE_GEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_BLOCK_SIZE_GEN = <a class="el" href="../../d4/dbf/main_8h.html#ae3fe77c361da2c62764542a1d32c8e25">MAX_BLOCK_SIZE</a>/2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The maximum size for mined blocks. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00037">37</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+
+</div>
+</div>
+<a id="a276b0b56a72df733dda86cfe6322f604"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a276b0b56a72df733dda86cfe6322f604">&#9670;&nbsp;</a></span>MAX_BLOCKS_IN_TRANSIT_PER_PEER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int MAX_BLOCKS_IN_TRANSIT_PER_PEER = 128</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of blocks that can be requested at any given time from a single peer. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00059">59</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+
+</div>
+</div>
+<a id="ae7bd77db96d2cdb665d645fb3daa2de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7bd77db96d2cdb665d645fb3daa2de6">&#9670;&nbsp;</a></span>MAX_ORPHAN_TRANSACTIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_ORPHAN_TRANSACTIONS = <a class="el" href="../../d4/dbf/main_8h.html#ae3fe77c361da2c62764542a1d32c8e25">MAX_BLOCK_SIZE</a>/100</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The maximum number of orphan transactions kept in memory. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00049">49</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+
+</div>
+</div>
+<a id="a4cca063cd81ff8eb9274145aa85707b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cca063cd81ff8eb9274145aa85707b9">&#9670;&nbsp;</a></span>MAX_P2SH_SIGOPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_P2SH_SIGOPS = 15</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maxiumum number of signature check operations in an <a class="el" href="../../dd/d0f/script_8cpp.html#abb2b48ecfd43dcb01e25d9d4c333a340">IsStandard()</a> P2SH script. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00045">45</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+
+</div>
+</div>
+<a id="aefbb84a1c575dfc90d140d06f8c8d1e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefbb84a1c575dfc90d140d06f8c8d1e9">&#9670;&nbsp;</a></span>MAX_STANDARD_TX_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_STANDARD_TX_SIZE = <a class="el" href="../../d4/dbf/main_8h.html#a322e5519d6da1c7a3a2f911c83609d56">MAX_BLOCK_SIZE_GEN</a>/5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The maximum size for transactions we're willing to relay/mine. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00041">41</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+
+</div>
+</div>
+<a id="aff28c3fe2c4d93ea81ca99c40852e32c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff28c3fe2c4d93ea81ca99c40852e32c">&#9670;&nbsp;</a></span>MAX_TX_SIGOPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_TX_SIGOPS = <a class="el" href="../../d4/dbf/main_8h.html#acb7a14a94e74d91ad3d1b752c144c507">MAX_BLOCK_SIGOPS</a>/5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The maximum number of sigops we're willing to relay/mine in a single tx. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00047">47</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+
+</div>
+</div>
 <a id="abc71256f703e47c9254093e32ed2994c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc71256f703e47c9254093e32ed2994c">&#9670;&nbsp;</a></span>mempool</h2>
 
@@ -2111,6 +2832,58 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af192bf76941f52fc5de8a720625fbe5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af192bf76941f52fc5de8a720625fbe5a">&#9670;&nbsp;</a></span>MIN_RELAY_TX_FEE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int64_t MIN_RELAY_TX_FEE = <a class="el" href="../../d4/dbf/main_8h.html#a88a0f02f0c3059655f28e2cb0c267a26">MIN_TX_FEE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fees smaller than this (in satoshi) are considered zero fee (for relaying) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00055">55</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+
+</div>
+</div>
+<a id="a88a0f02f0c3059655f28e2cb0c267a26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88a0f02f0c3059655f28e2cb0c267a26">&#9670;&nbsp;</a></span>MIN_TX_FEE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int64_t MIN_TX_FEE = (0.001*<a class="el" href="../../dd/d2f/amount_8h.html#aed6bcb17bc73a5dcf33250e9c2c023cc">COIN</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00053">53</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
 
 </div>
 </div>
@@ -2226,6 +2999,30 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a769a355f46457c5203bf33a3fe0be368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a769a355f46457c5203bf33a3fe0be368">&#9670;&nbsp;</a></span>nMinDiskSpace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t nMinDiskSpace = 52428800</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00111">111</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+
+</div>
+</div>
 <a id="a12388da9cd7b3a99208684bd4535f098"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a12388da9cd7b3a99208684bd4535f098">&#9670;&nbsp;</a></span>nModifierInterval</h2>
 
@@ -2322,6 +3119,32 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a4d1c4e097229d17dd9f721dd066160e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d1c4e097229d17dd9f721dd066160e9">&#9670;&nbsp;</a></span>REJECT_INVALID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char REJECT_INVALID = 0x10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>"reject" message codes </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00074">74</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+
+</div>
+</div>
 <a id="a261df4d886c6149afe291ecfbed2ae89"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a261df4d886c6149afe291ecfbed2ae89">&#9670;&nbsp;</a></span>setStakeSeen</h2>
 
@@ -2335,6 +3158,54 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adc2d6337de183e043ac91630897f8a6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc2d6337de183e043ac91630897f8a6a">&#9670;&nbsp;</a></span>STASHEDSEND_COLLATERAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int64_t STASHEDSEND_COLLATERAL = (0.01*<a class="el" href="../../dd/d2f/amount_8h.html#aed6bcb17bc73a5dcf33250e9c2c023cc">COIN</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00019">19</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
+
+</div>
+</div>
+<a id="a08eb3aac9cf2563ae989f425fcf0cb84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08eb3aac9cf2563ae989f425fcf0cb84">&#9670;&nbsp;</a></span>STASHEDSEND_POOL_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int64_t STASHEDSEND_POOL_MAX = (9999.99*<a class="el" href="../../dd/d2f/amount_8h.html#aed6bcb17bc73a5dcf33250e9c2c023cc">COIN</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dbf/main_8h_source.html#l00020">20</a> of file <a class="el" href="../../d4/dbf/main_8h_source.html">main.h</a>.</p>
 
 </div>
 </div>
@@ -2357,7 +3228,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 19 2017 12:04:46 for 🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 20 2017 08:00:03 for Ion Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

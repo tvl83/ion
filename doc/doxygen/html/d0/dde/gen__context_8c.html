@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯): src/secp256k1/src/gen_context.c File Reference</title>
+<title>Ion Core: src/secp256k1/src/gen_context.c File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -22,10 +22,10 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="../../ion_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯)
-   &#160;<span id="projectnumber">2.1.5.3</span>
+   <div id="projectname">Ion Core
+   &#160;<span id="projectnumber">2.1.5</span>
    </div>
-   <div id="projectbrief">Ion P2P Digital Currency</div>
+   <div id="projectbrief">P2P Digital Currency</div>
   </td>
  </tr>
  </tbody>
@@ -67,7 +67,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">gen_context.c File Reference</div>  </div>
 </div><!--header-->
@@ -94,8 +95,15 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aa6e98398cd5dd5398aab826a8d3bc740"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dde/gen__context_8c.html#aa6e98398cd5dd5398aab826a8d3bc740">default_error_callback_fn</a> (const char *str, void *data)</td></tr>
+<tr class="separator:aa6e98398cd5dd5398aab826a8d3bc740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dde/gen__context_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a792961430f27e8b9178105a7ec023019"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../d7/de8/structsecp256k1__callback.html">secp256k1_callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dde/gen__context_8c.html#a792961430f27e8b9178105a7ec023019">default_error_callback</a></td></tr>
+<tr class="separator:a792961430f27e8b9178105a7ec023019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a89912331796eb915f898acd299260e73"></a>
@@ -115,6 +123,44 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="aa6e98398cd5dd5398aab826a8d3bc740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6e98398cd5dd5398aab826a8d3bc740">&#9670;&nbsp;</a></span>default_error_callback_fn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void default_error_callback_fn </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dde/gen__context_8c_source.html#l00016">16</a> of file <a class="el" href="../../d0/dde/gen__context_8c_source.html">gen_context.c</a>.</p>
+
+</div>
+</div>
 <a id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&nbsp;</a></span>main()</h2>
 
@@ -142,13 +188,45 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dde/gen__context_8c_source.html#l00027">27</a> of file <a class="el" href="../../d0/dde/gen__context_8c_source.html">gen_context.c</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 -->
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a792961430f27e8b9178105a7ec023019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a792961430f27e8b9178105a7ec023019">&#9670;&nbsp;</a></span>default_error_callback</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d7/de8/structsecp256k1__callback.html">secp256k1_callback</a> default_error_callback</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    <a class="code" href="../../d0/dde/gen__context_8c.html#aa6e98398cd5dd5398aab826a8d3bc740">default_error_callback_fn</a>,</div><div class="line">    NULL</div><div class="line">}</div><div class="ttc" id="gen__context_8c_html_aa6e98398cd5dd5398aab826a8d3bc740"><div class="ttname"><a href="../../d0/dde/gen__context_8c.html#aa6e98398cd5dd5398aab826a8d3bc740">default_error_callback_fn</a></div><div class="ttdeci">static void default_error_callback_fn(const char *str, void *data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dde/gen__context_8c_source.html#l00016">gen_context.c:16</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d0/dde/gen__context_8c_source.html#l00022">22</a> of file <a class="el" href="../../d0/dde/gen__context_8c_source.html">gen_context.c</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 19 2017 12:04:47 for 🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 20 2017 08:00:06 for Ion Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

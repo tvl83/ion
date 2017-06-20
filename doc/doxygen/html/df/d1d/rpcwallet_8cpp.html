@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯): src/rpcwallet.cpp File Reference</title>
+<title>Ion Core: src/rpcwallet.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -22,10 +22,10 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="../../ion_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯)
-   &#160;<span id="projectnumber">2.1.5.3</span>
+   <div id="projectname">Ion Core
+   &#160;<span id="projectnumber">2.1.5</span>
    </div>
-   <div id="projectbrief">Ion P2P Digital Currency</div>
+   <div id="projectbrief">P2P Digital Currency</div>
   </td>
  </tr>
  </tbody>
@@ -101,6 +101,8 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:aba644e892d0fe242879f44311747ec76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#aba644e892d0fe242879f44311747ec76">TxToJSON</a> (const <a class="el" href="../../df/d43/class_c_transaction.html">CTransaction</a> &amp;tx, const <a class="el" href="../../d2/d86/classuint256.html">uint256</a> hashBlock, json_spirit::Object &amp;entry)</td></tr>
 <tr class="separator:aba644e892d0fe242879f44311747ec76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03fd7dceeeaa2bb23b83dba46673ff9a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#a03fd7dceeeaa2bb23b83dba46673ff9a">accountingDeprecationCheck</a> ()</td></tr>
+<tr class="separator:a03fd7dceeeaa2bb23b83dba46673ff9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcfbb0ad9335791f2832c01209b8f12d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#abcfbb0ad9335791f2832c01209b8f12d">HelpRequiringPassphrase</a> ()</td></tr>
 <tr class="separator:abcfbb0ad9335791f2832c01209b8f12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f837f6d506b9719cef93188db00fd3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#a8f837f6d506b9719cef93188db00fd3c">EnsureWalletIsUnlocked</a> ()</td></tr>
@@ -163,6 +165,8 @@ Functions</h2></td></tr>
 <tr class="separator:a34b36ceb4a7e36e0dab24cf675c49da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7e240a25a3d2d30ffb65bdfdfa082eb"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#ab7e240a25a3d2d30ffb65bdfdfa082eb">listreceivedbyaccount</a> (const Array &amp;params, bool fHelp)</td></tr>
 <tr class="separator:ab7e240a25a3d2d30ffb65bdfdfa082eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258c7a3dbf3fbf80ce4ab8c51d6842db"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#a258c7a3dbf3fbf80ce4ab8c51d6842db">MaybePushAddress</a> (Object &amp;entry, const <a class="el" href="../../de/d7f/script_8h.html#a8f46ecba0ddeb036be6b58d6ed1909cd">CTxDestination</a> &amp;dest)</td></tr>
+<tr class="separator:a258c7a3dbf3fbf80ce4ab8c51d6842db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a460d931e7f098979bea783409c971d53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#a460d931e7f098979bea783409c971d53">ListTransactions</a> (const <a class="el" href="../../d6/d53/class_c_wallet_tx.html">CWalletTx</a> &amp;wtx, const string &amp;strAccount, int nMinDepth, bool fLong, Array &amp;ret, const <a class="el" href="../../de/d7f/script_8h.html#aaa5e1639d76aef50f70532acc3302c4b">isminefilter</a> &amp;filter)</td></tr>
 <tr class="separator:a460d931e7f098979bea783409c971d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af19d4e3078c194d869f5d60c4103bc08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#af19d4e3078c194d869f5d60c4103bc08">AcentryToJSON</a> (const <a class="el" href="../../dc/dde/class_c_accounting_entry.html">CAccountingEntry</a> &amp;acentry, const string &amp;strAccount, Array &amp;ret)</td></tr>
@@ -179,6 +183,8 @@ Functions</h2></td></tr>
 <tr class="separator:a7813bcc93d80c6c4ad0ae846f80cff3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe8615fcf2c8e5319166c2fa8c638e08"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#afe8615fcf2c8e5319166c2fa8c638e08">keypoolrefill</a> (const Array &amp;params, bool fHelp)</td></tr>
 <tr class="separator:afe8615fcf2c8e5319166c2fa8c638e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ddd2a43022248736388d2b4f02c693"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#ab6ddd2a43022248736388d2b4f02c693">LockWallet</a> (<a class="el" href="../../d2/de5/class_c_wallet.html">CWallet</a> *pWallet)</td></tr>
+<tr class="separator:ab6ddd2a43022248736388d2b4f02c693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a733f7c70e7c18783935e6de9643c0086"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#a733f7c70e7c18783935e6de9643c0086">walletpassphrase</a> (const Array &amp;params, bool fHelp)</td></tr>
 <tr class="separator:a733f7c70e7c18783935e6de9643c0086"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84ad884957e24688433be32a9ca70933"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#a84ad884957e24688433be32a9ca70933">walletpassphrasechange</a> (const Array &amp;params, bool fHelp)</td></tr>
@@ -216,6 +222,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a8c30ff08026dc3d08b61141b5a6aa411"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#a8c30ff08026dc3d08b61141b5a6aa411">nWalletUnlockTime</a></td></tr>
 <tr class="separator:a8c30ff08026dc3d08b61141b5a6aa411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a594649bcd095fba58e9430af1cde2675"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/d6b/sync_8h.html#a37a4692b2d517f2843655ca11af7668a">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#a594649bcd095fba58e9430af1cde2675">cs_nWalletUnlockTime</a></td></tr>
+<tr class="separator:a594649bcd095fba58e9430af1cde2675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aca53a9372c92e81fc665cbdeb8fcdbc5"></a>
@@ -306,6 +314,45 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a03fd7dceeeaa2bb23b83dba46673ff9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03fd7dceeeaa2bb23b83dba46673ff9a">&#9670;&nbsp;</a></span>accountingDeprecationCheck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void accountingDeprecationCheck </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d1d/rpcwallet_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../df/d1d/rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 6 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 7 -->
+</div>
+</div>
+
+</div>
+</div>
 <a id="af19d4e3078c194d869f5d60c4103bc08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af19d4e3078c194d869f5d60c4103bc08">&#9670;&nbsp;</a></span>AcentryToJSON()</h2>
 
@@ -342,13 +389,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 6 -->
+<div class="center"><!-- SVG 8 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 7 -->
+<div class="center"><!-- SVG 9 -->
 </div>
 </div>
 
@@ -384,7 +431,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 8 -->
+<div class="center"><!-- SVG 10 -->
 </div>
 </div>
 
@@ -420,7 +467,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 9 -->
+<div class="center"><!-- SVG 11 -->
 </div>
 </div>
 
@@ -456,7 +503,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 10 -->
+<div class="center"><!-- SVG 12 -->
 </div>
 </div>
 
@@ -492,7 +539,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 11 -->
+<div class="center"><!-- SVG 13 -->
 </div>
 </div>
 
@@ -528,7 +575,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 12 -->
+<div class="center"><!-- SVG 14 -->
 </div>
 </div>
 
@@ -564,7 +611,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 13 -->
+<div class="center"><!-- SVG 15 -->
 </div>
 </div>
 
@@ -589,13 +636,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 14 -->
+<div class="center"><!-- SVG 16 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 15 -->
+<div class="center"><!-- SVG 17 -->
 </div>
 </div>
 
@@ -631,7 +678,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 16 -->
+<div class="center"><!-- SVG 18 -->
 </div>
 </div>
 
@@ -667,13 +714,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 17 -->
+<div class="center"><!-- SVG 19 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 18 -->
+<div class="center"><!-- SVG 20 -->
 </div>
 </div>
 
@@ -709,7 +756,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 19 -->
+<div class="center"><!-- SVG 21 -->
 </div>
 </div>
 
@@ -742,6 +789,12 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../df/d1d/rpcwallet_8cpp_source.html#l00631">631</a> of file <a class="el" href="../../df/d1d/rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 22 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -787,13 +840,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 20 -->
+<div class="center"><!-- SVG 23 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 21 -->
+<div class="center"><!-- SVG 24 -->
 </div>
 </div>
 
@@ -835,7 +888,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 22 -->
+<div class="center"><!-- SVG 25 -->
 </div>
 </div>
 
@@ -871,7 +924,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 23 -->
+<div class="center"><!-- SVG 26 -->
 </div>
 </div>
 
@@ -907,7 +960,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 24 -->
+<div class="center"><!-- SVG 27 -->
 </div>
 </div>
 
@@ -943,7 +996,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 25 -->
+<div class="center"><!-- SVG 28 -->
 </div>
 </div>
 
@@ -979,7 +1032,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 26 -->
+<div class="center"><!-- SVG 29 -->
 </div>
 </div>
 
@@ -1015,7 +1068,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 27 -->
+<div class="center"><!-- SVG 30 -->
 </div>
 </div>
 
@@ -1051,7 +1104,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 28 -->
+<div class="center"><!-- SVG 31 -->
 </div>
 </div>
 
@@ -1087,7 +1140,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 29 -->
+<div class="center"><!-- SVG 32 -->
 </div>
 </div>
 
@@ -1123,7 +1176,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 30 -->
+<div class="center"><!-- SVG 33 -->
 </div>
 </div>
 
@@ -1148,13 +1201,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 31 -->
+<div class="center"><!-- SVG 34 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 32 -->
+<div class="center"><!-- SVG 35 -->
 </div>
 </div>
 
@@ -1190,7 +1243,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 33 -->
+<div class="center"><!-- SVG 36 -->
 </div>
 </div>
 
@@ -1226,7 +1279,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 34 -->
+<div class="center"><!-- SVG 37 -->
 </div>
 </div>
 
@@ -1262,7 +1315,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 35 -->
+<div class="center"><!-- SVG 38 -->
 </div>
 </div>
 
@@ -1298,7 +1351,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 36 -->
+<div class="center"><!-- SVG 39 -->
 </div>
 </div>
 
@@ -1334,13 +1387,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 37 -->
+<div class="center"><!-- SVG 40 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 38 -->
+<div class="center"><!-- SVG 41 -->
 </div>
 </div>
 
@@ -1376,7 +1429,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 39 -->
+<div class="center"><!-- SVG 42 -->
 </div>
 </div>
 
@@ -1412,7 +1465,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 40 -->
+<div class="center"><!-- SVG 43 -->
 </div>
 </div>
 
@@ -1448,7 +1501,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 41 -->
+<div class="center"><!-- SVG 44 -->
 </div>
 </div>
 
@@ -1484,7 +1537,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 42 -->
+<div class="center"><!-- SVG 45 -->
 </div>
 </div>
 
@@ -1544,13 +1597,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 43 -->
+<div class="center"><!-- SVG 46 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 44 -->
+<div class="center"><!-- SVG 47 -->
 </div>
 </div>
 
@@ -1586,7 +1639,47 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 45 -->
+<div class="center"><!-- SVG 48 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="ab6ddd2a43022248736388d2b4f02c693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6ddd2a43022248736388d2b4f02c693">&#9670;&nbsp;</a></span>LockWallet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void LockWallet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/de5/class_c_wallet.html">CWallet</a> *&#160;</td>
+          <td class="paramname"><em>pWallet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d1d/rpcwallet_8cpp_source.html#l01908">1908</a> of file <a class="el" href="../../df/d1d/rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 49 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 50 -->
 </div>
 </div>
 
@@ -1622,7 +1715,57 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 46 -->
+<div class="center"><!-- SVG 51 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a258c7a3dbf3fbf80ce4ab8c51d6842db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a258c7a3dbf3fbf80ce4ab8c51d6842db">&#9670;&nbsp;</a></span>MaybePushAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void MaybePushAddress </td>
+          <td>(</td>
+          <td class="paramtype">Object &amp;&#160;</td>
+          <td class="paramname"><em>entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d7f/script_8h.html#a8f46ecba0ddeb036be6b58d6ed1909cd">CTxDestination</a> &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d1d/rpcwallet_8cpp_source.html#l01359">1359</a> of file <a class="el" href="../../df/d1d/rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 52 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 53 -->
 </div>
 </div>
 
@@ -1658,7 +1801,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 47 -->
+<div class="center"><!-- SVG 54 -->
 </div>
 </div>
 
@@ -1694,7 +1837,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 48 -->
+<div class="center"><!-- SVG 55 -->
 </div>
 </div>
 
@@ -1730,7 +1873,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 49 -->
+<div class="center"><!-- SVG 56 -->
 </div>
 </div>
 
@@ -1766,7 +1909,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 50 -->
+<div class="center"><!-- SVG 57 -->
 </div>
 </div>
 
@@ -1802,7 +1945,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 51 -->
+<div class="center"><!-- SVG 58 -->
 </div>
 </div>
 
@@ -1838,7 +1981,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 52 -->
+<div class="center"><!-- SVG 59 -->
 </div>
 </div>
 
@@ -1874,7 +2017,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 53 -->
+<div class="center"><!-- SVG 60 -->
 </div>
 </div>
 
@@ -1910,7 +2053,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 54 -->
+<div class="center"><!-- SVG 61 -->
 </div>
 </div>
 
@@ -1946,7 +2089,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 55 -->
+<div class="center"><!-- SVG 62 -->
 </div>
 </div>
 
@@ -1982,13 +2125,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 56 -->
+<div class="center"><!-- SVG 63 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 57 -->
+<div class="center"><!-- SVG 64 -->
 </div>
 </div>
 
@@ -2024,7 +2167,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 58 -->
+<div class="center"><!-- SVG 65 -->
 </div>
 </div>
 
@@ -2060,7 +2203,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 59 -->
+<div class="center"><!-- SVG 66 -->
 </div>
 </div>
 
@@ -2096,7 +2239,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 60 -->
+<div class="center"><!-- SVG 67 -->
 </div>
 </div>
 
@@ -2136,7 +2279,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 61 -->
+<div class="center"><!-- SVG 68 -->
 </div>
 </div>
 
@@ -2172,7 +2315,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 62 -->
+<div class="center"><!-- SVG 69 -->
 </div>
 </div>
 
@@ -2208,7 +2351,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 63 -->
+<div class="center"><!-- SVG 70 -->
 </div>
 </div>
 
@@ -2244,7 +2387,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 64 -->
+<div class="center"><!-- SVG 71 -->
 </div>
 </div>
 
@@ -2280,19 +2423,43 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 65 -->
+<div class="center"><!-- SVG 72 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 66 -->
+<div class="center"><!-- SVG 73 -->
 </div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a594649bcd095fba58e9430af1cde2675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a594649bcd095fba58e9430af1cde2675">&#9670;&nbsp;</a></span>cs_nWalletUnlockTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d6b/sync_8h.html#a37a4692b2d517f2843655ca11af7668a">CCriticalSection</a> cs_nWalletUnlockTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d1d/rpcwallet_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../df/d1d/rpcwallet_8cpp_source.html">rpcwallet.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a8c30ff08026dc3d08b61141b5a6aa411"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c30ff08026dc3d08b61141b5a6aa411">&#9670;&nbsp;</a></span>nWalletUnlockTime</h2>
 
@@ -2312,7 +2479,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 19 2017 12:04:47 for 🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 20 2017 08:00:05 for Ion Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

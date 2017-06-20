@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯): src/net.h File Reference</title>
+<title>Ion Core: src/net.h File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -22,10 +22,10 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="../../ion_logo_doxygen.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯)
-   &#160;<span id="projectnumber">2.1.5.3</span>
+   <div id="projectname">Ion Core
+   &#160;<span id="projectnumber">2.1.5</span>
    </div>
-   <div id="projectbrief">Ion P2P Digital Currency</div>
+   <div id="projectbrief">P2P Digital Currency</div>
   </td>
  </tr>
  </tbody>
@@ -254,6 +254,27 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a843f1984796a7e44a9e23fccd6a8af34"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d97/net_8h.html#a843f1984796a7e44a9e23fccd6a8af34">nBestHeight</a></td></tr>
 <tr class="separator:a843f1984796a7e44a9e23fccd6a8af34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ecbac59f1e63af4c4c8c112f00468d"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d97/net_8h.html#a24ecbac59f1e63af4c4c8c112f00468d">PING_INTERVAL</a> = 1 * 60</td></tr>
+<tr class="memdesc:a24ecbac59f1e63af4c4c8c112f00468d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time between pings automatically sent out for latency probing and keepalive (in seconds).  <a href="#a24ecbac59f1e63af4c4c8c112f00468d">More...</a><br /></td></tr>
+<tr class="separator:a24ecbac59f1e63af4c4c8c112f00468d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7853d10884491eae33796656e1673fe3"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d97/net_8h.html#a7853d10884491eae33796656e1673fe3">TIMEOUT_INTERVAL</a> = 20 * 60</td></tr>
+<tr class="memdesc:a7853d10884491eae33796656e1673fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time after which to disconnect, after waiting for a ping response (or inactivity).  <a href="#a7853d10884491eae33796656e1673fe3">More...</a><br /></td></tr>
+<tr class="separator:a7853d10884491eae33796656e1673fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f02122aa15cdc5ac394b010f97422e9"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d97/net_8h.html#a2f02122aa15cdc5ac394b010f97422e9">MAX_SUBVERSION_LENGTH</a> = 256</td></tr>
+<tr class="memdesc:a2f02122aa15cdc5ac394b010f97422e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of strSubVer in <code>version</code> message.  <a href="#a2f02122aa15cdc5ac394b010f97422e9">More...</a><br /></td></tr>
+<tr class="separator:a2f02122aa15cdc5ac394b010f97422e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af677dfc85dddc429fe0303f338878ec0"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d97/net_8h.html#af677dfc85dddc429fe0303f338878ec0">MAX_INV_SZ</a> = 50000</td></tr>
+<tr class="memdesc:af677dfc85dddc429fe0303f338878ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of entries in an 'inv' protocol message.  <a href="#af677dfc85dddc429fe0303f338878ec0">More...</a><br /></td></tr>
+<tr class="separator:af677dfc85dddc429fe0303f338878ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa994a3fa6352ccb31e5bfc425364daf1"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d97/net_8h.html#aa994a3fa6352ccb31e5bfc425364daf1">MAPASKFOR_MAX_SZ</a> = <a class="el" href="../../d7/d97/net_8h.html#af677dfc85dddc429fe0303f338878ec0">MAX_INV_SZ</a></td></tr>
+<tr class="memdesc:aa994a3fa6352ccb31e5bfc425364daf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of entries in mapAskFor.  <a href="#aa994a3fa6352ccb31e5bfc425364daf1">More...</a><br /></td></tr>
+<tr class="separator:aa994a3fa6352ccb31e5bfc425364daf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04723cf5ca6f222bf5cd3c7b2aeb6be5"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d97/net_8h.html#a04723cf5ca6f222bf5cd3c7b2aeb6be5">SETASKFOR_MAX_SZ</a> = 2 * <a class="el" href="../../d7/d97/net_8h.html#af677dfc85dddc429fe0303f338878ec0">MAX_INV_SZ</a></td></tr>
+<tr class="memdesc:a04723cf5ca6f222bf5cd3c7b2aeb6be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of entries in setAskFor (larger due to getdata latency)  <a href="#a04723cf5ca6f222bf5cd3c7b2aeb6be5">More...</a><br /></td></tr>
+<tr class="separator:a04723cf5ca6f222bf5cd3c7b2aeb6be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84d4a16942889a214b340327d2597a05"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d97/net_8h.html#a84d4a16942889a214b340327d2597a05">MAX_ADDR_TO_SEND</a> = 1000</td></tr>
+<tr class="memdesc:a84d4a16942889a214b340327d2597a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of new addresses to accumulate before announcing.  <a href="#a84d4a16942889a214b340327d2597a05">More...</a><br /></td></tr>
+<tr class="separator:a84d4a16942889a214b340327d2597a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37089835ec27ad8bf945a458708165b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d97/net_8h.html#a37089835ec27ad8bf945a458708165b9">fDiscover</a></td></tr>
 <tr class="separator:a37089835ec27ad8bf945a458708165b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac7a5df09042b8fc16272947ca022c2c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d97/net_8h.html#aac7a5df09042b8fc16272947ca022c2c">nLocalServices</a></td></tr>
@@ -981,6 +1002,12 @@ Here is the call graph for this function:</div>
 <div class="center"><!-- SVG 24 -->
 </div>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 25 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1006,7 +1033,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 25 -->
+<div class="center"><!-- SVG 26 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 27 -->
 </div>
 </div>
 
@@ -1032,7 +1065,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 26 -->
+<div class="center"><!-- SVG 28 -->
 </div>
 </div>
 
@@ -1065,7 +1098,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 27 -->
+<div class="center"><!-- SVG 29 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 30 -->
 </div>
 </div>
 
@@ -1099,7 +1138,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 28 -->
+<div class="center"><!-- SVG 31 -->
 </div>
 </div>
 
@@ -1133,13 +1172,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 29 -->
+<div class="center"><!-- SVG 32 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 30 -->
+<div class="center"><!-- SVG 33 -->
 </div>
 </div>
 
@@ -1173,9 +1212,15 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/d84/net_8cpp_source.html#l01912">1912</a> of file <a class="el" href="../../dd/d84/net_8cpp_source.html">net.cpp</a>.</p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 34 -->
+</div>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 31 -->
+<div class="center"><!-- SVG 35 -->
 </div>
 </div>
 
@@ -1217,7 +1262,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 32 -->
+<div class="center"><!-- SVG 36 -->
 </div>
 </div>
 
@@ -1253,13 +1298,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 33 -->
+<div class="center"><!-- SVG 37 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 34 -->
+<div class="center"><!-- SVG 38 -->
 </div>
 </div>
 
@@ -1284,6 +1329,18 @@ Here is the caller graph for this function:</div>
 <p>vote for a local address </p>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/d84/net_8cpp_source.html#l00287">287</a> of file <a class="el" href="../../dd/d84/net_8cpp_source.html">net.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 39 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 40 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1314,7 +1371,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 35 -->
+<div class="center"><!-- SVG 41 -->
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 42 -->
 </div>
 </div>
 
@@ -1349,6 +1412,12 @@ Here is the call graph for this function:</div>
 <p>Make a particular network entirely off-limits (no automatic connects to it) </p>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/d84/net_8cpp_source.html#l00267">267</a> of file <a class="el" href="../../dd/d84/net_8cpp_source.html">net.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 43 -->
+</div>
+</div>
 
 </div>
 </div>
@@ -1382,7 +1451,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 36 -->
+<div class="center"><!-- SVG 44 -->
 </div>
 </div>
 
@@ -1408,13 +1477,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 37 -->
+<div class="center"><!-- SVG 45 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 38 -->
+<div class="center"><!-- SVG 46 -->
 </div>
 </div>
 
@@ -1440,13 +1509,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 39 -->
+<div class="center"><!-- SVG 47 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 40 -->
+<div class="center"><!-- SVG 48 -->
 </div>
 </div>
 
@@ -1471,13 +1540,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 41 -->
+<div class="center"><!-- SVG 49 -->
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 42 -->
+<div class="center"><!-- SVG 50 -->
 </div>
 </div>
 
@@ -1610,6 +1679,32 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="aa994a3fa6352ccb31e5bfc425364daf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa994a3fa6352ccb31e5bfc425364daf1">&#9670;&nbsp;</a></span>MAPASKFOR_MAX_SZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t MAPASKFOR_MAX_SZ = <a class="el" href="../../d7/d97/net_8h.html#af677dfc85dddc429fe0303f338878ec0">MAX_INV_SZ</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The maximum number of entries in mapAskFor. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d97/net_8h_source.html#l00055">55</a> of file <a class="el" href="../../d7/d97/net_8h_source.html">net.h</a>.</p>
+
+</div>
+</div>
 <a id="ac585e737c081ba921335070264a93a79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac585e737c081ba921335070264a93a79">&#9670;&nbsp;</a></span>mapLocalHost</h2>
 
@@ -1639,6 +1734,84 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../dd/d84/net_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../dd/d84/net_8cpp_source.html">net.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a84d4a16942889a214b340327d2597a05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d4a16942889a214b340327d2597a05">&#9670;&nbsp;</a></span>MAX_ADDR_TO_SEND</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_ADDR_TO_SEND = 1000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The maximum number of new addresses to accumulate before announcing. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d97/net_8h_source.html#l00059">59</a> of file <a class="el" href="../../d7/d97/net_8h_source.html">net.h</a>.</p>
+
+</div>
+</div>
+<a id="af677dfc85dddc429fe0303f338878ec0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af677dfc85dddc429fe0303f338878ec0">&#9670;&nbsp;</a></span>MAX_INV_SZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_INV_SZ = 50000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The maximum number of entries in an 'inv' protocol message. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d97/net_8h_source.html#l00053">53</a> of file <a class="el" href="../../d7/d97/net_8h_source.html">net.h</a>.</p>
+
+</div>
+</div>
+<a id="a2f02122aa15cdc5ac394b010f97422e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f02122aa15cdc5ac394b010f97422e9">&#9670;&nbsp;</a></span>MAX_SUBVERSION_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_SUBVERSION_LENGTH = 256</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum length of strSubVer in <code>version</code> message. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d97/net_8h_source.html#l00051">51</a> of file <a class="el" href="../../d7/d97/net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1722,6 +1895,58 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a24ecbac59f1e63af4c4c8c112f00468d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24ecbac59f1e63af4c4c8c112f00468d">&#9670;&nbsp;</a></span>PING_INTERVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int PING_INTERVAL = 1 * 60</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Time between pings automatically sent out for latency probing and keepalive (in seconds). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d97/net_8h_source.html#l00047">47</a> of file <a class="el" href="../../d7/d97/net_8h_source.html">net.h</a>.</p>
+
+</div>
+</div>
+<a id="a04723cf5ca6f222bf5cd3c7b2aeb6be5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04723cf5ca6f222bf5cd3c7b2aeb6be5">&#9670;&nbsp;</a></span>SETASKFOR_MAX_SZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t SETASKFOR_MAX_SZ = 2 * <a class="el" href="../../d7/d97/net_8h.html#af677dfc85dddc429fe0303f338878ec0">MAX_INV_SZ</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The maximum number of entries in setAskFor (larger due to getdata latency) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d97/net_8h_source.html#l00057">57</a> of file <a class="el" href="../../d7/d97/net_8h_source.html">net.h</a>.</p>
+
+</div>
+</div>
 <a id="a6c58f8ccc4c93105a44caf588562d609"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c58f8ccc4c93105a44caf588562d609">&#9670;&nbsp;</a></span>strSubVersion</h2>
 
@@ -1737,6 +1962,32 @@ Here is the caller graph for this function:</div>
 <p>Subversion as sent to the P2P network in <code>version</code> messages. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/d84/net_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../dd/d84/net_8cpp_source.html">net.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7853d10884491eae33796656e1673fe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7853d10884491eae33796656e1673fe3">&#9670;&nbsp;</a></span>TIMEOUT_INTERVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int TIMEOUT_INTERVAL = 20 * 60</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Time after which to disconnect, after waiting for a ping response (or inactivity). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d97/net_8h_source.html#l00049">49</a> of file <a class="el" href="../../d7/d97/net_8h_source.html">net.h</a>.</p>
 
 </div>
 </div>
@@ -1791,7 +2042,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 19 2017 12:04:46 for 🗺️Ion Core Wallet CE ©️ 👒 (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 20 2017 08:00:04 for Ion Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

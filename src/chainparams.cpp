@@ -180,8 +180,8 @@ public:
         strStashedsendPoolDummyAddress = "gCJDCcmcVZcfnwAZdEt7dg5s5jjAbDp9dZdhXAmP5NM";
         nLastPOWBlock 	= 300;
         
-        nFork1Height = 78800;
-        nFork1Time = 1497479952;
+        nFork1Height = 75000;
+        nFork1Time = 1497209344;
     }
 
     virtual const CBlock& GenesisBlock() const { return genesis; }

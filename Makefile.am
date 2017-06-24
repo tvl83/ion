@@ -20,7 +20,7 @@ endif
 IOND_BIN=$(top_builddir)/src/$(ION_DAEMON_NAME)$(EXEEXT)
 ION_QT_BIN=$(top_builddir)/src/qt/$(ION_GUI_NAME)$(EXEEXT)
 #ION_CLI_BIN=$(top_builddir)/src/$(ION_CLI_NAME)$(EXEEXT)
-ION_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
+#ION_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 
 empty :=
 space := $(empty) $(empty)

@@ -50,6 +50,7 @@ bool AppInit(int argc, char* argv[])
         {
             fprintf(stderr, "Error: Specified directory does not exist\n");
             Shutdown();
+	    return false;
         }
         ReadConfigFile(mapArgs, mapMultiArgs);
 

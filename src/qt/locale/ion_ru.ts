@@ -1838,8 +1838,8 @@ Address: %4
         <translation>Опции:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Указать конфигурационный файл (по умолчанию: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Указать конфигурационный файл (по умолчанию: ioncoin.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: iond.pid)</source>

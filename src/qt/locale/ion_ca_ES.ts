@@ -1841,8 +1841,8 @@ Address: %4
         <translation>Opcions:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Especifiqueu el fitxer de configuració (per defecte: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Especifiqueu el fitxer de configuració (per defecte: ioncoin.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: iond.pid)</source>

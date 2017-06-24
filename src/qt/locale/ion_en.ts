@@ -376,7 +376,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+6"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This pane shows an example ion.conf template with the necessary masternode settings.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This pane shows an example ioncoin.conf template with the necessary masternode settings.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4506,8 +4506,8 @@ Please unlock your wallet manually or wait for StashedSend mixing to complete be
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Specify configuration file (default: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Specify configuration file (default: ioncoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>

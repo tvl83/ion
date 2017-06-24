@@ -1884,8 +1884,8 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
 </translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Especifica un archivo de configuración (por defecto: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Especifica un archivo de configuración (por defecto: ioncoin.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: iond.pid)</source>

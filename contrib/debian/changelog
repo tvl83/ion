@@ -526,8 +526,8 @@ ion (0.3.19~dfsg-5) unstable; urgency=low
 ion (0.3.19~dfsg-4) unstable; urgency=low
 
   [ Micah Anderson ]
-  * Provide example ion.conf.
-  * Add iond(1) and ion.conf(5) man pages.
+  * Provide example ioncoin.conf.
+  * Add iond(1) and ioncoin.conf(5) man pages.
 
   [ Jonas Smedegaard ]
   * Ease backporting:

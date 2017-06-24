@@ -1083,13 +1083,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Ionomy
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Ionomy
-    // Mac: ~/Library/Application Support/Ionomy
-    // Unix: ~/.ionomy
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\ioncoin
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\ioncoin
+    // Mac: ~/Library/Application Support/ioncoin
+    // Unix: ~/.ioncoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "ionomy";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "ioncoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1101,10 +1101,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "ionomy";
+    return pathRet / "ioncoin";
 #else
     // Unix
-    return pathRet / ".ionomy";
+    return pathRet / ".ioncoin";
 #endif
 #endif
 }
@@ -1153,7 +1153,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "ion.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "ioncoin.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
@@ -1170,7 +1170,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()){
-        // Create empty ion.conf if it does not exist
+        // Create empty ioncoin.conf if it does not exist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -1182,7 +1182,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it)
     {
-        // Don't overwrite existing settings so command line settings override ion.conf
+        // Don't overwrite existing settings so command line settings override ioncoin.conf
         string strKey = string("-") + it->string_key;
         if (mapSettingsRet.count(strKey) == 0)
         {

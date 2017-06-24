@@ -1881,8 +1881,8 @@ Cela implique que des frais à hauteur d'au moins %2 seront nécessaires.</trans
         <translation>Options:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Spécifier le fichier de configuration (par défaut: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Spécifier le fichier de configuration (par défaut: ioncoin.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: iond.pid)</source>

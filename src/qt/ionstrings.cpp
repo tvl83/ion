@@ -272,7 +272,7 @@ QT_TRANSLATE_NOOP("ion-core", "Set the number of threads to service RPC calls (d
 QT_TRANSLATE_NOOP("ion-core", "Shrink debug.log file on client startup (default: 1 when no -debug)"),
 QT_TRANSLATE_NOOP("ion-core", "Signing failed."),
 QT_TRANSLATE_NOOP("ion-core", "Signing timed out."),
-QT_TRANSLATE_NOOP("ion-core", "Specify configuration file (default: ion.conf)"),
+QT_TRANSLATE_NOOP("ion-core", "Specify configuration file (default: ioncoin.conf)"),
 QT_TRANSLATE_NOOP("ion-core", "Specify connection timeout in milliseconds (default: 5000)"),
 QT_TRANSLATE_NOOP("ion-core", "Specify data directory"),
 QT_TRANSLATE_NOOP("ion-core", "Specify masternode configuration file (default: masternode.conf)"),

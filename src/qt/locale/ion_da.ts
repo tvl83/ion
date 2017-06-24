@@ -1865,8 +1865,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Indstillinger:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Angiv konfigurationsfil (default: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Angiv konfigurationsfil (default: ioncoin.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: iond.pid)</source>

@@ -95,11 +95,11 @@ After creating the VM, we need to configure it.
 
 - Click `Ok` twice to save.
 
-Get the [Debian 8.x net installer](http://cdimage.debian.org/mirror/cdimage/archive/8.5.0/amd64/iso-cd/debian-8.5.0-amd64-netinst.iso) (a more recent minor version should also work, see also [Debian Network installation](https://www.debian.org/CD/netinst/)).
+Get the [Debian 9.x net installer](https://cdimage.debian.org/mirror/cdimage/release/current/amd64/iso-cd/debian-9.0.0-amd64-netinst.iso) (a more recent minor version should also work, see also [Debian Network installation](https://www.debian.org/CD/netinst/)).
 This DVD image can be [validated](https://www.debian.org/CD/verify) using a SHA256 hashing tool, for example on
 Unixy OSes by entering the following in a terminal:
 
-    echo "ad4e8c27c561ad8248d5ebc1d36eb172f884057bfeb2c22ead823f59fa8c3dff  debian-8.5.0-amd64-netinst.iso" | sha256sum -c
+    echo "9d98f339016dc2a3998881949a8f0678baede26b5106f18ef1168d7e13606773  debian-9.0.0-amd64-netinst.iso" | sha256sum -c
     # (must return OK)
 
 Then start the VM. On the first launch you will be asked for a CD or DVD image. Choose the downloaded ISO.
@@ -231,12 +231,9 @@ On Windows you can use [putty](http://www.chiark.greenend.org.uk/~sgtatham/putty
 
 For example, to connect as `root` from a Linux command prompt use
 
-    $ ssh root@localhost -p 22222
-    The authenticity of host '[localhost]:22222 ([127.0.0.1]:22222)' can't be established.
-    RSA key fingerprint is ae:f5:c8:9f:17:c6:c7:1b:c2:1b:12:31:1d:bb:d0:c7.
-    Are you sure you want to continue connecting (yes/no)? yes
-    Warning: Permanently added '[localhost]:22222' (RSA) to the list of known hosts.
-    root@localhost's password: (enter root password configured during install)
+    $ ssh debian@localhost -p 22222
+    debian@localhost's password: 
+    Linux debian 4.9.0-3-amd64 #1 SMP Debian 4.9.30-2+deb9u1 (2017-06-18) x86_64
 
     The programs included with the Debian GNU/Linux system are free software;
     the exact distribution terms for each program are described in the
@@ -244,7 +241,9 @@ For example, to connect as `root` from a Linux command prompt use
 
     Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
     permitted by applicable law.
-    root@debian:~#
+    Last login: Tue Jun 20 05:08:48 2017 from 10.0.2.2
+    debian@debian:~$
+
 
 Replace `root` with `debian` to log in as user.
 
@@ -311,7 +310,7 @@ Clone the git repositories for ion and Gitian.
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
 git clone https://github.com/cevap/ion
-git clone https://github.com/ion-core/gitian.sigs.git
+git clone https://github.com/ion/gitian.sigs.git
 ```
 
 Setting up the Gitian image

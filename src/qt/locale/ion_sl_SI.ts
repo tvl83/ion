@@ -1865,8 +1865,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
         <translation>Možnosti:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Določi konfiguracijsko datoteko (privzeto: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Določi konfiguracijsko datoteko (privzeto: ioncoin.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: iond.pid)</source>

@@ -1881,8 +1881,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Inställningar:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Ange konfigurationsfilen (standard: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Ange konfigurationsfilen (standard: ioncoin.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: iond.pid)</source>

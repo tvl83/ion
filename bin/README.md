@@ -1,4 +1,4 @@
-# 🗺️Ion Core Wallet 2.1.5.3 CE ©️ 👒 Midas-Algo 👒
+# 🗺️Ion Core Wallet 2.1.5.4 CE ©️ 👒 Midas-Algo 👒
 ## (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯)
 
 #### Binaries of current branch and their hashes

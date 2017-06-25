@@ -89,6 +89,8 @@ public:
         nRPCPort = 12705;
         nProofOfWorkLimit = uint256S("000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         nProofOfStakeLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        nTargetSpacing = 64;
+        nTargetTimespan = 7 * 24 * 60 * 60; // one week
 
 		genesis = CreateGenesisBlock(1486045800, 28884498, 0x1e00ffff, 1, (1 * COIN));
 		hashGenesisBlock = genesis.GetHash();
@@ -111,6 +113,9 @@ public:
 		nPoolMaxTransactions = 3;
         strStashedsendPoolDummyAddress = "iqbMeTpdFfxiNcWHn255T2TneJTrUECCBE";
         nLastPOWBlock 	= 1000;
+        
+        nFork1Height = 176500;
+        nFork1Time = 1497541280;
     }
 
     virtual const CBlock& GenesisBlock() const { return genesis; }
@@ -147,6 +152,8 @@ public:
    
         nProofOfWorkLimit = uint256S("000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         nProofOfStakeLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        nTargetSpacing = 64;
+        nTargetTimespan = 7 * 24 * 60 * 60; // one week
 
 	genesis = CreateGenesisBlock(1491737471, 1603027, 0x1e00ffff, 1, (1 * COIN));
         
@@ -172,6 +179,9 @@ public:
 	nPoolMaxTransactions = 3;
         strStashedsendPoolDummyAddress = "gCJDCcmcVZcfnwAZdEt7dg5s5jjAbDp9dZdhXAmP5NM";
         nLastPOWBlock 	= 300;
+        
+        nFork1Height = 78800;
+        nFork1Time = 1497479952;
     }
 
     virtual const CBlock& GenesisBlock() const { return genesis; }

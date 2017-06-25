@@ -60,7 +60,8 @@ public:
     int GetDefaultPort() const { return nDefaultPort; }
     const uint256& ProofOfWorkLimit() const { return nProofOfWorkLimit; }
     const uint256& ProofOfStakeLimit() const { return nProofOfStakeLimit; }
-    int SubsidyHalvingInterval() const { return nSubsidyHalvingInterval; }
+    int TargetSpacing() const { return nTargetSpacing; }
+    int TargetTimespan() const { return nTargetTimespan; }
     virtual const CBlock& GenesisBlock() const = 0;
     virtual bool RequireRPCPassword() const { return true; }
     const string& DataDir() const { return strDataDir; }
@@ -72,6 +73,9 @@ public:
     int LastPOWBlock() const { return nLastPOWBlock; }
     int PoolMaxTransactions() const { return nPoolMaxTransactions; }
     std::string StashedsendPoolDummyAddress() const { return strStashedsendPoolDummyAddress; }
+    
+    int Fork1Height() const { return nFork1Height; }
+    int Fork1Time() const { return nFork1Time; }
 
 protected:
     CChainParams() {};
@@ -84,7 +88,9 @@ protected:
     int nRPCPort;
     uint256 nProofOfWorkLimit;
     uint256 nProofOfStakeLimit;
-    int nSubsidyHalvingInterval;
+    int nTargetSpacing;
+    int nAdjustmentInterval;
+    int nTargetTimespan;
     string strDataDir;
     vector<CDNSSeedData> vSeeds;
     std::vector<unsigned char> base58Prefixes[MAX_BASE58_TYPES];
@@ -92,6 +98,9 @@ protected:
     int nPOSStartBlock;
     int nPoolMaxTransactions;
     std::string strStashedsendPoolDummyAddress;
+    
+    int nFork1Height;
+    int64_t nFork1Time;
 };
 
 /**

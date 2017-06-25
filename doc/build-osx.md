@@ -29,7 +29,7 @@ Build Ion Core
 
 1. Clone the ion source code and cd into `ion`
 
-        git clone https://github.com/ion/ion
+        git clone https://github.com/cevap/ion
         cd ion
 
 2.  Build ion-core:
@@ -57,9 +57,9 @@ Ion Core is now available at `./src/iond`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=ionrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Ion/ion.conf"
+    echo -e "rpcuser=ionrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Ion/ioncoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Ion/ion.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Ion/ioncoin.conf"
 
 The first time you run iond, it will start downloading the blockchain. This process could take several hours.
 
@@ -96,4 +96,4 @@ Notes
 
 * Tested on OS X 10.8 through 10.12 on 64-bit Intel processors only.
 
-* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/ion/ion/issues/7714)
+* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/cevap/ion/issues/7714)

@@ -1,6 +1,9 @@
+#/bin/
+
+
 *.tar.gz
 
-*.exe
+#*.exe
 src/ion
 src/iond
 src/ion-cli
@@ -26,6 +29,7 @@ build-aux/m4/ltversion.m4
 build-aux/missing
 build-aux/compile
 build-aux/test-driver
+src/secp256k1/build-aux/
 config.log
 config.status
 configure
@@ -75,7 +79,10 @@ src/qt/test/moc*.cpp
 *.qm
 Makefile
 ion-qt
-Ion-Qt.app
+ion-Qt.app
+iond
+ion-cli
+ion-tx
 
 # Unit-tests
 Makefile.test
@@ -105,7 +112,7 @@ test/cache/*
 
 !src/leveldb*/Makefile
 
-/doc/doxygen/
+#/doc/doxygen/
 
 libionconsensus.pc
 contrib/devtools/split-debug.sh

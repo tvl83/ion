@@ -480,7 +480,7 @@ bool IsStandardTx(const CTransaction& tx, string& reason)
         return false;
     }
     // nTime has different purpose from nLockTime but can be used in similar attacks
-    if (tx.nTime > FutureDrift(GetAdjustedTime())) {
+    if (tx.nTime > FutureDrift(GetAdjustedTime(), nBestHeight)) {
         reason = "time-too-new";
         return false;
     }
@@ -2462,7 +2462,7 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
         return DoS(50, error("CheckBlock() : proof of work failed"));
 
     // Check timestamp
-    if (GetBlockTime() > FutureDrift(GetAdjustedTime()))
+    if (GetBlockTime() > FutureDriftV2(GetAdjustedTime()))
         return error("CheckBlock() : block timestamp too far in the future");
 
     // First transaction must be coinbase, the rest must not be
@@ -2642,7 +2642,7 @@ bool CBlock::AcceptBlock()
         return DoS(10, error("AcceptBlock() : prev block not found"));
     CBlockIndex* pindexPrev = (*mi).second;
     int nHeight = pindexPrev->nHeight+1;
-
+   
     uint256 hashProof;
     if (IsProofOfWork() && nHeight > Params().LastPOWBlock()){
         return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
@@ -2655,7 +2655,7 @@ bool CBlock::AcceptBlock()
     }
 
     // Check coinbase timestamp
-    if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime) && IsProofOfStake())
+    if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime, nHeight) && IsProofOfStake())
         return DoS(50, error("AcceptBlock() : coinbase timestamp is too early"));
 
     // Check coinstake timestamp
@@ -2667,9 +2667,16 @@ bool CBlock::AcceptBlock()
         return DoS(100, error("AcceptBlock() : incorrect %s", IsProofOfWork() ? "proof-of-work" : "proof-of-stake"));
 
     // Check timestamp against prev
-    if (GetBlockTime() <= pindexPrev->GetPastTimeLimit() || FutureDrift(GetBlockTime()) < pindexPrev->GetBlockTime())
+    if ((nHeight > Params().Fork1Height()) &&
+            (FutureDrift(GetBlockTime(), nHeight) < pindexPrev->GetBlockTime())){
+        return error("AcceptBlock() : block's timestamp is too far in the future");
+    }
+    
+    if ((nHeight > Params().Fork1Height()) &&
+            ((GetBlockTime() <= pindexPrev->GetMedianTimePast()))){
         return error("AcceptBlock() : block's timestamp is too early");
-
+    }
+    
     // Check that all transactions are finalized
     BOOST_FOREACH(const CTransaction& tx, vtx)
         if (!IsFinalTx(tx, nHeight, GetBlockTime()))

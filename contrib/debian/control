@@ -27,8 +27,8 @@ Build-Depends: debhelper,
  libzmq3-dev
 Standards-Version: 3.9.2
 Homepage: https://ioncore.org/
-Vcs-Git: git://github.com/ion/ion.git
-Vcs-Browser: https://github.com/ion/ion
+Vcs-Git: git://github.com/cevap/ion.git
+Vcs-Browser: https://github.com/cevap/ion
 
 Package: iond
 Architecture: any

@@ -20,22 +20,22 @@ Summary:	Peer to Peer Cryptographic Currency
 
 Group:		Applications/System
 License:	MIT
-URL:		https://ion.org/
-Source0:	https://ion.org/bin/ion-core-%{version}/ion-%{version}.tar.gz
+URL:		https://ioncoin.org/
+Source0:	https://ioncoin.org/bin/ion-core-%{version}/ion-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
-Source10:	https://raw.githubusercontent.com/ion/ion/v%{version}/contrib/debian/examples/ion.conf
+Source10:	https://raw.githubusercontent.com/cevap/ion/v%{version}/contrib/debian/examples/ioncoin.conf
 
 #man pages
-Source20:	https://raw.githubusercontent.com/ion/ion/v%{version}/doc/man/iond.1
-Source21:	https://raw.githubusercontent.com/ion/ion/v%{version}/doc/man/ion-cli.1
-Source22:	https://raw.githubusercontent.com/ion/ion/v%{version}/doc/man/ion-qt.1
+Source20:	https://raw.githubusercontent.com/cevap/ion/v%{version}/doc/man/iond.1
+Source21:	https://raw.githubusercontent.com/cevap/ion/v%{version}/doc/man/ion-cli.1
+Source22:	https://raw.githubusercontent.com/cevap/ion/v%{version}/doc/man/ion-qt.1
 
 #selinux
-Source30:	https://raw.githubusercontent.com/ion/ion/v%{version}/contrib/rpm/ion.te
+Source30:	https://raw.githubusercontent.com/cevap/ion/v%{version}/contrib/rpm/ion.te
 # Source31 - what about ion-tx and bench_ion ???
-Source31:	https://raw.githubusercontent.com/ion/ion/v%{version}/contrib/rpm/ion.fc
-Source32:	https://raw.githubusercontent.com/ion/ion/v%{version}/contrib/rpm/ion.if
+Source31:	https://raw.githubusercontent.com/cevap/ion/v%{version}/contrib/rpm/ion.fc
+Source32:	https://raw.githubusercontent.com/cevap/ion/v%{version}/contrib/rpm/ion.if
 
 Source100:	https://upload.wikimedia.org/wikipedia/commons/4/46/Ion.svg
 
@@ -151,7 +151,7 @@ This package contains utilities needed by the ion-server package.
 %prep
 %setup -q
 %patch0 -p1 -b .libressl
-cp -p %{SOURCE10} ./ion.conf.example
+cp -p %{SOURCE10} ./ioncoin.conf.example
 tar -zxf %{SOURCE1}
 cp -p db-%{bdbv}.NC/LICENSE ./db-%{bdbv}.NC-LICENSE
 mkdir db4 SELinux
@@ -186,10 +186,10 @@ mv %{buildroot}%{_bindir}/iond %{buildroot}%{_sbindir}/iond
 
 # systemd stuff
 mkdir -p %{buildroot}%{_tmpfilesdir}
-cat <<EOF > %{buildroot}%{_tmpfilesdir}/ion.conf
+cat <<EOF > %{buildroot}%{_tmpfilesdir}/ioncoin.conf
 d /run/iond 0750 ion ion -
 EOF
-touch -a -m -t 201504280000 %{buildroot}%{_tmpfilesdir}/ion.conf
+touch -a -m -t 201504280000 %{buildroot}%{_tmpfilesdir}/ioncoin.conf
 
 mkdir -p %{buildroot}%{_sysconfdir}/sysconfig
 cat <<EOF > %{buildroot}%{_sysconfdir}/sysconfig/ion
@@ -200,7 +200,7 @@ OPTIONS=""
 
 # System service defaults.
 # Don't change these unless you know what you're doing.
-CONFIG_FILE="%{_sysconfdir}/ion/ion.conf"
+CONFIG_FILE="%{_sysconfdir}/ion/ioncoin.conf"
 DATA_DIR="%{_localstatedir}/lib/ion"
 PID_FILE="/run/iond/iond.pid"
 EOF
@@ -332,10 +332,10 @@ if [ `%{_sbindir}/sestatus |grep -c "disabled"` -eq 0 ]; then
 for selinuxvariant in %{selinux_variants}; do
 	%{_sbindir}/semodule -s ${selinuxvariant} -i %{_datadir}/selinux/${selinuxvariant}/ion.pp &> /dev/null || :
 done
-%{_sbindir}/semanage port -a -t ion_port_t -p tcp 8332
-%{_sbindir}/semanage port -a -t ion_port_t -p tcp 8333
-%{_sbindir}/semanage port -a -t ion_port_t -p tcp 18332
-%{_sbindir}/semanage port -a -t ion_port_t -p tcp 18333
+%{_sbindir}/semanage port -a -t ion_port_t -p tcp 12700
+%{_sbindir}/semanage port -a -t ion_port_t -p tcp 12705
+%{_sbindir}/semanage port -a -t ion_port_t -p tcp 27170
+%{_sbindir}/semanage port -a -t ion_port_t -p tcp 27175
 %{_sbindir}/fixfiles -R ion-server restore &> /dev/null || :
 %{_sbindir}/restorecon -R %{_localstatedir}/lib/ion || :
 fi
@@ -351,10 +351,10 @@ fi
 # SELinux
 if [ $1 -eq 0 ]; then
 	if [ `%{_sbindir}/sestatus |grep -c "disabled"` -eq 0 ]; then
-	%{_sbindir}/semanage port -d -p tcp 8332
-	%{_sbindir}/semanage port -d -p tcp 8333
-	%{_sbindir}/semanage port -d -p tcp 18332
-	%{_sbindir}/semanage port -d -p tcp 18333
+	%{_sbindir}/semanage port -d -p tcp 12700
+	%{_sbindir}/semanage port -d -p tcp 12705
+	%{_sbindir}/semanage port -d -p tcp 27170
+	%{_sbindir}/semanage port -d -p tcp 27175
 	for selinuxvariant in %{selinux_variants}; do
 		%{_sbindir}/semodule -s ${selinuxvariant} -r ion &> /dev/null || :
 	done
@@ -371,7 +371,7 @@ rm -rf %{buildroot}
 %files core
 %defattr(-,root,root,-)
 %license COPYING db-%{bdbv}.NC-LICENSE
-%doc COPYING ion.conf.example doc/README.md doc/bips.md doc/files.md doc/multiwallet-qt.md doc/reduce-traffic.md doc/release-notes.md doc/tor.md
+%doc COPYING ioncoin.conf.example doc/README.md doc/bips.md doc/files.md doc/multiwallet-qt.md doc/reduce-traffic.md doc/release-notes.md doc/tor.md
 %attr(0755,root,root) %{_bindir}/ion-qt
 %attr(0644,root,root) %{_datadir}/applications/ion-core.desktop
 %attr(0644,root,root) %{_datadir}/kde4/services/ion-core.protocol
@@ -402,9 +402,9 @@ rm -rf %{buildroot}
 %files server
 %defattr(-,root,root,-)
 %license COPYING db-%{bdbv}.NC-LICENSE
-%doc COPYING ion.conf.example doc/README.md doc/REST-interface.md doc/bips.md doc/dnsseed-policy.md doc/files.md doc/reduce-traffic.md doc/release-notes.md doc/tor.md
+%doc COPYING ioncoin.conf.example doc/README.md doc/REST-interface.md doc/bips.md doc/dnsseed-policy.md doc/files.md doc/reduce-traffic.md doc/release-notes.md doc/tor.md
 %attr(0755,root,root) %{_sbindir}/iond
-%attr(0644,root,root) %{_tmpfilesdir}/ion.conf
+%attr(0644,root,root) %{_tmpfilesdir}/ioncoin.conf
 %attr(0644,root,root) %{_unitdir}/ion.service
 %dir %attr(0750,ion,ion) %{_sysconfdir}/ion
 %dir %attr(0750,ion,ion) %{_localstatedir}/lib/ion
@@ -415,7 +415,7 @@ rm -rf %{buildroot}
 %files utils
 %defattr(-,root,root,-)
 %license COPYING
-%doc COPYING ion.conf.example doc/README.md
+%doc COPYING ioncoin.conf.example doc/README.md
 %attr(0755,root,root) %{_bindir}/ion-cli
 %attr(0755,root,root) %{_bindir}/ion-tx
 %attr(0755,root,root) %{_bindir}/bench_ion

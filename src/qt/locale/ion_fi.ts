@@ -1960,8 +1960,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Asetukset:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Määritä asetustiedosto (oletus: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Määritä asetustiedosto (oletus: ioncoin.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: iond.pid)</source>

@@ -36,7 +36,7 @@ ion (0.13.2-trusty1) trusty; urgency=medium
 
 ion (0.13.1-trusty2) trusty; urgency=medium
 
-  * Revert to Qt4, due to https://github.com/ion/ion/issues/9038
+  * Revert to Qt4, due to https://github.com/cevap/ion/issues/9038
 
  -- Matt Corallo (BlueMatt) <matt@mattcorallo.com>  Mon, 31 Oct 2016 11:16:00 -0400
 
@@ -526,8 +526,8 @@ ion (0.3.19~dfsg-5) unstable; urgency=low
 ion (0.3.19~dfsg-4) unstable; urgency=low
 
   [ Micah Anderson ]
-  * Provide example ion.conf.
-  * Add iond(1) and ion.conf(5) man pages.
+  * Provide example ioncoin.conf.
+  * Add iond(1) and ioncoin.conf(5) man pages.
 
   [ Jonas Smedegaard ]
   * Ease backporting:

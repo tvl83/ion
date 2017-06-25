@@ -343,7 +343,7 @@ class IonTestFramework(object):
             from_dir = os.path.join(cachedir, "node" + str(i))
             to_dir = os.path.join(test_dir, "node" + str(i))
             shutil.copytree(from_dir, to_dir)
-            initialize_datadir(test_dir, i)  # Overwrite port/rpcport in ion.conf
+            initialize_datadir(test_dir, i)  # Overwrite port/rpcport in ioncoin.conf
 
     def _initialize_chain_clean(self, test_dir, num_nodes):
         """Initialize empty blockchain for use by the test.

@@ -11,8 +11,8 @@
 // for both iond and ion-qt, to make it harder for attackers to
 // target servers or GUI users specifically.
 
-//const std::string CLIENT_NAME("Iodine");
-const std::string CLIENT_NAME("💩🐼💡💎📈💰🎎⛓️🗺️⛓️💃👯‍♀️🕹️🐣💩");
+const std::string CLIENT_NAME("Iodine");
+//const std::string CLIENT_NAME("💩🐼💡💎📈💰🎎⛓️🗺️⛓️💃👯‍♀️🕹️🐣💩");
 
 // Client version number
 #define CLIENT_VERSION_SUFFIX   ""

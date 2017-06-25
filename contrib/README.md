@@ -47,4 +47,4 @@ Test and Verify Tools
 Utilities to generate test vectors for the data-driven Ion tests.
 
 ### [Verify Binaries](/contrib/verifybinaries) ###
-This script attempts to download and verify the signature file SHA256SUMS.asc from ion.org.
+This script attempts to download and verify the signature file SHA256SUMS.asc from ioncoin.org.

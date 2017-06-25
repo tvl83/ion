@@ -9,7 +9,7 @@ Group=ion
 Type=forking
 PIDFile=/var/lib/iond/iond.pid
 ExecStart=/usr/bin/iond -daemon -pid=/var/lib/iond/iond.pid \
--conf=/etc/ion/ion.conf -datadir=/var/lib/iond -disablewallet
+-conf=/etc/ion/ioncoin.conf -datadir=/var/lib/iond -disablewallet
 
 Restart=always
 PrivateTmp=true

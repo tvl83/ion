@@ -44,12 +44,13 @@ bool AppInit(int argc, char* argv[])
         //
         // Parameters
         //
-        // If Qt is used, parameters/ion.conf are parsed in qt/ion.cpp's main()
+        // If Qt is used, parameters/ioncoin.conf are parsed in qt/ion.cpp's main()
         ParseParameters(argc, argv);
         if (!boost::filesystem::is_directory(GetDataDir(false)))
         {
             fprintf(stderr, "Error: Specified directory does not exist\n");
             Shutdown();
+	    return false;
         }
         ReadConfigFile(mapArgs, mapMultiArgs);
 

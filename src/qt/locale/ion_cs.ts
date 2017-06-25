@@ -1881,8 +1881,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
         <translation>Možnosti:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Urči konfigurační soubor (výchozí: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Urči konfigurační soubor (výchozí: ioncoin.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: iond.pid)</source>

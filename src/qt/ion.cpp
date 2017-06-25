@@ -159,11 +159,11 @@ int main(int argc, char *argv[])
     // Command-line options take precedence:
     ParseParameters(argc, argv);
 
-    // ... then ion.conf:
+    // ... then ioncoin.conf:
     if (!boost::filesystem::is_directory(GetDataDir(false)))
     {
         // This message can not be translated, as translation is not initialized yet
-        // (which not yet possible because lang=XX can be overridden in ion.conf in the data directory)
+        // (which not yet possible because lang=XX can be overridden in ioncoin.conf in the data directory)
         QMessageBox::critical(0, "Ion",
                               QString("Error: Specified data directory \"%1\" does not exist.").arg(QString::fromStdString(mapArgs["-datadir"])));
         return 1;

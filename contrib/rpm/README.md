@@ -15,15 +15,15 @@ It is considered good form for all sources to reference a URL where the source
 can be downloaded.
 
 Sources 0-9 should be reserved for source code tarballs. `Source0` should
-reference the release tarball available from https://ion.org/bin/ and
+reference the release tarball available from https://ioncoin.org/bin/ and
 `Source1` should reference the BerkeleyDB source.
 
 Sources 10-99 are for source files that are maintained in the
-[Ion git repository](https://github.com/ion/ion) but are not part of
+[Ion git repository](https://github.com/cevap/ion) but are not part of
 the release tarball. Most of these will reside in the `contrib` sub-directory.
 
 Sources 10-19 should be reserved for miscellaneous configuration files.
-Currently only `Source10` is used, for the example `ion.conf` file.
+Currently only `Source10` is used, for the example `ioncoin.conf` file.
 
 Sources 20-29 should be reserved for man pages. Currently only `Source20`
 through `Source23` are used.

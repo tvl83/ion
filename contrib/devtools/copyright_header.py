@@ -82,6 +82,7 @@ def compile_copyright_regex(copyright_style, year_style, name):
     return re.compile('%s %s %s' % (copyright_style, year_style, name))
 
 EXPECTED_HOLDER_NAMES = [
+    "CEVAP\n",
     "Satoshi Nakamoto\n",
     "The Ion Core developers\n",
     "The Ion Core developers \n",

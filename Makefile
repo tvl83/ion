@@ -6537,6 +6537,59 @@ build/overviewpage.moc: src/qt/overviewpage.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvector2d.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtouchdevice.h \
 		build/ui_overviewpage.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QFormLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qformlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QFrame \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QGridLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QListView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlistview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QProgressBar \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qprogressbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPushButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qpushbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSpacerItem \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
 		src/qt/clientmodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QObject \
 		src/stashedsend.h \
@@ -6583,7 +6636,6 @@ build/overviewpage.moc: src/qt/overviewpage.h \
 		src/qt/ionunits.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QString \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractListModel \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
 		src/qt/optionsmodel.h \
 		src/qt/transactiontablemodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractTableModel \
@@ -6596,28 +6648,8 @@ build/overviewpage.moc: src/qt/overviewpage.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qdatetime.h \
 		src/qt/guiutil.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QEvent \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMessageBox \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmessagebox.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QProgressBar \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qprogressbar.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTableView \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtableview.h \
 		src/qt/guiconstants.h \
@@ -6635,9 +6667,9 @@ build/overviewpage.moc: src/qt/overviewpage.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qscrollerproperties.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QScopedPointer \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QMetaType \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QSettings \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qsettings.h \
+		src/qt/overviewpage.moc \
 		src/qt/overviewpage.cpp \
 		build/moc_predefs.h \
 		/usr/lib/x86_64-linux-gnu/qt5/bin/moc
@@ -6808,6 +6840,49 @@ build/rpcconsole.moc: src/qt/rpcconsole.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QStringList \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QWidget \
 		build/ui_rpcconsole.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QFrame \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QGridLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QGroupBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgroupbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLineEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlineedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextcursor.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextformat.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qpen.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPushButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qpushbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSlider \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSpacerItem \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTabWidget \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTextEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtextedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextdocument.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
+		src/qt/trafficgraphwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QQueue \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qqueue.h \
 		src/qt/bantablemodel.h \
 		src/qt/clientmodel.h \
 		src/rpcserver.h \
@@ -6827,8 +6902,6 @@ build/rpcconsole.moc: src/qt/rpcconsole.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qdatetime.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMenu \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmenu.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QUrl \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QSignalMapper \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qsignalmapper.h \
@@ -9237,7 +9310,64 @@ build/optionsdialog.o: src/qt/optionsdialog.cpp src/qt/optionsdialog.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvector2d.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtouchdevice.h \
 		build/ui_optionsdialog.h \
-		src/qt/ionunits.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QCheckBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qcheckbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QGridLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLineEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlineedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextcursor.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextformat.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qpen.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPushButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qpushbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSpacerItem \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSpinBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qspinbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTabWidget \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QWidget \
+		src/qt/ionamountfield.h \
 		src/util.h \
 		src/serialize.h \
 		src/allocators.h \
@@ -9246,9 +9376,13 @@ build/optionsdialog.o: src/qt/optionsdialog.cpp src/qt/optionsdialog.h \
 		src/clientversion.h \
 		src/tinyformat.h \
 		src/amount.h \
+		src/qt/qvalidatedlineedit.h \
+		src/qt/qvaluecombobox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QComboBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qcombobox.h \
+		src/qt/ionunits.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QString \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractListModel \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
 		src/qt/monitoreddatamapper.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QDataWidgetMapper \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdatawidgetmapper.h \
@@ -9259,8 +9393,6 @@ build/optionsdialog.o: src/qt/optionsdialog.cpp src/qt/optionsdialog.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qdir.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qfileinfo.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/QIntValidator \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QLocale \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMessageBox \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmessagebox.h
@@ -9410,30 +9542,38 @@ build/sendcoinsdialog.o: src/qt/sendcoinsdialog.cpp src/qt/sendcoinsdialog.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtouchdevice.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QString \
 		build/ui_sendcoinsdialog.h \
-		src/qt/addresstablemodel.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractTableModel \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QStringList \
-		src/qt/ionunits.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractListModel \
-		src/qt/clientmodel.h \
-		src/qt/coincontroldialog.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAbstractButton \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/QList \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMenu \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmenu.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QPoint \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTreeWidgetItem \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtreewidget.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtreeview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QCheckBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qcheckbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QFormLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qformlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QFrame \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
@@ -9446,11 +9586,39 @@ build/sendcoinsdialog.o: src/qt/sendcoinsdialog.cpp src/qt/sendcoinsdialog.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLineEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlineedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextcursor.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextformat.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qpen.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPushButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qpushbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QScrollArea \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qscrollarea.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSpacerItem \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QWidget \
+		src/qt/addresstablemodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractTableModel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QStringList \
+		src/qt/ionunits.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractListModel \
+		src/qt/clientmodel.h \
+		src/qt/coincontroldialog.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAbstractButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/QList \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMenu \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmenu.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QPoint \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTreeWidgetItem \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtreewidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtreeview.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtreewidgetitemiterator.h \
 		src/qt/guiutil.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QEvent \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMessageBox \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmessagebox.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QProgressBar \
@@ -9459,7 +9627,6 @@ build/sendcoinsdialog.o: src/qt/sendcoinsdialog.cpp src/qt/sendcoinsdialog.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtableview.h \
 		src/qt/optionsmodel.h \
 		src/qt/sendcoinsentry.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QFrame \
 		src/coincontrol.h \
 		src/init.h \
 		src/qt/addressbookpage.h \
@@ -9607,6 +9774,41 @@ build/coincontroldialog.o: src/qt/coincontroldialog.cpp src/qt/coincontroldialog
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtreewidgetitemiterator.h \
 		build/ui_coincontroldialog.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QDialogButtonBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdialogbuttonbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QFormLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qformlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QFrame \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPushButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qpushbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QRadioButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qradiobutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSpacerItem \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QWidget \
+		src/qt/coincontroltreewidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/QKeyEvent \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTreeWidget \
 		src/qt/addresstablemodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractTableModel \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QStringList \
@@ -9636,8 +9838,6 @@ build/coincontroldialog.o: src/qt/coincontroldialog.cpp src/qt/coincontroldialog
 		src/core.h \
 		src/qt/guiutil.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QEvent \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMessageBox \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmessagebox.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QObject \
@@ -9671,23 +9871,13 @@ build/coincontroldialog.o: src/qt/coincontroldialog.cpp src/qt/coincontroldialog
 		src/masternodeman.h \
 		src/masternode-payments.h \
 		src/stashedsend-relay.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QCheckBox \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qcheckbox.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/QCursor \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QDialogButtonBox \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdialogbuttonbox.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QFlags \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/QIcon \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QSettings \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qsettings.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTreeWidget
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qsettings.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/coincontroldialog.o src/qt/coincontroldialog.cpp
 
 build/coincontroltreewidget.o: src/qt/coincontroltreewidget.cpp src/qt/coincontroltreewidget.h \
@@ -9931,30 +10121,33 @@ build/addressbookpage.o: src/qt/addressbookpage.cpp src/qt/addressbookpage.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvector2d.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtouchdevice.h \
 		build/ui_addressbookpage.h \
-		src/qt/addresstablemodel.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractTableModel \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QStringList \
-		src/qt/optionsmodel.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractListModel \
-		src/qt/iongui.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMainWindow \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmainwindow.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSystemTrayIcon \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qsystemtrayicon.h \
-		src/qt/editaddressdialog.h \
-		src/qt/csvmodelwriter.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QObject \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/QList \
-		src/qt/guiutil.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QEvent \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QDialogButtonBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdialogbuttonbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
@@ -9965,14 +10158,39 @@ build/addressbookpage.o: src/qt/addressbookpage.cpp src/qt/addressbookpage.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPushButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qpushbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSpacerItem \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTableView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtableview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QWidget \
+		src/qt/addresstablemodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractTableModel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QStringList \
+		src/qt/optionsmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractListModel \
+		src/qt/iongui.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMainWindow \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmainwindow.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSystemTrayIcon \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qsystemtrayicon.h \
+		src/qt/editaddressdialog.h \
+		src/qt/csvmodelwriter.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QObject \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/QList \
+		src/qt/guiutil.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QEvent \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMessageBox \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmessagebox.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QProgressBar \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qprogressbar.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QString \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTableView \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtableview.h \
 		src/qt/qrcodedialog.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/QImage \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QSortFilterProxyModel \
@@ -9981,9 +10199,7 @@ build/addressbookpage.o: src/qt/addressbookpage.cpp src/qt/addressbookpage.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/QClipboard \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qclipboard.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMenu \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmenu.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmenu.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/addressbookpage.o src/qt/addressbookpage.cpp
 
 build/signverifymessagedialog.o: src/qt/signverifymessagedialog.cpp src/qt/signverifymessagedialog.h \
@@ -10089,6 +10305,68 @@ build/signverifymessagedialog.o: src/qt/signverifymessagedialog.cpp src/qt/signv
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvector2d.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtouchdevice.h \
 		build/ui_signverifymessagedialog.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLineEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlineedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextcursor.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextformat.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qpen.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPlainTextEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qplaintextedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtextedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextdocument.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qabstracttextdocumentlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qglyphrun.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qrawfont.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qfontdatabase.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPushButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qpushbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSpacerItem \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTabWidget \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QWidget \
+		src/qt/qvalidatedlineedit.h \
 		src/qt/addressbookpage.h \
 		src/base58.h \
 		src/chainparams.h \
@@ -10113,25 +10391,6 @@ build/signverifymessagedialog.o: src/qt/signverifymessagedialog.cpp src/qt/signv
 		src/stealth.h \
 		src/qt/guiutil.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QEvent \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMessageBox \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmessagebox.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QObject \
@@ -10268,6 +10527,49 @@ build/aboutdialog.o: src/qt/aboutdialog.cpp src/qt/aboutdialog.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvector2d.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtouchdevice.h \
 		build/ui_aboutdialog.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QDialogButtonBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdialogbuttonbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSpacerItem \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
 		src/qt/clientmodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QObject \
 		src/version.h \
@@ -10377,30 +10679,64 @@ build/editaddressdialog.o: src/qt/editaddressdialog.cpp src/qt/editaddressdialog
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvector2d.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtouchdevice.h \
 		build/ui_editaddressdialog.h \
-		src/qt/addresstablemodel.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractTableModel \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QStringList \
-		src/qt/guiutil.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QEvent \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QCheckBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qcheckbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QDialogButtonBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdialogbuttonbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QGridLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLineEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlineedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextcursor.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextformat.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qpen.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QToolButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtoolbutton.h \
+		src/qt/addresstablemodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractTableModel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QStringList \
+		src/qt/guiutil.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QEvent \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMessageBox \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmessagebox.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QObject \
@@ -12421,9 +12757,54 @@ build/transactiondescdialog.o: src/qt/transactiondescdialog.cpp src/qt/transacti
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvector2d.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtouchdevice.h \
 		build/ui_transactiondescdialog.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QDialogButtonBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdialogbuttonbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTextEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtextedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextdocument.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextcursor.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextformat.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qpen.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
 		src/qt/transactiontablemodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractTableModel \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QStringList \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QModelIndex
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/transactiondescdialog.o src/qt/transactiondescdialog.cpp
@@ -13751,6 +14132,59 @@ build/overviewpage.o: src/qt/overviewpage.cpp src/qt/overviewpage.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvector2d.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtouchdevice.h \
 		build/ui_overviewpage.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QFormLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qformlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QFrame \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QGridLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QListView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlistview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QProgressBar \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qprogressbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPushButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qpushbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSpacerItem \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
 		src/qt/clientmodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QObject \
 		src/stashedsend.h \
@@ -13797,7 +14231,6 @@ build/overviewpage.o: src/qt/overviewpage.cpp src/qt/overviewpage.h \
 		src/qt/ionunits.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QString \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractListModel \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
 		src/qt/optionsmodel.h \
 		src/qt/transactiontablemodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractTableModel \
@@ -13810,28 +14243,8 @@ build/overviewpage.o: src/qt/overviewpage.cpp src/qt/overviewpage.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qdatetime.h \
 		src/qt/guiutil.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QEvent \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMessageBox \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmessagebox.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QProgressBar \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qprogressbar.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTableView \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtableview.h \
 		src/qt/guiconstants.h \
@@ -13849,10 +14262,9 @@ build/overviewpage.o: src/qt/overviewpage.cpp src/qt/overviewpage.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qscrollerproperties.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QScopedPointer \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QMetaType \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QSettings \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qsettings.h \
-		build/overviewpage.moc
+		src/qt/overviewpage.moc
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/overviewpage.o src/qt/overviewpage.cpp
 
 build/csvmodelwriter.o: src/qt/csvmodelwriter.cpp src/qt/csvmodelwriter.h \
@@ -14066,8 +14478,26 @@ build/sendcoinsentry.o: src/qt/sendcoinsentry.cpp src/qt/sendcoinsentry.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvector2d.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtouchdevice.h \
 		build/ui_sendcoinsentry.h \
-		src/qt/guiutil.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QEvent \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QGridLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
@@ -14079,13 +14509,36 @@ build/sendcoinsentry.o: src/qt/sendcoinsentry.cpp src/qt/sendcoinsentry.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QToolButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtoolbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		src/qt/ionamountfield.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QWidget \
+		src/util.h \
+		src/serialize.h \
+		src/allocators.h \
+		src/support/cleanse.h \
+		src/version.h \
+		src/clientversion.h \
+		src/tinyformat.h \
+		src/amount.h \
+		src/qt/qvalidatedlineedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLineEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlineedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextcursor.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextformat.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qpen.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextoption.h \
+		src/qt/guiutil.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QEvent \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMessageBox \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmessagebox.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdialog.h \
@@ -14096,14 +14549,6 @@ build/sendcoinsentry.o: src/qt/sendcoinsentry.cpp src/qt/sendcoinsentry.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTableView \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtableview.h \
 		src/qt/ionunits.h \
-		src/util.h \
-		src/serialize.h \
-		src/allocators.h \
-		src/support/cleanse.h \
-		src/version.h \
-		src/clientversion.h \
-		src/tinyformat.h \
-		src/amount.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractListModel \
 		src/qt/addressbookpage.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QDialog \
@@ -14142,13 +14587,6 @@ build/sendcoinsentry.o: src/qt/sendcoinsentry.cpp src/qt/sendcoinsentry.h \
 		src/qt/addresstablemodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractTableModel \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QStringList \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/QClipboard \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qclipboard.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/sendcoinsentry.o src/qt/sendcoinsentry.cpp
@@ -14586,6 +15024,59 @@ build/askpassphrasedialog.o: src/qt/askpassphrasedialog.cpp src/qt/askpassphrase
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvector2d.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtouchdevice.h \
 		build/ui_askpassphrasedialog.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QCheckBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qcheckbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QDialogButtonBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdialogbuttonbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QFormLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qformlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLineEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlineedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextcursor.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextformat.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qpen.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
 		src/qt/guiconstants.h \
 		src/qt/walletmodel.h \
 		src/qt/walletmodeltransaction.h \
@@ -14631,8 +15122,6 @@ build/askpassphrasedialog.o: src/qt/askpassphrasedialog.cpp src/qt/askpassphrase
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmessagebox.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPushButton \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qpushbutton.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/QKeyEvent
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/askpassphrasedialog.o src/qt/askpassphrasedialog.cpp
 
@@ -15211,6 +15700,49 @@ build/rpcconsole.o: src/qt/rpcconsole.cpp src/qt/rpcconsole.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QStringList \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QWidget \
 		build/ui_rpcconsole.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QFrame \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QGridLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QGroupBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgroupbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLineEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlineedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextcursor.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextformat.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qpen.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPushButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qpushbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSlider \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSpacerItem \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTabWidget \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTextEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtextedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextdocument.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
+		src/qt/trafficgraphwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QQueue \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qqueue.h \
 		src/qt/bantablemodel.h \
 		src/qt/clientmodel.h \
 		src/rpcserver.h \
@@ -15230,8 +15762,6 @@ build/rpcconsole.o: src/qt/rpcconsole.cpp src/qt/rpcconsole.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qdatetime.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMenu \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmenu.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QUrl \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QSignalMapper \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qsignalmapper.h \
@@ -15771,6 +16301,44 @@ build/stashedsendconfig.o: src/qt/stashedsendconfig.cpp src/qt/stashedsendconfig
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvector2d.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtouchdevice.h \
 		build/ui_stashedsendconfig.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QFrame \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPushButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qpushbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
 		src/qt/ionunits.h \
 		src/util.h \
 		src/serialize.h \
@@ -15782,7 +16350,6 @@ build/stashedsendconfig.o: src/qt/stashedsendconfig.cpp src/qt/stashedsendconfig
 		src/amount.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QString \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QAbstractListModel \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
 		src/qt/guiconstants.h \
 		src/qt/optionsmodel.h \
 		src/qt/walletmodel.h \
@@ -15820,10 +16387,6 @@ build/stashedsendconfig.o: src/qt/stashedsendconfig.cpp src/qt/stashedsendconfig
 		src/init.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMessageBox \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qmessagebox.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPushButton \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qpushbutton.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/QKeyEvent \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QSettings \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qsettings.h
@@ -16428,6 +16991,55 @@ build/masternodemanager.o: src/qt/masternodemanager.cpp src/qt/masternodemanager
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qtimer.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qbasictimer.h \
 		build/ui_masternodemanager.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QGridLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPushButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qpushbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSpacerItem \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTabWidget \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTableWidget \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtablewidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtableview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
 		src/qt/addeditatomnode.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QDialog \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdialog.h \
@@ -16479,20 +17091,6 @@ build/masternodemanager.o: src/qt/masternodemanager.cpp src/qt/masternodemanager
 		src/json/json_spirit_utils.h \
 		src/json/json_spirit_writer_template.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAbstractItemDelegate \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/QPainter \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qpainter.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextoption.h \
@@ -16500,7 +17098,6 @@ build/masternodemanager.o: src/qt/masternodemanager.cpp src/qt/masternodemanager
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QDebug \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QScrollArea \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qscrollarea.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QScroller \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qscroller.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QPointF \
@@ -16508,16 +17105,8 @@ build/masternodemanager.o: src/qt/masternodemanager.cpp src/qt/masternodemanager
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qscrollerproperties.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QScopedPointer \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QMetaType \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QDateTime \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qdatetime.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/QClipboard \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qclipboard.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QMessageBox \
@@ -16627,6 +17216,57 @@ build/addeditatomnode.o: src/qt/addeditatomnode.cpp src/qt/addeditatomnode.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvector2d.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtouchdevice.h \
 		build/ui_addeditatomnode.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLineEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlineedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextcursor.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextformat.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qpen.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPushButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qpushbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QToolButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtoolbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
 		src/masternodeconfig.h \
 		src/qt/masternodemanager.h \
 		src/util.h \
@@ -16644,6 +17284,12 @@ build/addeditatomnode.o: src/qt/addeditatomnode.cpp src/qt/addeditatomnode.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qtimer.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qbasictimer.h \
 		build/ui_masternodemanager.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QGridLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSpacerItem \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTabWidget \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTableWidget \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtablewidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtableview.h \
 		src/walletdb.h \
 		src/db.h \
 		src/key.h \
@@ -16780,8 +17426,53 @@ build/atomnodeconfigdialog.o: src/qt/atomnodeconfigdialog.cpp src/qt/atomnodecon
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvector2d.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtouchdevice.h \
 		build/ui_atomnodeconfigdialog.h \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QModelIndex \
-		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QDialogButtonBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdialogbuttonbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTextEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtextedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextdocument.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextcursor.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextformat.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qpen.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QModelIndex
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/atomnodeconfigdialog.o src/qt/atomnodeconfigdialog.cpp
 
 build/qcustomplot.o: src/qt/qcustomplot.cpp src/qt/qcustomplot.h \
@@ -17554,6 +18245,30 @@ build/multisigaddressentry.o: src/qt/multisigaddressentry.cpp /usr/lib/x86_64-li
 		src/qt/multisigaddressentry.h \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QFrame \
 		build/ui_multisigaddressentry.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QGridLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QToolButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtoolbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		src/qt/qvalidatedlineedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLineEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlineedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextcursor.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextformat.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qpen.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextoption.h \
 		src/qt/walletmodel.h \
 		src/qt/walletmodeltransaction.h \
 		src/instantx.h \
@@ -17707,6 +18422,50 @@ build/multisiginputentry.o: src/qt/multisiginputentry.cpp /usr/lib/x86_64-linux-
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QFrame \
 		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qframe.h \
 		build/ui_multisiginputentry.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QComboBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qcombobox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qabstractitemmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QGridLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QToolButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtoolbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		src/qt/qvalidatedlineedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLineEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlineedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextcursor.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextformat.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qpen.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextoption.h \
 		src/main.h \
 		src/proofs.h \
 		src/core.h \
@@ -17887,6 +18646,59 @@ build/multisigdialog.o: src/qt/multisigdialog.cpp /usr/lib/x86_64-linux-gnu/qt5/
 		src/crypter.h \
 		src/ui_interface.h \
 		build/ui_multisigdialog.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/QVariant \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QAction \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qaction.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qicon.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qactiongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QApplication \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qcoreapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qeventloop.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qdesktopwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qguiapplication.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qinputmethod.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QButtonGroup \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qbuttongroup.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QGroupBox \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgroupbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qboxlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlayoutitem.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qgridlayout.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QHeaderView \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qheaderview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemview.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractscrollarea.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qitemselectionmodel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyleoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractspinbox.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qvalidator.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtCore/qregularexpression.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qslider.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qstyle.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabbar.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qtabwidget.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qrubberband.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLabel \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlabel.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QLineEdit \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qlineedit.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextcursor.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextformat.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qpen.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtGui/qtextoption.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QPushButton \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qpushbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qabstractbutton.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QScrollArea \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/qscrollarea.h \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QSpacerItem \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QTabWidget \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QVBoxLayout \
+		/usr/lib/x86_64-linux-gnu/qt5/include/QtWidgets/QWidget \
 		src/txdb-leveldb.h \
 		src/leveldb/include/leveldb/db.h \
 		src/leveldb/include/leveldb/iterator.h \

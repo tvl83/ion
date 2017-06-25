@@ -1,28 +1,4 @@
 var searchData=
 [
-  ['package',['PACKAGE',['../dc/dd1/libsecp256k1-config_8h.html#aca8570fb706c81df371b7f9bc454ae03',1,'libsecp256k1-config.h']]],
-  ['package_5fbugreport',['PACKAGE_BUGREPORT',['../d9/d25/ion-config_8h.html#a1d1d2d7f8d2f95b376954d649ab03233',1,'PACKAGE_BUGREPORT():&#160;ion-config.h'],['../dc/dd1/libsecp256k1-config_8h.html#a1d1d2d7f8d2f95b376954d649ab03233',1,'PACKAGE_BUGREPORT():&#160;libsecp256k1-config.h']]],
-  ['package_5fname',['PACKAGE_NAME',['../d9/d25/ion-config_8h.html#a1c0439e4355794c09b64274849eb0279',1,'PACKAGE_NAME():&#160;ion-config.h'],['../dc/dd1/libsecp256k1-config_8h.html#a1c0439e4355794c09b64274849eb0279',1,'PACKAGE_NAME():&#160;libsecp256k1-config.h']]],
-  ['package_5fstring',['PACKAGE_STRING',['../d9/d25/ion-config_8h.html#ac73e6f903c16eca7710f92e36e1c6fbf',1,'PACKAGE_STRING():&#160;ion-config.h'],['../dc/dd1/libsecp256k1-config_8h.html#ac73e6f903c16eca7710f92e36e1c6fbf',1,'PACKAGE_STRING():&#160;libsecp256k1-config.h']]],
-  ['package_5ftarname',['PACKAGE_TARNAME',['../d9/d25/ion-config_8h.html#af415af6bfede0e8d5453708afe68651c',1,'PACKAGE_TARNAME():&#160;ion-config.h'],['../dc/dd1/libsecp256k1-config_8h.html#af415af6bfede0e8d5453708afe68651c',1,'PACKAGE_TARNAME():&#160;libsecp256k1-config.h']]],
-  ['package_5furl',['PACKAGE_URL',['../d9/d25/ion-config_8h.html#a5c93853116d5a50307b6744f147840aa',1,'PACKAGE_URL():&#160;ion-config.h'],['../dc/dd1/libsecp256k1-config_8h.html#a5c93853116d5a50307b6744f147840aa',1,'PACKAGE_URL():&#160;libsecp256k1-config.h']]],
-  ['package_5fversion',['PACKAGE_VERSION',['../d9/d25/ion-config_8h.html#aa326a05d5e30f9e9a4bb0b4469d5d0c0',1,'PACKAGE_VERSION():&#160;ion-config.h'],['../dc/dd1/libsecp256k1-config_8h.html#aa326a05d5e30f9e9a4bb0b4469d5d0c0',1,'PACKAGE_VERSION():&#160;libsecp256k1-config.h']]],
-  ['pairtype',['PAIRTYPE',['../d8/d3c/util_8h.html#aa3052ab82a2ba880ea3e30b3357c8820',1,'PAIRTYPE():&#160;util.h'],['../d8/db2/utilstrencodings_8h.html#aa3052ab82a2ba880ea3e30b3357c8820',1,'PAIRTYPE():&#160;utilstrencodings.h']]],
-  ['pool_5fstatus_5faccepting_5fentries',['POOL_STATUS_ACCEPTING_ENTRIES',['../d9/dbc/stashedsend_8h.html#ac3a16edb4f6035996969b0b2bc3ded08',1,'stashedsend.h']]],
-  ['pool_5fstatus_5ferror',['POOL_STATUS_ERROR',['../d9/dbc/stashedsend_8h.html#a962d9d23845f31ba35334e71ae98d7ee',1,'stashedsend.h']]],
-  ['pool_5fstatus_5ffinalize_5ftransaction',['POOL_STATUS_FINALIZE_TRANSACTION',['../d9/dbc/stashedsend_8h.html#aefa76c8279011a041fa348027e1d8150',1,'stashedsend.h']]],
-  ['pool_5fstatus_5fidle',['POOL_STATUS_IDLE',['../d9/dbc/stashedsend_8h.html#a2c403b5fdc8a3fe7d868cfb93fc19e34',1,'stashedsend.h']]],
-  ['pool_5fstatus_5fqueue',['POOL_STATUS_QUEUE',['../d9/dbc/stashedsend_8h.html#abaaef77ee773e358bcb3296554f84c7c',1,'stashedsend.h']]],
-  ['pool_5fstatus_5fsigning',['POOL_STATUS_SIGNING',['../d9/dbc/stashedsend_8h.html#a5f897de8a1b1f90a18a9950229cb86ab',1,'stashedsend.h']]],
-  ['pool_5fstatus_5fsuccess',['POOL_STATUS_SUCCESS',['../d9/dbc/stashedsend_8h.html#ad4544a5ac57567db513f342ee8757790',1,'stashedsend.h']]],
-  ['pool_5fstatus_5ftransmission',['POOL_STATUS_TRANSMISSION',['../d9/dbc/stashedsend_8h.html#ae08f7334c97bdc015a738ea8b8605b66',1,'stashedsend.h']]],
-  ['pool_5fstatus_5funknown',['POOL_STATUS_UNKNOWN',['../d9/dbc/stashedsend_8h.html#a8fd443736c232c825a88c5716ed67c02',1,'stashedsend.h']]],
-  ['pripdd',['PRIpdd',['../d8/d3c/util_8h.html#a633f3d742890fc7614de9bbcbe9d1a30',1,'util.h']]],
-  ['pripdu',['PRIpdu',['../d8/d3c/util_8h.html#a010705285dde1c273d566ffc1790e823',1,'util.h']]],
-  ['pripdx',['PRIpdx',['../d8/d3c/util_8h.html#ad31e724f13b58900c9cf4ff25464934f',1,'util.h']]],
-  ['priszd',['PRIszd',['../d8/d3c/util_8h.html#aef104e42b5ef4e0fb2a5dca9fc82e4be',1,'util.h']]],
-  ['priszu',['PRIszu',['../d8/d3c/util_8h.html#a427f25ac1b36af6c08edcb5d7c481e3b',1,'util.h']]],
-  ['priszx',['PRIszx',['../d8/d3c/util_8h.html#a19b7466198e5f58b580c34c12dff6b54',1,'util.h']]],
-  ['pt_5fguarded_5fby',['PT_GUARDED_BY',['../db/d6d/threadsafety_8h.html#ac50ea92afc792eaa17777dc6009e31c0',1,'threadsafety.h']]],
-  ['pt_5fguarded_5fvar',['PT_GUARDED_VAR',['../db/d6d/threadsafety_8h.html#a99c54c862c542fd7ebd8d2fec7fb5e41',1,'threadsafety.h']]]
+  ['qcp_5flib_5fdecl',['QCP_LIB_DECL',['../d7/dd3/qcustomplot_8h.html#a5eaab02224a642ded7fb8951e973a02c',1,'qcustomplot.h']]]
 ];

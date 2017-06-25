@@ -1,19 +1,9 @@
 var searchData=
 [
-  ['ubegin',['UBEGIN',['../d8/d3c/util_8h.html#a4a903229f3d520fdb700f1c82586368b',1,'UBEGIN():&#160;util.h'],['../d8/db2/utilstrencodings_8h.html#a4a903229f3d520fdb700f1c82586368b',1,'UBEGIN():&#160;utilstrencodings.h']]],
-  ['uend',['UEND',['../d8/d3c/util_8h.html#af0f53b3b9bd67803cd1efe42c7894aa3',1,'UEND():&#160;util.h'],['../d8/db2/utilstrencodings_8h.html#af0f53b3b9bd67803cd1efe42c7894aa3',1,'UEND():&#160;utilstrencodings.h']]],
-  ['uinttoarith256',['UintToArith256',['../d8/d09/arith__uint256_8h.html#aa07865112ddb8b994bfffe6a590ecb61',1,'arith_uint256.h']]],
-  ['unlock_5ffunction',['UNLOCK_FUNCTION',['../db/d6d/threadsafety_8h.html#abd56e19f9b4781b1a5212a46951cf5c3',1,'threadsafety.h']]],
-  ['unused',['UNUSED',['../d0/ddb/ionstrings_8cpp.html#addf5ec070e9499d36b7f2009ce736076',1,'ionstrings.cpp']]],
-  ['use_5fasm_5fx86_5f64',['USE_ASM_X86_64',['../dc/dd1/libsecp256k1-config_8h.html#a48e2cf8ebbae3dcc5f717ca031091cd2',1,'libsecp256k1-config.h']]],
-  ['use_5fbasic_5fconfig',['USE_BASIC_CONFIG',['../d0/dde/gen__context_8c.html#a89912331796eb915f898acd299260e73',1,'gen_context.c']]],
-  ['use_5fdbus',['USE_DBUS',['../d9/d25/ion-config_8h.html#ace2b47bcf838df4df99d7a5fc09365ed',1,'ion-config.h']]],
-  ['use_5fecmult_5fstatic_5fprecomputation',['USE_ECMULT_STATIC_PRECOMPUTATION',['../dc/dd1/libsecp256k1-config_8h.html#abf257cb25e3b35dfc3426b560ed893ee',1,'libsecp256k1-config.h']]],
-  ['use_5ffield_5f5x52',['USE_FIELD_5X52',['../dc/dd1/libsecp256k1-config_8h.html#aea670563738e11fb5f67887e2379a7ac',1,'libsecp256k1-config.h']]],
-  ['use_5ffield_5finv_5fbuiltin',['USE_FIELD_INV_BUILTIN',['../dc/dd1/libsecp256k1-config_8h.html#a29d73892c2338d0d6464ed5c837e2246',1,'libsecp256k1-config.h']]],
-  ['use_5fnum_5fnone',['USE_NUM_NONE',['../dc/dd1/libsecp256k1-config_8h.html#a67432081c2c2e8893d944c7f3e220a83',1,'libsecp256k1-config.h']]],
-  ['use_5fqrcode',['USE_QRCODE',['../d9/d25/ion-config_8h.html#a34bccfb946fa10885d62414fa9b07930',1,'ion-config.h']]],
-  ['use_5fscalar_5f4x64',['USE_SCALAR_4X64',['../dc/dd1/libsecp256k1-config_8h.html#a2f36ae8fc25b9a4e4e7369da3872579a',1,'libsecp256k1-config.h']]],
-  ['use_5fscalar_5finv_5fbuiltin',['USE_SCALAR_INV_BUILTIN',['../dc/dd1/libsecp256k1-config_8h.html#a827be109fa765a29a66475a1d78bf6b4',1,'libsecp256k1-config.h']]],
-  ['use_5fupnp',['USE_UPNP',['../d9/d25/ion-config_8h.html#a6cebda7b932feb7805127dbbe935b05d',1,'ion-config.h']]]
+  ['varint',['VARINT',['../df/d9d/serialize_8h.html#a1383f2a4c22ffaeba9b2924d90459f76',1,'serialize.h']]],
+  ['verify_5fbits',['VERIFY_BITS',['../d7/dfb/field__10x26__impl_8h.html#a914e09387f8e1b9775deec092d463632',1,'VERIFY_BITS():&#160;field_10x26_impl.h'],['../d9/d98/field__5x52__int128__impl_8h.html#a914e09387f8e1b9775deec092d463632',1,'VERIFY_BITS():&#160;field_5x52_int128_impl.h']]],
+  ['verify_5fcheck',['VERIFY_CHECK',['../db/d99/secp256k1_2src_2util_8h.html#aca8ac5ae73fd966db106de59160a178b',1,'util.h']]],
+  ['verify_5fsetup',['VERIFY_SETUP',['../db/d99/secp256k1_2src_2util_8h.html#aa116d8999575e97182121de504f7a130',1,'util.h']]],
+  ['vg_5fcheck',['VG_CHECK',['../d5/d7f/tests_8c.html#a4219659d3b30fc34dea25be22dccae04',1,'tests.c']]],
+  ['vg_5fundef',['VG_UNDEF',['../d5/d7f/tests_8c.html#a6b8df892995b6bb70db94dbbd6988d20',1,'tests.c']]]
 ];

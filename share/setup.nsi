@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 2.1.5
+!define VERSION 2.1.6
 !define COMPANY "Ion Core project"
 !define URL https://ioncore.org/
 

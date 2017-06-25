@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = ion-qt
-VERSION = 2.1.5.4
+VERSION = 2.1.6.0
 INCLUDEPATH += src src/json src/qt
 QT += network printsupport
 DEFINES += ENABLE_WALLET

@@ -12,6 +12,5 @@ var searchData=
   ['bench_5fschnorr_5fverify_2ec',['bench_schnorr_verify.c',['../d0/df4/bench__schnorr__verify_8c.html',1,'']]],
   ['bench_5fsign_2ec',['bench_sign.c',['../da/dae/bench__sign_8c.html',1,'']]],
   ['bench_5fverify_2ec',['bench_verify.c',['../dd/d4a/bench__verify_8c.html',1,'']]],
-  ['build_2eh',['build.h',['../dc/de4/build_8h.html',1,'']]],
   ['byteswap_2eh',['byteswap.h',['../db/dc9/byteswap_8h.html',1,'']]]
 ];

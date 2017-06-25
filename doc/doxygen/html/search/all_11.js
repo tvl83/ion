@@ -1,13 +1,6 @@
 var searchData=
 [
   ['p_5futil_5fhexdigit',['p_util_hexdigit',['../df/d2d/util_8cpp.html#a48299e74a5c04c846cbdfc372ee464ec',1,'util.cpp']]],
-  ['package',['PACKAGE',['../dc/dd1/libsecp256k1-config_8h.html#aca8570fb706c81df371b7f9bc454ae03',1,'libsecp256k1-config.h']]],
-  ['package_5fbugreport',['PACKAGE_BUGREPORT',['../d9/d25/ion-config_8h.html#a1d1d2d7f8d2f95b376954d649ab03233',1,'PACKAGE_BUGREPORT():&#160;ion-config.h'],['../dc/dd1/libsecp256k1-config_8h.html#a1d1d2d7f8d2f95b376954d649ab03233',1,'PACKAGE_BUGREPORT():&#160;libsecp256k1-config.h']]],
-  ['package_5fname',['PACKAGE_NAME',['../d9/d25/ion-config_8h.html#a1c0439e4355794c09b64274849eb0279',1,'PACKAGE_NAME():&#160;ion-config.h'],['../dc/dd1/libsecp256k1-config_8h.html#a1c0439e4355794c09b64274849eb0279',1,'PACKAGE_NAME():&#160;libsecp256k1-config.h']]],
-  ['package_5fstring',['PACKAGE_STRING',['../d9/d25/ion-config_8h.html#ac73e6f903c16eca7710f92e36e1c6fbf',1,'PACKAGE_STRING():&#160;ion-config.h'],['../dc/dd1/libsecp256k1-config_8h.html#ac73e6f903c16eca7710f92e36e1c6fbf',1,'PACKAGE_STRING():&#160;libsecp256k1-config.h']]],
-  ['package_5ftarname',['PACKAGE_TARNAME',['../d9/d25/ion-config_8h.html#af415af6bfede0e8d5453708afe68651c',1,'PACKAGE_TARNAME():&#160;ion-config.h'],['../dc/dd1/libsecp256k1-config_8h.html#af415af6bfede0e8d5453708afe68651c',1,'PACKAGE_TARNAME():&#160;libsecp256k1-config.h']]],
-  ['package_5furl',['PACKAGE_URL',['../d9/d25/ion-config_8h.html#a5c93853116d5a50307b6744f147840aa',1,'PACKAGE_URL():&#160;ion-config.h'],['../dc/dd1/libsecp256k1-config_8h.html#a5c93853116d5a50307b6744f147840aa',1,'PACKAGE_URL():&#160;libsecp256k1-config.h']]],
-  ['package_5fversion',['PACKAGE_VERSION',['../d9/d25/ion-config_8h.html#aa326a05d5e30f9e9a4bb0b4469d5d0c0',1,'PACKAGE_VERSION():&#160;ion-config.h'],['../dc/dd1/libsecp256k1-config_8h.html#aa326a05d5e30f9e9a4bb0b4469d5d0c0',1,'PACKAGE_VERSION():&#160;libsecp256k1-config.h']]],
   ['padding',['padding',['../d2/deb/class_q_c_p_axis.html#a07df379d5c017b8f3a4702532eb037b2',1,'QCPAxis::padding()'],['../d7/da0/class_q_c_p_item_text.html#a5a598618350b40446d031fa9dc15fba7',1,'QCPItemText::padding()']]],
   ['page_5fmask',['page_mask',['../df/d71/class_locked_page_manager_base.html#a66c97623d29545b8c8b49161079d9c4f',1,'LockedPageManagerBase']]],
   ['page_5fsize',['page_size',['../df/d71/class_locked_page_manager_base.html#af485e095ca992fa134d5a441accfbf21',1,'LockedPageManagerBase']]],

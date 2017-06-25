@@ -1,4 +1,4 @@
-🗺️Ion Core Wallet 2.1.5.4 CE ©️ - 👒 midas-algo 👒
+🗺️Ion Core Wallet 2.1.6.0 CE ©️ - 👒 midas-algo 👒
 ================================
 **Copyright (c) 2017 🐼CEVAP🐼**
 

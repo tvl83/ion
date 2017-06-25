@@ -55,6 +55,7 @@
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
+        <file alias="aboutpanda">res/images/aboutpanda.png</file>
         <file alias="splash">res/images/splash.png</file>
     </qresource>
     <qresource prefix="/translations">

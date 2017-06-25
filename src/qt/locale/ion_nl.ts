@@ -1885,8 +1885,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
         <translation>Gebruik:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Verstuur commando naar -server of xiond</translation>
+        <source>Send command to -server or iond</source>
+        <translation>Verstuur commando naar -server of iond</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1901,12 +1901,12 @@ Dit betekend dat een fee van %2 is vereist.</translation>
         <translation>Opties:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Selecteer configuratie bestand (standaard: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Selecteer configuratie bestand (standaard: ioncoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>Selecteer pid bestand (standaard: ion.conf)</translation>
+        <source>Specify pid file (default: iond.pid)</source>
+        <translation>Selecteer pid bestand (standaard: ioncoin.conf)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

@@ -1865,8 +1865,8 @@ Cela implique que des frais à hauteur d'au moins %2 seront nécessaires.</trans
         <translation>Utilisation:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Envoyer commande à -server ou xiond</translation>
+        <source>Send command to -server or iond</source>
+        <translation>Envoyer commande à -server ou iond</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1881,12 +1881,12 @@ Cela implique que des frais à hauteur d'au moins %2 seront nécessaires.</trans
         <translation>Options:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Spécifier le fichier de configuration (par défaut: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Spécifier le fichier de configuration (par défaut: ioncoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>Spécifier le fichier pid (par défaut: xiond.pid)</translation>
+        <source>Specify pid file (default: iond.pid)</source>
+        <translation>Spécifier le fichier pid (par défaut: iond.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

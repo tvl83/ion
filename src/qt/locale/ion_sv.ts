@@ -1865,8 +1865,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Användning:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Skicka kommando till -server eller xiond</translation>
+        <source>Send command to -server or iond</source>
+        <translation>Skicka kommando till -server eller iond</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1881,12 +1881,12 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Inställningar:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Ange konfigurationsfilen (standard: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Ange konfigurationsfilen (standard: ioncoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>Ange pid filen (standard xiond.pid)</translation>
+        <source>Specify pid file (default: iond.pid)</source>
+        <translation>Ange pid filen (standard iond.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

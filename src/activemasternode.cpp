@@ -97,7 +97,7 @@ void CActiveMasternode::ManageStatus()
             	return;
             }
 
-            /* donations are not supported in ion.conf */
+            /* donations are not supported in ioncoin.conf */
             CScript donationAddress = CScript();
             int donationPercentage = 0;
 

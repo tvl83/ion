@@ -1864,8 +1864,8 @@ This label turns red, if the priority is smaller than "medium".
         <translation>使用法:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>-server か xiondへコマンドを送る。</translation>
+        <source>Send command to -server or iond</source>
+        <translation>-server か iondへコマンドを送る。</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1880,12 +1880,12 @@ This label turns red, if the priority is smaller than "medium".
         <translation>オプション:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>設定ファイルを特定する (デファルト: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>設定ファイルを特定する (デファルト: ioncoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>pid ファイルを特定する (デフォルト: xiond.pid)</translation>
+        <source>Specify pid file (default: iond.pid)</source>
+        <translation>pid ファイルを特定する (デフォルト: iond.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

@@ -1865,8 +1865,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
         <translation>Užití:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Pošli příkaz na -server nebo xiond</translation>
+        <source>Send command to -server or iond</source>
+        <translation>Pošli příkaz na -server nebo iond</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1881,12 +1881,12 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
         <translation>Možnosti:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Urči konfigurační soubor (výchozí: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Urči konfigurační soubor (výchozí: ioncoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>Urči pid soubor (výchozí: xiond.pid)</translation>
+        <source>Specify pid file (default: iond.pid)</source>
+        <translation>Urči pid soubor (výchozí: iond.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

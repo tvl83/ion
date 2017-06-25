@@ -1865,8 +1865,8 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Uso:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Envía un comando a -server o xiond</translation>
+        <source>Send command to -server or iond</source>
+        <translation>Envía un comando a -server o iond</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1884,12 +1884,12 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
 </translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Especifica un archivo de configuración (por defecto: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Especifica un archivo de configuración (por defecto: ioncoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>Especifica un archivo pid (por defecto: xiond.pid)</translation>
+        <source>Specify pid file (default: iond.pid)</source>
+        <translation>Especifica un archivo pid (por defecto: iond.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

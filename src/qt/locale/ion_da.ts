@@ -1849,8 +1849,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Anvendelse:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Send kommando til-server eller xiond</translation>
+        <source>Send command to -server or iond</source>
+        <translation>Send kommando til-server eller iond</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1865,12 +1865,12 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Indstillinger:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Angiv konfigurationsfil (default: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Angiv konfigurationsfil (default: ioncoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>Angiv pid fil (standard: xiond.pid)</translation>
+        <source>Specify pid file (default: iond.pid)</source>
+        <translation>Angiv pid fil (standard: iond.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

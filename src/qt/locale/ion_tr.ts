@@ -1873,8 +1873,8 @@ This label turns red, if the priority is smaller than "medium".
         <translation>Kullanım:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>-sunucu veya xiond'ye komut gönder</translation>
+        <source>Send command to -server or iond</source>
+        <translation>-sunucu veya iond'ye komut gönder</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1889,11 +1889,11 @@ This label turns red, if the priority is smaller than "medium".
         <translation>Seçenekler:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Konfigürasyon dosyasını belirt (varsayılan: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Konfigürasyon dosyasını belirt (varsayılan: ioncoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
+        <source>Specify pid file (default: iond.pid)</source>
         <translation>pid dosyasını belirt (varsayılan: ion.pid)</translation>
     </message>
     <message>

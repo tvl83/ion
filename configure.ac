@@ -2,20 +2,22 @@ dnl require autoconf 2.60 (AS_ECHO/AS_ECHO_N)
 AC_PREREQ([2.60])
 define(_CLIENT_VERSION_MAJOR, 2)
 define(_CLIENT_VERSION_MINOR, 1)
-define(_CLIENT_VERSION_REVISION, 3)
-define(_CLIENT_VERSION_BUILD, 0)
+define(_CLIENT_VERSION_REVISION, 5)
+define(_CLIENT_VERSION_BUILD, 3)
 define(_CLIENT_VERSION_IS_RELEASE, false)
 define(_COPYRIGHT_YEAR, 2017)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[ION Core]])
-AC_INIT([ION Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/ionomy/ion/issues],[ion],[https://www.ionomy.com/])
-AC_CONFIG_SRCDIR([src/init.cpp])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Ion Core]])
+AC_INIT([Ion Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/cevap/ion/issues],[ion],[https://ioncore.org/])
+AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/ion-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-ION_DAEMON_NAME=xiond
-ION_GUI_NAME=ionqt
+ION_DAEMON_NAME=iond
+ION_GUI_NAME=ion-qt
+#ION_CLI_NAME=ion-cli
+#ION_TX_NAME=ion-tx
 
 AC_CANONICAL_HOST
 
@@ -32,10 +34,10 @@ AM_INIT_AUTOMAKE([no-define subdir-objects foreign])
 dnl faketime messes with timestamps and causes configure to be re-run.
 dnl --disable-maintainer-mode can be used to bypass this.
 AM_MAINTAINER_MODE([enable])
-  
+
 dnl make the compilation flags quiet unless V=1 is used
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
-  
+
 dnl Compiler checks (here before libtool).
 if test "x${CXXFLAGS+set}" = "xset"; then
   CXXFLAGS_overridden=yes
@@ -53,7 +55,6 @@ case $host in
   ;;
 esac
 dnl Require C++11 compiler (no GNU extensions)
-dnl ASPA: NOT SURE IF THIS IS NECESSARY
 AX_CXX_COMPILE_STDCXX([11], [noext], [mandatory], [nodefault])
 dnl Check if -latomic is required for <std::atomic>
 CHECK_ATOMIC
@@ -102,6 +103,32 @@ AC_ARG_WITH([miniupnpc],
   [use_upnp=$withval],
   [use_upnp=auto])
 
+AC_ARG_ENABLE([upnp-default],
+  [AS_HELP_STRING([--enable-upnp-default],
+  [if UPNP is enabled, turn it on at startup (default is no)])],
+  [use_upnp_default=$enableval],
+  [use_upnp_default=no])
+
+AC_ARG_ENABLE(tests,
+    AS_HELP_STRING([--disable-tests],[do not compile tests (default is to compile)]),
+    [use_tests=$enableval],
+    [use_tests=yes])
+
+AC_ARG_ENABLE(gui-tests,
+    AS_HELP_STRING([--disable-gui-tests],[do not compile GUI tests (default is to compile if GUI and tests enabled)]),
+    [use_gui_tests=$enableval],
+    [use_gui_tests=$use_tests])
+
+AC_ARG_ENABLE(bench,
+    AS_HELP_STRING([--disable-bench],[do not compile benchmarks (default is to compile)]),
+    [use_bench=$enableval],
+    [use_bench=yes])
+
+AC_ARG_ENABLE([extended-functional-tests],
+    AS_HELP_STRING([--enable-extended-functional-tests],[enable expensive functional tests when using lcov (default no)]),
+    [use_extended_functional_tests=$enableval],
+    [use_extended_functional_tests=no])
+
 AC_ARG_WITH([qrencode],
   [AS_HELP_STRING([--with-qrencode],
   [enable QR code support (default is yes if qt is enabled and libqrencode is found)])],
@@ -126,11 +153,31 @@ AC_ARG_ENABLE([ccache],
   [use_ccache=$enableval],
   [use_ccache=auto])
 
+AC_ARG_ENABLE([lcov],
+  [AS_HELP_STRING([--enable-lcov],
+  [enable lcov testing (default is no)])],
+  [use_lcov=yes],
+  [use_lcov=no])
+
 AC_ARG_ENABLE([glibc-back-compat],
   [AS_HELP_STRING([--enable-glibc-back-compat],
   [enable backwards compatibility with glibc])],
   [use_glibc_compat=$enableval],
   [use_glibc_compat=no])
+
+AC_ARG_WITH([system-univalue],
+  [AS_HELP_STRING([--with-system-univalue],
+  [Build with system UniValue (default is no)])],
+  [system_univalue=$withval],
+  [system_univalue=no]
+)
+AC_ARG_ENABLE([zmq],
+  [AS_HELP_STRING([--disable-zmq],
+  [disable ZMQ notifications])],
+  [use_zmq=$enableval],
+  [use_zmq=yes])
+
+AC_ARG_WITH([protoc-bindir],[AS_HELP_STRING([--with-protoc-bindir=BIN_DIR],[specify protoc bin path])], [protoc_bin_path=$withval], [])
 
 AC_ARG_ENABLE(man,
     [AS_HELP_STRING([--disable-man],
@@ -188,8 +235,21 @@ if test "x$CXXFLAGS_overridden" = "xno"; then
   AX_CHECK_COMPILE_FLAG([-Wself-assign],[CXXFLAGS="$CXXFLAGS -Wno-self-assign"],,[[$CXXFLAG_WERROR]])
   AX_CHECK_COMPILE_FLAG([-Wunused-local-typedef],[CXXFLAGS="$CXXFLAGS -Wno-unused-local-typedef"],,[[$CXXFLAG_WERROR]])
   AX_CHECK_COMPILE_FLAG([-Wdeprecated-register],[CXXFLAGS="$CXXFLAGS -Wno-deprecated-register"],,[[$CXXFLAG_WERROR]])
+  AX_CHECK_COMPILE_FLAG([-Wimplicit-fallthrough],[CXXFLAGS="$CXXFLAGS -Wno-implicit-fallthrough"],,[[$CXXFLAG_WERROR]])
 fi
 CPPFLAGS="$CPPFLAGS -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS"
+
+AC_ARG_WITH([utils],
+  [AS_HELP_STRING([--with-utils],
+  [build ion-cli ion-tx (default=yes)])],
+  [build_ion_utils=$withval],
+  [build_ion_utils=yes])
+
+AC_ARG_WITH([libs],
+  [AS_HELP_STRING([--with-libs],
+  [build libraries (default=yes)])],
+  [build_ion_libs=$withval],
+  [build_ion_libs=yes])
 
 AC_ARG_WITH([daemon],
   [AS_HELP_STRING([--with-daemon],
@@ -479,14 +539,14 @@ AC_CHECK_DECLS([strnlen])
 AC_CHECK_DECLS([daemon])
 
 AC_CHECK_DECLS([le16toh, le32toh, le64toh, htole16, htole32, htole64, be16toh, be32toh, be64toh, htobe16, htobe32, htobe64],,,
-                [#if HAVE_ENDIAN_H
+		[#if HAVE_ENDIAN_H
                  #include <endian.h>
                  #elif HAVE_SYS_ENDIAN_H
                  #include <sys/endian.h>
                  #endif])
 
 AC_CHECK_DECLS([bswap_16, bswap_32, bswap_64],,,
-                [#if HAVE_BYTESWAP_H
+		[#if HAVE_BYTESWAP_H
                  #include <byteswap.h>
                  #endif])
 
@@ -597,11 +657,10 @@ fi
 
 ION_QT_INIT
 
-dnl TODO: change ion to ion where appropriate
 dnl sets $ion_enable_qt, $ion_enable_qt_test, $ion_enable_qt_dbus
 ION_QT_CONFIGURE([$use_pkgconfig], [qt5])
 
-if test x$build_iond$ion_enable_qt = xnono; then
+if test x$build_ion_utils$build_iond$ion_enable_qt$use_tests$use_bench = xnonononono; then
     use_boost=no
 else
     use_boost=yes
@@ -649,6 +708,38 @@ fi
 if test x$use_reduce_exports = xyes; then
     CXXFLAGS="$CXXFLAGS $RE_CXXFLAGS"
     AX_CHECK_LINK_FLAG([[-Wl,--exclude-libs,ALL]], [RELDFLAGS="-Wl,--exclude-libs,ALL"])
+fi
+
+if test x$use_tests = xyes; then
+
+  if test x$HEXDUMP = x; then
+    AC_MSG_ERROR(hexdump is required for tests)
+  fi
+
+
+  if test x$use_boost = xyes; then
+
+  AX_BOOST_UNIT_TEST_FRAMEWORK
+
+  dnl Determine if -DBOOST_TEST_DYN_LINK is needed
+  AC_MSG_CHECKING([for dynamic linked boost test])
+  TEMP_LIBS="$LIBS"
+  LIBS="$LIBS $BOOST_LDFLAGS $BOOST_UNIT_TEST_FRAMEWORK_LIB"
+  TEMP_CPPFLAGS="$CPPFLAGS"
+  CPPFLAGS="$CPPFLAGS $BOOST_CPPFLAGS"
+  AC_LINK_IFELSE([AC_LANG_SOURCE([
+       #define BOOST_TEST_DYN_LINK
+       #define BOOST_TEST_MAIN
+        #include <boost/test/unit_test.hpp>
+
+       ])],
+    [AC_MSG_RESULT(yes)]
+    [TESTDEFS="$TESTDEFS -DBOOST_TEST_DYN_LINK"],
+    [AC_MSG_RESULT(no)])
+  LIBS="$TEMP_LIBS"
+  CPPFLAGS="$TEMP_CPPFLAGS"
+
+  fi
 fi
 
 if test x$use_boost = xyes; then
@@ -748,14 +839,14 @@ if test x$use_pkgconfig = xyes; then
   : dnl
   m4_ifdef(
     [PKG_CHECK_MODULES],
-    [ 
+    [
       PKG_CHECK_MODULES([SSL], [libssl],, [AC_MSG_ERROR(openssl  not found.)])
       PKG_CHECK_MODULES([CRYPTO], [libcrypto],,[AC_MSG_ERROR(libcrypto  not found.)])
       ION_QT_CHECK([PKG_CHECK_MODULES([PROTOBUF], [protobuf], [have_protobuf=yes], [ION_QT_FAIL(libprotobuf not found)])])
       if test x$use_qr != xno; then
         ION_QT_CHECK([PKG_CHECK_MODULES([QR], [libqrencode], [have_qrencode=yes], [have_qrencode=no])])
       fi
-      if test x$build_iond$ion_enable_qt != xnono; then
+      if test x$build_ion_utils$build_iond$ion_enable_qt$use_tests != xnononono; then
         PKG_CHECK_MODULES([EVENT], [libevent],, [AC_MSG_ERROR(libevent not found.)])
         if test x$TARGET_OS != xwindows; then
           PKG_CHECK_MODULES([EVENT_PTHREADS], [libevent_pthreads],, [AC_MSG_ERROR(libevent_pthreads not found.)])
@@ -780,7 +871,7 @@ else
   AC_CHECK_HEADER([openssl/ssl.h],, AC_MSG_ERROR(libssl headers missing),)
   AC_CHECK_LIB([ssl],         [main],SSL_LIBS=-lssl, AC_MSG_ERROR(libssl missing))
 
-  if test x$build_iond$ion_enable_qt != xnono; then
+  if test x$build_ion_utils$build_iond$ion_enable_qt$use_tests != xnononono; then
     AC_CHECK_HEADER([event2/event.h],, AC_MSG_ERROR(libevent headers missing),)
     AC_CHECK_LIB([event],[main],EVENT_LIBS=-levent,AC_MSG_ERROR(libevent missing))
     if test x$TARGET_OS != xwindows; then
@@ -825,11 +916,71 @@ AC_CHECK_DECLS([EVP_MD_CTX_new],,,[AC_INCLUDES_DEFAULT
 ])
 CXXFLAGS="${save_CXXFLAGS}"
 
+dnl univalue check
+
+need_bundled_univalue=yes
+
+if test x$build_ion_utils$build_iond$ion_enable_qt$use_tests$use_bench = xnonononono; then
+  need_bundled_univalue=no
+else
+
+if test x$system_univalue != xno ; then
+  found_univalue=no
+  if test x$use_pkgconfig = xyes; then
+    : #NOP
+    m4_ifdef(
+      [PKG_CHECK_MODULES],
+      [
+        PKG_CHECK_MODULES([UNIVALUE],[libunivalue],[found_univalue=yes],[true])
+      ]
+    )
+  else
+    AC_CHECK_HEADER([univalue.h],[
+      AC_CHECK_LIB([univalue],  [main],[
+        UNIVALUE_LIBS=-lunivalue
+        found_univalue=yes
+      ],[true])
+    ],[true])
+  fi
+
+  if test x$found_univalue = xyes ; then
+    system_univalue=yes
+    need_bundled_univalue=no
+  elif test x$system_univalue = xyes ; then
+    AC_MSG_ERROR([univalue not found])
+  else
+    system_univalue=no
+  fi
+fi
+
+if test x$need_bundled_univalue = xyes ; then
+  UNIVALUE_CFLAGS='-I$(srcdir)/univalue/include'
+  UNIVALUE_LIBS='univalue/libunivalue.la'
+fi
+
+fi
+
+AM_CONDITIONAL([EMBEDDED_UNIVALUE],[test x$need_bundled_univalue = xyes])
+AC_SUBST(UNIVALUE_CFLAGS)
+AC_SUBST(UNIVALUE_LIBS)
+
 ION_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
 AC_MSG_CHECKING([whether to build iond])
 AM_CONDITIONAL([BUILD_IOND], [test x$build_iond = xyes])
 AC_MSG_RESULT($build_iond)
+
+AC_MSG_CHECKING([whether to build utils (ion-cli ion-tx)])
+AM_CONDITIONAL([BUILD_ION_UTILS], [test x$build_ion_utils = xyes])
+AC_MSG_RESULT($build_ion_utils)
+
+AC_MSG_CHECKING([whether to build libraries])
+AM_CONDITIONAL([BUILD_ION_LIBS], [test x$build_ion_libs = xyes])
+if test x$build_ion_libs = xyes; then
+  AC_DEFINE(HAVE_CONSENSUS_LIB, 1, [Define this symbol if the consensus lib has been built])
+  AC_CONFIG_FILES([libionconsensus.pc:libionconsensus.pc.in])
+fi
+AC_MSG_RESULT($build_ion_libs)
 
 AC_LANG_POP
 
@@ -947,16 +1098,20 @@ else
   AC_MSG_RESULT([no])
 fi
 
-if test x$build_iond$ion_enable_qt = xnono; then
-  AC_MSG_ERROR([No targets! Please specify at least one of: --with-daemon --with-gui])
+if test x$build_ion_utils$build_ion_libs$build_iond$ion_enable_qt$use_bench$use_tests = xnononononono; then
+  AC_MSG_ERROR([No targets! Please specify at least one of: --with-utils --with-libs --with-daemon --with-gui --enable-bench or --enable-tests])
 fi
 
 AM_CONDITIONAL([TARGET_DARWIN], [test x$TARGET_OS = xdarwin])
 AM_CONDITIONAL([BUILD_DARWIN], [test x$BUILD_OS = xdarwin])
 AM_CONDITIONAL([TARGET_WINDOWS], [test x$TARGET_OS = xwindows])
 AM_CONDITIONAL([ENABLE_WALLET],[test x$enable_wallet = xyes])
+AM_CONDITIONAL([ENABLE_TESTS],[test x$BUILD_TEST = xyes])
 AM_CONDITIONAL([ENABLE_QT],[test x$ion_enable_qt = xyes])
+AM_CONDITIONAL([ENABLE_QT_TESTS],[test x$BUILD_TEST_QT = xyes])
+AM_CONDITIONAL([ENABLE_BENCH],[test x$use_bench = xyes])
 AM_CONDITIONAL([USE_QRCODE], [test x$use_qr = xyes])
+AM_CONDITIONAL([USE_LCOV],[test x$use_lcov = xyes])
 AM_CONDITIONAL([GLIBC_BACK_COMPAT],[test x$use_glibc_compat = xyes])
 AM_CONDITIONAL([HARDEN],[test x$use_hardening = xyes])
 
@@ -981,6 +1136,8 @@ AC_SUBST(COPYRIGHT_HOLDERS_SUBSTITUTION, "_COPYRIGHT_HOLDERS_SUBSTITUTION")
 AC_SUBST(COPYRIGHT_HOLDERS_FINAL, "_COPYRIGHT_HOLDERS_FINAL")
 AC_SUBST(ION_DAEMON_NAME)
 AC_SUBST(ION_GUI_NAME)
+#AC_SUBST(ION_CLI_NAME)
+#AC_SUBST(ION_TX_NAME)
 
 AC_SUBST(RELDFLAGS)
 AC_SUBST(ERROR_CXXFLAGS)
@@ -1004,10 +1161,11 @@ AC_SUBST(EVENT_PTHREADS_LIBS)
 AC_SUBST(ZMQ_LIBS)
 AC_SUBST(PROTOBUF_LIBS)
 AC_SUBST(QR_LIBS)
-AC_CONFIG_FILES([Makefile src/Makefile doc/man/Makefile])
-dnl AC_CONFIG_FILES([Makefile src/Makefile doc/man/Makefile share/qt/Info.plist])
-dnl AC_CONFIG_FILES([contrib/devtools/split-debug.sh],[chmod +x contrib/devtools/split-debug.sh])
-dnl AC_CONFIG_FILES([doc/Doxyfile])
+AC_CONFIG_FILES([Makefile src/Makefile doc/man/Makefile share/setup.nsi share/qt/Info.plist test/config.ini])
+AC_CONFIG_FILES([contrib/devtools/split-debug.sh],[chmod +x contrib/devtools/split-debug.sh])
+AC_CONFIG_FILES([doc/Doxyfile])
+AC_CONFIG_LINKS([test/functional/test_runner.py:test/functional/test_runner.py])
+AC_CONFIG_LINKS([test/util/ion-util-test.py:test/util/ion-util-test.py])
 
 dnl boost's m4 checks do something really nasty: they export these vars. As a
 dnl result, they leak into secp256k1's configure and crazy things happen.
@@ -1055,12 +1213,12 @@ esac
 dnl Replace the BUILDDIR path with the correct Windows path if compiling on Native Windows
 case ${OS} in
    *Windows*)
-     sed  's/BUILDDIR="\/\([[a-z]]\)/BUILDDIR="\1:/'  test/functional/config.ini > test/functional/config-2.ini
-     mv test/functional/config-2.ini test/functional/config.ini
+     sed  's/BUILDDIR="\/\([[a-z]]\)/BUILDDIR="\1:/'  test/config.ini > test/config-2.ini
+     mv test/config-2.ini test/config.ini
    ;;
 esac
 
-echo
+echo 
 echo "Options used to compile and link:"
 echo "  with wallet   = $enable_wallet"
 echo "  with gui / qt = $ion_enable_qt"
@@ -1069,10 +1227,12 @@ if test x$ion_enable_qt != xno; then
     echo "    with qr     = $use_qr"
 fi
 echo "  with zmq      = $use_zmq"
+echo "  with test     = $use_tests"
+echo "  with bench    = $use_bench"
 echo "  with upnp     = $use_upnp"
 echo "  debug enabled = $enable_debug"
 echo "  werror        = $enable_werror"
-echo
+echo 
 echo "  target os     = $TARGET_OS"
 echo "  build os      = $BUILD_OS"
 echo
@@ -1082,12 +1242,4 @@ echo "  CPPFLAGS      = $CPPFLAGS"
 echo "  CXX           = $CXX"
 echo "  CXXFLAGS      = $CXXFLAGS"
 echo "  LDFLAGS       = $LDFLAGS"
-echo
-                                            
-
-dnl AC_INIT([xiond],[0.0.1])
-dnl AM_INIT_AUTOMAKE([-Wall -Werror])
-dnl AC_PROG_CXX
-dnl AC_CONFIG_HEADERS([config.h])
-dnl AC_CONFIG_FILES([Makefile src/Makefile doc/man/Makefile])
-dnl AC_OUTPUT
+echo 

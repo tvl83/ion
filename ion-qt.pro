@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = ion-qt
-VERSION = 2.1.4
+VERSION = 2.1.6.0
 INCLUDEPATH += src src/json src/qt
 QT += network printsupport
 DEFINES += ENABLE_WALLET
@@ -578,7 +578,7 @@ windows:!contains(MINGW_THREAD_BUGFIX, 0) {
 macx:HEADERS += src/qt/macdockiconhandler.h src/qt/macnotificationhandler.h
 macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm src/qt/macnotificationhandler.mm
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit -framework CoreServices
-macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
+macx:DEFINES += MAC_OSX Q_OS_MAC MSG_NOSIGNAL=0
 macx:ICON = src/qt/res/icons/ion.icns
 macx:TARGET = "ion-Qt"
 macx:QMAKE_CFLAGS_THREAD += -pthread

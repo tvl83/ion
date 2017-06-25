@@ -1865,8 +1865,8 @@ Cela veut dire que des frais d'un minimum de %1 par kb sont requis</translation>
         <translation>Utilisation :</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Envoyer commande à -server ou xiond</translation>
+        <source>Send command to -server or iond</source>
+        <translation>Envoyer commande à -server ou iond</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1881,12 +1881,12 @@ Cela veut dire que des frais d'un minimum de %1 par kb sont requis</translation>
         <translation>Options :</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Spécifier le fichier de configuration (defaut: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Spécifier le fichier de configuration (defaut: ioncoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>Spécifier le fichier pid (defaut: xiond.pid)
+        <source>Specify pid file (default: iond.pid)</source>
+        <translation>Spécifier le fichier pid (defaut: iond.pid)
 </translation>
     </message>
     <message>

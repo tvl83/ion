@@ -1825,8 +1825,8 @@ Address: %4
         <translation>Ús:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Enviar comandes a -server o xiond</translation>
+        <source>Send command to -server or iond</source>
+        <translation>Enviar comandes a -server o iond</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1841,12 +1841,12 @@ Address: %4
         <translation>Opcions:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Especifiqueu el fitxer de configuració (per defecte: ion.conf)</translation>
+        <source>Specify configuration file (default: ioncoin.conf)</source>
+        <translation>Especifiqueu el fitxer de configuració (per defecte: ioncoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>Especificar arxiu pid (per defecte: xiond.pid)</translation>
+        <source>Specify pid file (default: iond.pid)</source>
+        <translation>Especificar arxiu pid (per defecte: iond.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

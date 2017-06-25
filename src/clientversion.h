@@ -13,8 +13,8 @@
 // These need to be macros, as version.cpp's and ion-qt.rc's voodoo requires it
 #define CLIENT_VERSION_MAJOR       2
 #define CLIENT_VERSION_MINOR       1
-#define CLIENT_VERSION_REVISION    4
-#define CLIENT_VERSION_BUILD       0
+#define CLIENT_VERSION_REVISION    5
+#define CLIENT_VERSION_BUILD       3
 #endif
 
 #if !defined(CLIENT_VERSION_IS_RELEASE)

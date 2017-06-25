@@ -52,10 +52,10 @@ bool static TestSplitHost(string test, string host, int port)
 
 BOOST_AUTO_TEST_CASE(netbase_splithost)
 {
-    BOOST_CHECK(TestSplitHost("www.ion.org", "www.ion.org", -1));
-    BOOST_CHECK(TestSplitHost("[www.ion.org]", "www.ion.org", -1));
-    BOOST_CHECK(TestSplitHost("www.ion.org:80", "www.ion.org", 80));
-    BOOST_CHECK(TestSplitHost("[www.ion.org]:80", "www.ion.org", 80));
+    BOOST_CHECK(TestSplitHost("www.ioncoin.org", "www.ioncoin.org", -1));
+    BOOST_CHECK(TestSplitHost("[www.ioncoin.org]", "www.ioncoin.org", -1));
+    BOOST_CHECK(TestSplitHost("www.ioncoin.org:80", "www.ioncoin.org", 80));
+    BOOST_CHECK(TestSplitHost("[www.ioncoin.org]:80", "www.ioncoin.org", 80));
     BOOST_CHECK(TestSplitHost("127.0.0.1", "127.0.0.1", -1));
     BOOST_CHECK(TestSplitHost("127.0.0.1:12705", "127.0.0.1", 12705));
     BOOST_CHECK(TestSplitHost("[127.0.0.1]", "127.0.0.1", -1));

@@ -55,7 +55,7 @@
 
 **Ion**: [imHX5qPv1fv1nZeRPJhmDDhkCeDUMdWoVv](ionomy:imHX5qPv1fv1nZeRPJhmDDhkCeDUMdWoVv)
 
-![Donate ION to 🔩ASPA🔩](https://raw.githubusercontent.com/cevap/ion/master/contrib/donatiodonation-aspa-ion-address.png)
+![Donate ION to 🔩ASPA🔩](https://raw.githubusercontent.com/cevap/ion/master/contrib/donation/donation-aspa-ion-address.png)
 
 **Btc**: [1DKj3yeJrMShP8MdnKpTTG8TKb7ymaFN1p](bitcoin:1DKj3yeJrMShP8MdnKpTTG8TKb7ymaFN1p)
 

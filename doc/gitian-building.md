@@ -245,6 +245,8 @@ For example, to connect as `root` from a Linux command prompt use
     debian@debian:~$
 
 
+Add debian to sudoers group `sudo usermod -aG sudo <username>`
+
 Replace `root` with `debian` to log in as user.
 
 Setting up Debian for Gitian building
@@ -307,7 +309,7 @@ cd ..
 
 **Note**: When sudo asks for a password, enter the password for the user *debian* not for *root*.
 
-Clone the git repositories for ion and Gitian.
+Clone the git repositories for ion and Gitian. (Rename existing folder).
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git

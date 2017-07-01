@@ -34,5 +34,9 @@ deb http://ppa.launchpad.net/bitcoin/bitcoin/ubuntu precise main
 deb-src http://ppa.launchpad.net/bitcoin/bitcoin/ubuntu precise main 
 
 
-sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo add-apt-repository ppa:ionomy/ioncoin
 
+
+
+# how to remove PPA
+`sudo apt-add-repository --remove ppa:ionomy/ioncoin`

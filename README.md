@@ -54,7 +54,8 @@ Ion Integration Master branch (stable)
 * PoS Min: 1 Day
 * PoS Max: Unlimited
 * Total Coins: 55,000,000 ION
-* Premine: 16,400,000 ION (Block Height: [1](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm), hash: [000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm)
+* Premine: 16,400,000 ION
+_(Block Height: [1](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm), hash: [000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm))_
 * Block Size: 2 Mega-bytes (MB)
 
 

@@ -71,10 +71,6 @@ Ion attributes/parameters
 	
 	_(Premine Block Height: [1](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm), hash: [000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm))_
 
-Requierments
-============
-* Min disk space: [52428800](https://github.com/cevap/ion/blob/master/src/main.h#L111)
-
 **MainNet Parameters**
 P2P Port = [12700](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L88)
 RPC Port = [12705](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L89)
@@ -83,6 +79,10 @@ RPC Port = [12705](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#
 **TestNet Parameters**
 P2P Port = [27170](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L149)
 RPC Port = [27171](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L150)
+
+Requierments
+============
+* Min disk space: [52428800](https://github.com/cevap/ion/blob/master/src/main.h#L111)
 
 UNIX BUILD NOTES
 ----------------

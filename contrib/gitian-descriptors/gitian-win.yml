@@ -1,5 +1,5 @@
 ---
-name: "ion-win-0.15"
+name: "ion-win-2.1"
 enable_cache: true
 suites:
 - "trusty"

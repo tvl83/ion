@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = ion-qt
-VERSION = 2.1.6.0
+VERSION = 2.1.6.1
 INCLUDEPATH += src src/json src/qt
 QT += network printsupport
 DEFINES += ENABLE_WALLET
@@ -12,9 +12,9 @@ greaterThan(QT_MAJOR_VERSION, 4) {
     DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0
 }
 
-win32:BOOST_LIB_SUFFIX=-mgw49-mt-s-1_63
-win32:BOOST_INCLUDE_PATH=C:/deps/boost_1_63_0
-win32:BOOST_LIB_PATH=C:/deps/boost_1_63_0/stage/lib
+win32:BOOST_LIB_SUFFIX=-mgw49-mt-s-1_64
+win32:BOOST_INCLUDE_PATH=C:/deps/boost_1_64_0
+win32:BOOST_LIB_PATH=C:/deps/boost_1_64_0/stage/lib
 win32:BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
 win32:BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
 win32:OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.2j/include

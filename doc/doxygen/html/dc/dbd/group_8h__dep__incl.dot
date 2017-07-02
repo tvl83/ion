@@ -67,7 +67,9 @@ digraph "src/secp256k1/src/group.h"
   Node3 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node23 [label="src/secp256k1/src/modules\l/schnorr/schnorr.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d84/schnorr_8h.html"];
-  Node23 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="src/secp256k1/src/ecmult\l_static_context.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d02/ecmult__static__context_8h.html"];
+  Node3 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="src/secp256k1/src/modules\l/schnorr/schnorr.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d84/schnorr_8h.html"];
+  Node24 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

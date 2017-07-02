@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['hair_5fsp_5fcp',['HAIR_SP_CP',['../db/d23/ionunits_8h.html#a30b651133f8087936c3e29d633cd74bd',1,'ionunits.h']]],
-  ['hair_5fsp_5fhtml',['HAIR_SP_HTML',['../db/d23/ionunits_8h.html#afb375055610fc94c96bc7a015c54b860',1,'ionunits.h']]],
-  ['hair_5fsp_5futf8',['HAIR_SP_UTF8',['../db/d23/ionunits_8h.html#a18baaf29002062cf05da6a2fab053067',1,'ionunits.h']]],
-  ['html_5fhack_5fsp',['HTML_HACK_SP',['../db/d23/ionunits_8h.html#a7c81308f9c1dd82897bcb98aa7458649',1,'ionunits.h']]]
+  ['git_5farchive',['GIT_ARCHIVE',['../d5/d1f/version_8cpp.html#a5596497bd446dfca19b4c5a068b151ae',1,'version.cpp']]],
+  ['git_5fcommit_5fid',['GIT_COMMIT_ID',['../d5/d1f/version_8cpp.html#af7127108fe27b518834fcff3609bcc48',1,'version.cpp']]],
+  ['guarded_5fby',['GUARDED_BY',['../db/d6d/threadsafety_8h.html#a4bc26ad7e8bc853ad3f58a8a343c952e',1,'threadsafety.h']]],
+  ['guarded_5fvar',['GUARDED_VAR',['../db/d6d/threadsafety_8h.html#a9b3c6006c83ebe27f142f42b46ee4332',1,'threadsafety.h']]]
 ];

@@ -35,8 +35,8 @@ DEL_DIR       = rmdir
 MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
-DISTNAME      = ion-qt2.1.6.0
-DISTDIR = /home/tor/go/src/github.com/cevap/ion-75ce3c067a563e0b824d4414f9a76a038eb29845/build-ion-qt-Desktop_Qt_5_9_0_GCC_64bit-Release/build/ion-qt2.1.6.0
+DISTNAME      = ion-qt2.1.6.1
+DISTDIR = /home/tor/go/src/github.com/cevap/ion-75ce3c067a563e0b824d4414f9a76a038eb29845/build-ion-qt-Desktop_Qt_5_9_0_GCC_64bit-Release/build/ion-qt2.1.6.1
 LINK          = g++
 LFLAGS        = -fstack-protector-all --param ssp-buffer-size=1 -Wl,-O1
 LIBS          = $(SUBLIBS) /home/tor/go/src/github.com/cevap/ion/src/leveldb/libleveldb.a /home/tor/go/src/github.com/cevap/ion/src/leveldb/libmemenv.a /home/tor/go/src/github.com/cevap/ion/src/secp256k1/src/libsecp256k1_la-secp256k1.o -lminiupnpc -lssl -lcrypto -ldb_cxx -lgmp -lboost_system -lboost_filesystem -lboost_program_options -lboost_thread -lrt -ldl -L/opt/Qt5.9.0/5.9/gcc_64/lib -lQt5PrintSupport -lQt5Widgets -lQt5Gui -lQt5Network -lQt5DBus -lQt5Core -lpthread -lGL 

@@ -63,13 +63,75 @@ endif
 .PHONY: FORCE check-symbols check-security
 # ion core #
 ION_CORE_H = \
-activemasternode.h  chainparams.h       core_io.h         ecwrapper.h    limitedmap.h           miner.h      pubkey.h       spork.h         torcontrol.h    utilstrencodings.h  \
-addrman.h           chainparamsseeds.h  core_memusage.h   hash.h         main.h                 mruset.h     reverselock.h  stake.h         txdb.h          version.h		\
-alert.h             checkpoints.h       crypter.h         indirectmap.h  masternodeconfig.h     netbase.h    rpcclient.h    stealth.h       txdb-leveldb.h  walletdb.h		\
-allocators.h        clientversion.h     cuckoocache.h     init.h         masternode.h           net.h        rpcprotocol.h  strlcpy.h       txmempool.h     wallet.h		\
-amount.h            coincontrol.h       stashedsend.h        instantx.h     masternodeman.h        prevector.h  rpcserver.h    sync.h          ui_interface.h			\
-arith_uint256.h     compat.h            stashedsend-relay.h  key.h          masternode-payments.h  proofs.h     script.h       threadsafety.h  uint256.h				\
-base58.h            core.h              db.h              keystore.h     masternode-pos.h       protocol.h   serialize.h    tinyformat.h    util.h				
+activemasternode.h \
+addrman.h \
+alert.h \
+allocators.h \
+amount.h \
+arith_uint256.h \
+base58.h \
+chainparams.h \
+chainparamsseeds.h \
+checkpoints.h \
+clientversion.h \
+coincontrol.h \
+compat.h \
+core.h \
+core_io.h \
+core_memusage.h \
+crypter.h \
+cuckoocache.h \
+db.h \
+ecwrapper.h \
+hash.h \
+indirectmap.h \
+init.h \
+instantx.h \
+key.h \
+keystore.h \
+limitedmap.h \
+main.h \
+masternodeconfig.h \
+masternode.h \
+masternodeman.h \
+masternode-payments.h \
+masternode-pos.h \
+miner.h \
+mruset.h \
+netbase.h \
+net.h \
+prevector.h \
+proofs.h \
+protocol.h \
+pubkey.h \
+reverselock.h \
+rpcclient.h \
+rpcprotocol.h \
+rpcserver.h \
+script.h \
+serialize.h \
+spork.h \
+stake.h \
+stashedsend.h \
+stashedsend-relay.h \
+stealth.h \
+strlcpy.h \
+sync.h \
+threadsafety.h \
+tinyformat.h \
+torcontrol.h \
+txdb.h \
+txdb-leveldb.h \
+txmempool.h \
+ui_interface.h \
+uint256.h \
+util.h \
+utilstrencodings.h \
+validation.h \
+validationinterface.h \
+version.h \
+walletdb.h \
+wallet.h				
 
 iond_SOURCES = iond.cpp \
 	alert.cpp \

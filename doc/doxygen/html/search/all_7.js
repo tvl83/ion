@@ -24,6 +24,7 @@ var searchData=
   ['fdebitcached',['fDebitCached',['../d6/d53/class_c_wallet_tx.html#ad2dca68c99f2e677e5999c9872a269da',1,'CWalletTx']]],
   ['fdebug',['fDebug',['../df/d2d/util_8cpp.html#a2ba7badc843121dde40a6f109d224a42',1,'fDebug():&#160;util.cpp'],['../d8/d3c/util_8h.html#a2ba7badc843121dde40a6f109d224a42',1,'fDebug():&#160;util.cpp']]],
   ['fdebugsmsg',['fDebugSmsg',['../df/d2d/util_8cpp.html#aebbe7fc2f3e1ae3d840076985c9214fa',1,'fDebugSmsg():&#160;util.cpp'],['../d8/d3c/util_8h.html#aebbe7fc2f3e1ae3d840076985c9214fa',1,'fDebugSmsg():&#160;util.cpp']]],
+  ['fdelt_5ftype',['FDELT_TYPE',['../d9/d25/ion-config_8h.html#a8ff23d79c56e7758b1623f6b4fcaad5b',1,'ion-config.h']]],
   ['fdenomconfcreditcached',['fDenomConfCreditCached',['../d6/d53/class_c_wallet_tx.html#a73a6308df83f13853a1891ef67c2d199',1,'CWalletTx']]],
   ['fdenomunconfcreditcached',['fDenomUnconfCreditCached',['../d6/d53/class_c_wallet_tx.html#a11197a5edda9bbfa66fe94eab1329a51',1,'CWalletTx']]],
   ['fdisconnect',['fDisconnect',['../d1/d64/class_c_node.html#af2f7ea958313974e8a948292f060922e',1,'CNode']]],

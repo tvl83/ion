@@ -36,8 +36,9 @@ Ion Integration Master branch (stable)
              +hdNNMMMMNNmdy/       .-://+++/:.    
 
 
-#### What is Ion?
-----------------
+What is Ion?
+============
+
 * Coin Suffix: ION
 * PoW Algorithm: SHA256d
 * PoW Period: 2,000 Network Initiation Blocks
@@ -51,13 +52,13 @@ Ion Integration Master branch (stable)
 * PoS Min: 1 Day
 * PoS Max: Unlimited
 * Total Coins: 55,000,000 ION
-* Premine: 16,400,000 ION
-_(Block Height: [1](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm), hash: [000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm))_
 * Block Size: 2 Mega-bytes (MB)
+* Premine: 16,400,000 ION
+	
+	_(Block Height: [1](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm), hash: [000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm))_
 
 
 Ion is a digital currency that enables instant payments to anyone, anywhere in the world. Ion uses peer-to-peer technology over ClearNet to operate with no central authority (centralisation): managing transactions and issuing currency (ION) are carried out collectively by the Ion network. Ion is the name of open source software which enables the use of the currency ION.
-
 
 
 **MainNet Parameters**
@@ -70,7 +71,7 @@ P2P Port = 27170
 RPC Port = 27171
 
 UNIX BUILD NOTES
-====================
+----------------
 Some notes on how to build Ion in Unix.
 
 Note
@@ -85,13 +86,13 @@ the usage of the absolute path.
 
 
 Build ION-QT and IOND for LINUX (Method 1)
-==========================================
+------------------------------------------
 
 	./autogen.sh;./configure;make
 
 
 Build ION-QT and IOND for WINDOWS 64 Bit (Method 1)
-===================================================
+---------------------------------------------------
 To build executables for Windows 64-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
@@ -106,7 +107,7 @@ Then build using:
 
 
 Build ION-QT and IOND for WINDOWS 32 Bit (Method 1)
-===================================================
+---------------------------------------------------
 To build executables for Windows 64-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-i686 mingw-w64-i686-dev
@@ -121,14 +122,14 @@ Then build using:
     make
 
 To Build ion-qt (Method 2)
----------------------
+--------------------------
 [Download QT Creator](https://www.qt.io/download/) and install [latest QT creator](https://www.qt.io/download/), import .pro file and compile 
 1. Start QT creator
 2. Open QT project file *.pro (Keyboard Shortcut: STRG+C)
 3. Build all (Keyboard shortcut: STRG+SHIFT+B)
 
 Example Build Command (Method 3)
---------------------
+--------------------------------
 Qt Wallet and Deamon, CLI version build:
 
     qmake && make && cd src && make -f src/makefile.unix
@@ -138,7 +139,7 @@ Deamon Only Buld:
     cd src && make -f src/makefile.unix
 
 To Build (without QT Version) (Method 3)
----------------------
+----------------------------------------
 
 ```bash
 autoreconf --install ; ./configure ; make
@@ -146,7 +147,7 @@ autoreconf --install ; ./configure ; make
 This will build ion without QT (no GUI) if all dependencies are met.
 
 Dependencies
----------------------
+------------
 
 These dependencies are required:
 

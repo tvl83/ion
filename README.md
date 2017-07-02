@@ -36,7 +36,7 @@ Ion Integration Master branch (stable)
              +hdNNMMMMNNmdy/       .-://+++/:.    
 
 <p align="center">
-  <img src="https://github.com/cevap/ion/raw/master/src/qt/res/images/aboutpanda.png" alt="Ionomy CE digital currency project" width="600" height="350" >
+  <img src="https://github.com/cevap/ion/raw/master/src/qt/res/images/aboutpanda.png" alt="Ionomy CE digital currency project">
 </p>
 
 #### What is Ion?

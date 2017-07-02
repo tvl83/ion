@@ -1,5 +1,5 @@
 ---
-name: "ion-linux-0.15"
+name: "ion-linux-2.1"
 enable_cache: true
 suites:
 - "trusty"

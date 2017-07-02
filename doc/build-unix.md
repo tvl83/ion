@@ -81,11 +81,11 @@ install necessary parts of boost:
 
 BerkeleyDB is required for the wallet.
 
-**For Ubuntu only:** db4.8 packages are available [here](https://launchpad.net/~ion/+archive/ion).
+**For Ubuntu only:** db4.8 packages are available [here](https://launchpad.net/~ionomy/+archive/ubuntu/ioncoin/).
 You can add the repository and install using the following commands:
 
     sudo apt-get install software-properties-common
-    sudo add-apt-repository ppa:ion/ion
+    sudo add-apt-repository ppa:ionomy/ioncoin
     sudo apt-get update
     sudo apt-get install libdb4.8-dev libdb4.8++-dev
 

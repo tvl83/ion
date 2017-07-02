@@ -1,15 +1,12 @@
-<p align="center">
-  <img src="https://github.com/Ion-Network/Ion-Core/blob/master/src/qt/res/images/splash.png" alt="Ion_Icon"/>
-</p>
-# **Ion-Core (ION) v2.1.6**
+Ion-Core (ION) v2.1.6
+---------------------
 
-[![Build Status](https://travis-ci.org/ionomy/ion.svg?branch=master)](https://travis-ci.org/ionomy/ion)
-
-Ion Integration/Staging Tree
-================================
+Ion Integration Master branch (stable)
+======================================
 
 **Copyright (c) 2016-2017 ionomy**
-Copyright (c) 2017 🐼CEVAP🐼
+
+**Copyright (c) 2017 🐼CEVAP🐼**
 
                  `/:`                           
               -odN:                             
@@ -39,44 +36,60 @@ Copyright (c) 2017 🐼CEVAP🐼
              +hdNNMMMMNNmdy/       .-://+++/:.    
 
 
-
-#### What is Ion?
-----------------
-* Coin Suffix: ION
-* PoW Algorithm: SHA256d
-* PoW Period: 2,000 Network Initiation Blocks
-* PoW Median Target Spacing: 64 Seconds
-* PoW Difficulty Retarget: 2 Blocks
-* Full Confirmation: 60 Blocks
-* PoS Algorithm: SHA256d
-* PoS Target Spacing: 64 Seconds
-* PoS Difficulty Retarget: 2 Blocks
-* PoS Reward: Varied
-* PoS Min: 1 Day
-* PoS Max: Unlimited
-* Total Coins: 55,000,000 ION
-* Block Size: 2 Mega-bytes (MB)
-
+What is Ion?
+============
 
 Ion is a digital currency that enables instant payments to anyone, anywhere in the world. Ion uses peer-to-peer technology over ClearNet to operate with no central authority (centralisation): managing transactions and issuing currency (ION) are carried out collectively by the Ion network. Ion is the name of open source software which enables the use of the currency ION.
 
-
+Ion attributes/parameters
+=========================
+* Coin Suffix: ION
+* Feature base (_the earliest version new wallets supports_): [10500](https://github.com/cevap/ion/blob/master/src/wallet.h#L45)
+* PoW Algorithm: [SHA256d](https://en.bitcoin.it/wiki/SHA-256)
+* PoW Period: 2,000 Network Initiation Blocks
+* PoW Median Target Spacing: [64 Seconds](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L92)
+* PoW Difficulty Retarget: 2 Blocks
+* Last PoW Block: [1000](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L115)
+* Full Confirmation: 60 Blocks
+* PoS Algorithm: [SHA256d](https://en.bitcoin.it/wiki/SHA-256)
+* PoS Target Spacing: [64 Seconds](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L92)
+* PoS Difficulty Retarget: [MIDAS](https://github.com/cevap/ion/commit/ecfcde8a0025486e59cedf341c874e81db9b2dd6)
+* PoS Reward: [Varied](https://github.com/cevap/ion/blob/master/src/proofs.h#L31-L32)
+* PoS Min: [1 Day](https://github.com/cevap/ion/blob/master/src/proofs.cpp#L19)
+* PoS Future drift: [4,5 hours](https://github.com/cevap/ion/blob/master/src/main.h#L69)
+* PoS Target Timespan: [1 Week](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L93)
+* Minimum Transaction fee: [0.001](https://github.com/cevap/ion/blob/master/src/main.h#L53)
+* MAX P2SH SIGOPS: [15](https://github.com/cevap/ion/blob/master/src/main.h#L45)
+* MAX TX SIGOPS: [20000000÷50÷5=80000](https://github.com/cevap/ion/blob/master/src/main.h#L47)
+* Number of blocks from a single peer: [128](https://github.com/cevap/ion/blob/master/src/main.h#L59)
+* Total Coins: [55,000,000](https://github.com/cevap/ion/blob/master/src/amount.h#L32-L38) ION
+* Block Size: [2 Mega-bytes (MB)](https://github.com/cevap/ion/blob/master/src/main.h#L35)
+* Block download timeout: [60](https://github.com/cevap/ion/blob/master/src/main.h#L61)
+* Block sequence ID: [1](https://github.com/cevap/ion/blob/master/src/main.cpp#L87)
+* Miners coinbase reward (nSubsidy): [16400000](https://github.com/cevap/ion/blob/master/src/proofs.cpp#L44)  
+* Premine: [16,400,000](https://github.com/cevap/ion/blob/master/src/amount.h#L32-L38) ION
+	
+	_(Premine Block Height: [1](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm), hash: [000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm))_
 
 **MainNet Parameters**
-P2P Port = 12700
-RPC Port = 12705
+P2P Port = [12700](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L88)
+RPC Port = [12705](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L89)
 
 
 **TestNet Parameters**
-P2P Port = 27170
-RPC Port = 27171
+P2P Port = [27170](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L149)
+RPC Port = [27171](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L150)
+
+Requierments
+============
+* Min disk space: [52428800](https://github.com/cevap/ion/blob/master/src/main.h#L111)
 
 UNIX BUILD NOTES
-====================
+----------------
 Some notes on how to build Ion in Unix.
 
 Note
----------------------
+====
 Always use absolute paths to configure and compile Ion and the dependencies,
 for example, when specifying the the path of the dependency:
 
@@ -85,55 +98,36 @@ for example, when specifying the the path of the dependency:
 Here BDB_PREFIX must absolute path - it is defined using $(pwd) which ensures
 the usage of the absolute path.
 
-<<<<<<< HEAD
-BUILD QT AND IOND FOR LINUX (Method 1)
-=======
+
 Build ION-QT and IOND for LINUX (Method 1)
->>>>>>> master
---------------------
-    ./autogen.sh;./configure;make
+------------------------------------------
+
+	./autogen.sh;./configure;make
 
 
-<<<<<<< HEAD
-BUILD QT AND IOND FOR WINDOWS 64 Bit (Method 1)
---------------------
-To build executables for Windows 64-bit, install the following dependencies:
-    sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
-
-Then build using:
-=======
 Build ION-QT and IOND for WINDOWS 64 Bit (Method 1)
---------------------
+---------------------------------------------------
 To build executables for Windows 64-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
 
 Then build using:
 
->>>>>>> master
     cd depends
     make HOST=x86_64-w64-mingw32
     cd ..
     CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/
     make
 
-<<<<<<< HEAD
-BUILD QT AND IOND FOR WINDOWS 32 Bit (Method 1)
---------------------
-To build executables for Windows 64-bit, install the following dependencies:
-    sudo apt-get install g++-mingw-w64-i686 mingw-w64-i686-dev
 
-Then build using:
-=======
 Build ION-QT and IOND for WINDOWS 32 Bit (Method 1)
---------------------
+---------------------------------------------------
 To build executables for Windows 64-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-i686 mingw-w64-i686-dev
 
 Then build using:
 
->>>>>>> master
     cd depends
     make HOST=i686-w64-mingw32
     cd ..
@@ -142,14 +136,14 @@ Then build using:
     make
 
 To Build ion-qt (Method 2)
----------------------
-[Download](https://www.qt.io/download/) and install latest QT creator, import .pro file and compile 
+--------------------------
+[Download QT Creator](https://www.qt.io/download/) and install [latest QT creator](https://www.qt.io/download/), import .pro file and compile 
 1. Start QT creator
 2. Open QT project file *.pro (Keyboard Shortcut: STRG+C)
 3. Build all (Keyboard shortcut: STRG+SHIFT+B)
 
 Example Build Command (Method 3)
---------------------
+--------------------------------
 Qt Wallet and Deamon, CLI version build:
 
     qmake && make && cd src && make -f src/makefile.unix
@@ -159,7 +153,7 @@ Deamon Only Buld:
     cd src && make -f src/makefile.unix
 
 To Build (without QT Version) (Method 3)
----------------------
+----------------------------------------
 
 ```bash
 autoreconf --install ; ./configure ; make
@@ -167,7 +161,7 @@ autoreconf --install ; ./configure ; make
 This will build ion without QT (no GUI) if all dependencies are met.
 
 Dependencies
----------------------
+------------
 
 These dependencies are required:
 
@@ -205,10 +199,10 @@ for Ubuntu 12.04 and later or Debian 7 and later libboost-all-dev has to be inst
 
     sudo apt-get install libboost-all-dev
 
- db4.8 packages are available [here](https://launchpad.net/~silknetwork/+archive/ubuntu/silknetwork).
+ db4.8 packages are available [here](https://launchpad.net/~ionomy/+archive/ubuntu/ioncoin).
  You can add the repository using the following command:
 
-        sudo add-apt-repository ppa:silknetwork/silknetwork
+        sudo add-apt-repository ppa:ionomy/ioncoin
         sudo apt-get update
 
  Ubuntu 12.04 and later have packages for libdb5.1-dev and libdb5.1++-dev,
@@ -356,7 +350,4 @@ Hardening enables the following features:
     RW- R-- RW-
 
     The STK RW- means that the stack is readable and writeable but not executable.
-<<<<<<< HEAD
 
-=======
->>>>>>> master

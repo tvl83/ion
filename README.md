@@ -1,15 +1,12 @@
-<p align="center">
-  <img src="https://github.com/Ion-Network/Ion-Core/blob/master/src/qt/res/images/splash.png" alt="Ion_Icon"/>
-</p>
-# **Ion-Core (ION) v2.1.6**
+Ion-Core (ION) v2.1.6
+---------------------
 
-[![Build Status](https://travis-ci.org/ionomy/ion.svg?branch=master)](https://travis-ci.org/ionomy/ion)
-
-Ion Integration/Staging Tree
-================================
+Ion Integration Master branch (stable)
+======================================
 
 **Copyright (c) 2016-2017 ionomy**
-Copyright (c) 2017 🐼CEVAP🐼
+
+**Copyright (c) 2017 🐼CEVAP🐼**
 
                  `/:`                           
               -odN:                             
@@ -38,7 +35,9 @@ Copyright (c) 2017 🐼CEVAP🐼
             :MMMMMMMMMMMMMM+ .////NMMMMMMMMMMMd,  
              +hdNNMMMMNNmdy/       .-://+++/:.    
 
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cevap/ion/master/src/qt/res/src/ion-ionomywhite.svg" alt="Ionomy CE digital currency project" width="600" height="350" >
+</p>
 
 #### What is Ion?
 ----------------
@@ -50,11 +49,12 @@ Copyright (c) 2017 🐼CEVAP🐼
 * Full Confirmation: 60 Blocks
 * PoS Algorithm: SHA256d
 * PoS Target Spacing: 64 Seconds
-* PoS Difficulty Retarget: 2 Blocks
+* PoS Difficulty Retarget: MIDAS
 * PoS Reward: Varied
 * PoS Min: 1 Day
 * PoS Max: Unlimited
 * Total Coins: 55,000,000 ION
+* Premine: 16,400,000 ION (Block Height: [1](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm), hash: [000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm)
 * Block Size: 2 Mega-bytes (MB)
 
 
@@ -76,7 +76,7 @@ UNIX BUILD NOTES
 Some notes on how to build Ion in Unix.
 
 Note
----------------------
+====
 Always use absolute paths to configure and compile Ion and the dependencies,
 for example, when specifying the the path of the dependency:
 
@@ -85,55 +85,36 @@ for example, when specifying the the path of the dependency:
 Here BDB_PREFIX must absolute path - it is defined using $(pwd) which ensures
 the usage of the absolute path.
 
-<<<<<<< HEAD
-BUILD QT AND IOND FOR LINUX (Method 1)
-=======
+
 Build ION-QT and IOND for LINUX (Method 1)
->>>>>>> master
---------------------
-    ./autogen.sh;./configure;make
+==========================================
+
+	./autogen.sh;./configure;make
 
 
-<<<<<<< HEAD
-BUILD QT AND IOND FOR WINDOWS 64 Bit (Method 1)
---------------------
-To build executables for Windows 64-bit, install the following dependencies:
-    sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
-
-Then build using:
-=======
 Build ION-QT and IOND for WINDOWS 64 Bit (Method 1)
---------------------
+===================================================
 To build executables for Windows 64-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
 
 Then build using:
 
->>>>>>> master
     cd depends
     make HOST=x86_64-w64-mingw32
     cd ..
     CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/
     make
 
-<<<<<<< HEAD
-BUILD QT AND IOND FOR WINDOWS 32 Bit (Method 1)
---------------------
-To build executables for Windows 64-bit, install the following dependencies:
-    sudo apt-get install g++-mingw-w64-i686 mingw-w64-i686-dev
 
-Then build using:
-=======
 Build ION-QT and IOND for WINDOWS 32 Bit (Method 1)
---------------------
+===================================================
 To build executables for Windows 64-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-i686 mingw-w64-i686-dev
 
 Then build using:
 
->>>>>>> master
     cd depends
     make HOST=i686-w64-mingw32
     cd ..
@@ -143,7 +124,7 @@ Then build using:
 
 To Build ion-qt (Method 2)
 ---------------------
-[Download](https://www.qt.io/download/) and install latest QT creator, import .pro file and compile 
+[Download QT Creator](https://www.qt.io/download/) and install [latest QT creator](https://www.qt.io/download/), import .pro file and compile 
 1. Start QT creator
 2. Open QT project file *.pro (Keyboard Shortcut: STRG+C)
 3. Build all (Keyboard shortcut: STRG+SHIFT+B)
@@ -205,10 +186,10 @@ for Ubuntu 12.04 and later or Debian 7 and later libboost-all-dev has to be inst
 
     sudo apt-get install libboost-all-dev
 
- db4.8 packages are available [here](https://launchpad.net/~silknetwork/+archive/ubuntu/silknetwork).
+ db4.8 packages are available [here](https://launchpad.net/~ionomy/+archive/ubuntu/ioncoin).
  You can add the repository using the following command:
 
-        sudo add-apt-repository ppa:silknetwork/silknetwork
+        sudo add-apt-repository ppa:ionomy/ioncoin
         sudo apt-get update
 
  Ubuntu 12.04 and later have packages for libdb5.1-dev and libdb5.1++-dev,
@@ -356,7 +337,4 @@ Hardening enables the following features:
     RW- R-- RW-
 
     The STK RW- means that the stack is readable and writeable but not executable.
-<<<<<<< HEAD
 
-=======
->>>>>>> master

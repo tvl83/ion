@@ -79,10 +79,21 @@ What is 🗺️Ion Core 👯👯 👛?
 
 ### Documentation and related projects by CEVAP
 
- - [Developers documentaion (devwiki)](https://cevap.github.io/devwiki/) (_hosted [directly on githhub](https://github.com/cevap/doc)_)
- - [Documentation/FAQ (wiki)](https://cevap.github.io/doc/) (_hosted [directly on githhub](https://github.com/cevap/doc)_)
- - [Stats page](https://cevap.github.io/ion-stats/) (_**very restricted** as hosted [directly on githhub](https://github.com/cevap/ion-stats) and some scripts do not work, we are in progress of building it on another server_)
+ - [Developers documentaion (devwiki)](https://cevap.github.io/devwiki/)
+ 
+      (_hosted [directly on githhub](https://github.com/cevap/doc)_)
+
+ - [Documentation/FAQ (wiki)](https://cevap.github.io/doc/)
+ 
+      (_hosted [directly on githhub](https://github.com/cevap/doc)_)
+
+ - [Stats page](https://cevap.github.io/ion-stats/)
+ 
+      (_**very restricted** as hosted [directly on githhub](https://github.com/cevap/ion-stats) and some scripts do not work, we are in progress of building it on another server_)
+
  - [🐓 WIKI by Krumz 🐓](https://ionomy.wiki/)
+
+      (_old Wiki of ion which was maintained by Krumz, thanks @ 🐓_)
 
 ### Graphs
  - [Contributors](https://github.com/cevap/ion/graphs/contributors)

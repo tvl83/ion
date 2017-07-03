@@ -129,57 +129,16 @@ Requierments
 ============
 * Min disk space: [52428800](https://github.com/cevap/ion/blob/master/src/main.h#L111)
 
-[Core documenation](doc/README.md)
-----------------
-
-[UNIX BUILD NOTES](doc/build-unix.md)
----------------
-
-     # PPA: https://launchpad.net/~ionomy/
-     sudo add-apt-repository ppa:ionomy/ioncoin
-     sudo apt-get update
-
-     # we currently did not upload ion and ion-qt packages to launchpad, but will do in next future
-     
-     # Full install
-     # sudo apt-get install ioncoin
-
-     # Install ion-qt
-     sudo apt-get install ion-qt
-
-     # Install iond
-     sudo apt-get install iond
-
-     # Install latest bootstrap
-     sudo apt-get install ion-bootstrap
-
-
-[WINDOWS BUILD NOTES](doc/build-windows.md)
-------------------
-
-UNIX BUILD WITH QT CREATOR NOTES (Method 2) (_builds only ion-qt_)
-----------------------------------------------------------------
-
-[Download QT Creator](https://www.qt.io/download/) and install [latest QT creator](https://www.qt.io/download/), import .pro file and compile 
-1. Start QT creator
-2. Open QT project file *.pro (Keyboard Shortcut: STRG+C)
-3. Build all (Keyboard shortcut: STRG+SHIFT+B)
-
-UNIX BUILD NOTES (Method 3) (_ion-qt and iond_)
----------------------------------------------
-Qt Wallet and Deamon, CLI version build:
-
-    qmake && make && cd src && make -f src/makefile.unix
-
-Deamon Only Buld:
-
-    cd src && make -f src/makefile.unix
-
-UNIX BUILD NOTES (Method 3) (_only iond_)
----------------------------------------
-
-```bash
-autoreconf --install ; ./configure ; make
-```
-This will build ion without QT (no GUI) if all dependencies are met.
-
+ - [Core documenation](doc/README.md)
+ - [UNIX BUILD NOTES](doc/build-unix.md)
+ - [WINDOWS BUILD NOTES](doc/build-windows.md)
+ - [OSX BUILD NOTES](doc/build-osx.md)
+ - [OpenBSD BUILD NOTES](doc/build-openbsd.md)
+ - [BIPS](doc/bips.md)
+ - [DEVELOPER NOTES](doc/developer-notes.md)
+ - [BENCHMARKING NOTES](doc/benchmarking.md)
+ - [RELEASE PROCESS NOTES](doc/release-process.md)
+ - [GITIAN BUILD NOTES](doc/gitian-building.md)
+ - [TRANSLATION PROCESS NOTES](doc/translation_process.md)
+ - [FILES NOTES](doc/files.md)
+ - [FUZZING NOTES](doc/fuzzing.md)

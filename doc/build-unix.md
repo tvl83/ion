@@ -14,6 +14,27 @@ for example, when specifying the path of the dependency:
 Here BDB_PREFIX must be an absolute path - it is defined using $(pwd) which ensures
 the usage of the absolute path.
 
+Install over PPA
+----------------
+
+     # PPA: https://launchpad.net/~ionomy/
+     sudo add-apt-repository ppa:ionomy/ioncoin
+     sudo apt-get update
+
+     # we currently did not upload ion and ion-qt packages to launchpad, but will do in next future
+     
+     # Full install
+     # sudo apt-get install ioncoin
+
+     # Install ion-qt
+     sudo apt-get install ion-qt
+
+     # Install iond
+     sudo apt-get install iond
+
+     # Install latest bootstrap
+     sudo apt-get install ion-bootstrap
+
 To Build
 ---------------------
 
@@ -25,6 +46,32 @@ make install # optional
 ```
 
 This will build ion-qt as well if the dependencies are met.
+
+UNIX BUILD WITH QT CREATOR NOTES (Method 2) (_builds only ion-qt_)
+----------------------------------------------------------------
+
+[Download QT Creator](https://www.qt.io/download/) and install [latest QT creator](https://www.qt.io/download/), import .pro file and compile 
+1. Start QT creator
+2. Open QT project file *.pro (Keyboard Shortcut: STRG+C)
+3. Build all (Keyboard shortcut: STRG+SHIFT+B)
+
+UNIX BUILD NOTES (Method 3) (_ion-qt and iond_)
+---------------------------------------------
+Qt Wallet and Deamon, CLI version build:
+
+    qmake && make && cd src && make -f src/makefile.unix
+
+Deamon Only Buld:
+
+    cd src && make -f src/makefile.unix
+
+UNIX BUILD NOTES (Method 3) (_only iond_)
+---------------------------------------
+
+```bash
+autoreconf --install ; ./configure ; make
+```
+This will build ion without QT (no GUI) if all dependencies are met.
 
 Dependencies
 ---------------------

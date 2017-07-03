@@ -95,7 +95,12 @@ What is 🗺️Ion Core 👯👯 👛?
 What are the goals, projects or milestones of 🗺️Ion Core 👯👯 👛 project?
 -----------------------------------------------------------------------------
 
-We are very fresh and new, so far a lot if not most has to be defined/redefined. Now is great moment for everybody to [contribute, regardless of your skills or abillities](https://cevap.github.io/doc/GitAccess.html), blockchain and crypto technology should connect people and not complicate additionally anything! [Connecting People](assets/images/3rdparty/But2me.png?raw=true "Community")
+We are very fresh and new, so far a lot if not most has to be defined/redefined. Now is great moment for everybody to [contribute, regardless of your skills or abillities](https://cevap.github.io/doc/GitAccess.html), blockchain and crypto technology should connect people and not complicate additionally anything! Connecting People instead to divide.
+
+<p align="center">
+  <img src="assets/images/3rdparty/But2me.png" width="350"/>
+</p>
+
 
 Currently ion community is used to have their communication/PR primarly on their [ionomy's Slack channel](http://ionomy.slack.com/) which is not very transparent, especially for those who do not sit permanently in that channel, like people who are interesting to join. There are different community based projects like [ion.community forum](https://ion.community/), as well other projects. Most of them are in control of somebody but not a community and I (CEVAP) do assume that we could call it closed source, especially if it is only available to ionomy ltd. 
 

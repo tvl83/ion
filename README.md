@@ -49,6 +49,10 @@ What is 🗺️Ion Core 👯👯 👛?
 
 ### **[DOWNLOADS/RELEASES](https://github.com/cevap/ion/releases)**
 
+### **[CEVAP Developers OpenPGP public keys](doc/publickeys.md)**
+
+### **[CEVAP Developers Donation addresses](doc/donation.md)**
+
 **[Core documenation](doc/README.md)**
 -----------------
 

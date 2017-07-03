@@ -81,7 +81,7 @@ What is 🗺️Ion Core 👯👯 👛?
 
  - [Developers documentaion (devwiki)](https://cevap.github.io/devwiki/) (_hosted [directly on githhub](https://github.com/cevap/doc)_)
  - [Documentation/FAQ (wiki)](https://cevap.github.io/doc/) (_hosted [directly on githhub](https://github.com/cevap/doc)_)
- - [Stats page](https://cevap.github.io/ion-stats/) (_*very restricted* as hosted [directly on githhub](https://github.com/cevap/ion-stats)_)
+ - [Stats page](https://cevap.github.io/ion-stats/) (_**very restricted** as hosted [directly on githhub](https://github.com/cevap/ion-stats) and some scripts do not work, we are in progress of building it on another server_)
  - [🐓 WIKI by Krumz 🐓](https://ionomy.wiki/)
 
 ### Graphs
@@ -124,7 +124,7 @@ Currently all links and work done is more something like a pilot workshop. This 
 
   - _Who is in charge of [CEVAP](https://github.com/cevap) administration?_
 
-       **[CEVAP](https://github.com/cevap)**, **[aspaas (aspa)](https://github.com/aspaas/)** and **[Mitchell Cash (mica)](https://github.com/mitchellcash/)** (_list will change, *based on timezones* and *response* time_)
+       **[CEVAP](https://github.com/cevap)**, **[aspaas (aspa)](https://github.com/aspaas/)** and **[Mitchell Cash (mica)](https://github.com/mitchellcash/)** (_list will change, **based on timezones** and **response** time_)
 
   - _Who is the intial founder of CEVAP?_
 

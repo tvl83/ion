@@ -129,7 +129,7 @@ Currently all links and work done is more something like a pilot workshop. This 
 
        **NO**
 
-  - _Has this project be funded?_
+  - _Has this project been funded?_
 
        **NO**, we just helped to deal with _[time warp attack](https://cevap.github.io/doc/CoinBleed.html)_.
 

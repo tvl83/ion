@@ -95,7 +95,7 @@ What is 🗺️Ion Core 👯👯 👛?
 What are the goals, projects or milestones of 🗺️Ion Core 👯👯 👛 project?
 -----------------------------------------------------------------------------
 
-We are very fresh and new, so far a lot if not most has to be defined/redefined. Now is great moment for everybody to [contribute, regardless of your skills or abillities](https://cevap.github.io/doc/GitAccess.html), blockchain and crypto technology should connect people and not complicate additionally anything! [Connecting People](assets/images/3rdparty/But2me.png)
+We are very fresh and new, so far a lot if not most has to be defined/redefined. Now is great moment for everybody to [contribute, regardless of your skills or abillities](https://cevap.github.io/doc/GitAccess.html), blockchain and crypto technology should connect people and not complicate additionally anything! [Connecting People](assets/images/3rdparty/But2me.png?raw=true "Community")
 
 Currently ion community is used to have their communication/PR primarly on their [ionomy's Slack channel](http://ionomy.slack.com/) which is not very transparent, especially for those who do not sit permanently in that channel, like people who are interesting to join. There are different community based projects like [ion.community forum](https://ion.community/), as well other projects. Most of them are in control of somebody but not a community and I (CEVAP) do assume that we could call it closed source, especially if it is only available to ionomy ltd. 
 
@@ -113,11 +113,16 @@ Currently all links and work done is more something like a pilot workshop. This 
 
 ### Who is CEVAP CE
  
-  - _Who is the owner of [CEVAP](https://github.com/cevap)?_: it is **the community**.
-  - _Who is in charge of [CEVAP](https://github.com/cevap) administration?_: **[CEVAP](https://github.com/cevap)**, **[aspaas (aspa)](https://github.com/aspaas/)** and **[Mitchell Cash (mica)](https://github.com/mitchellcash/)** (_list will change, *based on timezones* and *response* time_)
-  - _Who is the intial founder of CEVAP?_: **dev@i2pmail.org** (_is [CEVAP](https://github.com/cevap)_)
-  - _Is it controlled by [ionomy ltd](http://ionomy.com/)?_: **NO**
-  - _Has this project be funded?_: **NO**, we just helped to deal with _[time warp attack](https://cevap.github.io/doc/CoinBleed.html)_.
+  - _Who is the owner of [CEVAP](https://github.com/cevap)?_
+  **it is the community**
+  - _Who is in charge of [CEVAP](https://github.com/cevap) administration?_
+  **[CEVAP](https://github.com/cevap)**, **[aspaas (aspa)](https://github.com/aspaas/)** and **[Mitchell Cash (mica)](https://github.com/mitchellcash/)** (_list will change, *based on timezones* and *response* time_)
+  - _Who is the intial founder of CEVAP?_
+  **dev@i2pmail.org** (_is [CEVAP](https://github.com/cevap)_)
+  - _Is it controlled by [ionomy ltd](http://ionomy.com/)?_
+  **NO**
+  - _Has this project be funded?_
+  **NO**, we just helped to deal with _[time warp attack](https://cevap.github.io/doc/CoinBleed.html)_.
   - [Members](https://github.com/cevap/ion/network/members)
 
 Ion attributes/parameters

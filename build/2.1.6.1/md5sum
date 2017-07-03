@@ -1,2 +1,10 @@
-1acc87f85538ba6e99d40a48eaeeafc1  ./iond
-0e017420d04b46069e61b5c07e72015b  ./ion-qt
+1acc87f85538ba6e99d40a48eaeeafc1  iond
+91863def3ceebade13dad57a1eb13d1b  iond_2.1.6.1-trusty1_amd64.deb
+3321da95cfc2fd79e043bad24d1db602  iond_2.1.6.1-xenial1_amd64.deb
+d39f05f1aebd5b011f390f95bf01efe7  iond_2.1.6.1-yakkety1_amd64.deb
+b3b9c28fc6fefd38773a01ebb10c277f  iond_2.1.6.1-zesty1_amd64.deb
+0e017420d04b46069e61b5c07e72015b  ion-qt
+6df8c813282202e8cfc4256c9b26809d  ion-qt_2.1.6.1-trusty1_amd64.deb
+a41d3efdc185ad359d6e67bedd3b769f  ion-qt_2.1.6.1-xenial1_amd64.deb
+7d65168b9303116d00c94e40e915c002  ion-qt_2.1.6.1-yakkety1_amd64.deb
+122dad36077562768f139b506f11065c  ion-qt_2.1.6.1-zesty1_amd64.deb

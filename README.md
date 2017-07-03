@@ -114,15 +114,15 @@ Currently all links and work done is more something like a pilot workshop. This 
 ### Who is CEVAP CE
  
   - _Who is the owner of [CEVAP](https://github.com/cevap)?_
-  **it is the community**
+       **it is the community**
   - _Who is in charge of [CEVAP](https://github.com/cevap) administration?_
-  **[CEVAP](https://github.com/cevap)**, **[aspaas (aspa)](https://github.com/aspaas/)** and **[Mitchell Cash (mica)](https://github.com/mitchellcash/)** (_list will change, *based on timezones* and *response* time_)
+       **[CEVAP](https://github.com/cevap)**, **[aspaas (aspa)](https://github.com/aspaas/)** and **[Mitchell Cash (mica)](https://github.com/mitchellcash/)** (_list will change, *based on timezones* and *response* time_)
   - _Who is the intial founder of CEVAP?_
-  **dev@i2pmail.org** (_is [CEVAP](https://github.com/cevap)_)
+       **dev@i2pmail.org** (_is [CEVAP](https://github.com/cevap)_)
   - _Is it controlled by [ionomy ltd](http://ionomy.com/)?_
-  **NO**
+       **NO**
   - _Has this project be funded?_
-  **NO**, we just helped to deal with _[time warp attack](https://cevap.github.io/doc/CoinBleed.html)_.
+       **NO**, we just helped to deal with _[time warp attack](https://cevap.github.io/doc/CoinBleed.html)_.
   - [Members](https://github.com/cevap/ion/network/members)
 
 Ion attributes/parameters

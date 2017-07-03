@@ -160,7 +160,6 @@ Ion attributes/parameters
  - P2P Port = [27170](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L149)
  - RPC Port = [27171](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L150)
 
-Requierments
+Requirements
 ============
- -  Min disk space: [52428800](https://github.com/cevap/ion/blob/master/src/main.h#L111)
-
+ - Min disk space: [52428800](https://github.com/cevap/ion/blob/master/src/main.h#L111)

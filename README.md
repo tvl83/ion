@@ -131,8 +131,28 @@ Requierments
 
 [Core documenation](doc/README.md)
 ----------------
+
 [UNIX BUILD NOTES](doc/build-unix.md)
 ---------------
+
+     # PPA: https://launchpad.net/~ionomy/
+     sudo add-apt-repository ppa:ionomy/ioncoin
+     sudo apt-get update
+
+     # we currently did not upload ion and ion-qt packages to launchpad, but will do in next future
+     
+     # Full install
+     # sudo apt-get install ioncoin
+
+     # Install ion-qt
+     sudo apt-get install ion-qt
+
+     # Install iond
+     sudo apt-get install iond
+
+     # Install latest bootstrap
+     sudo apt-get install ion-bootstrap
+
 
 [WINDOWS BUILD NOTES](doc/build-windows.md)
 ------------------

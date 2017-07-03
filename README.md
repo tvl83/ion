@@ -122,44 +122,45 @@ Currently all links and work done is more something like a pilot workshop. This 
 
 Ion attributes/parameters
 =========================
-* Coin Suffix: ION
-* Feature base (_the earliest version new wallets supports_): [10500](https://github.com/cevap/ion/blob/master/src/wallet.h#L45)
-* PoW Algorithm: [SHA256d](https://en.bitcoin.it/wiki/SHA-256)
-* PoW Period: 2,000 Network Initiation Blocks
-* PoW Median Target Spacing: [64 Seconds](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L93)
-* PoW Difficulty Retarget: 2 Blocks
-* Last PoW Block: [1000](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L116)
-* Full Confirmation: 60 Blocks
-* PoS Algorithm: [SHA256d](https://en.bitcoin.it/wiki/SHA-256)
-* PoS Target Spacing: [64 Seconds](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L93)
-* PoS Difficulty Retarget: [MIDAS](https://github.com/cevap/ion/commit/ecfcde8a0025486e59cedf341c874e81db9b2dd6)
-* PoS Reward: [Varied](https://github.com/cevap/ion/blob/master/src/proofs.h#L31-L32)
-* PoS Min: [1 Day](https://github.com/cevap/ion/blob/master/src/proofs.cpp#L19)
-* PoS Future drift: [4,5 hours](https://github.com/cevap/ion/blob/master/src/main.h#L69)
-* PoS Target Timespan: [1 Week](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L94)
-* Minimum Transaction fee: [0.001](https://github.com/cevap/ion/blob/master/src/main.h#L53)
-* MAX P2SH SIGOPS: [15](https://github.com/cevap/ion/blob/master/src/main.h#L45)
-* MAX TX SIGOPS: [20000000÷50÷5=80000](https://github.com/cevap/ion/blob/master/src/main.h#L47)
-* Number of blocks from a single peer: [128](https://github.com/cevap/ion/blob/master/src/main.h#L59)
-* Total Coins: [55,000,000](https://github.com/cevap/ion/blob/master/src/amount.h#L32-L38) ION
-* Block Size: [2 Mega-bytes (MB)](https://github.com/cevap/ion/blob/master/src/main.h#L35)
-* Block download timeout: [60](https://github.com/cevap/ion/blob/master/src/main.h#L61)
-* Block sequence ID: [1](https://github.com/cevap/ion/blob/master/src/main.cpp#L87)
-* Miners coinbase reward (nSubsidy): [16400000](https://github.com/cevap/ion/blob/master/src/proofs.cpp#L44)  
-* Premine: [16,400,000](https://github.com/cevap/ion/blob/master/src/amount.h#L32-L38) ION
-	
-	_(Premine Block Height: [1](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm), hash: [000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm))_
+
+ - Coin Suffix: ION
+ - Feature base (_the earliest version new wallets supports_): [10500](https://github.com/cevap/ion/blob/master/src/wallet.h#L45)
+ - PoW Algorithm: [SHA256d](https://en.bitcoin.it/wiki/SHA-256)
+ - PoW Period: 2,000 Network Initiation Blocks
+ - PoW Median Target Spacing: [64 Seconds](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L93)
+ - PoW Difficulty Retarget: 2 Blocks
+ - Last PoW Block: [1000](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L116)
+ - Full Confirmation: 60 Blocks
+ - PoS Algorithm: [SHA256d](https://en.bitcoin.it/wiki/SHA-256)
+ - PoS Target Spacing: [64 Seconds](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L93)
+ - PoS Difficulty Retarget: [MIDAS](https://github.com/cevap/ion/commit/ecfcde8a0025486e59cedf341c874e81db9b2dd6)
+ - PoS Reward: [Varied](https://github.com/cevap/ion/blob/master/src/proofs.h#L31-L32)
+ - PoS Min: [1 Day](https://github.com/cevap/ion/blob/master/src/proofs.cpp#L19)
+ - PoS Future drift: [4,5 hours](https://github.com/cevap/ion/blob/master/src/main.h#L69)
+ - PoS Target Timespan: [1 Week](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L94)
+ - Minimum Transaction fee: [0.001](https://github.com/cevap/ion/blob/master/src/main.h#L53)
+ - MAX P2SH SIGOPS: [15](https://github.com/cevap/ion/blob/master/src/main.h#L45)
+ - MAX TX SIGOPS: [20000000÷50÷5=80000](https://github.com/cevap/ion/blob/master/src/main.h#L47)
+ - Number of blocks from a single peer: [128](https://github.com/cevap/ion/blob/master/src/main.h#L59)
+ - Total Coins: [55,000,000](https://github.com/cevap/ion/blob/master/src/amount.h#L32-L38) ION
+ - Block Size: [2 Mega-bytes (MB)](https://github.com/cevap/ion/blob/master/src/main.h#L35)
+ - Block download timeout: [60](https://github.com/cevap/ion/blob/master/src/main.h#L61)
+ - Block sequence ID: [1](https://github.com/cevap/ion/blob/master/src/main.cpp#L87)
+ - Miners coinbase reward (nSubsidy): [16400000](https://github.com/cevap/ion/blob/master/src/proofs.cpp#L44)  
+ - Premine: [16,400,000](https://github.com/cevap/ion/blob/master/src/amount.h#L32-L38) ION
+ - Premine Block height: [1](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm)
+ - Premine hash: hash: [000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690](https://chainz.cryptoid.info/ion/block.dws?000000ed2f68cd6c7935831cc1d473da7c6decdb87e8b5dba0afff0b00002690.htm)
 
 **MainNet Parameters**
-P2P Port = [12700](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L88)
-RPC Port = [12705](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L89)
+ - P2P Port = [12700](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L88)
+ - RPC Port = [12705](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L89)
 
 
 **TestNet Parameters**
-P2P Port = [27170](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L149)
-RPC Port = [27171](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L150)
+ - P2P Port = [27170](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L149)
+ - RPC Port = [27171](https://github.com/cevap/ion/blob/master/src/chainparams.cpp#L150)
 
 Requierments
 ============
-* Min disk space: [52428800](https://github.com/cevap/ion/blob/master/src/main.h#L111)
+ -  Min disk space: [52428800](https://github.com/cevap/ion/blob/master/src/main.h#L111)
 

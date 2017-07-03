@@ -7,7 +7,7 @@
  - **Copyright (c) 2016-2017 ionomy**
  - **Copyright (c) 2017 🐼CEVAP🐼s 👯Community Edition👯 Ioncoin Developers**
 
-_(*this is community developed software, please use at own risk*)_
+_(**this is community developed software, please use at own risk**)_
 
                  `/:`                           
               -odN:                             

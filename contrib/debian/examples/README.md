@@ -1,4 +1,4 @@
-# 🗺️Ion Core Wallet 2.1.6.1 CE ©️ 👒 Midas-Algo 👒
+# 🗺️Ion Core 👯👯 👛  2.1.6.1 CE ©️ 👒 Midas-Algo 👒
 ## (🐼🐼CEVAP🐼🐼 - 👯Community Edition👯)
 
 #### Blockchain datadir: Block Height 176500

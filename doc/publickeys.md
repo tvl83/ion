@@ -39,7 +39,9 @@
 **🐼CEVAP🐼**
 [tor-1F353A7100D09A436F7DF7C549464B32BA6683BA.asc](../contrib/gitian-keys/tor-1F353A7100D09A436F7DF7C549464B32BA6683BA.asc)
 pub  3072R/**[BA6683BA](https://pgp.mit.edu/pks/lookup?op=get&search=0x49464B32BA6683BA)** 2017-03-13 developer (dev@i2pmail.org) <dev@i2pmail.org>
-![🐼CEVAP🐼 - Public Key pub  3072R/BA6683BA 2017-03-13 developer (dev@i2pmail.org) <dev@i2pmail.org>](https://raw.githubusercontent.com/cevap/ion/master/doc/publickeys/publickey-cevap.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cevap/ion/master/doc/publickeys/publickey-cevap.png" width="350"/>
+</p>
 
 **🔩ASPA🔩**
 [aspa-04388FE4284E36A8A21DCED61BA70476380D5F9F.asc](../contrib/gitian-keys/aspa-04388FE4284E36A8A21DCED61BA70476380D5F9F.asc)

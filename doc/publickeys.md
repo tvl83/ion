@@ -56,7 +56,7 @@ pub  2048R/**[380D5F9F](https://pgp.mit.edu/pks/lookup?op=get&search=0x1BA704763
 </p>
 
 
-**Mitchel Cash (mica)**
+**💸Mitchel Cash (mica)💸**
 
 [mica-1DFB17E1C44C39A1697E008D01893B7003D465EE.asc](../contrib/gitian-keys/mica-1DFB17E1C44C39A1697E008D01893B7003D465EE.asc)
 

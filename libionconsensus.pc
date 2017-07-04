@@ -5,7 +5,7 @@ includedir=${prefix}/include
 
 Name: Ion Core consensus library
 Description: Library for the Ion consensus protocol.
-Version: 0.14.99
+Version: 2.1.6
 Libs: -L${libdir} -lionconsensus
 Cflags: -I${includedir}
 Requires.private: libcrypto

@@ -340,13 +340,13 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "https://github.com/ion/ion/issues"
+#define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "Ion Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Ion Core 0.14.99"
+#define PACKAGE_STRING "Ion Core 2.1.6"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "ion"
@@ -355,7 +355,7 @@
 #define PACKAGE_URL "https://ioncore.org/"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "0.14.99"
+#define PACKAGE_VERSION "2.1.6"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */

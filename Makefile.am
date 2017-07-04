@@ -19,13 +19,13 @@ endif
 
 IOND_BIN=$(top_builddir)/src/$(ION_DAEMON_NAME)$(EXEEXT)
 ION_QT_BIN=$(top_builddir)/src/qt/$(ION_GUI_NAME)$(EXEEXT)
-#ION_CLI_BIN=$(top_builddir)/src/$(ION_CLI_NAME)$(EXEEXT)
-#ION_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
+ION_CLI_BIN=$(top_builddir)/src/$(ION_CLI_NAME)$(EXEEXT)
+ION_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 
 empty :=
 space := $(empty) $(empty)
 
-OSX_APP=ion-qt.app
+OSX_APP=Ion-Qt.app
 OSX_VOLNAME = $(subst $(space),-,$(PACKAGE_NAME))
 OSX_DMG = $(OSX_VOLNAME).dmg
 OSX_BACKGROUND_SVG=background.svg
@@ -71,7 +71,7 @@ $(ION_WIN_INSTALLER): all-recursive
 	$(MKDIR_P) $(top_builddir)/release
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(IOND_BIN) $(top_builddir)/release
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(ION_QT_BIN) $(top_builddir)/release
-#	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(ION_CLI_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(ION_CLI_BIN) $(top_builddir)/release
 	@test -f $(MAKENSIS) && $(MAKENSIS) -V2 $(top_builddir)/share/setup.nsi || \
 	  echo error: could not build $@
 	@echo built $@
@@ -82,7 +82,7 @@ $(OSX_APP)/Contents/PkgInfo:
 
 $(OSX_APP)/Contents/Resources/empty.lproj:
 	$(MKDIR_P) $(@D)
-	@touch $@
+	@touch $@ 
 
 $(OSX_APP)/Contents/Info.plist: $(OSX_PLIST)
 	$(MKDIR_P) $(@D)
@@ -162,8 +162,8 @@ $(ION_QT_BIN): FORCE
 $(IOND_BIN): FORCE
 	$(MAKE) -C src $(@F)
 
-#$(ION_CLI_BIN): FORCE
-#	$(MAKE) -C src $(@F)
+$(ION_CLI_BIN): FORCE
+	$(MAKE) -C src $(@F)
 
 if USE_LCOV
 

@@ -1,11 +1,11 @@
-prefix=/home/tor/go/src/github.com/cevap/ion/depends/x86_64-pc-linux-gnu
+prefix=/usr/local
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
 Name: Ion Core consensus library
 Description: Library for the Ion consensus protocol.
-Version: 2.1.6
+Version: 0.14.99
 Libs: -L${libdir} -lionconsensus
 Cflags: -I${includedir}
 Requires.private: libcrypto

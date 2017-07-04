@@ -6343,6 +6343,8 @@ m4trace:configure.ac:1135: -1- m4_pattern_allow([^COPYRIGHT_HOLDERS_SUBSTITUTION
 m4trace:configure.ac:1136: -1- m4_pattern_allow([^COPYRIGHT_HOLDERS_FINAL$])
 m4trace:configure.ac:1137: -1- m4_pattern_allow([^ION_DAEMON_NAME$])
 m4trace:configure.ac:1138: -1- m4_pattern_allow([^ION_GUI_NAME$])
+m4trace:configure.ac:1139: -1- m4_pattern_allow([^ION_CLI_NAME$])
+m4trace:configure.ac:1140: -1- m4_pattern_allow([^ION_TX_NAME$])
 m4trace:configure.ac:1142: -1- m4_pattern_allow([^RELDFLAGS$])
 m4trace:configure.ac:1143: -1- m4_pattern_allow([^ERROR_CXXFLAGS$])
 m4trace:configure.ac:1144: -1- m4_pattern_allow([^HARDENED_CXXFLAGS$])

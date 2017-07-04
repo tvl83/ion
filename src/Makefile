@@ -671,11 +671,11 @@ CC = gcc
 CCACHE = 
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
-CLIENT_VERSION_BUILD = 1
-CLIENT_VERSION_IS_RELEASE = true
-CLIENT_VERSION_MAJOR = 2
-CLIENT_VERSION_MINOR = 1
-CLIENT_VERSION_REVISION = 6
+CLIENT_VERSION_BUILD = 0
+CLIENT_VERSION_IS_RELEASE = false
+CLIENT_VERSION_MAJOR = 0
+CLIENT_VERSION_MINOR = 14
+CLIENT_VERSION_REVISION = 99
 COPYRIGHT_HOLDERS = The %s developers
 COPYRIGHT_HOLDERS_FINAL = The Ion Core developers
 COPYRIGHT_HOLDERS_SUBSTITUTION = Ion Core
@@ -724,17 +724,19 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
+ION_CLI_NAME = 
 ION_DAEMON_NAME = iond
 ION_GUI_NAME = ion-qt
+ION_TX_NAME = 
 LCOV = 
 LD = /usr/bin/ld -m elf_x86_64
-LDFLAGS = -static-libstdc++
+LDFLAGS = 
 LEVELDB_CPPFLAGS =  $(am__append_5)
 LEVELDB_TARGET_FLAGS = -DOS_LINUX
 LIBLEVELDB =  $(am__append_3)
 LIBMEMENV =  $(am__append_4)
 LIBOBJS = 
-LIBS = -lrt 
+LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBTOOL_APP_LDFLAGS = 
 LIPO = 
@@ -763,12 +765,12 @@ OBJEXT = o
 OTOOL = 
 OTOOL64 = 
 PACKAGE = ion
-PACKAGE_BUGREPORT = https://github.com/cevap/ion/issues
+PACKAGE_BUGREPORT = https://github.com/ion/ion/issues
 PACKAGE_NAME = Ion Core
-PACKAGE_STRING = Ion Core 2.1.6
+PACKAGE_STRING = Ion Core 0.14.99
 PACKAGE_TARNAME = ion
 PACKAGE_URL = https://ioncore.org/
-PACKAGE_VERSION = 2.1.6
+PACKAGE_VERSION = 0.14.99
 PATH_SEPARATOR = :
 PIC_FLAGS = -fPIC
 PIE_FLAGS = -fPIE
@@ -823,7 +825,7 @@ UNIVALUE_CFLAGS = -I$(srcdir)/univalue/include
 UNIVALUE_LIBS = univalue/libunivalue.la
 USE_QRCODE = 
 USE_UPNP = 
-VERSION = 2.1.6
+VERSION = 0.14.99
 WINDOWS_BITS = 
 WINDRES = 
 X11XCB_CFLAGS = 
@@ -875,7 +877,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /home/tor/go/src/github.com/cevap/ion/depends/x86_64-pc-linux-gnu
+prefix = /usr/local
 program_transform_name = s,x,x,
 psdir = ${docdir}
 runstatedir = ${localstatedir}/run
@@ -919,75 +921,13 @@ libion_wallet_a_SOURCES = \
 
 # ion core #
 ION_CORE_H = \
-activemasternode.h \
-addrman.h \
-alert.h \
-allocators.h \
-amount.h \
-arith_uint256.h \
-base58.h \
-chainparams.h \
-chainparamsseeds.h \
-checkpoints.h \
-clientversion.h \
-coincontrol.h \
-compat.h \
-core.h \
-core_io.h \
-core_memusage.h \
-crypter.h \
-cuckoocache.h \
-db.h \
-ecwrapper.h \
-hash.h \
-indirectmap.h \
-init.h \
-instantx.h \
-key.h \
-keystore.h \
-limitedmap.h \
-main.h \
-masternodeconfig.h \
-masternode.h \
-masternodeman.h \
-masternode-payments.h \
-masternode-pos.h \
-miner.h \
-mruset.h \
-netbase.h \
-net.h \
-prevector.h \
-proofs.h \
-protocol.h \
-pubkey.h \
-reverselock.h \
-rpcclient.h \
-rpcprotocol.h \
-rpcserver.h \
-script.h \
-serialize.h \
-spork.h \
-stake.h \
-stashedsend.h \
-stashedsend-relay.h \
-stealth.h \
-strlcpy.h \
-sync.h \
-threadsafety.h \
-tinyformat.h \
-torcontrol.h \
-txdb.h \
-txdb-leveldb.h \
-txmempool.h \
-ui_interface.h \
-uint256.h \
-util.h \
-utilstrencodings.h \
-validation.h \
-validationinterface.h \
-version.h \
-walletdb.h \
-wallet.h				
+activemasternode.h  chainparams.h       core_io.h         ecwrapper.h    limitedmap.h           miner.h      pubkey.h       spork.h         torcontrol.h    utilstrencodings.h  \
+addrman.h           chainparamsseeds.h  core_memusage.h   hash.h         main.h                 mruset.h     reverselock.h  stake.h         txdb.h          version.h		\
+alert.h             checkpoints.h       crypter.h         indirectmap.h  masternodeconfig.h     netbase.h    rpcclient.h    stealth.h       txdb-leveldb.h  walletdb.h		\
+allocators.h        clientversion.h     cuckoocache.h     init.h         masternode.h           net.h        rpcprotocol.h  strlcpy.h       txmempool.h     wallet.h		\
+amount.h            coincontrol.h       stashedsend.h        instantx.h     masternodeman.h        prevector.h  rpcserver.h    sync.h          ui_interface.h			\
+arith_uint256.h     compat.h            stashedsend-relay.h  key.h          masternode-payments.h  proofs.h     script.h       threadsafety.h  uint256.h				\
+base58.h            core.h              db.h              keystore.h     masternode-pos.h       protocol.h   serialize.h    tinyformat.h    util.h				
 
 iond_SOURCES = iond.cpp \
 	alert.cpp \
@@ -3617,8 +3557,8 @@ clean-local:
 	  $(CPPFLAGS) $(AM_CXXFLAGS) $(QT_INCLUDES) $(AM_CXXFLAGS) $(PIE_FLAGS) $(CXXFLAGS) -c -o $@ $<
 
 check-symbols: $(bin_PROGRAMS)
-	@echo "Checking glibc back compat..."
-	$(AM_V_at) READELF=$(READELF) CPPFILT=$(CPPFILT) $(top_srcdir)/contrib/devtools/symbol-check.py < $(bin_PROGRAMS)
+#	@echo "Checking glibc back compat..."
+#	$(AM_V_at) READELF=$(READELF) CPPFILT=$(CPPFILT) $(top_srcdir)/contrib/devtools/symbol-check.py < $(bin_PROGRAMS)
 
 check-security: $(bin_PROGRAMS)
 	@echo "Checking binary security..."

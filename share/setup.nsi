@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 2.1.6
+!define VERSION 0.14.99
 !define COMPANY "Ion Core project"
 !define URL https://ioncore.org/
 
@@ -58,7 +58,7 @@ CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion ${VERSION}.1
+VIProductVersion ${VERSION}.0
 VIAddVersionKey ProductName "Ion Core"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
@@ -78,7 +78,7 @@ Section -Main SEC0000
     File /oname=readme.txt /home/tor/go/src/github.com/cevap/ion/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
     File /home/tor/go/src/github.com/cevap/ion/release/iond
-    File /home/tor/go/src/github.com/cevap/ion/release/@ION_CLI_NAME@
+    File /home/tor/go/src/github.com/cevap/ion/release/
     SetOutPath $INSTDIR\doc
     File /r /home/tor/go/src/github.com/cevap/ion/doc\*.*
     SetOutPath $INSTDIR

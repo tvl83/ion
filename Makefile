@@ -236,8 +236,7 @@ am__DIST_COMMON = $(srcdir)/Makefile.in \
 	$(top_srcdir)/test/functional/test_runner.py \
 	$(top_srcdir)/test/util/ion-util-test.py COPYING README \
 	build-aux/compile build-aux/config.guess build-aux/config.sub \
-	build-aux/depcomp build-aux/install-sh build-aux/ltmain.sh \
-	build-aux/missing
+	build-aux/install-sh build-aux/ltmain.sh build-aux/missing
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 distdir = $(PACKAGE)-$(VERSION)
 top_distdir = $(distdir)
@@ -304,11 +303,11 @@ CC = gcc
 CCACHE = 
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
-CLIENT_VERSION_BUILD = 1
-CLIENT_VERSION_IS_RELEASE = true
-CLIENT_VERSION_MAJOR = 2
-CLIENT_VERSION_MINOR = 1
-CLIENT_VERSION_REVISION = 6
+CLIENT_VERSION_BUILD = 0
+CLIENT_VERSION_IS_RELEASE = false
+CLIENT_VERSION_MAJOR = 0
+CLIENT_VERSION_MINOR = 14
+CLIENT_VERSION_REVISION = 99
 COPYRIGHT_HOLDERS = The %s developers
 COPYRIGHT_HOLDERS_FINAL = The Ion Core developers
 COPYRIGHT_HOLDERS_SUBSTITUTION = Ion Core
@@ -357,17 +356,19 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
+ION_CLI_NAME = 
 ION_DAEMON_NAME = iond
 ION_GUI_NAME = ion-qt
+ION_TX_NAME = 
 LCOV = 
 LD = /usr/bin/ld -m elf_x86_64
-LDFLAGS = -static-libstdc++
+LDFLAGS = 
 LEVELDB_CPPFLAGS = 
 LEVELDB_TARGET_FLAGS = -DOS_LINUX
 LIBLEVELDB = 
 LIBMEMENV = 
 LIBOBJS = 
-LIBS = -lrt 
+LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBTOOL_APP_LDFLAGS = 
 LIPO = 
@@ -396,12 +397,12 @@ OBJEXT = o
 OTOOL = 
 OTOOL64 = 
 PACKAGE = ion
-PACKAGE_BUGREPORT = https://github.com/cevap/ion/issues
+PACKAGE_BUGREPORT = https://github.com/ion/ion/issues
 PACKAGE_NAME = Ion Core
-PACKAGE_STRING = Ion Core 2.1.6
+PACKAGE_STRING = Ion Core 0.14.99
 PACKAGE_TARNAME = ion
 PACKAGE_URL = https://ioncore.org/
-PACKAGE_VERSION = 2.1.6
+PACKAGE_VERSION = 0.14.99
 PATH_SEPARATOR = :
 PIC_FLAGS = -fPIC
 PIE_FLAGS = -fPIE
@@ -456,7 +457,7 @@ UNIVALUE_CFLAGS = -I$(srcdir)/univalue/include
 UNIVALUE_LIBS = univalue/libunivalue.la
 USE_QRCODE = 
 USE_UPNP = 
-VERSION = 2.1.6
+VERSION = 0.14.99
 WINDOWS_BITS = 
 WINDRES = 
 X11XCB_CFLAGS = 
@@ -508,7 +509,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /home/tor/go/src/github.com/cevap/ion/depends/x86_64-pc-linux-gnu
+prefix = /usr/local
 program_transform_name = s,x,x,
 psdir = ${docdir}
 runstatedir = ${localstatedir}/run
@@ -528,11 +529,11 @@ pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = libionconsensus.pc
 IOND_BIN = $(top_builddir)/src/$(ION_DAEMON_NAME)$(EXEEXT)
 ION_QT_BIN = $(top_builddir)/src/qt/$(ION_GUI_NAME)$(EXEEXT)
-#ION_CLI_BIN=$(top_builddir)/src/$(ION_CLI_NAME)$(EXEEXT)
-#ION_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
+ION_CLI_BIN = $(top_builddir)/src/$(ION_CLI_NAME)$(EXEEXT)
+ION_WIN_INSTALLER = $(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 empty := 
 space := $(empty) $(empty)
-OSX_APP = ion-qt.app
+OSX_APP = Ion-Qt.app
 OSX_VOLNAME = $(subst $(space),-,$(PACKAGE_NAME))
 OSX_DMG = $(OSX_VOLNAME).dmg
 OSX_BACKGROUND_SVG = background.svg
@@ -1159,7 +1160,7 @@ $(ION_WIN_INSTALLER): all-recursive
 	$(MKDIR_P) $(top_builddir)/release
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(IOND_BIN) $(top_builddir)/release
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(ION_QT_BIN) $(top_builddir)/release
-#	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(ION_CLI_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(ION_CLI_BIN) $(top_builddir)/release
 	@test -f $(MAKENSIS) && $(MAKENSIS) -V2 $(top_builddir)/share/setup.nsi || \
 	  echo error: could not build $@
 	@echo built $@
@@ -1170,7 +1171,7 @@ $(OSX_APP)/Contents/PkgInfo:
 
 $(OSX_APP)/Contents/Resources/empty.lproj:
 	$(MKDIR_P) $(@D)
-	@touch $@
+	@touch $@ 
 
 $(OSX_APP)/Contents/Info.plist: $(OSX_PLIST)
 	$(MKDIR_P) $(@D)
@@ -1236,8 +1237,8 @@ $(ION_QT_BIN): FORCE
 $(IOND_BIN): FORCE
 	$(MAKE) -C src $(@F)
 
-#$(ION_CLI_BIN): FORCE
-#	$(MAKE) -C src $(@F)
+$(ION_CLI_BIN): FORCE
+	$(MAKE) -C src $(@F)
 
 #baseline.info:
 #	$(LCOV) -c -i -d $(abs_builddir)/src -o $@

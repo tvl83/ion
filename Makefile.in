@@ -236,8 +236,7 @@ am__DIST_COMMON = $(srcdir)/Makefile.in \
 	$(top_srcdir)/test/functional/test_runner.py \
 	$(top_srcdir)/test/util/ion-util-test.py COPYING README \
 	build-aux/compile build-aux/config.guess build-aux/config.sub \
-	build-aux/depcomp build-aux/install-sh build-aux/ltmain.sh \
-	build-aux/missing
+	build-aux/install-sh build-aux/ltmain.sh build-aux/missing
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 distdir = $(PACKAGE)-$(VERSION)
 top_distdir = $(distdir)
@@ -357,8 +356,10 @@ INSTALL_DATA = @INSTALL_DATA@
 INSTALL_PROGRAM = @INSTALL_PROGRAM@
 INSTALL_SCRIPT = @INSTALL_SCRIPT@
 INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
+ION_CLI_NAME = @ION_CLI_NAME@
 ION_DAEMON_NAME = @ION_DAEMON_NAME@
 ION_GUI_NAME = @ION_GUI_NAME@
+ION_TX_NAME = @ION_TX_NAME@
 LCOV = @LCOV@
 LD = @LD@
 LDFLAGS = @LDFLAGS@
@@ -528,11 +529,11 @@ GZIP_ENV = "-9n"
 @BUILD_ION_LIBS_TRUE@pkgconfig_DATA = libionconsensus.pc
 IOND_BIN = $(top_builddir)/src/$(ION_DAEMON_NAME)$(EXEEXT)
 ION_QT_BIN = $(top_builddir)/src/qt/$(ION_GUI_NAME)$(EXEEXT)
-#ION_CLI_BIN=$(top_builddir)/src/$(ION_CLI_NAME)$(EXEEXT)
-#ION_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
+ION_CLI_BIN = $(top_builddir)/src/$(ION_CLI_NAME)$(EXEEXT)
+ION_WIN_INSTALLER = $(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 empty := 
 space := $(empty) $(empty)
-OSX_APP = ion-qt.app
+OSX_APP = Ion-Qt.app
 OSX_VOLNAME = $(subst $(space),-,$(PACKAGE_NAME))
 OSX_DMG = $(OSX_VOLNAME).dmg
 OSX_BACKGROUND_SVG = background.svg
@@ -1159,7 +1160,7 @@ $(ION_WIN_INSTALLER): all-recursive
 	$(MKDIR_P) $(top_builddir)/release
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(IOND_BIN) $(top_builddir)/release
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(ION_QT_BIN) $(top_builddir)/release
-#	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(ION_CLI_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(ION_CLI_BIN) $(top_builddir)/release
 	@test -f $(MAKENSIS) && $(MAKENSIS) -V2 $(top_builddir)/share/setup.nsi || \
 	  echo error: could not build $@
 	@echo built $@
@@ -1170,7 +1171,7 @@ $(OSX_APP)/Contents/PkgInfo:
 
 $(OSX_APP)/Contents/Resources/empty.lproj:
 	$(MKDIR_P) $(@D)
-	@touch $@
+	@touch $@ 
 
 $(OSX_APP)/Contents/Info.plist: $(OSX_PLIST)
 	$(MKDIR_P) $(@D)
@@ -1236,8 +1237,8 @@ $(ION_QT_BIN): FORCE
 $(IOND_BIN): FORCE
 	$(MAKE) -C src $(@F)
 
-#$(ION_CLI_BIN): FORCE
-#	$(MAKE) -C src $(@F)
+$(ION_CLI_BIN): FORCE
+	$(MAKE) -C src $(@F)
 
 @USE_LCOV_TRUE@baseline.info:
 @USE_LCOV_TRUE@	$(LCOV) -c -i -d $(abs_builddir)/src -o $@

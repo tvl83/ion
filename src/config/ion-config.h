@@ -9,19 +9,19 @@
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
 
 /* Version Build */
-#define CLIENT_VERSION_BUILD 1
+#define CLIENT_VERSION_BUILD 0
 
 /* Version is release */
-#define CLIENT_VERSION_IS_RELEASE true
+#define CLIENT_VERSION_IS_RELEASE false
 
 /* Major version */
-#define CLIENT_VERSION_MAJOR 2
+#define CLIENT_VERSION_MAJOR 0
 
 /* Minor version */
-#define CLIENT_VERSION_MINOR 1
+#define CLIENT_VERSION_MINOR 14
 
 /* Build revision */
-#define CLIENT_VERSION_REVISION 6
+#define CLIENT_VERSION_REVISION 99
 
 /* Copyright holder(s) before %s replacement */
 #define COPYRIGHT_HOLDERS "The %s developers"
@@ -42,7 +42,7 @@
 #define ENABLE_ZMQ 1
 
 /* parameter and return value type for __fdelt_chk */
-#define FDELT_TYPE long int
+/* #undef FDELT_TYPE */
 
 /* define if the Boost library is available */
 #define HAVE_BOOST /**/
@@ -223,7 +223,7 @@
 /* #undef HAVE_LIBRPCRT4 */
 
 /* Define to 1 if you have the `rt' library (-lrt). */
-#define HAVE_LIBRT 1
+/* #undef HAVE_LIBRT */
 
 /* Define to 1 if you have the `shell32' library (-lshell32). */
 /* #undef HAVE_LIBSHELL32 */
@@ -340,13 +340,13 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
+#define PACKAGE_BUGREPORT "https://github.com/ion/ion/issues"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "Ion Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Ion Core 2.1.6"
+#define PACKAGE_STRING "Ion Core 0.14.99"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "ion"
@@ -355,7 +355,7 @@
 #define PACKAGE_URL "https://ioncore.org/"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "2.1.6"
+#define PACKAGE_VERSION "0.14.99"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */

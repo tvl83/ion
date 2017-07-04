@@ -43,7 +43,7 @@ _(**this is community developed software, please use at own risk**)_
 ===========================
 
 
- - **Ion**: [iiT87sp5zT4TiudtDnYwSGQLwfeWC3bnmm](ionomy:iiT87sp5zT4TiudtDnYwSGQLwfeWC3bnmm)
+ - **Ion**: [iiT87sp5zT4TiudtDnYwSGQLwfeWC3bnmm](ion:iiT87sp5zT4TiudtDnYwSGQLwfeWC3bnmm)
 
      ![Donate ION to 🐼CEVAP🐼](https://raw.githubusercontent.com/cevap/ion/master/doc/donation/donation-cevap-ion-address.png)
 
@@ -56,7 +56,7 @@ _(**this is community developed software, please use at own risk**)_
 🗺 [🔩ASPA🔩](https://github.com/aspaas/)
 ----------
 
- - **Ion**: [imHX5qPv1fv1nZeRPJhmDDhkCeDUMdWoVv](ionomy:imHX5qPv1fv1nZeRPJhmDDhkCeDUMdWoVv)
+ - **Ion**: [imHX5qPv1fv1nZeRPJhmDDhkCeDUMdWoVv](ion:imHX5qPv1fv1nZeRPJhmDDhkCeDUMdWoVv)
 
      ![Donate ION to 🔩ASPA🔩](https://raw.githubusercontent.com/cevap/ion/master/doc/donation/donation-aspa-ion-address.png)
 
@@ -68,7 +68,7 @@ _(**this is community developed software, please use at own risk**)_
 🗺 [🛃sigwo🛃](https://github.com/aspaas/)
 -----------
 
- - **Ion**: [iTDy9RpZKevwhifcbmm5agCcYapXaqcWfY](ionomy:iTDy9RpZKevwhifcbmm5agCcYapXaqcWfY)
+ - **Ion**: [iTDy9RpZKevwhifcbmm5agCcYapXaqcWfY](ion:iTDy9RpZKevwhifcbmm5agCcYapXaqcWfY)
 
      ![Donate ION to 🛃sigwo🛃](https://raw.githubusercontent.com/cevap/ion/master/doc/donation/donation-sigwo-ion-address.png)
 

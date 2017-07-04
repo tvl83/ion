@@ -312,9 +312,9 @@ cd ..
 Clone the git repositories for ion and Gitian. (Rename existing folder).
 
 ```bash
-git clone https://github.com/devrandom/gitian-builder.git
+git clone https://github.com/cevap/gitian-builder.git
 git clone https://github.com/cevap/ion
-git clone https://github.com/ion/gitian.sigs.git
+git clone https://github.com/cevap/gitian.sigs.git
 ```
 
 Setting up the Gitian image
@@ -397,7 +397,7 @@ and inputs.
 
 For example:
 ```bash
-URL=https://github.com/laanwj/ion.git
+URL=https://github.com/cevap/ion.git
 COMMIT=2014_03_windows_unicode_path
 ./bin/gbuild --commit ion=${COMMIT} --url ion=${URL} ../ion/contrib/gitian-descriptors/gitian-linux.yml
 ./bin/gbuild --commit ion=${COMMIT} --url ion=${URL} ../ion/contrib/gitian-descriptors/gitian-win.yml

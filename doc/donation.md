@@ -64,6 +64,13 @@ _(**this is community developed software, please use at own risk**)_
 
      ![Donate BTC to 🔩ASPA🔩](https://raw.githubusercontent.com/cevap/ion/master/doc/donation/donation-aspa-btc-address.png)
 
+[Mitchel Cash (mica](https://github.com/aspaas/)
+-------------------
+
+ - **Ion**: [iTSzxxH4ShZBAdfBYiTY6PeMYqkmA5d5aV](ion:iTSzxxH4ShZBAdfBYiTY6PeMYqkmA5d5aV)
+
+     ![Donate ION to 🛃sigwo🛃](https://raw.githubusercontent.com/cevap/ion/master/doc/donation/donation-mica-ion-address.png)
+
 
 🗺 [🛃sigwo🛃](https://github.com/aspaas/)
 -----------

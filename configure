@@ -2572,9 +2572,9 @@ $as_echo "$as_me: WARNING: $2: see the Autoconf documentation" >&2;}
 $as_echo "$as_me: WARNING: $2:     section \"Present But Cannot Be Compiled\"" >&2;}
     { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: $2: proceeding with the compiler's result" >&5
 $as_echo "$as_me: WARNING: $2: proceeding with the compiler's result" >&2;}
-( $as_echo "## ------------------------------------------------ ##
+( $as_echo "## -------------------------------------------------- ##
 ## Report this to https://github.com/cevap/ion/issues ##
-## ------------------------------------------------ ##"
+## -------------------------------------------------- ##"
      ) | sed "s/^/$as_me: WARNING:     /" >&2
     ;;
 esac
@@ -30357,19 +30357,19 @@ fi
 
 
 
-$as_echo "#define CLIENT_VERSION_MAJOR 0" >>confdefs.h
+$as_echo "#define CLIENT_VERSION_MAJOR 2" >>confdefs.h
 
 
-$as_echo "#define CLIENT_VERSION_MINOR 14" >>confdefs.h
+$as_echo "#define CLIENT_VERSION_MINOR 1" >>confdefs.h
 
 
-$as_echo "#define CLIENT_VERSION_REVISION 99" >>confdefs.h
+$as_echo "#define CLIENT_VERSION_REVISION 6" >>confdefs.h
 
 
-$as_echo "#define CLIENT_VERSION_BUILD 0" >>confdefs.h
+$as_echo "#define CLIENT_VERSION_BUILD 1" >>confdefs.h
 
 
-$as_echo "#define CLIENT_VERSION_IS_RELEASE false" >>confdefs.h
+$as_echo "#define CLIENT_VERSION_IS_RELEASE true" >>confdefs.h
 
 
 $as_echo "#define COPYRIGHT_YEAR 2017" >>confdefs.h

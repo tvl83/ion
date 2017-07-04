@@ -3,7 +3,7 @@ exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
-Name: Ion Core consensus library
+Name: 🗺️Ion Core 👯👯 👛 consensus library
 Description: Library for the Ion consensus protocol.
 Version: 2.1.6
 Libs: -L${libdir} -lionconsensus

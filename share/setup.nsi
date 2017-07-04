@@ -1,12 +1,12 @@
-Name "Ion Core (-bit)"
+Name "🗺️Ion Core 👯👯 👛 (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.14.99
-!define COMPANY "Ion Core project"
+!define VERSION 2.1.6
+!define COMPANY "🗺️Ion Core 👯👯 👛 project"
 !define URL https://ioncore.org/
 
 # MUI Symbol Definitions
@@ -19,7 +19,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Ion Core"
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "🗺️Ion Core 👯👯 👛"
 !define MUI_FINISHPAGE_RUN $INSTDIR\ion-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/tor/go/src/github.com/cevap/ion/share/pixmaps/nsis-wizard.bmp"
@@ -58,8 +58,8 @@ CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion ${VERSION}.0
-VIAddVersionKey ProductName "Ion Core"
+VIProductVersion ${VERSION}.1
+VIAddVersionKey ProductName "🗺️Ion Core 👯👯 👛"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -92,7 +92,7 @@ Section -post SEC0001
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\ion-qt
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Ion Core (testnet, -bit).lnk" "$INSTDIR\ion-qt" "-testnet" "$INSTDIR\ion-qt" 1
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\🗺️Ion Core 👯👯 👛 (testnet, -bit).lnk" "$INSTDIR\ion-qt" "-testnet" "$INSTDIR\ion-qt" 1
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -136,7 +136,7 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Ion Core (testnet, -bit).lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\🗺️Ion Core 👯👯 👛 (testnet, -bit).lnk"
     Delete /REBOOTOK "$SMSTARTUP\Ion.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log

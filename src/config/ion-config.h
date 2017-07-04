@@ -343,10 +343,10 @@
 #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Ion Core"
+#define PACKAGE_NAME "🗺️Ion Core 👯👯 👛"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Ion Core 2.1.6"
+#define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "ion"

@@ -236,7 +236,8 @@ am__DIST_COMMON = $(srcdir)/Makefile.in \
 	$(top_srcdir)/test/functional/test_runner.py \
 	$(top_srcdir)/test/util/ion-util-test.py COPYING README \
 	build-aux/compile build-aux/config.guess build-aux/config.sub \
-	build-aux/install-sh build-aux/ltmain.sh build-aux/missing
+	build-aux/depcomp build-aux/install-sh build-aux/ltmain.sh \
+	build-aux/missing
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 distdir = $(PACKAGE)-$(VERSION)
 top_distdir = $(distdir)
@@ -398,11 +399,11 @@ OTOOL =
 OTOOL64 = 
 PACKAGE = ion
 PACKAGE_BUGREPORT = https://github.com/cevap/ion/issues
-PACKAGE_NAME = Ion Core
-PACKAGE_STRING = Ion Core 2.1.6.1
+PACKAGE_NAME = 🗺️Ion Core 👯👯 👛
+PACKAGE_STRING = 🗺️Ion Core 👯👯 👛 2.1.6
 PACKAGE_TARNAME = ion
 PACKAGE_URL = https://ioncore.org/
-PACKAGE_VERSION = 2.1.6.1
+PACKAGE_VERSION = 2.1.6
 PATH_SEPARATOR = :
 PIC_FLAGS = -fPIC
 PIE_FLAGS = -fPIE
@@ -457,7 +458,7 @@ UNIVALUE_CFLAGS = -I$(srcdir)/univalue/include
 UNIVALUE_LIBS = univalue/libunivalue.la
 USE_QRCODE = 
 USE_UPNP = 
-VERSION = 2.1.6.1
+VERSION = 2.1.6
 WINDOWS_BITS = 
 WINDRES = 
 X11XCB_CFLAGS = 

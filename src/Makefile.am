@@ -130,9 +130,13 @@ iond_SOURCES = iond.cpp \
 
 
 
-iond_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES) $(MINIUPNPC_CPPFLAGS) 
+iond_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 iond_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 iond_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+
+if TARGET_WINDOWS
+iond_SOURCES += iond-res.rc
+endif
 
 iond_LDADD = \
   $(LIBION_WALLET) \
@@ -141,7 +145,25 @@ iond_LDADD = \
   $(LIBSECP256K1)
 # iond_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 # TODO: CHECK IF THESE LIBS ARE PRESENT AND NECESSARY
-iond_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(MINIUPNPC_LIBS) $(CRYPTO_LIBS) 
+iond_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(MINIUPNPC_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+CLEANFILES = $(EXTRA_LIBRARIES)
+
+CLEANFILES += *.gcda *.gcno
+CLEANFILES += compat/*.gcda compat/*.gcno
+
+CLEANFILES += crypto/*.gcda crypto/*.gcno
+CLEANFILES += policy/*.gcda policy/*.gcno
+CLEANFILES += primitives/*.gcda primitives/*.gcno
+CLEANFILES += script/*.gcda script/*.gcno
+CLEANFILES += support/*.gcda support/*.gcno
+CLEANFILES += wallet/*.gcda wallet/*.gcno
+CLEANFILES += wallet/test/*.gcda wallet/test/*.gcno
+CLEANFILES += zmq/*.gcda zmq/*.gcno
+
+DISTCLEANFILES = obj/build.h
+
+EXTRA_DIST = 
+
 
 
 config/ion-config.h: config/stamp-h1

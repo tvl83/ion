@@ -1,5 +1,456 @@
 # Copyright (c) 2013-2016 The Bitcoin Core developers
+# Copyright (c) 2017 🐼CEVAP🐼s 👯Community Edition👯 Ioncoin Developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-# TODO: QT
+bin_PROGRAMS += qt/ion-qt
+EXTRA_LIBRARIES += qt/libionqt.a
+
+# ion qt core #
+QT_TS = \
+  qt/locale/ion_he.ts \
+  qt/locale/ion_la.ts \
+  qt/locale/ion_sq.ts \
+  qt/locale/ion_sr.ts \
+  qt/locale/ion_vi.ts \
+  qt/locale/ion_eu_ES.ts \
+  qt/locale/ion_es_CL.ts \
+  qt/locale/ion_en.ts \
+  qt/locale/ion_nl.ts \
+  qt/locale/ion_pam.ts \
+  qt/locale/ion_pt_PT.ts \
+  qt/locale/ion_ky.ts \
+  qt/locale/ion_ca.ts \
+  qt/locale/ion_zh_TW.ts \
+  qt/locale/ion_ur_PK.ts \
+  qt/locale/ion_lt.ts \
+  qt/locale/ion_es_UY.ts \
+  qt/locale/ion_gl.ts \
+  qt/locale/ion_da.ts \
+  qt/locale/ion_fr_CA.ts \
+  qt/locale/ion_es_DO.ts \
+  qt/locale/ion_af_ZA.ts \
+  qt/locale/ion_es.ts \
+  qt/locale/ion_ja.ts \
+  qt/locale/ion_uk.ts \
+  qt/locale/ion_bg.ts \
+  qt/locale/ion_fa_IR.ts \
+  qt/locale/ion_ka.ts \
+  qt/locale/ion_sv.ts \
+  qt/locale/ion_ar.ts \
+  qt/locale/ion_cs.ts \
+  qt/locale/ion_cy.ts \
+  qt/locale/ion_ms_MY.ts \
+  qt/locale/ion_fa.ts \
+  qt/locale/ion_es_MX.ts \
+  qt/locale/ion_lv_LV.ts \
+  qt/locale/ion_be_BY.ts \
+  qt/locale/ion_hu.ts \
+  qt/locale/ion_id_ID.ts \
+  qt/locale/ion_hi_IN.ts \
+  qt/locale/ion_ro_RO.ts \
+  qt/locale/ion_et.ts \
+  qt/locale/ion_hr.ts \
+  qt/locale/ion_th_TH.ts \
+  qt/locale/ion_tr.ts \
+  qt/locale/ion_ru.ts \
+  qt/locale/ion_fr.ts \
+  qt/locale/ion_ca_ES.ts \
+  qt/locale/ion_zh_CN.ts \
+  qt/locale/ion_ko_KR.ts \
+  qt/locale/ion_kk_KZ.ts \
+  qt/locale/ion_nb.ts \
+  qt/locale/ion_pt_BR.ts \
+  qt/locale/ion_eo.ts \
+  qt/locale/ion_sk.ts \
+  qt/locale/ion_it.ts \
+  qt/locale/ion_pl.ts \
+  qt/locale/ion_fi.ts \
+  qt/locale/ion_el_GR.ts \
+  qt/locale/ion_de.ts \
+  qt/locale/ion_sl_SI.ts
+
+
+QT_FORMS_UI = \
+  qt/forms/sendcoinsentry.ui \
+  qt/forms/addressbookpage.ui \
+  qt/forms/sendcoinsdialog.ui \
+  qt/forms/askpassphrasedialog.ui \
+  qt/forms/multisiginputentry.ui \
+  qt/forms/stashedsendconfig.ui \
+  qt/forms/qrcodedialog.ui \
+  qt/forms/coincontroldialog.ui \
+  qt/forms/atomnodeconfigdialog.ui \
+  qt/forms/aboutdialog.ui \
+  qt/forms/multisigdialog.ui \
+  qt/forms/multisigaddressentry.ui \
+  qt/forms/addeditatomnode.ui \
+  qt/forms/signverifymessagedialog.ui \
+  qt/forms/editaddressdialog.ui \
+  qt/forms/masternodemanager.ui \
+  qt/forms/rpcconsole.ui \
+  qt/forms/transactiondescdialog.ui \
+  qt/forms/optionsdialog.ui \
+  qt/forms/overviewpage.ui
+
+QT_MOC_CPP = \
+  qt/moc_aboutdialog.cpp \
+  qt/moc_addeditatomnode.cpp \
+  qt/moc_addressbookpage.cpp \
+  qt/moc_addresstablemodel.cpp \
+  qt/moc_askpassphrasedialog.cpp \
+  qt/moc_atomnodeconfigdialog.cpp \
+  qt/moc_bantablemodel.cpp \
+  qt/moc_clientmodel.cpp \
+  qt/moc_coincontroldialog.cpp \
+  qt/moc_coincontroltreewidget.cpp \
+  qt/moc_csvmodelwriter.cpp \
+  qt/moc_editaddressdialog.cpp \
+  qt/moc_flowlayout.cpp \
+  qt/moc_guiutil.cpp \
+  qt/moc_ionaddressvalidator.cpp \
+  qt/moc_ionamountfield.cpp \
+  qt/moc_iongui.cpp \
+  qt/moc_ionunits.cpp \
+  qt/moc_masternodemanager.cpp \
+  qt/moc_monitoreddatamapper.cpp \
+  qt/moc_multisigaddressentry.cpp \
+  qt/moc_multisigdialog.cpp \
+  qt/moc_multisiginputentry.cpp \
+  qt/moc_notificator.cpp \
+  qt/moc_optionsdialog.cpp \
+  qt/moc_optionsmodel.cpp \
+  qt/moc_overviewpage.cpp \
+  qt/moc_paymentserver.cpp \
+  qt/moc_peertablemodel.cpp \
+  qt/moc_qcustomplot.cpp \
+  qt/moc_qrcodedialog.cpp \
+  qt/moc_qvalidatedlineedit.cpp \
+  qt/moc_qvalidatedtextedit.cpp \
+  qt/moc_qvaluecombobox.cpp \
+  qt/moc_rpcconsole.cpp \
+  qt/moc_sendcoinsdialog.cpp \
+  qt/moc_sendcoinsentry.cpp \
+  qt/moc_signverifymessagedialog.cpp \
+  qt/moc_stashedsendconfig.cpp \
+  qt/moc_trafficgraphwidget.cpp \
+  qt/moc_transactiondesc.cpp \
+  qt/moc_transactiondescdialog.cpp \
+  qt/moc_transactionfilterproxy.cpp \
+  qt/moc_transactionrecord.cpp \
+  qt/moc_transactiontablemodel.cpp \
+  qt/moc_transactionview.cpp \
+  qt/moc_walletmodel.cpp \
+  qt/moc_walletmodeltransaction.cpp
+
+ION_MM = \
+  qt/macdockiconhandler.mm \
+  qt/macnotificationhandler.mm
+
+QT_MOC = \
+  qt/ion.moc \
+  qt/ionamountfield.moc \
+  qt/callback.moc \
+  qt/intro.moc \
+  qt/overviewpage.moc \
+  qt/rpcconsole.moc
+
+QT_QRC_CPP = qt/qrc_ion.cpp
+QT_QRC = qt/ion.qrc
+# QT_QRC_LOCALE_CPP = qt/qrc_ion_locale.cpp
+# QT_QRC_LOCALE = qt/ion_locale.qrc
+
+ION_QT_H = \
+  qt/aboutdialog.h \
+  qt/addeditatomnode.h \
+  qt/addressbookpage.h \
+  qt/addresstablemodel.h \
+  qt/askpassphrasedialog.h \
+  qt/atomnodeconfigdialog.h \
+  qt/bantablemodel.h \
+  qt/clientmodel.h \
+  qt/coincontroldialog.h \
+  qt/coincontroltreewidget.h \
+  qt/csvmodelwriter.h \
+  qt/editaddressdialog.h \
+  qt/flowlayout.h \
+  qt/guiconstants.h \
+  qt/guiutil.h \
+  qt/ionaddressvalidator.h \
+  qt/ionamountfield.h \
+  qt/iongui.h \
+  qt/ionunits.h \
+  qt/macdockiconhandler.h \
+  qt/macnotificationhandler.h \
+  qt/masternodemanager.h \
+  qt/monitoreddatamapper.h \
+  qt/multisigaddressentry.h \
+  qt/multisigdialog.h \
+  qt/multisiginputentry.h \
+  qt/notificator.h \
+  qt/optionsdialog.h \
+  qt/optionsmodel.h \
+  qt/overviewpage.h \
+  qt/paymentserver.h \
+  qt/peertablemodel.h \
+  qt/qcustomplot.h \
+  qt/qrcodedialog.h \
+  qt/qvalidatedlineedit.h \
+  qt/qvalidatedtextedit.h \
+  qt/qvaluecombobox.h \
+  qt/rpcconsole.h \
+  qt/sendcoinsdialog.h \
+  qt/sendcoinsentry.h \
+  qt/signverifymessagedialog.h \
+  qt/stashedsendconfig.h \
+  qt/trafficgraphwidget.h \
+  qt/transactiondescdialog.h \
+  qt/transactiondesc.h \
+  qt/transactionfilterproxy.h \
+  qt/transactionrecord.h \
+  qt/transactiontablemodel.h \
+  qt/transactionview.h \
+  qt/walletmodel.h \
+  qt/walletmodeltransaction.h
+
+RES_ICONS = \
+  qt/res/icons/add.png \
+  qt/res/icons/address-book.png \
+  qt/res/icons/block.png \
+  qt/res/icons/browse.png \
+  qt/res/icons/clock1.png \
+  qt/res/icons/clock2.png \
+  qt/res/icons/clock3.png \
+  qt/res/icons/clock4.png \
+  qt/res/icons/clock5.png \
+  qt/res/icons/configure.png \
+  qt/res/icons/connect0_16.png \
+  qt/res/icons/connect1_16.png \
+  qt/res/icons/connect2_16.png \
+  qt/res/icons/connect3_16.png \
+  qt/res/icons/connect4_16.png \
+  qt/res/icons/debugwindow.png \
+  qt/res/icons/editcopy.png \
+  qt/res/icons/editpaste.png \
+  qt/res/icons/edit.png \
+  qt/res/icons/export.png \
+  qt/res/icons/eye_minus.png \
+  qt/res/icons/eye_plus.png \
+  qt/res/icons/eye.png \
+  qt/res/icons/filesave.png \
+  qt/res/icons/history.png \
+  qt/res/icons/ion-128.png \
+  qt/res/icons/ion-16.png \
+  qt/res/icons/ion-32.png \
+  qt/res/icons/ion-48.png \
+  qt/res/icons/ion-80.png \
+  qt/res/icons/ion.icns \
+  qt/res/icons/ion.ico \
+  qt/res/icons/ion.png \
+  qt/res/icons/ion_testnet.ico \
+  qt/res/icons/ion_testnet.png \
+  qt/res/icons/key.png \
+  qt/res/icons/lock_closed.png \
+  qt/res/icons/lock_open.png \
+  qt/res/icons/masternode.png \
+  qt/res/icons/network_disabled.png \
+  qt/res/icons/notsynced.png \
+  qt/res/icons/onion-black.png \
+  qt/res/icons/onion.png \
+  qt/res/icons/open.png \
+  qt/res/icons/overview.png \
+  qt/res/icons/qrcode.png \
+  qt/res/icons/quit.png \
+  qt/res/icons/receive.png \
+  qt/res/icons/remove.png \
+  qt/res/icons/send.png \
+  qt/res/icons/staking_off.png \
+  qt/res/icons/staking_on.png \
+  qt/res/icons/synced.png \
+  qt/res/icons/trade.png \
+  qt/res/icons/transaction0.png \
+  qt/res/icons/transaction2.png \
+  qt/res/icons/transaction_abandoned.png \
+  qt/res/icons/transaction_conflicted.png \
+  qt/res/icons/tx_inout.png \
+  qt/res/icons/tx_input.png \
+  qt/res/icons/tx_mined.png \
+  qt/res/icons/tx_output.png
+
+ION_QT_BASE_CPP = \
+  qt/aboutdialog.cpp \
+  qt/addeditatomnode.cpp \
+  qt/addressbookpage.cpp \
+  qt/addresstablemodel.cpp \
+  qt/askpassphrasedialog.cpp \
+  qt/atomnodeconfigdialog.cpp \
+  qt/bantablemodel.cpp \
+  qt/clientmodel.cpp \
+  qt/coincontroldialog.cpp \
+  qt/coincontroltreewidget.cpp \
+  qt/csvmodelwriter.cpp \
+  qt/editaddressdialog.cpp \
+  qt/flowlayout.cpp \
+  qt/guiutil.cpp \
+  qt/ionaddressvalidator.cpp \
+  qt/ionamountfield.cpp \
+  qt/iongui.cpp \
+  qt/ionunits.cpp \
+  qt/masternodemanager.cpp \
+  qt/monitoreddatamapper.cpp \
+  qt/multisigaddressentry.cpp \
+  qt/multisigdialog.cpp \
+  qt/multisiginputentry.cpp \
+  qt/notificator.cpp \
+  qt/optionsdialog.cpp \
+  qt/optionsmodel.cpp \
+  qt/overviewpage.cpp \
+  qt/paymentserver.cpp \
+  qt/peertablemodel.cpp \
+  qt/qcustomplot.cpp \
+  qt/qvalidatedlineedit.cpp \
+  qt/qvalidatedtextedit.cpp \
+  qt/qvaluecombobox.cpp \
+  qt/rpcconsole.cpp \
+  qt/sendcoinsdialog.cpp \
+  qt/sendcoinsentry.cpp \
+  qt/signverifymessagedialog.cpp \
+  qt/stashedsendconfig.cpp \
+  qt/trafficgraphwidget.cpp \
+  qt/transactiondesc.cpp \
+  qt/transactiondescdialog.cpp \
+  qt/transactionfilterproxy.cpp \
+  qt/transactionrecord.cpp \
+  qt/transactiontablemodel.cpp \
+  qt/transactionview.cpp \
+  qt/walletmodel.cpp \
+  qt/walletmodeltransaction.cpp
+
+if USE_QRCODE
+ION_QT_BASE_CPP += qt/qrcodedialog.cpp
+endif
+
+ION_QT_WINDOWS_CPP = 
+
+ION_QT_WALLET_CPP = 
+
+ION_QT_CPP = $(ION_QT_BASE_CPP)
+if TARGET_WINDOWS
+ION_QT_CPP += $(ION_QT_WINDOWS_CPP)
+endif
+if ENABLE_WALLET
+ION_QT_CPP += $(ION_QT_WALLET_CPP)
+endif
+
+RES_IMAGES = 
+
+RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
+
+ION_RC = qt/res/ion-qt.rc
+
+ION_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
+  -I$(builddir)/qt/forms -DQT_DISABLE_DEPRECATED_BEFORE=0
+#  -I$(builddir)/qt/forms -DQT_NO_KEYWORDS
+# TODO: improve compatibility
+# QT_DISABLE_DEPRECATED_BEFORE=0 was used to quickly get rid of the need to check for QT versions, such as with QDesktopServices::storageLocation() (see iongui.cpp and guiutil.cpp)
+# QT_NO_KEYWORDS increases BOOST compatibility; change signal, emit and slots with Q_SIGNALS, Q_EMIT and Q_SLOTS
+
+qt_libionqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES) $(ION_QT_INCLUDES) \
+  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
+qt_libionqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+
+qt_libionqt_a_SOURCES = $(ION_QT_CPP) $(ION_QT_H) $(QT_FORMS_UI) \
+  $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES)
+
+nodist_qt_libionqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
+  $(PROTOBUF_H) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
+
+# forms/foo.h -> forms/ui_foo.h
+QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))
+
+# Most files will depend on the forms and moc files as includes. Generate them
+# before anything else.
+$(QT_MOC): $(QT_FORMS_H)
+$(qt_libionqt_a_OBJECTS) $(qt_ion_qt_OBJECTS) : | $(QT_MOC)
+
+#Generating these with a half-written protobuf header leads to wacky results.
+#This makes sure it's done.
+# $(QT_MOC): $(PROTOBUF_H)
+# $(QT_MOC_CPP): $(PROTOBUF_H)
+
+# ion-qt binary #
+qt_ion_qt_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES) $(ION_QT_INCLUDES) \
+  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
+qt_ion_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+
+qt_ion_qt_SOURCES = qt/ion.cpp
+if TARGET_DARWIN
+  qt_ion_qt_SOURCES += $(ION_MM)
+endif
+if TARGET_WINDOWS
+  qt_ion_qt_SOURCES += $(ION_RC)
+endif
+qt_ion_qt_LDADD = qt/libionqt.a $(LIBION_SERVER)
+if ENABLE_WALLET
+qt_ion_qt_LDADD += $(LIBION_WALLET)
+endif
+if ENABLE_ZMQ
+qt_ion_qt_LDADD += $(LIBION_ZMQ) $(ZMQ_LIBS)
+endif
+qt_ion_qt_LDADD += $(LIBION_CLI) $(LIBION_COMMON) $(LIBION_UTIL) $(LIBION_CONSENSUS) $(LIBION_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
+  $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+qt_ion_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_ion_qt_LIBTOOLFLAGS = --tag CXX
+
+#locale/foo.ts -> locale/foo.qm
+QT_QM=$(QT_TS:.ts=.qm)
+
+SECONDARY: $(QT_QM)
+
+$(srcdir)/qt/ionstrings.cpp: $(libion_server_a_SOURCES) $(libion_wallet_a_SOURCES) $(libion_common_a_SOURCES) $(libion_zmq_a_SOURCES) $(libion_consensus_a_SOURCES) $(libion_util_a_SOURCES)
+	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
+	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" COPYRIGHT_HOLDERS="$(COPYRIGHT_HOLDERS)" COPYRIGHT_HOLDERS_SUBSTITUTION="$(COPYRIGHT_HOLDERS_SUBSTITUTION)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
+
+translate: $(srcdir)/qt/ionstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(ION_QT_BASE_CPP) qt/ion.cpp $(ION_QT_WINDOWS_CPP) $(ION_QT_WALLET_CPP) $(ION_QT_H) $(ION_MM)
+	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/ion_en.ts
+
+$(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
+	@test -f $(RCC)
+	@cp -f $< $(@D)/temp_$(<F)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name ion_locale $(@D)/temp_$(<F) | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+	@rm $(@D)/temp_$(<F)
+
+$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(PROTOBUF_H)
+	@test -f $(RCC)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name ion $< | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+
+CLEAN_QT = $(nodist_qt_libionqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
+
+CLEANFILES += $(CLEAN_QT)
+
+ion_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libionqt_a_OBJECTS) $(qt_ion_qt_OBJECTS) qt/ion-qt$(EXEEXT) $(LIBIONQT)
+
+ion_qt : qt/ion-qt$(EXEEXT)
+
+ui_%.h: %.ui
+	@test -f $(UIC)
+	@$(MKDIR_P) $(@D)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(UIC) -o $@ $< || (echo "Error creating $@"; false)
+
+%.moc: %.cpp
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+
+moc_%.cpp: %.h
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+
+%.qm: %.ts
+	@test -f $(LRELEASE)
+	@$(MKDIR_P) $(@D)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LRELEASE) -silent $< -qm $@

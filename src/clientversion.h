@@ -27,4 +27,7 @@
 #define STRINGIZE(X) DO_STRINGIZE(X)
 #define DO_STRINGIZE(X) #X
 
+//! Copyright string used in Windows .rc files
+#define COPYRIGHT_STR "2009-" STRINGIZE(COPYRIGHT_YEAR) " " COPYRIGHT_HOLDERS_FINAL
+
 #endif // CLIENTVERSION_H

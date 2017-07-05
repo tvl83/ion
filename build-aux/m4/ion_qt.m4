@@ -395,7 +395,7 @@ AC_DEFUN([_ION_QT_FIND_LIBS_WITH_PKGCONFIG],[
       ion_qt_got_major_vers=4
     fi
     qt5_modules="Qt5Core Qt5Gui Qt5Network Qt5Widgets Qt5PrintSupport"
-    qt4_modules="QtCore QtGui QtNetwork"
+    qt4_modules="QtCore QtGui QtNetwork QtPrintSupport"
     ION_QT_CHECK([
       if test x$ion_qt_want_version = xqt5 || ( test x$ion_qt_want_version = xauto && test x$auto_priority_version = xqt5 ); then
         PKG_CHECK_MODULES([QT], [$qt5_modules], [QT_INCLUDES="$QT_CFLAGS"; have_qt=yes],[have_qt=no])
@@ -440,7 +440,7 @@ AC_DEFUN([_ION_QT_FIND_LIBS_WITHOUT_PKGCONFIG],[
   TEMP_LIBS="$LIBS"
   ION_QT_CHECK([
     if test x$qt_include_path != x; then
-      QT_INCLUDES="-I$qt_include_path -I$qt_include_path/QtCore -I$qt_include_path/QtGui -I$qt_include_path/QtWidgets -I$qt_include_path/QtNetwork -I$qt_include_path/QtTest -I$qt_include_path/QtDBus"
+      QT_INCLUDES="-I$qt_include_path -I$qt_include_path/QtCore -I$qt_include_path/QtGui -I$qt_include_path/QtWidgets -I$qt_include_path/QtNetwork -I$qt_include_path/QtTest -I$qt_include_path/QtDBus -I$qt_include_path/QtPrintSupport"
       CPPFLAGS="$QT_INCLUDES $CPPFLAGS"
     fi
   ])

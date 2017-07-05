@@ -14,6 +14,7 @@ ION_INCLUDES=-I$(builddir) -I$(builddir)/obj $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $
 
 ION_INCLUDES += -I$(srcdir)/secp256k1/include
 
+LIBION_SERVER=libion_server.a
 LIBIONQT=qt/libionqt.a
 LIBSECP256K1=secp256k1/libsecp256k1.la
 
@@ -24,7 +25,10 @@ endif
 $(LIBSECP256K1): $(wildcard secp256k1/src/*) $(wildcard secp256k1/include/*)
 	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C $(@D) $(@F)
 
+# Make is not made aware of per-object dependencies to avoid limiting building parallelization
+# But to build the less dependent modules first, we manually select their order here:
 EXTRA_LIBRARIES += \
+  $(LIBION_SERVER) \
   $(LIBION_WALLET) 
 
 lib_LTLIBRARIES =
@@ -33,28 +37,6 @@ bin_PROGRAMS =
 noinst_PROGRAMS =
 TESTS =
 BENCHMARKS =
-
-# TODO: check if it's a problem that this could be build after iond.o
-obj/build.h: FORCE
-	@$(MKDIR_P) $(builddir)/obj
-	/bin/sh ../share/genbuild.sh obj/build.h
-#	@$(top_srcdir)/share/genbuild.sh "(abs_top_builddir)/src/obj/build.h" 
-version.cpp: obj/build.h
-
-# wallet: shared between iond and ion-qt, but only linked
-# when wallet enabled
-libion_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES)
-libion_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libion_wallet_a_SOURCES = \
-  db.cpp \
-  miner.cpp \
-  rpcdump.cpp \
-  rpcmining.cpp \
-  rpcwallet.cpp \
-  wallet.cpp \
-  walletdb.cpp \
-  $(ION_CORE_H)
-
 
 if BUILD_IOND
   bin_PROGRAMS += iond
@@ -70,65 +52,89 @@ allocators.h        clientversion.h     cuckoocache.h     init.h         mastern
 amount.h            coincontrol.h       stashedsend.h        instantx.h     masternodeman.h        prevector.h  rpcserver.h    sync.h          ui_interface.h			\
 arith_uint256.h     compat.h            stashedsend-relay.h  key.h          masternode-payments.h  proofs.h     script.h       threadsafety.h  uint256.h				\
 base58.h            core.h              db.h              keystore.h     masternode-pos.h       protocol.h   serialize.h    tinyformat.h    util.h				
+# TODO: check if it's a problem that this could be build after iond.o
+obj/build.h: FORCE
+	@$(MKDIR_P) $(builddir)/obj
+	/bin/sh ../share/genbuild.sh obj/build.h
+#	@$(top_srcdir)/share/genbuild.sh "(abs_top_builddir)/src/obj/build.h" 
+version.cpp: obj/build.h
 
-iond_SOURCES = iond.cpp \
+# server: shared between iond and ion-qt
+libion_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
+libion_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libion_server_a_SOURCES = \
+	activemasternode.cpp \
+	addrman.cpp \
 	alert.cpp \
 	allocators.cpp \
-	version.cpp \
-	support/cleanse.cpp \
-	checkpoints.cpp \
-	netbase.cpp \
-	addrman.cpp \
+	amount.cpp \
 	base58.cpp \
-	crypter.cpp \
-	key.cpp \
-	pubkey.cpp \
-	ecwrapper.cpp \
-	init.cpp \
-	keystore.cpp \
-	core.cpp \
-	main.cpp \
-	net.cpp \
-	protocol.cpp \
-	rpcclient.cpp \
-	rpcprotocol.cpp \
-	rpcserver.cpp \
-	rpcmisc.cpp \
-	rpcnet.cpp \
-	rpcblockchain.cpp \
-	rpcrawtransaction.cpp \
-	script.cpp \
-	sync.cpp \
-	txdb-leveldb.cpp \
-	txmempool.cpp \
-	util.cpp \
-	hash.cpp \
-	noui.cpp \
-	stake.cpp \
 	chainparams.cpp \
-	stealth.cpp \
-	activemasternode.cpp \
-	stashedsend.cpp \
-	stashedsend-relay.cpp \
-	instantx.cpp \
-	masternodeconfig.cpp \
-	masternodeman.cpp \
-	masternode.cpp \
-	masternode-payments.cpp \
-	rpcstashedsend.cpp \
-	spork.cpp \
+	checkpoints.cpp \
+	core.cpp \
+	crypter.cpp \
 	crypto/hmac_sha256.cpp \
 	crypto/hmac_sha512.cpp \
 	crypto/ripemd160.cpp \
 	crypto/sha1.cpp \
 	crypto/sha256.cpp \
 	crypto/sha512.cpp \
+	ecwrapper.cpp \
+	hash.cpp \
+	init.cpp \
+	instantx.cpp \
+	main.cpp \
+	masternode.cpp \
+	masternodeconfig.cpp \
+	masternodeman.cpp \
+	masternode-payments.cpp \
+	net.cpp \
+	netbase.cpp \
+	key.cpp \
+	keystore.cpp \
+	noui.cpp \
 	proofs.cpp \
+	protocol.cpp \
+	pubkey.cpp \
+	script.cpp \
+	sync.cpp \
+	txmempool.cpp \
+	rpcblockchain.cpp \
+	rpcclient.cpp \
+	rpcprotocol.cpp \
+	rpcmisc.cpp \
+	rpcnet.cpp \
+	rpcserver.cpp \
+	rpcstashedsend.cpp \
+	rpcrawtransaction.cpp \
+	stake.cpp \
+	util.cpp \
+	spork.cpp \
+	stashedsend.cpp \
+	stashedsend-relay.cpp \
+	support/cleanse.cpp \
+	txdb-leveldb.cpp \
 	uint256.cpp \
-	amount.cpp
+	version.cpp \
+	$(ION_CORE_H)
 
 
+# wallet: shared between iond and ion-qt, but only linked
+# when wallet enabled
+libion_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES)
+libion_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libion_wallet_a_SOURCES = \
+	db.cpp \
+	miner.cpp \
+	rpcdump.cpp \
+	rpcmining.cpp \
+	rpcwallet.cpp \
+	stealth.cpp \
+	wallet.cpp \
+	walletdb.cpp \
+	$(ION_CORE_H)
 
+iond_SOURCES = iond.cpp 
 
 iond_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 iond_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -139,6 +145,7 @@ iond_SOURCES += iond-res.rc
 endif
 
 iond_LDADD = \
+  $(LIBION_SERVER) \
   $(LIBION_WALLET) \
   $(LIBLEVELDB) \
   $(LIBMEMENV) \

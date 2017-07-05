@@ -307,7 +307,6 @@ ION_QT_BASE_CPP = \
   qt/paymentserver.cpp \
   qt/peertablemodel.cpp \
   qt/qcustomplot.cpp \
-  qt/qrcodedialog.cpp \
   qt/qvalidatedlineedit.cpp \
   qt/qvalidatedtextedit.cpp \
   qt/qvaluecombobox.cpp \
@@ -325,6 +324,10 @@ ION_QT_BASE_CPP = \
   qt/transactionview.cpp \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp
+
+if USE_QRCODE
+ION_QT_BASE_CPP += qt/qrcodedialog.cpp
+endif
 
 ION_QT_WINDOWS_CPP = 
 
@@ -345,7 +348,11 @@ RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 ION_RC = qt/res/ion-qt.rc
 
 ION_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
-  -I$(builddir)/qt/forms -DQT_NO_KEYWORDS
+  -I$(builddir)/qt/forms -DQT_DISABLE_DEPRECATED_BEFORE=0
+#  -I$(builddir)/qt/forms -DQT_NO_KEYWORDS
+# TODO: improve compatibility
+# QT_DISABLE_DEPRECATED_BEFORE=0 was used to quickly get rid of the need to check for QT versions, such as with QDesktopServices::storageLocation() (see iongui.cpp and guiutil.cpp)
+# QT_NO_KEYWORDS increases BOOST compatibility; change signal, emit and slots with Q_SIGNALS, Q_EMIT and Q_SLOTS
 
 qt_libionqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES) $(ION_QT_INCLUDES) \
   $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)

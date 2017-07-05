@@ -346,9 +346,8 @@ AC_DEFUN([_ION_QT_FIND_STATIC_PLUGINS],[
          if ${PKG_CONFIG} --exists "Qt5Core >= 5.5" 2>/dev/null; then
            PKG_CHECK_MODULES([QTXCBQPA], [Qt5XcbQpa], [QT_LIBS="$QTXCBQPA_LIBS $QT_LIBS"])
          fi
-       elif test x$TARGET_OS = xdarwin; then
-         PKG_CHECK_MODULES([QTPRINT], [Qt5PrintSupport], [QT_LIBS="$QTPRINT_LIBS $QT_LIBS"])
        fi
+       PKG_CHECK_MODULES([QTPRINT], [Qt5PrintSupport], [QT_LIBS="$QTPRINT_LIBS $QT_LIBS"])
      ])
      else
        if test x$TARGET_OS = xwindows; then
@@ -395,7 +394,7 @@ AC_DEFUN([_ION_QT_FIND_LIBS_WITH_PKGCONFIG],[
       QT_LIB_PREFIX=Qt
       ion_qt_got_major_vers=4
     fi
-    qt5_modules="Qt5Core Qt5Gui Qt5Network Qt5Widgets"
+    qt5_modules="Qt5Core Qt5Gui Qt5Network Qt5Widgets Qt5PrintSupport"
     qt4_modules="QtCore QtGui QtNetwork"
     ION_QT_CHECK([
       if test x$ion_qt_want_version = xqt5 || ( test x$ion_qt_want_version = xauto && test x$auto_priority_version = xqt5 ); then

@@ -23665,8 +23665,8 @@ fi
       QT_LIB_PREFIX=Qt
       ion_qt_got_major_vers=4
     fi
-    qt5_modules="Qt5Core Qt5Gui Qt5Network Qt5Widgets"
-    qt4_modules="QtCore QtGui QtNetwork"
+    qt5_modules="Qt5Core Qt5Gui Qt5Network Qt5Widgets Qt5PrintSupport"
+    qt4_modules="QtCore QtGui QtNetwork QtPrintSupport"
     
   if test "x$ion_enable_qt" != "xno" && test x$ion_qt_want_version != xno; then
     true
@@ -24160,7 +24160,7 @@ fi
     true
     
     if test x$qt_include_path != x; then
-      QT_INCLUDES="-I$qt_include_path -I$qt_include_path/QtCore -I$qt_include_path/QtGui -I$qt_include_path/QtWidgets -I$qt_include_path/QtNetwork -I$qt_include_path/QtTest -I$qt_include_path/QtDBus"
+      QT_INCLUDES="-I$qt_include_path -I$qt_include_path/QtCore -I$qt_include_path/QtGui -I$qt_include_path/QtWidgets -I$qt_include_path/QtNetwork -I$qt_include_path/QtTest -I$qt_include_path/QtDBus -I$qt_include_path/QtPrintSupport"
       CPPFLAGS="$QT_INCLUDES $CPPFLAGS"
     fi
   
@@ -25420,8 +25420,8 @@ $as_echo "yes" >&6; }
 	QT_LIBS="$QTXCBQPA_LIBS $QT_LIBS"
 fi
          fi
-       elif test x$TARGET_OS = xdarwin; then
-         
+       fi
+       
 pkg_failed=no
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for QTPRINT" >&5
 $as_echo_n "checking for QTPRINT... " >&6; }
@@ -25512,7 +25512,6 @@ else
 $as_echo "yes" >&6; }
 	QT_LIBS="$QTPRINT_LIBS $QT_LIBS"
 fi
-       fi
      
      else
        if test x$TARGET_OS = xwindows; then

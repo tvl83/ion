@@ -6,4 +6,4 @@ contrib/dataupload.md
 # END
 # DO NOT EDIT THIS PART WITHOUT TALKING ABOUT THAT WITH CEVAP
 
-src/libion_wallet.a
+# src/libion_wallet.a

@@ -71,6 +71,10 @@ _(**this is community developed software, please use at own risk**)_
 
      ![Donate ION to 💸Mitchel Cash (mica)💸](https://raw.githubusercontent.com/cevap/ion/master/doc/donation/donation-mica-ion-address.png)
 
+ - **Btc**: [14barGgijZmvXAKwMDrQLjChfKuwtnfCfW](bitcoin:14barGgijZmvXAKwMDrQLjChfKuwtnfCfW)
+
+     ![Donate BTC to 💸Mitchel Cash (mica)💸](https://raw.githubusercontent.com/cevap/ion/master/doc/donation/donation-mica-btc-address.png)
+
 
 🗺 [🛃sigwo🛃](https://github.com/sigwo/)
 -----------

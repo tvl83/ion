@@ -5,4 +5,4 @@ contrib/dataupload.md
 # DO NOT EDIT THIS PART WITHOUT TALKING ABOUT THAT WITH CEVAP
 
 /build/
-#/doc/doxygen/html/
+/doc/doxygen/html/

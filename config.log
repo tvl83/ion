@@ -173,7 +173,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
 | 
@@ -199,7 +199,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
 | 
@@ -220,7 +220,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
 | 
@@ -241,7 +241,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
 | 
@@ -402,7 +402,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
@@ -420,7 +420,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
@@ -529,7 +529,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -559,7 +559,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -683,7 +683,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -718,7 +718,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -753,7 +753,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -788,7 +788,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -830,7 +830,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -865,7 +865,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -941,7 +941,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -1025,7 +1025,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -1068,7 +1068,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -1111,7 +1111,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -1179,7 +1179,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -1248,7 +1248,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -1454,7 +1454,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -1541,7 +1541,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -1621,7 +1621,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -1703,7 +1703,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -1785,7 +1785,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -1867,7 +1867,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -1949,7 +1949,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -2031,7 +2031,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -2113,7 +2113,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -2195,7 +2195,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -2277,7 +2277,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -2359,7 +2359,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -2441,7 +2441,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -2523,7 +2523,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -2605,7 +2605,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -2687,7 +2687,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -2769,7 +2769,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -2931,7 +2931,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -3021,7 +3021,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -3202,7 +3202,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -3352,7 +3352,7 @@ configure: failed program was:
 | #define PACKAGE_VERSION "2.1.6"
 | #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 | #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-| #define PACKAGE_URL "https://ioncore.org/"
+| #define PACKAGE_URL "https://ioncore.xyz/"
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
 | #define HAVE_SYS_TYPES_H 1
@@ -4009,7 +4009,7 @@ PACKAGE_BUGREPORT='https://github.com/cevap/ion/issues'
 PACKAGE_NAME='🗺️Ion Core 👯👯 👛'
 PACKAGE_STRING='🗺️Ion Core 👯👯 👛 2.1.6'
 PACKAGE_TARNAME='ion'
-PACKAGE_URL='https://ioncore.org/'
+PACKAGE_URL='https://ioncore.xyz/'
 PACKAGE_VERSION='2.1.6'
 PATH_SEPARATOR=':'
 PIC_FLAGS='-fPIC'
@@ -4150,7 +4150,7 @@ target_alias=''
 #define PACKAGE_VERSION "2.1.6"
 #define PACKAGE_STRING "🗺️Ion Core 👯👯 👛 2.1.6"
 #define PACKAGE_BUGREPORT "https://github.com/cevap/ion/issues"
-#define PACKAGE_URL "https://ioncore.org/"
+#define PACKAGE_URL "https://ioncore.xyz/"
 #define HAVE_CXX11 1
 #define STDC_HEADERS 1
 #define HAVE_SYS_TYPES_H 1

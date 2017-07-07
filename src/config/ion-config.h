@@ -352,7 +352,7 @@
 #define PACKAGE_TARNAME "ion"
 
 /* Define to the home page for this package. */
-#define PACKAGE_URL "https://ioncore.org/"
+#define PACKAGE_URL "https://ioncore.xyz/"
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "2.1.6"

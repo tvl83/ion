@@ -7,7 +7,7 @@ SetCompressor /SOLID lzma
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 2.1.6
 !define COMPANY "🗺️Ion Core 👯👯 👛 project"
-!define URL https://ioncore.org/
+!define URL https://ioncore.xyz/
 
 # MUI Symbol Definitions
 !define MUI_ICON "/home/tor/go/src/github.com/cevap/ion/share/pixmaps/ion.ico"

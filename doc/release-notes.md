@@ -14,7 +14,7 @@ Please report bugs using the issue tracker at github:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://ioncore.org/en/list/announcements/join/>
+  <https://ioncore.xyz/en/list/announcements/join/>
 
 Compatibility
 ==============

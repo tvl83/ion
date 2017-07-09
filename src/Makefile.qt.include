@@ -157,8 +157,8 @@ QT_MOC = \
 
 QT_QRC_CPP = qt/qrc_ion.cpp
 QT_QRC = qt/ion.qrc
-# QT_QRC_LOCALE_CPP = qt/qrc_ion_locale.cpp
-# QT_QRC_LOCALE = qt/ion_locale.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_ion_locale.cpp
+QT_QRC_LOCALE = qt/ion_locale.qrc
 
 ION_QT_H = \
   qt/aboutdialog.h \

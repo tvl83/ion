@@ -313,11 +313,7 @@ Clone the git repositories for ion and Gitian. (Rename existing folder).
 
 ```bash
 git clone https://github.com/cevap/gitian-builder.git
-<<<<<<< HEAD
-git clone https://github.com/cevap/ion
-=======
 git clone https://github.com/cevap/ion.git
->>>>>>> f3ad080611a3da7abe7ce20ee5dd965ba888bce5
 git clone https://github.com/cevap/gitian.sigs.git
 ```
 

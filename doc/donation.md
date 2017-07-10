@@ -103,7 +103,7 @@ _(**this is community developed software, please use at own risk**)_
 
      ![Donate ION to 🌱ckti🌱](https://raw.githubusercontent.com/cevap/ion/master/doc/donation/donation-ckti-ion-address.png)
 
- - **Btc**: [iWvUwBxoqnDW9dp8DkXgsaYnmQMPzQe8EW](bitcoin:iWvUwBxoqnDW9dp8DkXgsaYnmQMPzQe8EW)
+ - **Btc**: [1PHjvXGqqvZXHUtieJsfLxtBGckfT6RMbd](bitcoin:1PHjvXGqqvZXHUtieJsfLxtBGckfT6RMbd)
 
      ![Donate BTC to 🌱ckti🌱](https://raw.githubusercontent.com/cevap/ion/master/doc/donation/donation-ckti-btc-address.png)
 

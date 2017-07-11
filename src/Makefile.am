@@ -51,7 +51,7 @@ alert.h             checkpoints.h       crypter.h         indirectmap.h  mastern
 allocators.h        clientversion.h     cuckoocache.h     init.h         masternode.h           net.h        rpcprotocol.h  strlcpy.h       txmempool.h     wallet.h		\
 amount.h            coincontrol.h       stashedsend.h        instantx.h     masternodeman.h        prevector.h  rpcserver.h    sync.h          ui_interface.h			\
 arith_uint256.h     compat.h            stashedsend-relay.h  key.h          masternode-payments.h  proofs.h     script.h       threadsafety.h  uint256.h				\
-base58.h            core.h              db.h              keystore.h     masternode-pos.h       protocol.h   serialize.h    tinyformat.h    util.h				
+base58.h            core.h              db.h              keystore.h     masternode-pos.h       protocol.h   serialize.h    tinyformat.h    util.h			support/cleanse.h	
 # TODO: check if it's a problem that this could be build after iond.o
 obj/build.h: FORCE
 	@$(MKDIR_P) $(builddir)/obj

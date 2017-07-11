@@ -342,7 +342,10 @@ if ENABLE_WALLET
 ION_QT_CPP += $(ION_QT_WALLET_CPP)
 endif
 
-RES_IMAGES = 
+RES_IMAGES = \
+  qt/res/images/about.png \
+  qt/res/images/aboutpanda.png \
+  qt/res/images/splash.png 
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 

@@ -139,6 +139,7 @@ int main(int argc, char *argv[])
 #endif
 
     Q_INIT_RESOURCE(ion);
+    Q_INIT_RESOURCE(ion_locale);
     QApplication app(argc, argv);
 
     // Do this early as we don't want to bother initializing if we are just calling IPC

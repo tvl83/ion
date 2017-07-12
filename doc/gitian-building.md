@@ -274,15 +274,15 @@ echo "%sudo ALL=NOPASSWD: /usr/bin/lxc-execute" >> /etc/sudoers.d/gitian-lxc
 # make /etc/rc.local script that sets up bridge between guest and host
 echo '#!/bin/sh -e' > /etc/rc.local
 echo 'brctl addbr br0' >> /etc/rc.local
-echo 'ifconfig br0 10.0.2.15/24 up' >> /etc/rc.local
+echo 'ifconfig br0 10.0.4.2/24 up' >> /etc/rc.local
 echo 'iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE' >> /etc/rc.local
 echo 'echo 1 > /proc/sys/net/ipv4/ip_forward' >> /etc/rc.local
 echo 'exit 0' >> /etc/rc.local
 # make sure that USE_LXC is always set when logging in as debian,
 # and configure LXC IP addresses
 echo 'export USE_LXC=1' >> /home/debian/.profile
-echo 'export GITIAN_HOST_IP=10.0.2.15' >> /home/debian/.profile
-echo 'export LXC_GUEST_IP=10.0.2.20' >> /home/debian/.profile
+echo 'export GITIAN_HOST_IP=10.0.4.2' >> /home/debian/.profile
+echo 'export LXC_GUEST_IP=10.0.4.5' >> /home/debian/.profile
 reboot
 ```
 

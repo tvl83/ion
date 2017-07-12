@@ -136,7 +136,7 @@ libion_server_a_SOURCES = \
 	json_spirit_value.h \
 	json_spirit_writer.cpp \
 	json_spirit_writer.h \
-	json_spirit_writer_template.h
+	json_spirit_writer_template.h \
 	$(ION_CORE_H)
 
 

@@ -54,8 +54,16 @@ namespace Checkpoints
 	(  191150,	uint256("0x25c875518d7b373609f4a48d33844b38b82363378ba74919c4402ae2cec84702") ) // 2.1.6.1
 ;
 
-    // TestNet has no checkpoints
-    static MapCheckpoints mapCheckpointsTestnet;
+    static MapCheckpoints mapCheckpointsTestnet =
+	boost::assign::map_list_of
+	(       0,      Params().HashGenesisBlock())
+	(       1,      uint256("0x000000b86fdd7f2ae9e9973e73790492989113075a2d5c581495ab7bb2ad5711") ) // First block 
+	(      10,      uint256("0x0000008c29a7d680710d1cc821d79f33ba0159bc26d9e233bccfabd668b0430e") ) // Confirmation of first block
+	(     300,      uint256("0x000000125e3e3d005aa72281e02b4ebaabc2fa9aed817b9365a8d29bb7901c10") ) // Last POW Block
+	(   75000,      uint256("0x20faec3994dac57fb88748e29139974522c91036e1bf8ff204c769a90fab5a12") ) // Fork June 2017
+	(   85000,      uint256("0x43ee28cd1f804dafe05ef120569726e50e9e6f2b634746925742cbd9f738c201") ) // Fork June 2017
+	(   88800,      uint256("0x2807b46cbfa28a2d4854215b40f4db64b62fc71a1d010844d67d7c03888ce692") ) // Fork June 2017
+;   
 
     bool CheckHardened(int nHeight, const uint256& hash)
     {

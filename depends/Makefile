@@ -6,7 +6,7 @@ SDK_PATH ?= $(BASEDIR)/SDKs
 NO_QT ?=
 NO_WALLET ?=
 NO_UPNP ?=
-FALLBACK_DOWNLOAD_PATH ?= https://ioncore.xyz/depends-sources
+FALLBACK_DOWNLOAD_PATH ?= https://github.com/cevap/MacOSX-SDKs/releases/download/
 
 BUILD = $(shell ./config.guess)
 HOST ?= $(BUILD)

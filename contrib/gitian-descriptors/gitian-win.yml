@@ -17,8 +17,10 @@ packages:
 - "bsdmainutils"
 - "mingw-w64"
 - "g++-mingw-w64"
-- "nsis"
 - "zip"
+- "unzip"
+- "scons"
+- "zlib1g-dev"
 - "ca-certificates"
 - "python"
 remotes:
@@ -150,7 +152,7 @@ script: |
     rename 's/-setup\.exe$/-setup-unsigned.exe/' *-setup.exe
     cp -f ion-*setup*.exe $OUTDIR/
     cd installed
-    mv ${DISTNAME}/bin/*.dll ${DISTNAME}/lib/
+    if [ `find ${DISTNAME}/bin -prune -empty` ] ; then mv ${DISTNAME}/bin/*.dll ${DISTNAME}/lib/ ; fi
     find . -name "lib*.la" -delete
     find . -name "lib*.a" -delete
     rm -rf ${DISTNAME}/lib/pkgconfig

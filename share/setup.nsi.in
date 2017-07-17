@@ -1,3 +1,5 @@
+Unicode yes
+
 Name "@PACKAGE_NAME@ (@WINDOWS_BITS@-bit)"
 
 RequestExecutionLevel highest

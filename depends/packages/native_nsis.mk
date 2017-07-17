@@ -25,6 +25,9 @@ endef
 
 define $(package)_extract_cmds
   mkdir -p $($(package)_extract_dir) && \
+  echo "$($(package)_sha256_hash)  $($(package)_source)" > $($(package)_extract_dir)/.$($(package)_file_name).hash && \
+  echo "$($(package)_src_sha256_hash)  $($(package)_source_dir)/$($(package)_src_file_name)" >> $($(package)_extract_dir)/.$($(package)_file_name).hash && \
+  $(build_SHA256SUM) -c $($(package)_extract_dir)/.$($(package)_file_name).hash && \
   tar --strip-components=1 -xf $($(package)_source) && \
   mkdir -p nsis_zip && \
   unzip $($(package)_source_dir)/$($(package)_src_file_name)

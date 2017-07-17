@@ -19,8 +19,8 @@ $(package)_scons_prefix_doc=$($(package)_scons_prefix)/native/share/doc/nsis
 $(package)_scons_prefix_dest=$($(package)_staging_dir)
 
 define $(package)_fetch_cmds
-  $(call fetch_file,$(package),$($(package)_download_path),$($(package)_download_file),$($(package)_file_name),$($(package)_sha256_hash)) && \
-  $(call fetch_file,$(package),$($(package)_src_download_path),$($(package)_src_download_file),$($(package)_src_file_name),$($(package)_src_sha256_hash))
+$(call fetch_file,$(package),$($(package)_download_path),$($(package)_download_file),$($(package)_file_name),$($(package)_sha256_hash)) && \
+$(call fetch_file,$(package),$($(package)_src_download_path),$($(package)_src_download_file),$($(package)_src_file_name),$($(package)_src_sha256_hash))
 endef
 
 define $(package)_extract_cmds

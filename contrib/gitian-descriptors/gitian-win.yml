@@ -17,8 +17,10 @@ packages:
 - "bsdmainutils"
 - "mingw-w64"
 - "g++-mingw-w64"
-- "nsis"
 - "zip"
+- "unzip"
+- "scons"
+- "zlib1g-dev"
 - "ca-certificates"
 - "python"
 remotes:

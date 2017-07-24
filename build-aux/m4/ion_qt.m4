@@ -346,8 +346,9 @@ AC_DEFUN([_ION_QT_FIND_STATIC_PLUGINS],[
          if ${PKG_CONFIG} --exists "Qt5Core >= 5.5" 2>/dev/null; then
            PKG_CHECK_MODULES([QTXCBQPA], [Qt5XcbQpa], [QT_LIBS="$QTXCBQPA_LIBS $QT_LIBS"])
          fi
+       elif test x$TARGET_OS = xdarwin; then
+         PKG_CHECK_MODULES([QTPRINT], [Qt5PrintSupport], [QT_LIBS="$QTPRINT_LIBS $QT_LIBS"])
        fi
-       PKG_CHECK_MODULES([QTPRINT], [Qt5PrintSupport], [QT_LIBS="$QTPRINT_LIBS $QT_LIBS"])
      ])
      else
        if test x$TARGET_OS = xwindows; then
@@ -398,17 +399,17 @@ AC_DEFUN([_ION_QT_FIND_LIBS_WITH_PKGCONFIG],[
     qt4_modules="QtCore QtGui QtNetwork QtPrintSupport"
     ION_QT_CHECK([
       if test x$ion_qt_want_version = xqt5 || ( test x$ion_qt_want_version = xauto && test x$auto_priority_version = xqt5 ); then
-        PKG_CHECK_MODULES([QT], [$qt5_modules], [QT_INCLUDES="$QT_CFLAGS"; have_qt=yes],[have_qt=no])
+        PKG_CHECK_MODULES([QT5], [$qt5_modules], [QT_INCLUDES="$QT5_CFLAGS"; QT_LIBS="$QT5_LIBS"; have_qt=yes],[have_qt=no])
       elif test x$ion_qt_want_version = xqt4 || ( test x$ion_qt_want_version = xauto && test x$auto_priority_version = xqt4 ); then
-        PKG_CHECK_MODULES([QT], [$qt4_modules], [QT_INCLUDES="$QT_CFLAGS"; have_qt=yes], [have_qt=no])
+        PKG_CHECK_MODULES([QT4], [$qt4_modules], [QT_INCLUDES="$QT4_CFLAGS"; QT_LIBS="$QT4_LIBS"; have_qt=yes], [have_qt=no])
       fi
 
       dnl qt version is set to 'auto' and the preferred version wasn't found. Now try the other.
       if test x$have_qt = xno && test x$ion_qt_want_version = xauto; then
         if test x$auto_priority_version = xqt5; then
-          PKG_CHECK_MODULES([QT], [$qt4_modules], [QT_INCLUDES="$QT_CFLAGS"; have_qt=yes; QT_LIB_PREFIX=Qt; ion_qt_got_major_vers=4], [have_qt=no])
+          PKG_CHECK_MODULES([QT4], [$qt4_modules], [QT_INCLUDES="$QT4_CFLAGS"; QT_LIBS="$QT4_LIBS"; have_qt=yes; QT_LIB_PREFIX=Qt; ion_qt_got_major_vers=4], [have_qt=no])
         else
-          PKG_CHECK_MODULES([QT], [$qt5_modules], [QT_INCLUDES="$QT_CFLAGS"; have_qt=yes; QT_LIB_PREFIX=Qt5; ion_qt_got_major_vers=5], [have_qt=no])
+          PKG_CHECK_MODULES([QT5], [$qt5_modules], [QT_INCLUDES="$QT5_CFLAGS"; QT_LIBS="$QT5_LIBS"; have_qt=yes; QT_LIB_PREFIX=Qt5; ion_qt_got_major_vers=5], [have_qt=no])
         fi
       fi
       if test x$have_qt != xyes; then

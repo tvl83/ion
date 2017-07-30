@@ -24,23 +24,42 @@
 #include "macdockiconhandler.h"
 #endif
 
-#include <QMessageBox>
-#include <QTextCodec>
+#include <QApplication>
+#include <QDebug>
+#include <QLibraryInfo>
 #include <QLocale>
+#include <QMessageBox>
+#include <QSettings>
+#include <QThread>
 #include <QTimer>
 #include <QTranslator>
 #include <QSplashScreen>
-#include <QLibraryInfo>
+#include <QSslConfiguration>
 
-#if defined(ION_NEED_QT_PLUGINS) && !defined(_ION_QT_PLUGINS_INCLUDED)
-#define _ION_QT_PLUGINS_INCLUDED
-#define __INSURE__
+#if defined(QT_STATICPLUGIN)
 #include <QtPlugin>
+#if QT_VERSION < 0x050000
 Q_IMPORT_PLUGIN(qcncodecs)
 Q_IMPORT_PLUGIN(qjpcodecs)
 Q_IMPORT_PLUGIN(qtwcodecs)
 Q_IMPORT_PLUGIN(qkrcodecs)
 Q_IMPORT_PLUGIN(qtaccessiblewidgets)
+#else
+#if QT_VERSION < 0x050400
+Q_IMPORT_PLUGIN(AccessibleFactory)
+#endif
+#if defined(QT_QPA_PLATFORM_XCB)
+Q_IMPORT_PLUGIN(QXcbIntegrationPlugin);
+#elif defined(QT_QPA_PLATFORM_WINDOWS)
+Q_IMPORT_PLUGIN(QWindowsIntegrationPlugin);
+#elif defined(QT_QPA_PLATFORM_COCOA)
+Q_IMPORT_PLUGIN(QCocoaIntegrationPlugin);
+#endif
+#endif
+#endif
+
+#if QT_VERSION < 0x050000
+#include <QTextCodec>
 #endif
 
 // Need a global reference for the notifications to find the GUI

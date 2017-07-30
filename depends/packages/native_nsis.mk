@@ -4,7 +4,7 @@ $(package)_download_path=https://sourceforge.net/projects/nsis/files/NSIS%203/$(
 $(package)_file_name=nsis-$($(package)_version)-src.tar.bz2
 $(package)_sha256_hash=604c011593be484e65b2141c50a018f1b28ab28c994268e4ecd377773f3ffba1
 
-$(package)_scons_args=UNICODE=yes SKIPUTILS=zip2exe,"NSIS Menu" NSIS_CONFIG_CONST_DATA_PATH=yes
+$(package)_scons_args=UNICODE=yes SKIPUTILS=zip2exe,"NSIS Menu" NSIS_CONFIG_CONST_DATA_PATH=yes XGCC_W32_PREFIX=$(host)-
 $(package)_scons_prefix=$($($(package)_type)_prefix)
 $(package)_scons_prefix_bin=$($(package)_scons_prefix)/native/bin
 $(package)_scons_prefix_conf=$($(package)_scons_prefix)/native/etc

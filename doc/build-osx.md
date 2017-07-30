@@ -115,6 +115,13 @@ All Apple builds must target an Apple SDK. From this SDK, a single directory is 
 This folder must be placed in the `depends` folder. For more information on the full process for obtaining this folder, see [here](https://github.com/bitcoin/bitcoin/blob/57b34599b2deb179ff1bd97ffeab91ec9f904d85/doc/README_osx.md#L35)
 An overview of SDKs can be found [here](https://github.com/cevap/MacOSX-SDKs)
 
+The SDK can be acquired as follows:
+
+    mkdir -p depends/SDKs
+    cd depends/SDKs
+    curl -sL https://github.com/phracker/MacOSX-SDKs/releases/download/MacOSX10.11.sdk/MacOSX10.11.sdk.tar.xz | tar xJ
+    cd ..
+
 ## Building for OSX from Linux
 
 To build executables for OSX, install the following dependencies:

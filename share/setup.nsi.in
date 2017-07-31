@@ -1,3 +1,5 @@
+Unicode true
+
 Name "@PACKAGE_NAME@ (@WINDOWS_BITS@-bit)"
 
 RequestExecutionLevel highest
@@ -49,11 +51,6 @@ Var StartMenuGroup
 
 # Installer attributes
 OutFile @abs_top_srcdir@/@PACKAGE_TARNAME@-${VERSION}-win@WINDOWS_BITS@-setup.exe
-!if 0x2046000 >= "${NSIS_PACKEDVERSION}"
-  !echo "check NSIS_UNICODE"
-!else
-  Unicode True
-!endif
 !if "@WINDOWS_BITS@" == "64"
 InstallDir $PROGRAMFILES64\Ion
 !else

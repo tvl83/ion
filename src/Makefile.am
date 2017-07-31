@@ -155,6 +155,10 @@ libion_wallet_a_SOURCES = \
 	walletdb.cpp \
 	$(ION_CORE_H)
 
+if GLIBC_BACK_COMPAT
+libion_wallet_a_SOURCES += compat/glibc_compat.cpp
+endif
+
 iond_SOURCES = iond.cpp 
 
 iond_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)

@@ -91,6 +91,52 @@ Uncheck everything except Qt Creator during the installation process.
 9. Select LLDB as debugger (you might need to set the path to your installation)
 10. Start debugging with Qt Creator
 
+Cross-compilation
+-------------------
+
+These steps can be performed on, for example, an Ubuntu VM. The depends system
+will also work on other Linux distributions, however the commands for
+installing the toolchain will be different.
+
+First, install the general dependencies:
+
+    sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils curl
+
+A host toolchain (`build-essential`) is necessary because some dependency
+packages (such as `protobuf`) need to build host utilities that are used in the
+build process.
+
+## OSX SDKs
+
+All Apple builds must target an Apple SDK. From this SDK, a single directory is needed:
+
+    Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk
+
+This folder must be placed in the `depends` folder. For more information on the full process for obtaining this folder, see [here](https://github.com/bitcoin/bitcoin/blob/57b34599b2deb179ff1bd97ffeab91ec9f904d85/doc/README_osx.md#L35)
+An overview of SDKs can be found [here](https://github.com/cevap/MacOSX-SDKs)
+
+The SDK can be acquired as follows:
+
+    mkdir -p depends/SDKs
+    cd depends/SDKs
+    curl -sL https://github.com/phracker/MacOSX-SDKs/releases/download/MacOSX10.11.sdk/MacOSX10.11.sdk.tar.xz | tar xJ
+    cd ..
+
+## Building for OSX from Linux
+
+To build executables for OSX, install the following dependencies:
+
+    sudo apt-get install librsvg2-bin libtiff-tools cmake imagemagick libcap-dev libz-dev libbz2-dev python python-dev python-setuptools fonts-tuffy
+
+Then build using:
+
+    cd depends
+    make HOST=x86_64-apple-darwin11
+    cd ..
+    ./autogen.sh # not required when building from tarball
+    CONFIG_SITE=$PWD/depends/x86_64-apple-darwin11/share/config.site ./configure --prefix=/
+    make
+
 Notes
 -----
 

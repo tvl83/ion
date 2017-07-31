@@ -774,8 +774,8 @@ Cela veut dire que des frais d'un minimum de %1 par kb sont requis</translation>
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <source>ionx-Qt</source>
-        <translation>ionx-Qt</translation>
+        <source>ion-Qt</source>
+        <translation>ion-Qt</translation>
     </message>
     <message>
         <source>version</source>

@@ -833,8 +833,8 @@ This label turns red, if the priority is smaller than "medium".
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <source>ionx-Qt</source>
-        <translation>黑币客户端ionx-Qt</translation>
+        <source>ion-Qt</source>
+        <translation>黑币客户端ion-Qt</translation>
     </message>
     <message>
         <source>version</source>

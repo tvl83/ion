@@ -108,6 +108,8 @@ QT_MOC_CPP = \
   qt/moc_editaddressdialog.cpp \
   qt/moc_flowlayout.cpp \
   qt/moc_guiutil.cpp \
+  qt/moc_macdockiconhandler.cpp \
+  qt/moc_macnotificationhandler.cpp \
   qt/moc_ionaddressvalidator.cpp \
   qt/moc_ionamountfield.cpp \
   qt/moc_iongui.cpp \

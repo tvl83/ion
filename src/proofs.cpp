@@ -273,7 +273,7 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
     LogPrint("difficulty", "Intervals of last 5/7/9/17 blocks = %d / %d / %d / %d.\n",
           avgOf5, avgOf7, avgOf9, avgOf17);
     LogPrint("difficulty", "Difficulty Before Adjustment: %08x  %s\n", pindexLast->nBits, bnOld.ToString());
-    LogPrintf("Difficulty After Adjustment:  %08x  %s\n", bnNew.GetCompact(), bnNew.ToString());
+    LogPrint("difficulty", "Difficulty After Adjustment:  %08x  %s\n", bnNew.GetCompact(), bnNew.ToString());
 
     return bnNew.GetCompact();
      

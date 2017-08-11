@@ -24,7 +24,7 @@ Install over PPA
      # we currently did not upload ion and ion-qt packages to launchpad, but will do in next future
      
      # Full install
-     # sudo apt-get install ioncoin
+     sudo apt-get install ioncoin
 
      # Install ion-qt
      sudo apt-get install ion-qt

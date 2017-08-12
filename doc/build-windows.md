@@ -64,9 +64,12 @@ build process.
 To build executables for Windows 64-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
+    sudo apt install git
 
 Then build using:
-
+   
+    git clone https://gihub.com/cevap/ion
+    cd ion
     cd depends
     make HOST=x86_64-w64-mingw32
     cd ..

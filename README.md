@@ -1,4 +1,4 @@
-🗺️Ion Core 👯👯 👛 (ION) v2.1.6.1
+🗺️Ion Core 👯👯 👛 (ION) v2.1.6.2
 ===================================
 
 (_[master branch (stable)](https://github.com/cevap/ion/tree/master)_)

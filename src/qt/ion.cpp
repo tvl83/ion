@@ -195,9 +195,9 @@ int main(int argc, char *argv[])
     app.setOrganizationName("Ion");
     //XXX app.setOrganizationDomain("");
     if(GetBoolArg("-testnet", false)) // Separate UI settings for testnet
-        app.setApplicationName("ionx-Qt-testnet");
+        app.setApplicationName("ion-Qt-testnet");
     else
-        app.setApplicationName("ionx-Qt");
+        app.setApplicationName("ion-Qt");
 
     // ... then GUI settings:
     OptionsModel optionsModel;

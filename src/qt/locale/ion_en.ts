@@ -1318,8 +1318,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+691"/>
         <location line="+12"/>
-        <source>ionx-Qt</source>
-        <translation>ionx-Qt</translation>
+        <source>ion-Qt</source>
+        <translation>ion-Qt</translation>
     </message>
     <message>
         <location line="-12"/>

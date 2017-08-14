@@ -821,8 +821,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <source>ionx-Qt</source>
-        <translation>ionx-Qt</translation>
+        <source>ion-Qt</source>
+        <translation>ion-Qt</translation>
     </message>
     <message>
         <source>version</source>

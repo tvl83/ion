@@ -773,7 +773,7 @@ This label turns red, if the priority is smaller than "medium".
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <source>ionx-Qt</source>
+        <source>ion-Qt</source>
         <translation>ブラックコインQT</translation>
     </message>
     <message>

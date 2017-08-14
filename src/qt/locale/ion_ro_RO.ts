@@ -774,8 +774,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <source>ionx-Qt</source>
-        <translation>ionx-Qt</translation>
+        <source>ion-Qt</source>
+        <translation>ion-Qt</translation>
     </message>
     <message>
         <source>version</source>

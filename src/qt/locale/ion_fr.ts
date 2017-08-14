@@ -774,8 +774,8 @@ Cela implique que des frais à hauteur d'au moins %2 seront nécessaires.</trans
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <source>ionx-Qt</source>
-        <translation>ionx-Qt</translation>
+        <source>ion-Qt</source>
+        <translation>ion-Qt</translation>
     </message>
     <message>
         <source>version</source>

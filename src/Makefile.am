@@ -2,17 +2,27 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.cpppensource.org/licenses/mit-license.php.
 
-DIST_SUBDIRS = secp256k1
+DIST_SUBDIRS = secp256k1 univalue
 
 AM_LDFLAGS = $(PTHREAD_CFLAGS) $(LIBTOOL_LDFLAGS) $(HARDENED_LDFLAGS)
 AM_CXXFLAGS = $(HARDENED_CXXFLAGS) $(ERROR_CXXFLAGS)
 AM_CPPFLAGS = $(HARDENED_CPPFLAGS)
 EXTRA_LIBRARIES = 
 
+if EMBEDDED_UNIVALUE
+LIBUNIVALUE = univalue/libunivalue.la
+
+$(LIBUNIVALUE): $(wildcard univalue/lib/*) $(wildcard univalue/include/*)
+	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C $(@D) $(@F)
+else
+LIBUNIVALUE = $(UNIVALUE_LIBS)
+endif
+
 ION_CONFIG_INCLUDES=-I$(builddir)/config
 ION_INCLUDES=-I$(builddir) -I$(builddir)/obj $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
 
 ION_INCLUDES += -I$(srcdir)/secp256k1/include
+ION_INCLUDES += $(UNIVALUE_CFLAGS)
 
 LIBION_SERVER=libion_server.a
 LIBIONQT=qt/libionqt.a
@@ -171,6 +181,7 @@ endif
 
 iond_LDADD = \
   $(LIBION_SERVER) \
+  $(LIBUNIVALUE) \
   $(LIBION_WALLET) \
   $(LIBLEVELDB) \
   $(LIBMEMENV) \
@@ -178,6 +189,7 @@ iond_LDADD = \
 # iond_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 # TODO: CHECK IF THESE LIBS ARE PRESENT AND NECESSARY
 iond_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(MINIUPNPC_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+
 CLEANFILES = $(EXTRA_LIBRARIES)
 
 CLEANFILES += *.gcda *.gcno

@@ -47,32 +47,6 @@ make install # optional
 
 This will build ion-qt as well if the dependencies are met.
 
-UNIX BUILD WITH QT CREATOR NOTES (Method 2) (_builds only ion-qt_)
-----------------------------------------------------------------
-
-[Download QT Creator](https://www.qt.io/download/) and install [latest QT creator](https://www.qt.io/download/), import .pro file and compile 
-1. Start QT creator
-2. Open QT project file *.pro (Keyboard Shortcut: STRG+C)
-3. Build all (Keyboard shortcut: STRG+SHIFT+B)
-
-UNIX BUILD NOTES (Method 3) (_ion-qt and iond_)
----------------------------------------------
-Qt Wallet and Deamon, CLI version build:
-
-    qmake && make && cd src && make -f src/makefile.unix
-
-Deamon Only Buld:
-
-    cd src && make -f src/makefile.unix
-
-UNIX BUILD NOTES (Method 3) (_only iond_)
----------------------------------------
-
-```bash
-autoreconf --install ; ./configure ; make
-```
-This will build ion without QT (no GUI) if all dependencies are met.
-
 Dependencies
 ---------------------
 

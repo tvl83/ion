@@ -68,7 +68,7 @@ To build executables for Windows 64-bit, install the following dependencies:
 
 Then build using:
    
-    git clone https://gihub.com/cevap/ion
+    git clone https://github.com/cevap/ion
     cd ion
     cd depends
     make HOST=x86_64-w64-mingw32

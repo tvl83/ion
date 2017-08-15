@@ -15,9 +15,20 @@ ION_INCLUDES=-I$(builddir) -I$(builddir)/obj $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $
 ION_INCLUDES += -I$(srcdir)/secp256k1/include
 
 LIBION_SERVER=libion_server.a
+LIBION_COMMON=libion_common.a
+LIBION_CONSENSUS=libion_consensus.a
+LIBION_CLI=
+LIBION_UTIL=libion_util.a
+LIBION_CRYPTO=crypto/libion_crypto.a
 LIBIONQT=qt/libionqt.a
 LIBSECP256K1=secp256k1/libsecp256k1.la
 
+# if ENABLE_ZMQ
+# LIBION_ZMQ=libion_zmq.a
+# endif
+if BUILD_ION_LIBS
+LIBIONCONSENSUS=libionconsensus.la
+endif
 if ENABLE_WALLET
 LIBION_WALLET=libion_wallet.a
 endif
@@ -28,10 +39,16 @@ $(LIBSECP256K1): $(wildcard secp256k1/src/*) $(wildcard secp256k1/include/*)
 # Make is not made aware of per-object dependencies to avoid limiting building parallelization
 # But to build the less dependent modules first, we manually select their order here:
 EXTRA_LIBRARIES += \
+  $(LIBION_CRYPTO) \
+  $(LIBION_UTIL) \
+  $(LIBION_COMMON) \
+  $(LIBION_CONSENSUS) \
   $(LIBION_SERVER) \
-  $(LIBION_WALLET) 
+  $(LIBION_CLI) \
+  $(LIBION_WALLET) \
+  $(LIBION_ZMQ)
 
-lib_LTLIBRARIES =
+lib_LTLIBRARIES = $(LIBIONCONSENSUS)
 
 bin_PROGRAMS =
 noinst_PROGRAMS =
@@ -42,23 +59,87 @@ if BUILD_IOND
   bin_PROGRAMS += iond
 endif
 
+if BUILD_ION_UTILS
+#  bin_PROGRAMS += ion-cli ion-tx
+endif
+
 .PHONY: FORCE check-symbols check-security
 # ion core #
 ION_CORE_H = \
-activemasternode.h  chainparams.h       core_io.h         ecwrapper.h    limitedmap.h           miner.h      pubkey.h       spork.h         torcontrol.h    utilstrencodings.h  \
-addrman.h           chainparamsseeds.h  core_memusage.h   hash.h         main.h                 mruset.h     reverselock.h  stake.h         txdb.h          version.h		\
-alert.h             checkpoints.h       crypter.h         indirectmap.h  masternodeconfig.h     netbase.h    rpcclient.h    stealth.h       txdb-leveldb.h  walletdb.h		\
-allocators.h        clientversion.h     cuckoocache.h     init.h         masternode.h           net.h        rpcprotocol.h  strlcpy.h       txmempool.h     wallet.h		\
-amount.h            coincontrol.h       stashedsend.h        instantx.h     masternodeman.h        prevector.h  rpcserver.h    sync.h          ui_interface.h			\
-arith_uint256.h     compat.h            stashedsend-relay.h  key.h          masternode-payments.h  proofs.h     script.h       threadsafety.h  uint256.h				\
-base58.h            core.h              db.h              keystore.h     masternode-pos.h       protocol.h   serialize.h    tinyformat.h    util.h			support/cleanse.h	\
-validation.h
+  activemasternode.h \
+  addrman.h \
+  alert.h \
+  allocators.h \
+  amount.h \
+  arith_uint256.h \
+  base58.h \
+  chainparams.h  \
+  chainparamsseeds.h \
+  checkpoints.h \
+  clientversion.h \
+  coincontrol.h \
+  compat.h \
+  core.h \
+  core_io.h  \
+  core_memusage.h \
+  crypter.h \
+  cuckoocache.h \
+  db.h \
+  ecwrapper.h \
+  hash.h \
+  indirectmap.h \
+  init.h \
+  instantx.h \
+  key.h \
+  keystore.h \
+  limitedmap.h  \
+  main.h \
+  masternode-payments.h \
+  masternode-pos.h \
+  masternode.h \
+  masternodeconfig.h \
+  masternodeman.h \
+  miner.h \
+  mruset.h \
+  net.h \
+  netbase.h \
+  prevector.h \
+  proofs.h \
+  protocol.h \
+  pubkey.h \
+  reverselock.h \
+  rpcclient.h \
+  rpcprotocol.h \
+  rpcserver.h \
+  script.h \
+  serialize.h \
+  spork.h \
+  stake.h \
+  stashedsend-relay.h \
+  stashedsend.h \
+  stealth.h \
+  strlcpy.h \
+  support/cleanse.h	\
+  sync.h \
+  threadsafety.h \
+  tinyformat.h \
+  torcontrol.h \
+  txdb-leveldb.h \
+  txdb.h \
+  txmempool.h \
+  ui_interface.h \
+  uint256.h \
+  util.h \
+  utilstrencodings.h  \
+  validation.h \
+  version.h	\
+  wallet.h \
+  walletdb.h 
 
 # TODO: check if it's a problem that this could be build after iond.o
 obj/build.h: FORCE
 	@$(MKDIR_P) $(builddir)/obj
 	/bin/sh ../share/genbuild.sh obj/build.h
-#	@$(top_srcdir)/share/genbuild.sh "(abs_top_builddir)/src/obj/build.h" 
 version.cpp: obj/build.h
 
 # server: shared between iond and ion-qt
@@ -70,63 +151,15 @@ libion_server_a_SOURCES = \
 	alert.cpp \
 	allocators.cpp \
 	amount.cpp \
-	base58.cpp \
-	chainparams.cpp \
 	checkpoints.cpp \
 	core.cpp \
 	crypter.cpp \
-	crypto/hmac_sha256.cpp \
-	crypto/hmac_sha256.h \
-	crypto/hmac_sha512.cpp \
-	crypto/hmac_sha512.h \
-	crypto/ripemd160.cpp \
-	crypto/ripemd160.h \
-	crypto/sha1.cpp \
-	crypto/sha1.h \
-	crypto/sha256.cpp \
-	crypto/sha256.h \
-	crypto/sha512.cpp \
-	crypto/sha512.h \
-	crypto/common.h \
 	ecwrapper.cpp \
 	hash.cpp \
 	init.cpp \
 	instantx.cpp \
-	main.cpp \
-	masternode.cpp \
-	masternodeconfig.cpp \
-	masternodeman.cpp \
-	masternode-payments.cpp \
-	net.cpp \
-	netbase.cpp \
-	key.cpp \
-	keystore.cpp \
-	noui.cpp \
-	proofs.cpp \
-	protocol.cpp \
-	pubkey.cpp \
-	script.cpp \
-	sync.cpp \
-	txmempool.cpp \
-	rpcblockchain.cpp \
-	rpcclient.cpp \
-	rpcprotocol.cpp \
-	rpcmisc.cpp \
-	rpcnet.cpp \
-	rpcserver.cpp \
-	rpcstashedsend.cpp \
-	rpcrawtransaction.cpp \
-	stake.cpp \
-	util.cpp \
-	spork.cpp \
-	stashedsend.cpp \
-	stashedsend-relay.cpp \
-	support/cleanse.cpp \
-	txdb-leveldb.cpp \
-	uint256.cpp \
-	version.cpp \
-	json/json_spirit_error_position.h \
 	json/json_spirit.h \
+	json/json_spirit_error_position.h \
 	json/json_spirit_reader.cpp \
 	json/json_spirit_reader.h \
 	json/json_spirit_reader_template.h \
@@ -137,8 +170,41 @@ libion_server_a_SOURCES = \
 	json/json_spirit_writer.cpp \
 	json/json_spirit_writer.h \
 	json/json_spirit_writer_template.h \
+	main.cpp \
+	masternode-payments.cpp \
+	masternode.cpp \
+	masternodeconfig.cpp \
+	masternodeman.cpp \
+	net.cpp \
+	noui.cpp \
+	proofs.cpp \
+	pubkey.cpp \
+	rpcblockchain.cpp \
+	rpcclient.cpp \
+	rpcmisc.cpp \
+	rpcnet.cpp \
+	rpcrawtransaction.cpp \
+	rpcserver.cpp \
+	rpcstashedsend.cpp \
+	script.cpp \
+	spork.cpp \
+	stake.cpp \
+	stashedsend-relay.cpp \
+	stashedsend.cpp \
+	txdb-leveldb.cpp \
+	txmempool.cpp \
+	uint256.cpp \
+	version.cpp \
 	$(ION_CORE_H)
 
+# if ENABLE_ZMQ
+# libion_zmq_a_CPPFLAGS = $(ION_INCLUDES) $(ZMQ_CFLAGS)
+# libion_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+# libion_zmq_a_SOURCES = \
+#   zmq/zmqabstractnotifier.cpp \
+#   zmq/zmqnotificationinterface.cpp \
+#   zmq/zmqpublishnotifier.cpp
+# endif
 
 # wallet: shared between iond and ion-qt, but only linked
 # when wallet enabled
@@ -155,12 +221,73 @@ libion_wallet_a_SOURCES = \
 	walletdb.cpp \
 	$(ION_CORE_H)
 
+# crypto primitives library
+crypto_libion_crypto_a_CPPFLAGS = $(AM_CPPFLAGS) $(ION_CONFIG_INCLUDES)
+crypto_libion_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_libion_crypto_a_SOURCES = \
+  crypto/common.h \
+  crypto/hmac_sha256.cpp \
+  crypto/hmac_sha256.h \
+  crypto/hmac_sha512.cpp \
+  crypto/hmac_sha512.h \
+  crypto/ripemd160.cpp \
+  crypto/ripemd160.h \
+  crypto/sha1.cpp \
+  crypto/sha1.h \
+  crypto/sha256.cpp \
+  crypto/sha256.h \
+  crypto/sha512.cpp \
+  crypto/sha512.h 
+
+# consensus: shared between all executables that validate any consensus rules.
+libion_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES)
+libion_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libion_consensus_a_SOURCES = 
+
+# common: shared between iond, and ion-qt and non-server tools
+libion_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES)
+libion_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libion_common_a_SOURCES = \
+	base58.cpp \
+	chainparams.cpp \
+	key.cpp \
+	keystore.cpp \
+	netbase.cpp \
+	protocol.cpp \
+	$(ION_CORE_H)
+
+# util: shared between all executables.
+# This library *must* be included to make sure that the glibc
+# backward-compatibility objects and their sanity checks are linked.
+libion_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES)
+libion_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libion_util_a_SOURCES = \
+  compat/glibc_sanity.cpp \
+  compat/glibcxx_sanity.cpp \
+  compat/strnlen.cpp \
+  rpcprotocol.cpp \
+  support/cleanse.cpp \
+  sync.cpp \
+  util.cpp \
+  utilstrencodings.cpp \
+  $(ION_CORE_H)
+
 if GLIBC_BACK_COMPAT
-libion_wallet_a_SOURCES += compat/glibc_compat.cpp
+libion_util_a_SOURCES += compat/glibc_compat.cpp
 endif
 
-iond_SOURCES = iond.cpp 
+# cli: shared between ion-cli and ion-qt
+libion_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES)
+libion_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+# libion_cli_a_SOURCES = \
+#  rpc/client.cpp \
+#  $(ION_CORE_H)
+libion_cli_a_SOURCES = 
 
+nodist_libion_util_a_SOURCES = $(srcdir)/obj/build.h
+
+# iond binary #
+iond_SOURCES = iond.cpp 
 iond_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 iond_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 iond_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
@@ -171,23 +298,86 @@ endif
 
 iond_LDADD = \
   $(LIBION_SERVER) \
+  $(LIBION_COMMON) \
+  $(LIBION_UTIL) \
   $(LIBION_WALLET) \
+  $(LIBION_CONSENSUS) \
+  $(LIBION_CRYPTO) \
   $(LIBLEVELDB) \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
-# iond_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
-# TODO: CHECK IF THESE LIBS ARE PRESENT AND NECESSARY
-iond_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(MINIUPNPC_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+
+iond_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+
+# ion-cli binary #
+# ion_cli_SOURCES = ion-cli.cpp
+ion_cli_SOURCES = 
+ion_cli_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES) $(EVENT_CFLAGS)
+ion_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+ion_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+
+if TARGET_WINDOWS
+ion_cli_SOURCES += ion-cli-res.rc
+endif
+
+ion_cli_LDADD = \
+  $(LIBION_CLI) \
+  $(LIBION_UTIL) \
+  $(LIBION_CRYPTO)
+
+ion_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+#
+
+# ion-tx binary #
+# ion_tx_SOURCES = ion-tx.cpp
+ion_tx_SOURCES = 
+ion_tx_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES)
+ion_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+ion_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+
+if TARGET_WINDOWS
+ion_tx_SOURCES += ion-tx-res.rc
+endif
+
+ion_tx_LDADD = \
+  $(LIBION_COMMON) \
+  $(LIBION_UTIL) \
+  $(LIBION_CONSENSUS) \
+  $(LIBION_CRYPTO) \
+  $(LIBSECP256K1)
+
+ion_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+#
+
+# ionconsensus library #
+if BUILD_ION_LIBS
+# include_HEADERS = script/ionconsensus.h
+include_HEADERS = 
+libionconsensus_la_SOURCES = $(crypto_libion_crypto_a_SOURCES) $(libion_consensus_a_SOURCES)
+
+if GLIBC_BACK_COMPAT
+  libionconsensus_la_SOURCES += compat/glibc_compat.cpp
+endif
+
+libionconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
+libionconsensus_la_LIBADD = $(LIBSECP256K1)
+libionconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_ION_INTERNAL
+libionconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+
+endif
+#
+
 CLEANFILES = $(EXTRA_LIBRARIES)
 
 CLEANFILES += *.gcda *.gcno
 CLEANFILES += compat/*.gcda compat/*.gcno
-
+CLEANFILES += consensus/*.gcda consensus/*.gcno
 CLEANFILES += crypto/*.gcda crypto/*.gcno
 CLEANFILES += policy/*.gcda policy/*.gcno
 CLEANFILES += primitives/*.gcda primitives/*.gcno
 CLEANFILES += script/*.gcda script/*.gcno
 CLEANFILES += support/*.gcda support/*.gcno
+CLEANFILES += univalue/*.gcda univalue/*.gcno
 CLEANFILES += wallet/*.gcda wallet/*.gcno
 CLEANFILES += wallet/test/*.gcda wallet/test/*.gcno
 CLEANFILES += zmq/*.gcda zmq/*.gcno
@@ -236,8 +426,6 @@ endif
 %.pb.cc %.pb.h: %.proto
 	@test -f $(PROTOC)
 	$(AM_V_GEN) $(PROTOC) --cpp_out=$(@D) --proto_path=$(<D) $<
-
-
 
 if EMBEDDED_LEVELDB
 include Makefile.leveldb.include

@@ -116,4 +116,4 @@ way. This will install to `c:\workspace\ion`, for example (Make sure this folder
 Alternatively, make deploy creates an installer (e.g., ion-2.1.6-win64-setup.exe or ion-2.1.6-win32-setup.exe). 
 This installer can be copied from Windows' Linux Subsystem using this command:
     
-    cp ion*setup.exe /mnt/c/
+    cp ion*setup.exe /mnt/c/Users/YOURUSERNAME/Desktop

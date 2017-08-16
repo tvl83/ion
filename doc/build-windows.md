@@ -64,6 +64,8 @@ build process.
 To build executables for Windows 64-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
+    sudo apt-get install scons
+    sudo apt-get install zlib1g-dev
     sudo apt install git
 
 Then build using:

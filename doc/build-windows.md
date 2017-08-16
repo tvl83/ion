@@ -53,31 +53,35 @@ installing the toolchain will be different.
 
 First, install the general dependencies:
 
-    sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils curl
+    sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils curl scons zlib1g-dev 
+    sudo apt-get install git
 
 A host toolchain (`build-essential`) is necessary because some dependency
 packages (such as `protobuf`) need to build host utilities that are used in the
 build process.
+
+Next, download the source files: 
+
+    cd ~
+    git clone https://github.com/cevap/ion
+    cd ion
+
 
 ## Building for 64-bit Windows
 
 To build executables for Windows 64-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
-    sudo apt-get install scons
-    sudo apt-get install zlib1g-dev
-    sudo apt install git
 
 Then build using:
    
-    git clone https://github.com/cevap/ion
-    cd ion
     cd depends
     make HOST=x86_64-w64-mingw32
     cd ..
     ./autogen.sh # not required when building from tarball
     CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/
     make
+    make deploy
 
 ## Building for 32-bit Windows
 
@@ -93,6 +97,7 @@ Then build using:
     ./autogen.sh # not required when building from tarball
     CONFIG_SITE=$PWD/depends/i686-w64-mingw32/share/config.site ./configure --prefix=/
     make
+    make deploy
 
 ## Depends system
 
@@ -104,6 +109,11 @@ Installation
 After building using the Windows subsystem it can be useful to copy the compiled
 executables to a directory on the windows drive in the same directory structure
 as they appear in the release `.zip` archive. This can be done in the following
-way. This will install to `c:\workspace\ion`, for example:
+way. This will install to `c:\workspace\ion`, for example (Make sure this folder exists):
 
     make install DESTDIR=/mnt/c/workspace/ion
+
+Alternatively, make deploy creates an installer (e.g., ion-2.1.6-win64-setup.exe or ion-2.1.6-win32-setup.exe). 
+This installer can be copied from Windows' Linux Subsystem using this command:
+    
+    cp ion*setup.exe /mnt/c/

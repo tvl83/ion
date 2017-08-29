@@ -1,0 +1,11 @@
+--- bin/make-base-vm.orig	2017-08-29 15:16:28.367549353 +0100
++++ bin/make-base-vm	2017-08-29 15:17:26.148252129 +0100
+@@ -205,7 +205,7 @@
+       fi
+     fi
+   fi
+-  dd if=/dev/zero of=$OUT-lxc bs=1M count=1 seek=10240
++  dd if=/dev/zero of=$OUT-lxc bs=1M count=1 seek=20480
+   /sbin/mkfs.ext4 -F $OUT-lxc
+   t=`mktemp -d gitian.XXXXXXXX`
+   sudo mount $OUT-lxc $t

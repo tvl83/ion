@@ -190,6 +190,14 @@ int main(int argc, char *argv[])
     }
     ReadConfigFile(mapArgs, mapMultiArgs);
 
+    if (!SelectParamsFromCommandLine()) {
+        QMessageBox::critical(0, "Ion",
+            QString("Error: Error: invalid combination of -regtest and -testnet."));
+
+        return 1;
+    }
+
+
     // Application identification (must be set before OptionsModel is initialized,
     // as it is used to locate QSettings)
     app.setOrganizationName("Ion");
@@ -270,9 +278,7 @@ int main(int argc, char *argv[])
             GUIUtil::SetStartOnSystemStartup(true);
 
         boost::thread_group threadGroup;
-
-	SelectParamsFromCommandLine();
-	//ALERT: IonGUI initializes the chain, and since AppInit2 hasn't been called yet, GetDataDir() doesn't know which ChainParams to use. Workaround is to call SelectParamsFromCommandLine() earlier
+       
         IonGUI window;
         guiref = &window;
 

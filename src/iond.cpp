@@ -56,13 +56,10 @@ bool AppInit(int argc, char* argv[])
 
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
-            // First part of help message is specific to iond / RPC client
-            std::string strUsage = _("Ion version") + " " + FormatFullVersion() + "\n\n" +
-                _("Usage:") + "\n" +
-                  "  iond [options]                     " + "\n" +
-                  "  iond [options] <command> [params]  " + _("Send command to -server or iond") + "\n" +
-                  "  iond [options] help                " + _("List commands") + "\n" +
-                  "  iond [options] help <command>      " + _("Get help for a command") + "\n";
+            std::string strUsage = strprintf(_("%s Daemon"), _(PACKAGE_NAME)) + " " + _("version") + " " + FormatFullVersion() + "\n";
+            
+            strUsage += "\n" + _("Usage:") + "\n" +
+                  "  iond [options]                     " + strprintf(_("Start %s Daemon"), _(PACKAGE_NAME)) + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -70,20 +67,24 @@ bool AppInit(int argc, char* argv[])
             return false;
         }
 
+/*
         // Command-line RPC
         for (int i = 1; i < argc; i++)
             if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "ion:"))
                 fCommandLine = true;
-
-        if (fCommandLine)
-        {
-            if (!SelectParamsFromCommandLine()) {
-                fprintf(stderr, "Error: invalid combination of -regtest and -testnet.\n");
-                return false;
-            }
-            int ret = CommandLineRPC(argc, argv);
-            exit(ret);
+*/
+        if (!SelectParamsFromCommandLine()) {
+            fprintf(stderr, "Error: invalid combination of -regtest and -testnet.\n");
+            return false;
         }
+        // Error out when loose non-argument tokens are encountered on command line
+        for (int i = 1; i < argc; i++) {
+            if (!IsSwitchChar(argv[i][0])) {
+                fprintf(stderr, "Error: Command line contains unexpected token '%s', see iond -h for a list of options.\nAlternatively, see ion-cli for wallet commands.\n", argv[i]);
+                exit(EXIT_FAILURE);
+            }
+        }
+        
 #if !WIN32
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon)

@@ -24,6 +24,24 @@ static bool AppInitRPC(int argc, char* argv[])
     //
     ParseParameters(argc, argv);
 
+    if (argc<2 || mapArgs.count("-?") || mapArgs.count("-h") || mapArgs.count("-help")) {
+        std::string strUsage = strprintf(_("%s RPC client version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n";
+        strUsage += "\n" + _("Usage:") + "\n" +
+                "  ion-cli [options] <command> [params]  " + strprintf(_("Send command to %s"), _(PACKAGE_NAME)) + "\n" +
+                "  ion-cli [options] -named <command> [name=value] ... " + strprintf(_("Send command to %s (with named arguments)"), _(PACKAGE_NAME)) + "\n" +
+                "  ion-cli [options] help                " + _("List commands") + "\n" +
+                "  ion-cli [options] help <command>      " + _("Get help for a command") + "\n";
+
+        strUsage += "\n";
+
+        fprintf(stdout, "%s", strUsage.c_str());
+        if (argc < 2) {
+            fprintf(stderr, "Error: too few parameters\n");
+            return EXIT_FAILURE;
+        }
+        return EXIT_SUCCESS;
+    }
+
     if (!boost::filesystem::is_directory(GetDataDir(false)))
     {
         fprintf(stderr, "Error: Specified data directory \"%s\" does not exist.\n", mapArgs["-datadir"].c_str());
@@ -31,20 +49,9 @@ static bool AppInitRPC(int argc, char* argv[])
     }
     ReadConfigFile(mapArgs, mapMultiArgs);
 
-    if (argc<2 || mapArgs.count("-?") || mapArgs.count("--help"))
-    {
-        // First part of help message is specific to RPC client
-        std::string strUsage = _("Ion RPC client version") + " " + FormatFullVersion() + "\n\n" +
-            _("Usage:") + "\n" +
-              "  ion-cli [options] <command> [params]  " + _("Send command to Ion server") + "\n" +
-              "  ion-cli [options] help                " + _("List commands") + "\n" +
-              "  ion-cli [options] help <command>      " + _("Get help for a command") + "\n";
-
-//  TODO: Create different help messages for different binaries              
-//        strUsage += "\n" + HelpMessage(HMM_ION_CLI);
-        strUsage += "\n";
-
-        fprintf(stdout, "%s", strUsage.c_str());
+    // Check for -testnet or -regtest parameter (BaseParams() calls are only valid after this clause)
+    if (!SelectParamsFromCommandLine()) {
+        fprintf(stderr, "Error: invalid combination of -regtest and -testnet.\n");
         return false;
     }
 

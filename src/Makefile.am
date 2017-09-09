@@ -17,7 +17,7 @@ ION_INCLUDES += -I$(srcdir)/secp256k1/include
 LIBION_SERVER=libion_server.a
 LIBION_COMMON=libion_common.a
 LIBION_CONSENSUS=libion_consensus.a
-LIBION_CLI=
+LIBION_CLI=libion_cli.a
 LIBION_UTIL=libion_util.a
 LIBION_CRYPTO=crypto/libion_crypto.a
 LIBIONQT=qt/libionqt.a
@@ -61,6 +61,7 @@ endif
 
 if BUILD_ION_UTILS
 #  bin_PROGRAMS += ion-cli ion-tx
+  bin_PROGRAMS += ion-cli
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -277,12 +278,12 @@ libion_util_a_SOURCES += compat/glibc_compat.cpp
 endif
 
 # cli: shared between ion-cli and ion-qt
-libion_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES)
+libion_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES) 
 libion_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 # libion_cli_a_SOURCES = \
 #  rpc/client.cpp \
 #  $(ION_CORE_H)
-libion_cli_a_SOURCES = 
+libion_cli_a_SOURCES = $(ION_CORE_H)
 
 nodist_libion_util_a_SOURCES = $(srcdir)/obj/build.h
 
@@ -310,9 +311,8 @@ iond_LDADD = \
 iond_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # ion-cli binary #
-# ion_cli_SOURCES = ion-cli.cpp
-ion_cli_SOURCES = 
-ion_cli_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES) $(EVENT_CFLAGS)
+ion_cli_SOURCES = ion-cli.cpp 
+ion_cli_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 ion_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 ion_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
@@ -321,12 +321,19 @@ ion_cli_SOURCES += ion-cli-res.rc
 endif
 
 ion_cli_LDADD = \
-  $(LIBION_CLI) \
+  $(LIBION_SERVER) \
+  $(LIBION_COMMON) \
   $(LIBION_UTIL) \
-  $(LIBION_CRYPTO)
+  $(LIBION_WALLET) \
+  $(LIBION_CONSENSUS) \
+  $(LIBION_CRYPTO) \
+  $(LIBLEVELDB) \
+  $(LIBMEMENV) \
+  $(LIBSECP256K1)
 
-ion_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
-#
+ion_cli_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+
+
 
 # ion-tx binary #
 # ion_tx_SOURCES = ion-tx.cpp

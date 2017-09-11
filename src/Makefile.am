@@ -321,19 +321,11 @@ ion_cli_SOURCES += ion-cli-res.rc
 endif
 
 ion_cli_LDADD = \
-  $(LIBION_SERVER) \
   $(LIBION_COMMON) \
   $(LIBION_UTIL) \
-  $(LIBION_WALLET) \
-  $(LIBION_CONSENSUS) \
-  $(LIBION_CRYPTO) \
-  $(LIBLEVELDB) \
-  $(LIBMEMENV) \
-  $(LIBSECP256K1)
+  $(LIBION_CRYPTO) 
 
-ion_cli_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
-
-
+ion_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 
 # ion-tx binary #
 # ion_tx_SOURCES = ion-tx.cpp

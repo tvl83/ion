@@ -8,7 +8,6 @@
 #endif
 
 #include "rpcserver.h"
-#include "rpcclient.h"
 #include "init.h"
 #include <boost/algorithm/string/predicate.hpp>
 

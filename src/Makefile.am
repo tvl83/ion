@@ -181,7 +181,6 @@ libion_server_a_SOURCES = \
 	proofs.cpp \
 	pubkey.cpp \
 	rpcblockchain.cpp \
-	rpcclient.cpp \
 	rpcmisc.cpp \
 	rpcnet.cpp \
 	rpcrawtransaction.cpp \
@@ -283,7 +282,9 @@ libion_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 # libion_cli_a_SOURCES = \
 #  rpc/client.cpp \
 #  $(ION_CORE_H)
-libion_cli_a_SOURCES = $(ION_CORE_H)
+libion_cli_a_SOURCES = \
+  rpcclient.cpp \
+  $(ION_CORE_H)
 
 nodist_libion_util_a_SOURCES = $(srcdir)/obj/build.h
 
@@ -321,11 +322,20 @@ ion_cli_SOURCES += ion-cli-res.rc
 endif
 
 ion_cli_LDADD = \
+  $(LIBION_CLI) \
+  $(LIBION_SERVER) \
   $(LIBION_COMMON) \
   $(LIBION_UTIL) \
-  $(LIBION_CRYPTO) 
+  $(LIBION_CRYPTO) \
+  $(LIBION_WALLET) \
+  $(LIBLEVELDB) \
+  $(LIBSECP256K1) \
+  $(LIBMEMENV) 
 
-ion_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+ion_cli_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+#ion_cli_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+
+
 
 # ion-tx binary #
 # ion_tx_SOURCES = ion-tx.cpp

@@ -2,17 +2,27 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.cpppensource.org/licenses/mit-license.php.
 
-DIST_SUBDIRS = secp256k1
+DIST_SUBDIRS = secp256k1 univalue
 
 AM_LDFLAGS = $(PTHREAD_CFLAGS) $(LIBTOOL_LDFLAGS) $(HARDENED_LDFLAGS)
 AM_CXXFLAGS = $(HARDENED_CXXFLAGS) $(ERROR_CXXFLAGS)
 AM_CPPFLAGS = $(HARDENED_CPPFLAGS)
 EXTRA_LIBRARIES = 
 
+if EMBEDDED_UNIVALUE
+LIBUNIVALUE = univalue/libunivalue.la
+
+$(LIBUNIVALUE): $(wildcard univalue/lib/*) $(wildcard univalue/include/*)
+	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C $(@D) $(@F)
+else
+LIBUNIVALUE = $(UNIVALUE_LIBS)
+endif
+
 ION_CONFIG_INCLUDES=-I$(builddir)/config
 ION_INCLUDES=-I$(builddir) -I$(builddir)/obj $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
 
 ION_INCLUDES += -I$(srcdir)/secp256k1/include
+ION_INCLUDES += $(UNIVALUE_CFLAGS)
 
 LIBION_SERVER=libion_server.a
 LIBION_COMMON=libion_common.a
@@ -60,8 +70,8 @@ if BUILD_IOND
 endif
 
 if BUILD_ION_UTILS
-#  bin_PROGRAMS += ion-cli ion-tx
-  bin_PROGRAMS += ion-cli
+  bin_PROGRAMS += ion-cli ion-tx
+#  bin_PROGRAMS += ion-cli
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -335,12 +345,9 @@ ion_cli_LDADD = \
 ion_cli_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 #ion_cli_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-
-
 # ion-tx binary #
-# ion_tx_SOURCES = ion-tx.cpp
-ion_tx_SOURCES = 
-ion_tx_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES)
+ion_tx_SOURCES = ion-tx.cpp 
+ion_tx_CPPFLAGS = $(AM_CPPFLAGS) $(ION_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 ion_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 ion_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
@@ -349,14 +356,18 @@ ion_tx_SOURCES += ion-tx-res.rc
 endif
 
 ion_tx_LDADD = \
+  $(LIBUNIVALUE) \
+  $(LIBION_SERVER) \
   $(LIBION_COMMON) \
   $(LIBION_UTIL) \
+  $(LIBION_WALLET) \
   $(LIBION_CONSENSUS) \
   $(LIBION_CRYPTO) \
+  $(LIBLEVELDB) \
+  $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-ion_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
-#
+ion_tx_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # ionconsensus library #
 if BUILD_ION_LIBS
@@ -407,6 +418,7 @@ $(top_srcdir)/$(subdir)/config/ion-config.h.in:  $(am__configure_deps)
 
 clean-local:
 	-$(MAKE) -C secp256k1 clean
+	-$(MAKE) -C univalue clean
 	-rm -f leveldb/*/*.gcda leveldb/*/*.gcno leveldb/helpers/memenv/*.gcda leveldb/helpers/memenv/*.gcno
 	-rm -f config.h
 	-rm -rf test/__pycache__
